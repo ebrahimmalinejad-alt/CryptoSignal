@@ -1,5 +1,12 @@
 {
-  "trades": {},
+  "trades": {
+    "LTCUSDT": {
+      "symbol": "LTCUSDT",
+      "type": "SELL",
+      "entryPrice": 63.37,
+      "timestamp": 1790150354765
+    }
+  },
   "closedToday": [],
   "lastDailyReportDate": ""
 }
