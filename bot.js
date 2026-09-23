@@ -590,20 +590,23 @@ async function executeScan() {
 }
 
 async function startContinuousLoop() {
-    console.log("Starting 50-minute live runner on GitHub...");
+    console.log("Starting 60-minute live runner on GitHub...");
     
-    for (let cycle = 1; cycle <= 5; cycle++) {
-        console.log(`\n--- Cycle ${cycle} of 5 ---`);
+    // 6 cycles x 10 minutes = 60 full minutes
+    for (let cycle = 1; cycle <= 6; cycle++) {
+        console.log(`\n--- Cycle ${cycle} of 6 ---`);
         await executeScan();
         
-        if (cycle < 5) {
+        if (cycle < 6) {
             console.log("Waiting exactly 10 minutes for next check...");
             await new Promise(resolve => setTimeout(resolve, 10 * 60 * 1000));
         }
     }
     
-    console.log("50-minute block completed successfully.");
+    console.log("60-minute block completed successfully.");
     process.exit(0);
 }
+
+startContinuousLoop();
 
 startContinuousLoop();
