@@ -99,7 +99,7 @@ async function getFundingRate(symbol) {
             return parseFloat(res.data.lastFundingRate);
         }
     } catch (e) {
-        // Fallback for cloud environments
+        // Fallback
     }
     return 0.0001;
 }
@@ -161,17 +161,63 @@ async function processSymbol(symbol) {
     };
 }
 
-// 1. Guaranteed 10-Minute Trade Status Report
+function evaluatePillars(trade, coinData) {
+    const { currRsi1h, currRsi5m, fundingRate, volumeRatio } = coinData;
+    const isLong = trade.type === 'BUY';
+
+    let p1Status = "🟢 [HEALTHY]";
+    let p1Desc = isLong ? "Momentum in favor of Long bias." : "Bearish momentum prevailing.";
+    if (isLong && currRsi5m < 45) {
+        p1Status = "🟡 [MOMENTUM WARNING]";
+        p1Desc = "Short-term momentum weakening.";
+    } else if (!isLong && currRsi5m > 55) {
+        p1Status = "🟡 [MOMENTUM WARNING]";
+        p1Desc = "Short-term buyer pressure detected.";
+    }
+
+    let p2Status = "🟢 [INTACT]";
+    let p2Desc = isLong ? "Short sellers trapped by funding." : "Long buyers paying high funding.";
+    if (isLong && fundingRate > 0.0003) {
+        p2Status = "🔴 [TRAP INVALIDATED]";
+        p2Desc = "Funding flipped positive against Longs.";
+    } else if (!isLong && fundingRate < -0.0001) {
+        p2Status = "🔴 [TRAP INVALIDATED]";
+        p2Desc = "Funding turned negative against Shorts.";
+    }
+
+    let p3Status = "🟢 [FAVORABLE]";
+    let p3Desc = "Volume matches current market movement.";
+    if (volumeRatio < 0.7) {
+        p3Status = "🟡 [EXHAUSTION RISK]";
+        p3Desc = "Volume fading, momentum resting.";
+    } else if (volumeRatio > 1.8) {
+        p3Status = "🟢 [HIGH SURGE]";
+        p3Desc = "Strong volume expansion recorded.";
+    }
+
+    let rationale = isLong 
+        ? "Key structural pillars remain supportive." 
+        : "Downside setup intact without volume breakout against trade.";
+    let riskPoint = isLong 
+        ? "5M RSI breaking below 35.0" 
+        : "5M RSI breaking above 65.0";
+
+    return { p1Status, p1Desc, p2Status, p2Desc, p3Status, p3Desc, rationale, riskPoint };
+}
+
+// 1. Guaranteed 10-Minute Trade Status Report (Diagnostic Engine)
 async function sendTenMinuteReport(validCoins, state, avgRsi1h, avgRsi5m) {
     const tradeKeys = Object.keys(state.trades || {});
-    const formattedDate = new Date().toISOString().replace('T', '  T: ');
+    const nowUtc = new Date().toISOString().replace('T', ' ').slice(0, 19) + ' UTC';
 
     if (tradeKeys.length === 0) {
-        const idleMessage = `📊 <b>TRADE STATUS UPDATE (10M Check)</b>\n\n` +
-            `• No active positions currently open.\n` +
-            `• Market Climate: 1H RSI [<code>${avgRsi1h}</code>] | 5M RSI [<code>${avgRsi5m}</code>]\n` +
-            `• Status: 3-Pillar engine scanning for high-probability setups...\n\n` +
-            `UTC: ${formattedDate}`;
+        const idleMessage = `🛰 <b>INSTITUTIONAL TELEMETRY | 10M PULSE</b>\n` +
+            `━━━━━━━━━━━━━━━━━━━━\n` +
+            `• <b>Active Positions:</b> 0\n` +
+            `• <b>Market Climate:</b> 1H RSI [<code>${avgRsi1h}</code>] | 5M RSI [<code>${avgRsi5m}</code>]\n` +
+            `• <b>Status:</b> Scanning for institutional setups...\n` +
+            `━━━━━━━━━━━━━━━━━━━━\n` +
+            `⏱ <code>${nowUtc}</code>`;
 
         await sendTelegramMessage(TELEGRAM_CHAT_LOG, idleMessage);
         return;
@@ -179,6 +225,7 @@ async function sendTenMinuteReport(validCoins, state, avgRsi1h, avgRsi5m) {
 
     let vipCards = [];
     let logCards = [];
+    let totalFloatingPnL = 0;
     let updatedTrades = { ...state.trades };
     if (!state.closedToday) state.closedToday = [];
 
@@ -187,36 +234,38 @@ async function sendTenMinuteReport(validCoins, state, avgRsi1h, avgRsi5m) {
         const coinData = validCoins.find(c => c.symbol === trade.symbol);
         if (!coinData) continue;
 
-        const { currentPrice, currRsi1h, currRsi5m } = coinData;
+        const { currentPrice, currRsi1h, currRsi5m, fundingRate, volumeRatio } = coinData;
 
         let pnlPercent = trade.type === 'BUY'
             ? ((currentPrice - trade.entryPrice) / trade.entryPrice) * 100
             : ((trade.entryPrice - currentPrice) / trade.entryPrice) * 100;
 
-        const pnlFormatted = pnlPercent >= 0 ? `+${pnlPercent.toFixed(2)}%` : `${pnlPercent.toFixed(2)}%`;
+        totalFloatingPnL += pnlPercent;
+
+        const pnlFormatted = (pnlPercent >= 0 ? '+' : '') + pnlPercent.toFixed(2) + '%';
         const pnlIcon = pnlPercent >= 0 ? '🟢' : '🔴';
 
-        let actionBanner = "👉 ACTION ➔ ⏳ [ HOLD POSITION ] ⏳";
+        let actionBanner = "⏳ [HOLD POSITION]";
         let isClosed = false;
         let closeReason = "";
 
         if (trade.type === 'BUY') {
             if (currRsi5m >= 70 || currRsi1h >= 70) {
-                actionBanner = "👉 ACTION ➔ 💰 [ CLOSE & TAKE PROFIT ] 🎯";
+                actionBanner = "💰 [TAKE PROFIT HIT]";
                 isClosed = true;
                 closeReason = "Take Profit";
             } else if (pnlPercent <= -2.5 || currRsi5m <= 30) {
-                actionBanner = "👉 ACTION ➔ 🛑 [ CLOSE & STOP LOSS ] 🛑";
+                actionBanner = "🛑 [STOP LOSS TRIGGERED]";
                 isClosed = true;
                 closeReason = "Stop Loss";
             }
         } else { // SELL
             if (currRsi5m <= 30 || currRsi1h <= 30) {
-                actionBanner = "👉 ACTION ➔ 💰 [ CLOSE & TAKE PROFIT ] 🎯";
+                actionBanner = "💰 [TAKE PROFIT HIT]";
                 isClosed = true;
                 closeReason = "Take Profit";
             } else if (pnlPercent <= -2.5 || currRsi5m >= 70) {
-                actionBanner = "👉 ACTION ➔ 🛑 [ CLOSE & STOP LOSS ] 🛑";
+                actionBanner = "🛑 [STOP LOSS TRIGGERED]";
                 isClosed = true;
                 closeReason = "Stop Loss";
             }
@@ -225,14 +274,26 @@ async function sendTenMinuteReport(validCoins, state, avgRsi1h, avgRsi5m) {
         // VIP Client Format
         const vipCard = `🪙 <b>#${trade.symbol.replace('USDT', '')}</b> [${trade.type}]\n` +
             `• Price: <code>$${trade.entryPrice}</code> ➔ <code>$${currentPrice}</code> (<b>${pnlFormatted}</b> ${pnlIcon})\n` +
-            `${actionBanner}`;
+            `👉 ACTION ➔ <b>${actionBanner}</b>`;
         vipCards.push(vipCard);
 
-        // Admin Detailed Format
-        const logCard = `🪙 <b>#${trade.symbol.replace('USDT', '')}</b> [${trade.type}]\n` +
-            `• PnL: ${pnlFormatted} | Entry: $${trade.entryPrice} | Now: $${currentPrice}\n` +
-            `• Telemetry: 1H RSI [${currRsi1h}] | 5M RSI [${currRsi5m}]\n` +
-            `${actionBanner}`;
+        // Admin Detailed 3-Pillars Diagnostic Format
+        const pillars = evaluatePillars(trade, coinData);
+        const fundingPercent = (fundingRate * 100).toFixed(4) + '%';
+
+        const logCard = `🪙 <b>#${trade.symbol.replace('USDT', '')} [${trade.type}]</b>\n` +
+            `• Price: <code>$${trade.entryPrice}</code> ➔ <code>$${currentPrice}</code> (<b>${pnlFormatted}</b> ${pnlIcon})\n\n` +
+            `🔍 <b>3-PILLAR HEALTH MATRIX:</b>\n` +
+            `1️⃣ <b>Location (RSI):</b> ${pillars.p1Status}\n` +
+            `   ↳ 1H [<code>${currRsi1h}</code>] • 5M [<code>${currRsi5m}</code>] | ${pillars.p1Desc}\n` +
+            `2️⃣ <b>Crowd Trap (Funding):</b> ${pillars.p2Status}\n` +
+            `   ↳ Rate [<code>${fundingPercent}</code>] | ${pillars.p2Desc}\n` +
+            `3️⃣ <b>Fuel (Volume):</b> ${pillars.p3Status}\n` +
+            `   ↳ Ratio [<code>${volumeRatio}x</code>] | ${pillars.p3Desc}\n\n` +
+            `🧠 <b>DECISION: <b>${actionBanner}</b></b>\n` +
+            `• <b>Rationale:</b> ${pillars.rationale}\n` +
+            `• <b>Risk Point:</b> ${pillars.riskPoint}`;
+        
         logCards.push(logCard);
 
         if (isClosed) {
@@ -246,13 +307,20 @@ async function sendTenMinuteReport(validCoins, state, avgRsi1h, avgRsi5m) {
         }
     }
 
+    const netIcon = totalFloatingPnL >= 0 ? '🟢' : '🔴';
+    const netFormatted = (totalFloatingPnL >= 0 ? '+' : '') + totalFloatingPnL.toFixed(2) + '%';
+
+    const logReport = `🛰 <b>INSTITUTIONAL TELEMETRY | 10M PULSE</b>\n` +
+        `━━━━━━━━━━━━━━━━━━━━\n` +
+        `💼 <b>Active:</b> ${tradeKeys.length} | <b>Floating PnL:</b> <code>${netFormatted}</code> ${netIcon}\n` +
+        `🌐 <b>Market Mood:</b> 1H RSI [<code>${avgRsi1h}</code>] • 5M RSI [<code>${avgRsi5m}</code>]\n\n` +
+        logCards.join('\n────────────────────\n') +
+        `\n━━━━━━━━━━━━━━━━━━━━\n` +
+        `⏱ <code>${nowUtc}</code>`;
+
     const vipReport = `📊 <b>TRADE STATUS UPDATE (10M Check)</b>\n\n` + 
         vipCards.join('\n─────────────────────\n') + 
-        `\n\nUTC: ${formattedDate}`;
-
-    const logReport = `📊 <b>ADMIN TELEMETRY UPDATE (10M Check)</b>\n\n` + 
-        logCards.join('\n─────────────────────\n') + 
-        `\n\nUTC: ${formattedDate}`;
+        `\n\nUTC: ${nowUtc}`;
 
     await sendTelegramMessage(TELEGRAM_CHAT_VIPI, vipReport);
     await sendTelegramMessage(TELEGRAM_CHAT_LOG, logReport);
@@ -432,7 +500,6 @@ async function executeScan() {
 async function startContinuousLoop() {
     console.log("Starting 50-minute live runner on GitHub...");
     
-    // Executes 5 cycles every 10 minutes
     for (let cycle = 1; cycle <= 5; cycle++) {
         console.log(`\n--- Cycle ${cycle} of 5 ---`);
         await executeScan();
