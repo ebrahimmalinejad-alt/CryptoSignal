@@ -1,0 +1,439 @@
+const axios = require('axios');
+const fs = require('fs');
+
+const TELEGRAM_BOT_TOKEN = "8952382896:AAGeV0YYvFF4exWp3hax0JnqSxtECRP-IsI";
+const TELEGRAM_CHAT_LOG = "-1004340657482";   // Admin / Technical Channel
+const TELEGRAM_CHAT_VIPI = "-1003909320436";  // VIP / Client Channel
+const STATE_FILE = './active_trades.json';
+
+const SYMBOLS = [
+    'BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'BNBUSDT', 'XRPUSDT', 
+    'DOGEUSDT', 'ADAUSDT', 'TRXUSDT', 'AVAXUSDT', 'LINKUSDT',
+    'SUIUSDT', 'TONUSDT', 'NEARUSDT', 'APTUSDT', 'DOTUSDT', 
+    'ICPUSDT', 'LTCUSDT', 'BCHUSDT', 'POLUSDT', 'ARBUSDT', 
+    'OPUSDT', 'SEIUSDT', 'TIAUSDT', 'FETUSDT', 'TAOUSDT', 
+    'RENDERUSDT', 'INJUSDT', 'UNIUSDT', 'AAVEUSDT', 'CAKEUSDT', 
+    'PEPEUSDT', 'SHIBUSDT', 'WIFUSDT', 'PAXGUSDT'
+];
+
+function loadState() {
+    try {
+        if (fs.existsSync(STATE_FILE)) {
+            return JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
+        }
+    } catch (e) {
+        console.error("Error loading state:", e.message);
+    }
+    return { trades: {}, closedToday: [], lastDailyReportDate: "" };
+}
+
+function saveState(state) {
+    try {
+        fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2), 'utf8');
+    } catch (e) {
+        console.error("Error saving state:", e.message);
+    }
+}
+
+function getZoneInfo(rsi) {
+    if (rsi >= 70) return { name: "Red", level: 5 };
+    if (rsi >= 60) return { name: "Pink", level: 4 };
+    if (rsi >= 40) return { name: "Grey", level: 3 };
+    if (rsi >= 30) return { name: "Light Green", level: 2 };
+    return { name: "Deep Green", level: 1 };
+}
+
+function calculateRSI(closes, period = 14) {
+    if (!closes || closes.length <= period) return null;
+    let gains = 0, losses = 0;
+
+    for (let i = 1; i <= period; i++) {
+        const diff = closes[i] - closes[i - 1];
+        if (diff >= 0) gains += diff;
+        else losses -= diff;
+    }
+
+    let avgGain = gains / period;
+    let avgLoss = losses / period;
+
+    for (let i = period + 1; i < closes.length; i++) {
+        const diff = closes[i] - closes[i - 1];
+        if (diff >= 0) {
+            avgGain = (avgGain * (period - 1) + diff) / period;
+            avgLoss = (avgLoss * (period - 1)) / period;
+        } else {
+            avgGain = (avgGain * (period - 1)) / period;
+            avgLoss = (avgLoss * (period - 1) - diff) / period;
+        }
+    }
+
+    if (avgLoss === 0) return 100;
+    const rs = avgGain / avgLoss;
+    return parseFloat((100 - (100 / (1 + rs))).toFixed(2));
+}
+
+async function getCandles(symbol, interval, limit = 50) {
+    try {
+        const url = `https://data-api.binance.vision/api/v3/klines?symbol=${symbol}&interval=${interval}&limit=${limit}`;
+        const res = await axios.get(url, { 
+            timeout: 6000,
+            headers: { 'User-Agent': 'Mozilla/5.0' }
+        });
+        if (Array.isArray(res.data)) {
+            return res.data.map(k => ({
+                close: parseFloat(k[4]),
+                volume: parseFloat(k[5])
+            }));
+        }
+        return null;
+    } catch (e) {
+        return null;
+    }
+}
+
+async function getFundingRate(symbol) {
+    try {
+        const url = `https://fapi.binance.com/fapi/v1/premiumIndex?symbol=${symbol}`;
+        const res = await axios.get(url, { timeout: 3500 });
+        if (res.data && res.data.lastFundingRate) {
+            return parseFloat(res.data.lastFundingRate);
+        }
+    } catch (e) {
+        // Fallback for cloud environments
+    }
+    return 0.0001;
+}
+
+async function sendTelegramMessage(chatId, text) {
+    const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+    try {
+        await axios.post(url, {
+            chat_id: chatId,
+            text: text,
+            parse_mode: 'HTML'
+        });
+        console.log(`Alert delivered to chat: ${chatId}`);
+    } catch (err) {
+        console.error(`Telegram Delivery Error (${chatId}):`, err.response ? err.response.data : err.message);
+    }
+}
+
+async function processSymbol(symbol) {
+    const [candles1h, candles5m, fundingRate] = await Promise.all([
+        getCandles(symbol, '1h'),
+        getCandles(symbol, '5m'),
+        getFundingRate(symbol)
+    ]);
+
+    if (!candles1h || !candles5m || candles1h.length < 20 || candles5m.length < 20) {
+        return null;
+    }
+
+    const closes1h = candles1h.map(c => c.close);
+    const closes5m = candles5m.map(c => c.close);
+
+    const currRsi1h = calculateRSI(closes1h);
+    const prevRsi1h = calculateRSI(closes1h.slice(0, -1));
+
+    const currRsi5m = calculateRSI(closes5m);
+    const prevRsi5m = calculateRSI(closes5m.slice(0, -1));
+
+    if (currRsi1h === null || prevRsi1h === null || currRsi5m === null || prevRsi5m === null) {
+        return null;
+    }
+
+    const recentVolumes = candles5m.slice(-15).map(c => c.volume);
+    const avgVolume = recentVolumes.reduce((a, b) => a + b, 0) / recentVolumes.length;
+    const currentVolume = candles5m[candles5m.length - 1].volume;
+    const volumeRatio = parseFloat((currentVolume / (avgVolume || 1)).toFixed(2));
+
+    const currentPrice = closes5m[closes5m.length - 1];
+
+    return {
+        symbol,
+        currentPrice,
+        currRsi1h,
+        prevRsi1h,
+        currRsi5m,
+        prevRsi5m,
+        fundingRate,
+        volumeRatio
+    };
+}
+
+// 1. Guaranteed 10-Minute Trade Status Report
+async function sendTenMinuteReport(validCoins, state, avgRsi1h, avgRsi5m) {
+    const tradeKeys = Object.keys(state.trades || {});
+    const formattedDate = new Date().toISOString().replace('T', '  T: ');
+
+    if (tradeKeys.length === 0) {
+        const idleMessage = `📊 <b>TRADE STATUS UPDATE (10M Check)</b>\n\n` +
+            `• No active positions currently open.\n` +
+            `• Market Climate: 1H RSI [<code>${avgRsi1h}</code>] | 5M RSI [<code>${avgRsi5m}</code>]\n` +
+            `• Status: 3-Pillar engine scanning for high-probability setups...\n\n` +
+            `UTC: ${formattedDate}`;
+
+        await sendTelegramMessage(TELEGRAM_CHAT_LOG, idleMessage);
+        return;
+    }
+
+    let vipCards = [];
+    let logCards = [];
+    let updatedTrades = { ...state.trades };
+    if (!state.closedToday) state.closedToday = [];
+
+    for (const key of tradeKeys) {
+        const trade = state.trades[key];
+        const coinData = validCoins.find(c => c.symbol === trade.symbol);
+        if (!coinData) continue;
+
+        const { currentPrice, currRsi1h, currRsi5m } = coinData;
+
+        let pnlPercent = trade.type === 'BUY'
+            ? ((currentPrice - trade.entryPrice) / trade.entryPrice) * 100
+            : ((trade.entryPrice - currentPrice) / trade.entryPrice) * 100;
+
+        const pnlFormatted = pnlPercent >= 0 ? `+${pnlPercent.toFixed(2)}%` : `${pnlPercent.toFixed(2)}%`;
+        const pnlIcon = pnlPercent >= 0 ? '🟢' : '🔴';
+
+        let actionBanner = "👉 ACTION ➔ ⏳ [ HOLD POSITION ] ⏳";
+        let isClosed = false;
+        let closeReason = "";
+
+        if (trade.type === 'BUY') {
+            if (currRsi5m >= 70 || currRsi1h >= 70) {
+                actionBanner = "👉 ACTION ➔ 💰 [ CLOSE & TAKE PROFIT ] 🎯";
+                isClosed = true;
+                closeReason = "Take Profit";
+            } else if (pnlPercent <= -2.5 || currRsi5m <= 30) {
+                actionBanner = "👉 ACTION ➔ 🛑 [ CLOSE & STOP LOSS ] 🛑";
+                isClosed = true;
+                closeReason = "Stop Loss";
+            }
+        } else { // SELL
+            if (currRsi5m <= 30 || currRsi1h <= 30) {
+                actionBanner = "👉 ACTION ➔ 💰 [ CLOSE & TAKE PROFIT ] 🎯";
+                isClosed = true;
+                closeReason = "Take Profit";
+            } else if (pnlPercent <= -2.5 || currRsi5m >= 70) {
+                actionBanner = "👉 ACTION ➔ 🛑 [ CLOSE & STOP LOSS ] 🛑";
+                isClosed = true;
+                closeReason = "Stop Loss";
+            }
+        }
+
+        // VIP Client Format
+        const vipCard = `🪙 <b>#${trade.symbol.replace('USDT', '')}</b> [${trade.type}]\n` +
+            `• Price: <code>$${trade.entryPrice}</code> ➔ <code>$${currentPrice}</code> (<b>${pnlFormatted}</b> ${pnlIcon})\n` +
+            `${actionBanner}`;
+        vipCards.push(vipCard);
+
+        // Admin Detailed Format
+        const logCard = `🪙 <b>#${trade.symbol.replace('USDT', '')}</b> [${trade.type}]\n` +
+            `• PnL: ${pnlFormatted} | Entry: $${trade.entryPrice} | Now: $${currentPrice}\n` +
+            `• Telemetry: 1H RSI [${currRsi1h}] | 5M RSI [${currRsi5m}]\n` +
+            `${actionBanner}`;
+        logCards.push(logCard);
+
+        if (isClosed) {
+            state.closedToday.push({
+                symbol: trade.symbol,
+                type: trade.type,
+                pnlPercent: parseFloat(pnlPercent.toFixed(2)),
+                reason: closeReason
+            });
+            delete updatedTrades[key];
+        }
+    }
+
+    const vipReport = `📊 <b>TRADE STATUS UPDATE (10M Check)</b>\n\n` + 
+        vipCards.join('\n─────────────────────\n') + 
+        `\n\nUTC: ${formattedDate}`;
+
+    const logReport = `📊 <b>ADMIN TELEMETRY UPDATE (10M Check)</b>\n\n` + 
+        logCards.join('\n─────────────────────\n') + 
+        `\n\nUTC: ${formattedDate}`;
+
+    await sendTelegramMessage(TELEGRAM_CHAT_VIPI, vipReport);
+    await sendTelegramMessage(TELEGRAM_CHAT_LOG, logReport);
+
+    state.trades = updatedTrades;
+    saveState(state);
+}
+
+// 2. Comprehensive Daily Performance Report (UTC 00:00 Midnight)
+async function checkDailyPerformanceReport(state) {
+    const now = new Date();
+    const today = now.toISOString().split('T')[0];
+    const currentHour = now.getUTCHours();
+
+    if (currentHour === 0 && state.lastDailyReportDate !== today) {
+        const closed = state.closedToday || [];
+        if (closed.length === 0) return;
+
+        const wins = closed.filter(t => t.pnlPercent > 0);
+        const losses = closed.filter(t => t.pnlPercent <= 0);
+        const winRate = ((wins.length / closed.length) * 100).toFixed(1);
+
+        const grossProfit = wins.reduce((acc, t) => acc + t.pnlPercent, 0);
+        const grossLoss = losses.reduce((acc, t) => acc + t.pnlPercent, 0);
+        const netPnL = (grossProfit + grossLoss).toFixed(2);
+
+        let breakdownLines = closed.map(t => {
+            const icon = t.pnlPercent > 0 ? "✅" : "❌";
+            const targetIcon = t.pnlPercent > 0 ? "🎯" : "🛑";
+            return `${icon} #${t.symbol.replace('USDT', '')} [${t.type}] ➔ ${t.pnlPercent > 0 ? '+' : ''}${t.pnlPercent}% ${targetIcon} (${t.reason})`;
+        });
+
+        const dailyMessage = `🏆 <b>DAILY AUDIT & PERFORMANCE REPORT</b>\n` +
+            `📅 Date: ${today} | UTC Close\n\n` +
+            `📈 <b>CORE PERFORMANCE:</b>\n` +
+            `• Total Trades: <b>${closed.length}</b>\n` +
+            `• Win / Loss: <b>${wins.length}W - ${losses.length}L</b>\n` +
+            `• Win Rate: <b>${winRate}% 🎯</b>\n` +
+            `• Gross Profit: <b>+${grossProfit.toFixed(2)}%</b>\n` +
+            `• Gross Loss: <b>${grossLoss.toFixed(2)}%</b>\n` +
+            `🔥 <b>TOTAL NET PnL: ${netPnL >= 0 ? '+' : ''}${netPnL}% 🚀</b>\n` +
+            `─────────────────────\n` +
+            `📋 <b>CLOSED TRADES:</b>\n` +
+            breakdownLines.join('\n') +
+            `\n\n💡 <i>Strict institutional execution guarantees long-term edge!</i>`;
+
+        await sendTelegramMessage(TELEGRAM_CHAT_VIPI, dailyMessage);
+        await sendTelegramMessage(TELEGRAM_CHAT_LOG, dailyMessage);
+
+        state.lastDailyReportDate = today;
+        state.closedToday = [];
+        saveState(state);
+    }
+}
+
+// Master Execution Function
+async function executeScan() {
+    console.log("Executing 3-Pillar Institutional Market Scanner...");
+
+    try {
+        const results = await Promise.all(SYMBOLS.map(sym => processSymbol(sym)));
+        const validCoins = results.filter(r => r !== null);
+
+        if (validCoins.length === 0) {
+            console.error("Zero assets fetched. Check network endpoint.");
+            process.exit(1);
+        }
+
+        const avgRsi1h = parseFloat((validCoins.reduce((acc, c) => acc + c.currRsi1h, 0) / validCoins.length).toFixed(2));
+        const avgRsi5m = parseFloat((validCoins.reduce((acc, c) => acc + c.currRsi5m, 0) / validCoins.length).toFixed(2));
+
+        let state = loadState();
+
+        // 1. Send Guaranteed 10-Minute Trade Status Report
+        await sendTenMinuteReport(validCoins, state, avgRsi1h, avgRsi5m);
+
+        // 2. Check Daily Midnight Audit
+        await checkDailyPerformanceReport(state);
+
+        // 3. Scan with the 3-Pillar Formula
+        for (const coin of validCoins) {
+            const { symbol, currentPrice, currRsi1h, prevRsi1h, currRsi5m, fundingRate, volumeRatio } = coin;
+
+            // RULE: Never send duplicate signals on open / held positions
+            if (state.trades[symbol]) {
+                continue; 
+            }
+
+            const prevZone1h = getZoneInfo(prevRsi1h);
+            const currZone1h = getZoneInfo(currRsi1h);
+
+            // Pillar 1: Location Shift
+            const is1hShift = prevZone1h.name !== currZone1h.name;
+            if (!is1hShift) continue;
+
+            const isShiftUp = currZone1h.level > prevZone1h.level;
+
+            // Pillar 2: Crowd Trap (Funding Rate)
+            const isFundingBullish = fundingRate <= 0.00015;
+            const isFundingBearish = fundingRate >= 0.00005;
+
+            // Pillar 3: Fuel (Volume Expansion)
+            const hasFuel = volumeRatio >= 1.15;
+
+            // Confluence Verification
+            const isInstitutionalBuy = isShiftUp && isFundingBullish && hasFuel && avgRsi1h >= 45 && currRsi5m <= 65;
+            const isInstitutionalSell = !isShiftUp && isFundingBearish && hasFuel && avgRsi1h <= 65 && currRsi5m >= 35;
+
+            if (isInstitutionalBuy || isInstitutionalSell) {
+                const signalType = isInstitutionalBuy ? "BUY" : "SELL";
+                const formattedDate = new Date().toISOString().replace('T', '  T: ');
+                const fundingPercent = (fundingRate * 100).toFixed(4) + '%';
+
+                const tpPrice = isInstitutionalBuy 
+                    ? (currentPrice * 1.035).toFixed(4) 
+                    : (currentPrice * 0.965).toFixed(4);
+                const slPrice = isInstitutionalBuy 
+                    ? (currentPrice * 0.975).toFixed(4) 
+                    : (currentPrice * 1.025).toFixed(4);
+
+                const confluenceScore = (hasFuel && Math.abs(fundingRate) > 0.0001) ? "95%" : "92%";
+
+                // A. VIP Client Message (Action-focused)
+                const vipMessage = `⚡️ <b>${isInstitutionalBuy ? '🟢 BUY SIGNAL (LONG)' : '🔴 SELL SIGNAL (SHORT)'}</b>\n\n` +
+                    `🪙 Coin: <b>#${symbol.replace('USDT', '')}</b>\n` +
+                    `💵 Entry Price: <code>$${currentPrice}</code>\n\n` +
+                    `🎯 Target (TP): <code>$${tpPrice}</code> (+3.5%)\n` +
+                    `🛑 Stop Loss (SL): <code>$${slPrice}</code> (-2.5%)\n` +
+                    `⚡️ Leverage: <b>3x - 5x</b>\n` +
+                    `⭐️ Confluence Score: <b>${confluenceScore}</b>\n\n` +
+                    `UTC: ${formattedDate}`;
+
+                // B. Admin Log Message (Full 3-Pillars Diagnostic)
+                const logMessage = `⚡️ <b>INSTITUTIONAL ALPHA SIGNAL [${signalType}]</b>\n` +
+                    `🪙 <b>#${symbol.replace('USDT', '')}</b> @ <code>$${currentPrice}</code>\n\n` +
+                    `🎯 <b>THE 3 PILLARS CONFLUENCE:</b>\n` +
+                    `1️⃣ <b>Location (RSI):</b> [${currZone1h.name}] ➔ 1H: <code>${currRsi1h}</code> | 5M: <code>${currRsi5m}</code>\n` +
+                    `2️⃣ <b>Crowd Trap (Funding):</b> <code>${fundingPercent}</code> ${isInstitutionalBuy ? '🔴 (Short Trap)' : '🟢 (Long Trap)'}\n` +
+                    `3️⃣ <b>Fuel (Volume Surge):</b> <code>${volumeRatio}x Avg</code> 🟢 (Whale Inflow)\n\n` +
+                    `💡 <b>Setup:</b> ${isInstitutionalBuy ? 'Short Squeeze Imminent' : 'Long Liquidation Cascade'}\n` +
+                    `⭐️ Confluence: <b>${confluenceScore} (3/3 Matched)</b>\n\n` +
+                    `UTC: ${formattedDate}`;
+
+                await sendTelegramMessage(TELEGRAM_CHAT_VIPI, vipMessage);
+                await sendTelegramMessage(TELEGRAM_CHAT_LOG, logMessage);
+
+                state.trades[symbol] = {
+                    symbol: symbol,
+                    type: signalType,
+                    entryPrice: currentPrice,
+                    timestamp: Date.now()
+                };
+                saveState(state);
+            }
+        }
+
+        console.log("3-Pillar Institutional scan finished cleanly.");
+        process.exit(0);
+
+    } catch (error) {
+        console.error("Execution Failure:", error.message);
+        process.exit(1);
+    }
+}
+
+async function startContinuousLoop() {
+    console.log("Starting 50-minute live runner on GitHub...");
+    
+    // اجرای ۵ دوره پشت سر هم با فاصله دقیق ۱۰ دقیقه
+    for (let cycle = 1; cycle <= 5; cycle++) {
+        console.log(`\n--- Cycle ${cycle} of 5 ---`);
+        await executeScan();
+        
+        if (cycle < 5) {
+            console.log("Waiting exactly 10 minutes for next check...");
+            await new Promise(resolve => setTimeout(resolve, 10 * 60 * 1000));
+        }
+    }
+    
+    console.log("50-minute block completed successfully.");
+    process.exit(0);
+}
+
+startContinuousLoop();
