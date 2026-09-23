@@ -29,6 +29,12 @@
       "type": "BUY",
       "entryPrice": 3.076,
       "timestamp": 1790155366916
+    },
+    "INJUSDT": {
+      "symbol": "INJUSDT",
+      "type": "BUY",
+      "entryPrice": 8.162,
+      "timestamp": 1790155368479
     }
   },
   "closedToday": [],
