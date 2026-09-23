@@ -2,7 +2,7 @@ name: RSI Market Monitor
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 */5 * * *'  # Runs every 5 hours (00:00, 05:00, 10:00, 15:00, 20:00)
   workflow_dispatch:
 
 concurrency:
@@ -16,7 +16,7 @@ permissions:
 jobs:
   scanner:
     runs-on: ubuntu-latest
-    timeout-minutes: 58
+    timeout-minutes: 330 # Max 5.5 hours allowance
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -38,7 +38,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add active_trades.json trade_history.json watchlist.json || true
           git commit -m "Auto-sync trades & history [skip ci]" || true
-          git push || true
+          git push origin main || true
 
       - name: Delete Previous Workflow Runs
         env:
