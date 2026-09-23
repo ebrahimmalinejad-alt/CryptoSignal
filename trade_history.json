@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "symbol": "SUIUSDT",
+    "type": "SELL",
+    "entryPrice": 1.0014,
+    "exitPrice": 0.978,
+    "pnlPercent": 2.34,
+    "openTime": "2026-09-23T13:12:01.541Z",
+    "closeTime": "2026-09-23T14:11:55.211Z",
+    "reason": "Take Profit"
+  }
+]
