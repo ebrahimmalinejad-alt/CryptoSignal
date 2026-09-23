@@ -1,30 +1,5 @@
 {
-  "trades": {
-    "TIAUSDT": {
-      "symbol": "TIAUSDT",
-      "type": "BUY",
-      "entryPrice": 0.4985,
-      "timestamp": 1790119362570
-    },
-    "ICPUSDT": {
-      "symbol": "ICPUSDT",
-      "type": "SELL",
-      "entryPrice": 3.036,
-      "timestamp": 1790136847405
-    },
-    "RENDERUSDT": {
-      "symbol": "RENDERUSDT",
-      "type": "SELL",
-      "entryPrice": 1.855,
-      "timestamp": 1790139200187
-    },
-   "AAVEUSDT": {
-      "symbol": "AAVEUSDT",
-      "type": "SELL",
-      "entryPrice": 151.15,
-      "timestamp": 1790146981446
-    }
-  },
+  "trades": {},
   "closedToday": [],
   "lastDailyReportDate": ""
 }
