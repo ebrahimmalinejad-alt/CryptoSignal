@@ -11,12 +11,12 @@ concurrency:
 
 permissions:
   contents: write
-  actions: write 
+  actions: write
 
 jobs:
   scanner:
     runs-on: ubuntu-latest
-    timeout-minutes: 58 
+    timeout-minutes: 58
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -32,12 +32,12 @@ jobs:
       - name: Execute Scanner
         run: node bot.js
 
-      - name: Save Active Trades
+      - name: Save Active Trades and History
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add active_trades.json || true
-          git commit -m "Sync trades [skip ci]" || true
+          git add active_trades.json trade_history.json watchlist.json || true
+          git commit -m "Auto-sync trades & history [skip ci]" || true
           git push || true
 
       - name: Delete Previous Workflow Runs
