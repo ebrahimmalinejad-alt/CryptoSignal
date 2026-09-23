@@ -63,7 +63,7 @@ function calculateRSI(closes, period = 14) {
             avgLoss = (avgLoss * (period - 1)) / period;
         } else {
             avgGain = (avgGain * (period - 1)) / period;
-            avgLoss = (avgLoss * (period - 1) - diff) / period;
+            avgLoss = (avgLoss * (period - 1)) - diff) / period;
         }
     }
 
@@ -269,7 +269,21 @@ async function checkDailyPerformanceReport(state) {
 
     if (currentHour === 0 && state.lastDailyReportDate !== today) {
         const closed = state.closedToday || [];
-        if (closed.length === 0) return;
+        
+        if (closed.length === 0) {
+            const emptyMessage = `🏆 <b>DAILY AUDIT & PERFORMANCE REPORT</b>\n` +
+                `📅 Date: ${today} | UTC Close\n\n` +
+                `• No positions were closed today.\n` +
+                `• System status: Operational and scanning setups.\n\n` +
+                `💡 <i>Strict institutional execution guarantees long-term edge!</i>`;
+
+            await sendTelegramMessage(TELEGRAM_CHAT_VIPI, emptyMessage);
+            await sendTelegramMessage(TELEGRAM_CHAT_LOG, emptyMessage);
+
+            state.lastDailyReportDate = today;
+            saveState(state);
+            return;
+        }
 
         const wins = closed.filter(t => t.pnlPercent > 0);
         const losses = closed.filter(t => t.pnlPercent <= 0);
