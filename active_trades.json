@@ -17,6 +17,12 @@
       "type": "SELL",
       "entryPrice": 0.10977,
       "timestamp": 1790153387153
+    },
+    "ARBUSDT": {
+      "symbol": "ARBUSDT",
+      "type": "SELL",
+      "entryPrice": 0.239,
+      "timestamp": 1790153994181
     }
   },
   "closedToday": [],
