@@ -12,12 +12,6 @@
       "entryPrice": 0.1363,
       "timestamp": 1790150960498
     },
-    "POLUSDT": {
-      "symbol": "POLUSDT",
-      "type": "SELL",
-      "entryPrice": 0.10977,
-      "timestamp": 1790153387153
-    },
     "ARBUSDT": {
       "symbol": "ARBUSDT",
       "type": "SELL",
@@ -49,6 +43,13 @@
       "timestamp": 1790158929710
     }
   },
-  "closedToday": [],
+  "closedToday": [
+    {
+      "symbol": "POLUSDT",
+      "type": "SELL",
+      "pnlPercent": 2.1,
+      "reason": "Take Profit"
+    }
+  ],
   "lastDailyReportDate": ""
 }
