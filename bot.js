@@ -60,7 +60,7 @@ function calculateRSI(closes, period = 14) {
         const diff = closes[i] - closes[i - 1];
         if (diff >= 0) {
             avgGain = (avgGain * (period - 1) + diff) / period;
-            avgLoss = (avgLoss * (period - 1)) / period;
+            avgLoss = (avgLoss * (period - 1) - diff) / period;
         } else {
             avgGain = (avgGain * (period - 1)) / period;
             avgLoss = (avgLoss * (period - 1)) - diff) / period;
