@@ -1,5 +1,6 @@
 const axios = require('axios');
 const fs = require('fs');
+const { execSync } = require('child_process');
 
 const TELEGRAM_BOT_TOKEN = "8952382896:AAGeV0YYvFF4exWp3hax0JnqSxtECRP-IsI";
 const TELEGRAM_CHAT_LOG = "-1004340657482";   // Admin / Technical Channel
@@ -30,8 +31,16 @@ function loadState() {
 function saveState(state) {
     try {
         fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2), 'utf8');
+        
+        // Push state directly to Git repo on every change
+        execSync('git config --global user.name "github-actions[bot]"');
+        execSync('git config --global user.email "github-actions[bot]@users.noreply.github.com"');
+        execSync(`git add ${STATE_FILE}`);
+        execSync('git commit -m "Auto-sync state [skip ci]" || true');
+        execSync('git push || true');
+        console.log("State instantly synced and pushed to repository.");
     } catch (e) {
-        console.error("Error saving state:", e.message);
+        console.error("Error saving/pushing state:", e.message);
     }
 }
 
@@ -487,6 +496,8 @@ async function executeScan() {
                     entryPrice: currentPrice,
                     timestamp: Date.now()
                 };
+                
+                // Save and Push instantly
                 saveState(state);
             }
         }
