@@ -318,7 +318,7 @@ async function executeScan() {
 
         if (validCoins.length === 0) {
             console.error("Zero assets fetched. Check network endpoint.");
-            process.exit(1);
+            return;
         }
 
         const avgRsi1h = parseFloat((validCoins.reduce((acc, c) => acc + c.currRsi1h, 0) / validCoins.length).toFixed(2));
@@ -336,7 +336,7 @@ async function executeScan() {
         for (const coin of validCoins) {
             const { symbol, currentPrice, currRsi1h, prevRsi1h, currRsi5m, fundingRate, volumeRatio } = coin;
 
-            // RULE: Never send duplicate signals on open / held positions
+            // Rule: Never send duplicate signals on open positions
             if (state.trades[symbol]) {
                 continue; 
             }
@@ -375,7 +375,7 @@ async function executeScan() {
 
                 const confluenceScore = (hasFuel && Math.abs(fundingRate) > 0.0001) ? "95%" : "92%";
 
-                // A. VIP Client Message (Action-focused)
+                // VIP Client Message
                 const vipMessage = `⚡️ <b>${isInstitutionalBuy ? '🟢 BUY SIGNAL (LONG)' : '🔴 SELL SIGNAL (SHORT)'}</b>\n\n` +
                     `🪙 Coin: <b>#${symbol.replace('USDT', '')}</b>\n` +
                     `💵 Entry Price: <code>$${currentPrice}</code>\n\n` +
@@ -385,7 +385,7 @@ async function executeScan() {
                     `⭐️ Confluence Score: <b>${confluenceScore}</b>\n\n` +
                     `UTC: ${formattedDate}`;
 
-                // B. Admin Log Message (Full 3-Pillars Diagnostic)
+                // Admin Log Message
                 const logMessage = `⚡️ <b>INSTITUTIONAL ALPHA SIGNAL [${signalType}]</b>\n` +
                     `🪙 <b>#${symbol.replace('USDT', '')}</b> @ <code>$${currentPrice}</code>\n\n` +
                     `🎯 <b>THE 3 PILLARS CONFLUENCE:</b>\n` +
@@ -410,18 +410,15 @@ async function executeScan() {
         }
 
         console.log("3-Pillar Institutional scan finished cleanly.");
-        process.exit(0);
-
     } catch (error) {
         console.error("Execution Failure:", error.message);
-        process.exit(1);
     }
 }
 
 async function startContinuousLoop() {
     console.log("Starting 50-minute live runner on GitHub...");
     
-    // اجرای ۵ دوره پشت سر هم با فاصله دقیق ۱۰ دقیقه
+    // Executes 5 cycles every 10 minutes
     for (let cycle = 1; cycle <= 5; cycle++) {
         console.log(`\n--- Cycle ${cycle} of 5 ---`);
         await executeScan();
