@@ -11,6 +11,12 @@
       "type": "SELL",
       "entryPrice": 0.1363,
       "timestamp": 1790150960498
+    },
+    "POLUSDT": {
+      "symbol": "POLUSDT",
+      "type": "SELL",
+      "entryPrice": 0.10977,
+      "timestamp": 1790153387153
     }
   },
   "closedToday": [],
