@@ -23,6 +23,12 @@
       "type": "SELL",
       "entryPrice": 0.239,
       "timestamp": 1790153994181
+    },
+    "ICPUSDT": {
+      "symbol": "ICPUSDT",
+      "type": "BUY",
+      "entryPrice": 3.076,
+      "timestamp": 1790155366916
     }
   },
   "closedToday": [],
