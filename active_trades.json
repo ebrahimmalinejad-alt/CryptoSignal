@@ -19,6 +19,13 @@
       "timestamp": 1790139200187
     }
   },
+   "AAVEUSDT": {
+      "symbol": "AAVEUSDT",
+      "type": "SELL",
+      "entryPrice": 151.15,
+      "timestamp": 1790146981446
+    }
+  },
   "closedToday": [],
   "lastDailyReportDate": ""
 }
