@@ -41,6 +41,12 @@
       "type": "SELL",
       "entryPrice": 0.8192,
       "timestamp": 1790158928117
+    },
+    "BCHUSDT": {
+      "symbol": "BCHUSDT",
+      "type": "SELL",
+      "entryPrice": 349.4,
+      "timestamp": 1790158929710
     }
   },
   "closedToday": [],
