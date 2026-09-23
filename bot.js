@@ -32,7 +32,6 @@ function saveState(state) {
     try {
         fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2), 'utf8');
         
-        // Push state directly to Git repo on every change
         execSync('git config --global user.name "github-actions[bot]"');
         execSync('git config --global user.email "github-actions[bot]@users.noreply.github.com"');
         execSync(`git add ${STATE_FILE}`);
@@ -123,8 +122,85 @@ async function sendTelegramMessage(chatId, text) {
         });
         console.log(`Alert delivered to chat: ${chatId}`);
     } catch (err) {
-        console.error(`Telegram Delivery Error (${chatId}):`, err.response ? err.response.data : err.message);
+        console.error(`Telegram Message Error (${chatId}):`, err.response ? err.response.data : err.message);
     }
+}
+
+async function sendTelegramPhoto(chatId, photoUrl, caption) {
+    const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendPhoto`;
+    try {
+        await axios.post(url, {
+            chat_id: chatId,
+            photo: photoUrl,
+            caption: caption,
+            parse_mode: 'HTML'
+        });
+        console.log(`Chart delivered to chat: ${chatId}`);
+    } catch (err) {
+        console.error(`Telegram Photo Error (${chatId}), fallback to text:`, err.response ? err.response.data : err.message);
+        await sendTelegramMessage(chatId, caption);
+    }
+}
+
+function generateRsiChartUrl(symbol, rsiHistory) {
+    const labels = rsiHistory.map((_, i) => `${(rsiHistory.length - 1 - i) * 5}m ago`);
+    labels[labels.length - 1] = 'Now';
+
+    const chartConfig = {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [
+                {
+                    label: `${symbol.replace('USDT', '')} 5M RSI`,
+                    data: rsiHistory,
+                    borderColor: '#a855f7',
+                    backgroundColor: 'rgba(168, 85, 247, 0.15)',
+                    fill: true,
+                    borderWidth: 3,
+                    pointRadius: 3
+                },
+                {
+                    label: 'Overbought (70)',
+                    data: new Array(rsiHistory.length).fill(70),
+                    borderColor: '#ef4444',
+                    borderDash: [4, 4],
+                    fill: false,
+                    pointRadius: 0
+                },
+                {
+                    label: 'Oversold (30)',
+                    data: new Array(rsiHistory.length).fill(30),
+                    borderColor: '#22c55e',
+                    borderDash: [4, 4],
+                    fill: false,
+                    pointRadius: 0
+                }
+            ]
+        },
+        options: {
+            title: {
+                display: true,
+                text: `${symbol.replace('USDT', '')} | 5M RSI Momentum Tracker`,
+                fontColor: '#ffffff'
+            },
+            legend: {
+                labels: { fontColor: '#cbd5e1' }
+            },
+            scales: {
+                yAxes: [{
+                    ticks: { min: 20, max: 80, fontColor: '#94a3b8' },
+                    gridLines: { color: 'rgba(255, 255, 255, 0.1)' }
+                }],
+                xAxes: [{
+                    ticks: { fontColor: '#94a3b8' },
+                    gridLines: { color: 'rgba(255, 255, 255, 0.05)' }
+                }]
+            }
+        }
+    };
+
+    return `https://quickchart.io/chart?c=${encodeURIComponent(JSON.stringify(chartConfig))}&w=600&h=280&bkg=%230f172a&devicePixelRatio=2`;
 }
 
 async function processSymbol(symbol) {
@@ -151,6 +227,14 @@ async function processSymbol(symbol) {
         return null;
     }
 
+    // Historical 5M RSI for the chart (last 6 candles = 30 minutes)
+    let rsi5mHistory = [];
+    for (let i = 5; i >= 0; i--) {
+        const slice = closes5m.slice(0, closes5m.length - i);
+        const rsiVal = calculateRSI(slice);
+        if (rsiVal !== null) rsi5mHistory.push(rsiVal);
+    }
+
     const recentVolumes = candles5m.slice(-15).map(c => c.volume);
     const avgVolume = recentVolumes.reduce((a, b) => a + b, 0) / recentVolumes.length;
     const currentVolume = candles5m[candles5m.length - 1].volume;
@@ -165,6 +249,7 @@ async function processSymbol(symbol) {
         prevRsi1h,
         currRsi5m,
         prevRsi5m,
+        rsi5mHistory,
         fundingRate,
         volumeRatio
     };
@@ -214,7 +299,7 @@ function evaluatePillars(trade, coinData) {
     return { p1Status, p1Desc, p2Status, p2Desc, p3Status, p3Desc, rationale, riskPoint };
 }
 
-// 1. Guaranteed 10-Minute Trade Status Report (Diagnostic Engine)
+// 1. Guaranteed 10-Minute Trade Status Report (Photo Chart + Diagnostic)
 async function sendTenMinuteReport(validCoins, state, avgRsi1h, avgRsi5m) {
     const tradeKeys = Object.keys(state.trades || {});
     const nowUtc = new Date().toISOString().replace('T', ' ').slice(0, 19) + ' UTC';
@@ -232,9 +317,6 @@ async function sendTenMinuteReport(validCoins, state, avgRsi1h, avgRsi5m) {
         return;
     }
 
-    let vipCards = [];
-    let logCards = [];
-    let totalFloatingPnL = 0;
     let updatedTrades = { ...state.trades };
     if (!state.closedToday) state.closedToday = [];
 
@@ -243,13 +325,11 @@ async function sendTenMinuteReport(validCoins, state, avgRsi1h, avgRsi5m) {
         const coinData = validCoins.find(c => c.symbol === trade.symbol);
         if (!coinData) continue;
 
-        const { currentPrice, currRsi1h, currRsi5m, fundingRate, volumeRatio } = coinData;
+        const { currentPrice, currRsi1h, currRsi5m, rsi5mHistory, fundingRate, volumeRatio } = coinData;
 
         let pnlPercent = trade.type === 'BUY'
             ? ((currentPrice - trade.entryPrice) / trade.entryPrice) * 100
             : ((trade.entryPrice - currentPrice) / trade.entryPrice) * 100;
-
-        totalFloatingPnL += pnlPercent;
 
         const pnlFormatted = (pnlPercent >= 0 ? '+' : '') + pnlPercent.toFixed(2) + '%';
         const pnlIcon = pnlPercent >= 0 ? '🟢' : '🔴';
@@ -280,17 +360,23 @@ async function sendTenMinuteReport(validCoins, state, avgRsi1h, avgRsi5m) {
             }
         }
 
-        // VIP Client Format
-        const vipCard = `🪙 <b>#${trade.symbol.replace('USDT', '')}</b> [${trade.type}]\n` +
-            `• Price: <code>$${trade.entryPrice}</code> ➔ <code>$${currentPrice}</code> (<b>${pnlFormatted}</b> ${pnlIcon})\n` +
-            `👉 ACTION ➔ <b>${actionBanner}</b>`;
-        vipCards.push(vipCard);
+        const chartUrl = generateRsiChartUrl(trade.symbol, rsi5mHistory);
 
-        // Admin Detailed 3-Pillars Diagnostic Format
+        // VIP Client Photo Message
+        const vipCaption = `📊 <b>TRADE STATUS UPDATE (10M Check)</b>\n\n` +
+            `🪙 <b>#${trade.symbol.replace('USDT', '')}</b> [${trade.type}]\n` +
+            `• Price: <code>$${trade.entryPrice}</code> ➔ <code>$${currentPrice}</code> (<b>${pnlFormatted}</b> ${pnlIcon})\n` +
+            `👉 ACTION ➔ <b>${actionBanner}</b>\n\n` +
+            `⏱ <code>${nowUtc}</code>`;
+        
+        await sendTelegramPhoto(TELEGRAM_CHAT_VIPI, chartUrl, vipCaption);
+
+        // Admin Detailed 3-Pillars Diagnostic Photo Message
         const pillars = evaluatePillars(trade, coinData);
         const fundingPercent = (fundingRate * 100).toFixed(4) + '%';
 
-        const logCard = `🪙 <b>#${trade.symbol.replace('USDT', '')} [${trade.type}]</b>\n` +
+        const logCaption = `🛰 <b>INSTITUTIONAL TELEMETRY | 10M PULSE</b>\n` +
+            `🪙 <b>#${trade.symbol.replace('USDT', '')} [${trade.type}]</b>\n` +
             `• Price: <code>$${trade.entryPrice}</code> ➔ <code>$${currentPrice}</code> (<b>${pnlFormatted}</b> ${pnlIcon})\n\n` +
             `🔍 <b>3-PILLAR HEALTH MATRIX:</b>\n` +
             `1️⃣ <b>Location (RSI):</b> ${pillars.p1Status}\n` +
@@ -301,9 +387,10 @@ async function sendTenMinuteReport(validCoins, state, avgRsi1h, avgRsi5m) {
             `   ↳ Ratio [<code>${volumeRatio}x</code>] | ${pillars.p3Desc}\n\n` +
             `🧠 <b>DECISION: <b>${actionBanner}</b></b>\n` +
             `• <b>Rationale:</b> ${pillars.rationale}\n` +
-            `• <b>Risk Point:</b> ${pillars.riskPoint}`;
-        
-        logCards.push(logCard);
+            `• <b>Risk Point:</b> ${pillars.riskPoint}\n\n` +
+            `⏱ <code>${nowUtc}</code>`;
+
+        await sendTelegramPhoto(TELEGRAM_CHAT_LOG, chartUrl, logCaption);
 
         if (isClosed) {
             state.closedToday.push({
@@ -315,24 +402,6 @@ async function sendTenMinuteReport(validCoins, state, avgRsi1h, avgRsi5m) {
             delete updatedTrades[key];
         }
     }
-
-    const netIcon = totalFloatingPnL >= 0 ? '🟢' : '🔴';
-    const netFormatted = (totalFloatingPnL >= 0 ? '+' : '') + totalFloatingPnL.toFixed(2) + '%';
-
-    const logReport = `🛰 <b>INSTITUTIONAL TELEMETRY | 10M PULSE</b>\n` +
-        `━━━━━━━━━━━━━━━━━━━━\n` +
-        `💼 <b>Active:</b> ${tradeKeys.length} | <b>Floating PnL:</b> <code>${netFormatted}</code> ${netIcon}\n` +
-        `🌐 <b>Market Mood:</b> 1H RSI [<code>${avgRsi1h}</code>] • 5M RSI [<code>${avgRsi5m}</code>]\n\n` +
-        logCards.join('\n────────────────────\n') +
-        `\n━━━━━━━━━━━━━━━━━━━━\n` +
-        `⏱ <code>${nowUtc}</code>`;
-
-    const vipReport = `📊 <b>TRADE STATUS UPDATE (10M Check)</b>\n\n` + 
-        vipCards.join('\n─────────────────────\n') + 
-        `\n\nUTC: ${nowUtc}`;
-
-    await sendTelegramMessage(TELEGRAM_CHAT_VIPI, vipReport);
-    await sendTelegramMessage(TELEGRAM_CHAT_LOG, logReport);
 
     state.trades = updatedTrades;
     saveState(state);
@@ -417,7 +486,7 @@ async function executeScan() {
 
         let state = loadState();
 
-        // 1. Send Guaranteed 10-Minute Trade Status Report
+        // 1. Send Guaranteed 10-Minute Photo Chart Status Report
         await sendTenMinuteReport(validCoins, state, avgRsi1h, avgRsi5m);
 
         // 2. Check Daily Midnight Audit
@@ -427,7 +496,6 @@ async function executeScan() {
         for (const coin of validCoins) {
             const { symbol, currentPrice, currRsi1h, prevRsi1h, currRsi5m, fundingRate, volumeRatio } = coin;
 
-            // Rule: Never send duplicate signals on open positions
             if (state.trades[symbol]) {
                 continue; 
             }
@@ -435,20 +503,16 @@ async function executeScan() {
             const prevZone1h = getZoneInfo(prevRsi1h);
             const currZone1h = getZoneInfo(currRsi1h);
 
-            // Pillar 1: Location Shift
             const is1hShift = prevZone1h.name !== currZone1h.name;
             if (!is1hShift) continue;
 
             const isShiftUp = currZone1h.level > prevZone1h.level;
 
-            // Pillar 2: Crowd Trap (Funding Rate)
             const isFundingBullish = fundingRate <= 0.00015;
             const isFundingBearish = fundingRate >= 0.00005;
 
-            // Pillar 3: Fuel (Volume Expansion)
             const hasFuel = volumeRatio >= 1.15;
 
-            // Confluence Verification
             const isInstitutionalBuy = isShiftUp && isFundingBullish && hasFuel && avgRsi1h >= 45 && currRsi5m <= 65;
             const isInstitutionalSell = !isShiftUp && isFundingBearish && hasFuel && avgRsi1h <= 65 && currRsi5m >= 35;
 
@@ -497,7 +561,6 @@ async function executeScan() {
                     timestamp: Date.now()
                 };
                 
-                // Save and Push instantly
                 saveState(state);
             }
         }
