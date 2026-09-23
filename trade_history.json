@@ -28,5 +28,15 @@
     "openTime": "2026-09-23T20:14:49.341Z",
     "closeTime": "2026-09-23T20:24:52.507Z",
     "reason": "Take Profit"
+  },
+  {
+    "symbol": "LINKUSDT",
+    "type": "SELL",
+    "entryPrice": 12.274,
+    "exitPrice": 12.232,
+    "pnlPercent": 0.34,
+    "openTime": "2026-09-23T20:44:59.144Z",
+    "closeTime": "2026-09-23T20:55:02.691Z",
+    "reason": "Take Profit"
   }
 ]
