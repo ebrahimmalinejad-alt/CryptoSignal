@@ -1,1 +1,10 @@
-{}
+{
+  "TIAUSDT": {
+    "symbol": "TIAUSDT",
+    "type": "SELL",
+    "entryPrice": 0.4643,
+    "openTime": "2026-09-23T18:14:05.830Z",
+    "timestamp": 1790187245830,
+    "isRiskFree": false
+  }
+}
