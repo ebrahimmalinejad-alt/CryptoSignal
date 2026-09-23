@@ -11,6 +11,12 @@
       "type": "SELL",
       "entryPrice": 3.036,
       "timestamp": 1790136847405
+    },
+    "RENDERUSDT": {
+      "symbol": "RENDERUSDT",
+      "type": "SELL",
+      "entryPrice": 1.855,
+      "timestamp": 1790139200187
     }
   },
   "closedToday": [],
