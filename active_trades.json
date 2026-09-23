@@ -1,0 +1,12 @@
+{
+  "trades": {
+    "TIAUSDT": {
+      "symbol": "TIAUSDT",
+      "type": "BUY",
+      "entryPrice": 0.4985,
+      "timestamp": 1790119362570
+    }
+  },
+  "closedToday": [],
+  "lastDailyReportDate": ""
+}
