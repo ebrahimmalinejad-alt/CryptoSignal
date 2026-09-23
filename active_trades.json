@@ -5,6 +5,12 @@
       "type": "SELL",
       "entryPrice": 63.37,
       "timestamp": 1790150354765
+    },
+    "OPUSDT": {
+      "symbol": "OPUSDT",
+      "type": "SELL",
+      "entryPrice": 0.1363,
+      "timestamp": 1790150960498
     }
   },
   "closedToday": [],
