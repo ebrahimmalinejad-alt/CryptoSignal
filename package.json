@@ -1,0 +1,8 @@
+{
+  "name": "crypto-rsi-bot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}
