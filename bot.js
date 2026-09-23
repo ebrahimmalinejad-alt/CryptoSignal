@@ -9,6 +9,17 @@ const TELEGRAM_CHAT_VIPI = "-1003909320436";  // VIP / Client Channel
 const WATCHLIST_FILE = './watchlist.json';
 const ACTIVE_TRADES_FILE = './active_trades.json';
 const HISTORY_FILE = './trade_history.json';
+const AUDIT_STATE_FILE = './daily_audit_lock.json';
+
+function pullLatestChanges() {
+    try {
+        execSync('git config --global user.name "github-actions[bot]"');
+        execSync('git config --global user.email "github-actions[bot]@users.noreply.github.com"');
+        execSync('git pull --rebase origin main || true');
+    } catch (e) {
+        // Fallback for isolated runs
+    }
+}
 
 function loadJson(file, fallback) {
     try {
@@ -26,11 +37,10 @@ function saveStateAndSync(activeTrades, history) {
         fs.writeFileSync(ACTIVE_TRADES_FILE, JSON.stringify(activeTrades, null, 2), 'utf8');
         fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2), 'utf8');
 
-        execSync('git config --global user.name "github-actions[bot]"');
-        execSync('git config --global user.email "github-actions[bot]@users.noreply.github.com"');
+        pullLatestChanges();
         execSync(`git add ${ACTIVE_TRADES_FILE} ${HISTORY_FILE}`);
         execSync('git commit -m "Auto-sync trades & history [skip ci]" || true');
-        execSync('git push || true');
+        execSync('git push origin main || true');
         console.log("State and history instantly synced to repository.");
     } catch (e) {
         console.error("Git Push Failure:", e.message);
@@ -207,7 +217,7 @@ function evaluatePillars(trade, coinData) {
     return { p1Status, p1Desc, p2Status, p2Desc, p3Status, p3Desc, rationale, riskPoint };
 }
 
-// 1. Guaranteed 10-Minute Trade Status Report
+// 1. Guaranteed 10-Minute Trade Status Report (With Breakeven & Risk Counters)
 async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, avgRsi5m) {
     const tradeKeys = Object.keys(activeTrades);
     const now = new Date();
@@ -224,7 +234,7 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
             `━━━━━━━━━━━━━━━━━━━━\n` +
             `💼 <b>Active Positions:</b> 0 | 🏁 <b>Closed Today:</b> ${closedSummary}\n` +
             `🌐 <b>Market Climate:</b> 1H RSI [<code>${avgRsi1h}</code>] | 5M RSI [<code>${avgRsi5m}</code>]\n` +
-            `• <b>Status:</b> Scanning watchlist for high-probability setups...\n` +
+            `• <b>Status:</b> Scanning watchlist for institutional setups...\n` +
             `━━━━━━━━━━━━━━━━━━━━\n` +
             `⏱ <code>${nowUtc}</code>`;
 
@@ -251,17 +261,27 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
 
         totalFloatingPnL += pnlPercent;
 
+        // Auto Breakeven Trigger (+2.0% profit)
+        if (pnlPercent >= 2.0 && !trade.isRiskFree) {
+            trade.isRiskFree = true;
+            hasChanges = true;
+        }
+
         const pnlFormatted = (pnlPercent >= 0 ? '+' : '') + pnlPercent.toFixed(2) + '%';
         const pnlIcon = pnlPercent >= 0 ? '🟢' : '🔴';
 
         const tpPrice = trade.type === 'BUY' 
             ? (trade.entryPrice * 1.035).toFixed(4) 
             : (trade.entryPrice * 0.965).toFixed(4);
-        const slPrice = trade.type === 'BUY' 
-            ? (trade.entryPrice * 0.975).toFixed(4) 
-            : (trade.entryPrice * 1.025).toFixed(4);
 
-        let actionBanner = "⏳ [HOLD POSITION]";
+        // SL updates to Entry if Risk-Free is triggered
+        const slPrice = trade.isRiskFree 
+            ? trade.entryPrice.toFixed(4) 
+            : (trade.type === 'BUY' ? (trade.entryPrice * 0.975).toFixed(4) : (trade.entryPrice * 1.025).toFixed(4));
+
+        let actionBanner = trade.isRiskFree 
+            ? "🛡 [HOLD - RISK-FREE ACTIVE]" 
+            : "⏳ [HOLD POSITION]";
         let isClosed = false;
         let closeReason = "";
 
@@ -270,7 +290,11 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
                 actionBanner = "💰 [TAKE PROFIT HIT]";
                 isClosed = true;
                 closeReason = "Take Profit";
-            } else if (pnlPercent <= -2.5 || currRsi5m <= 30) {
+            } else if (trade.isRiskFree && pnlPercent <= 0.0) {
+                actionBanner = "🛡 [CLOSED AT BREAKEVEN / ZERO RISK]";
+                isClosed = true;
+                closeReason = "Breakeven Stop";
+            } else if (!trade.isRiskFree && (pnlPercent <= -2.5 || currRsi5m <= 30)) {
                 actionBanner = "🛑 [STOP LOSS TRIGGERED]";
                 isClosed = true;
                 closeReason = "Stop Loss";
@@ -280,7 +304,11 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
                 actionBanner = "💰 [TAKE PROFIT HIT]";
                 isClosed = true;
                 closeReason = "Take Profit";
-            } else if (pnlPercent <= -2.5 || currRsi5m >= 70) {
+            } else if (trade.isRiskFree && pnlPercent <= 0.0) {
+                actionBanner = "🛡 [CLOSED AT BREAKEVEN / ZERO RISK]";
+                isClosed = true;
+                closeReason = "Breakeven Stop";
+            } else if (!trade.isRiskFree && (pnlPercent <= -2.5 || currRsi5m >= 70)) {
                 actionBanner = "🛑 [STOP LOSS TRIGGERED]";
                 isClosed = true;
                 closeReason = "Stop Loss";
@@ -290,7 +318,7 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
         // VIP Client Message Card
         const vipCard = `🪙 <b>#${trade.symbol.replace('USDT', '')} [${trade.type} / ${trade.type === 'BUY' ? 'LONG' : 'SHORT'}]</b>\n` +
             `• Price: <code>$${trade.entryPrice}</code> ➔ <code>$${currentPrice}</code> (<b>${pnlFormatted}</b> ${pnlIcon})\n` +
-            `• Target (TP): <code>$${tpPrice}</code> | Stop (SL): <code>$${slPrice}</code>\n` +
+            `• Target (TP): <code>$${tpPrice}</code> | Stop (SL): <code>$${slPrice}</code> ${trade.isRiskFree ? '🛡' : ''}\n` +
             `👉 ACTION ➔ <b>${actionBanner}</b>`;
         vipCards.push(vipCard);
 
@@ -300,7 +328,7 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
 
         const logCard = `🪙 <b>#${trade.symbol.replace('USDT', '')} [${trade.type} / ${trade.type === 'BUY' ? 'LONG' : 'SHORT'}]</b>\n` +
             `• Price: <code>$${trade.entryPrice}</code> ➔ <code>$${currentPrice}</code> (<b>${pnlFormatted}</b> ${pnlIcon})\n` +
-            `• Levels: TP: <code>$${tpPrice}</code> | SL: <code>$${slPrice}</code>\n\n` +
+            `• Levels: TP: <code>$${tpPrice}</code> | SL: <code>$${slPrice}</code> ${trade.isRiskFree ? '🛡 (Risk-Free)' : ''}\n\n` +
             `🔍 <b>3-PILLAR HEALTH MATRIX:</b>\n` +
             `1️⃣ <b>Location (RSI):</b> ${pillars.p1Status}\n` +
             `   ↳ 1H [<code>${currRsi1h}</code>] • 5M [<code>${currRsi5m}</code>] | ${pillars.p1Desc}\n` +
@@ -366,8 +394,7 @@ async function checkDailyPerformanceReport(history) {
     const today = now.toISOString().slice(0, 10);
     const currentHour = now.getUTCHours();
 
-    const auditStateFile = './daily_audit_lock.json';
-    const auditState = loadJson(auditStateFile, { lastReportDate: "" });
+    const auditState = loadJson(AUDIT_STATE_FILE, { lastReportDate: "" });
 
     if (currentHour === 0 && auditState.lastReportDate !== today) {
         const closedToday = history.filter(t => t.closeTime && t.closeTime.startsWith(today));
@@ -383,7 +410,7 @@ async function checkDailyPerformanceReport(history) {
             await sendTelegramMessage(TELEGRAM_CHAT_LOG, emptyMessage);
 
             auditState.lastReportDate = today;
-            fs.writeFileSync(auditStateFile, JSON.stringify(auditState, null, 2), 'utf8');
+            fs.writeFileSync(AUDIT_STATE_FILE, JSON.stringify(auditState, null, 2), 'utf8');
             return;
         }
 
@@ -419,7 +446,7 @@ async function checkDailyPerformanceReport(history) {
         await sendTelegramMessage(TELEGRAM_CHAT_LOG, dailyMessage);
 
         auditState.lastReportDate = today;
-        fs.writeFileSync(auditStateFile, JSON.stringify(auditState, null, 2), 'utf8');
+        fs.writeFileSync(AUDIT_STATE_FILE, JSON.stringify(auditState, null, 2), 'utf8');
     }
 }
 
@@ -428,6 +455,8 @@ async function executeScan() {
     console.log("Executing 3-Pillar Institutional Market Scanner...");
 
     try {
+        pullLatestChanges();
+
         const watchlist = loadJson(WATCHLIST_FILE, [
             'BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'BNBUSDT', 'XRPUSDT', 
             'DOGEUSDT', 'ADAUSDT', 'AVAXUSDT', 'LINKUSDT', 'SUIUSDT'
@@ -436,9 +465,9 @@ async function executeScan() {
         let activeTrades = loadJson(ACTIVE_TRADES_FILE, {});
         let history = loadJson(HISTORY_FILE, []);
 
-        // Union: fetch data for both Watchlist coins and active open positions
+        // Always monitor BTC for correlation safety guard
         const openSymbols = Object.keys(activeTrades);
-        const combinedSymbols = Array.from(new Set([...watchlist, ...openSymbols]));
+        const combinedSymbols = Array.from(new Set([...watchlist, ...openSymbols, 'BTCUSDT']));
 
         const results = await Promise.all(combinedSymbols.map(sym => processSymbol(sym)));
         const validCoins = results.filter(r => r !== null);
@@ -448,6 +477,7 @@ async function executeScan() {
             return;
         }
 
+        const btcCoin = validCoins.find(c => c.symbol === 'BTCUSDT');
         const avgRsi1h = parseFloat((validCoins.reduce((acc, c) => acc + c.currRsi1h, 0) / validCoins.length).toFixed(2));
         const avgRsi5m = parseFloat((validCoins.reduce((acc, c) => acc + c.currRsi5m, 0) / validCoins.length).toFixed(2));
 
@@ -462,7 +492,7 @@ async function executeScan() {
             const coin = validCoins.find(c => c.symbol === symbol);
             if (!coin) continue;
 
-            // Never send duplicate signal on open position
+            // Never duplicate open trade
             if (activeTrades[symbol]) {
                 continue; 
             }
@@ -485,9 +515,21 @@ async function executeScan() {
             // Pillar 3: Fuel (Volume Surge)
             const hasFuel = volumeRatio >= 1.15;
 
-            // Institutional Confluence
-            const isInstitutionalBuy = isShiftUp && isFundingBullish && hasFuel && avgRsi1h >= 45 && currRsi5m <= 65;
-            const isInstitutionalSell = !isShiftUp && isFundingBearish && hasFuel && avgRsi1h <= 65 && currRsi5m >= 35;
+            // Confluence
+            let isInstitutionalBuy = isShiftUp && isFundingBullish && hasFuel && avgRsi1h >= 45 && currRsi5m <= 65;
+            let isInstitutionalSell = !isShiftUp && isFundingBearish && hasFuel && avgRsi1h <= 65 && currRsi5m >= 35;
+
+            // BTC Correlation Guard: Discard buys if BTC is dumping (5M RSI <= 38), discard sells if BTC is pumping (5M RSI >= 65)
+            if (btcCoin && symbol !== 'BTCUSDT') {
+                if (isInstitutionalBuy && btcCoin.currRsi5m <= 38) {
+                    console.log(`[BTC Guard] Blocked BUY on ${symbol} due to BTC 5M dumping (${btcCoin.currRsi5m})`);
+                    isInstitutionalBuy = false;
+                }
+                if (isInstitutionalSell && btcCoin.currRsi5m >= 65) {
+                    console.log(`[BTC Guard] Blocked SELL on ${symbol} due to BTC 5M surging (${btcCoin.currRsi5m})`);
+                    isInstitutionalSell = false;
+                }
+            }
 
             if (isInstitutionalBuy || isInstitutionalSell) {
                 const signalType = isInstitutionalBuy ? "BUY" : "SELL";
@@ -533,7 +575,8 @@ async function executeScan() {
                     type: signalType,
                     entryPrice: currentPrice,
                     openTime: now.toISOString(),
-                    timestamp: now.getTime()
+                    timestamp: now.getTime(),
+                    isRiskFree: false
                 };
 
                 saveStateAndSync(activeTrades, history);
