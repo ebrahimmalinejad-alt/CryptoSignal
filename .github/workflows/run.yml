@@ -5,12 +5,19 @@ on:
     - cron: '0 * * * *'
   workflow_dispatch:
 
+# اگر تسک قبلی هنوز باز باشد، سریعاً آن را می‌بندد (Cancel می‌کند)
+concurrency:
+  group: rsi-scanner-group
+  cancel-in-progress: true
+
 permissions:
   contents: write
+  actions: write # دسترسی لازم برای حذف سوابق اکشن‌ها
 
 jobs:
   scanner:
     runs-on: ubuntu-latest
+    timeout-minutes: 58 # جهت اطمینان حداکثر بعد از ۵۸ دقیقه کشته می‌شود
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -33,3 +40,15 @@ jobs:
           git add active_trades.json || true
           git commit -m "Sync trades [skip ci]" || true
           git push || true
+
+      # گام حذف تاریخچه اکشن‌های قبلی
+      - name: Delete Previous Workflow Runs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Cleaning up old workflow runs..."
+          gh run list --workflow "RSI Market Monitor" --json databaseId -q '.[].databaseId' | while read -r run_id; do
+            if [ "$run_id" != "$GITHUB_RUN_ID" ]; then
+              gh run delete "$run_id" || true
+            fi
+          done
