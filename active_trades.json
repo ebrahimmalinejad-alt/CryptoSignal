@@ -30,12 +30,6 @@
       "entryPrice": 8.162,
       "timestamp": 1790155368479
     },
-    "APTUSDT": {
-      "symbol": "APTUSDT",
-      "type": "SELL",
-      "entryPrice": 0.8192,
-      "timestamp": 1790158928117
-    },
     "BCHUSDT": {
       "symbol": "BCHUSDT",
       "type": "SELL",
@@ -49,6 +43,12 @@
       "type": "SELL",
       "pnlPercent": 2.1,
       "reason": "Take Profit"
+    },
+    {
+      "symbol": "APTUSDT",
+      "type": "SELL",
+      "pnlPercent": -2.51,
+      "reason": "Stop Loss"
     }
   ],
   "lastDailyReportDate": ""
