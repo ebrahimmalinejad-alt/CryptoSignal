@@ -38,5 +38,15 @@
     "openTime": "2026-09-23T20:44:59.144Z",
     "closeTime": "2026-09-23T20:55:02.691Z",
     "reason": "Take Profit"
+  },
+  {
+    "symbol": "TIAUSDT",
+    "type": "SELL",
+    "entryPrice": 0.4643,
+    "exitPrice": 0.473,
+    "pnlPercent": -1.87,
+    "openTime": "2026-09-23T18:14:06.343Z",
+    "closeTime": "2026-09-24T02:45:21.738Z",
+    "reason": "Stop Loss"
   }
 ]
