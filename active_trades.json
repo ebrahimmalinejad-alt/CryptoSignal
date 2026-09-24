@@ -22,5 +22,13 @@
     "openTime": "2026-09-24T08:34:17.202Z",
     "timestamp": 1790238857202,
     "isRiskFree": false
+  },
+  "LTCUSDT": {
+    "symbol": "LTCUSDT",
+    "type": "SELL",
+    "entryPrice": 68.14,
+    "openTime": "2026-09-24T08:34:18.714Z",
+    "timestamp": 1790238858714,
+    "isRiskFree": false
   }
 }
