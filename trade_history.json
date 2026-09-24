@@ -58,5 +58,15 @@
     "openTime": "2026-09-24T06:13:34.741Z",
     "closeTime": "2026-09-24T07:33:56.613Z",
     "reason": "Take Profit"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "type": "BUY",
+    "entryPrice": 84388.67,
+    "exitPrice": 84590,
+    "pnlPercent": 0.24,
+    "openTime": "2026-09-24T07:44:01.735Z",
+    "closeTime": "2026-09-24T07:54:05.554Z",
+    "reason": "Take Profit"
   }
 ]
