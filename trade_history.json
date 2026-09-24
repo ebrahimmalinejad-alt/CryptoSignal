@@ -108,5 +108,15 @@
     "openTime": "2026-09-24T08:34:18.714Z",
     "closeTime": "2026-09-24T09:34:36.390Z",
     "reason": "Take Profit"
+  },
+  {
+    "symbol": "LTCUSDT",
+    "type": "SELL",
+    "entryPrice": 66.6,
+    "exitPrice": 68.24,
+    "pnlPercent": -2.46,
+    "openTime": "2026-09-24T11:14:10.678Z",
+    "closeTime": "2026-09-24T13:14:51.031Z",
+    "reason": "Stop Loss"
   }
 ]
