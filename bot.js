@@ -298,7 +298,7 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
             totalFloatingPnL += pnlPercent;
         }
 
-        // VIP Client Message Card (Cleaned format)
+        // VIP Client Message Card
         let vipCard = `🪙 <b>#${trade.symbol.replace('USDT', '')} [${trade.type}]</b> ➔ <b>${actionBanner}</b>\n` +
             `• Price: <code>$${trade.entryPrice}</code> ➔ <code>$${currentPrice}</code> (<b>${pnlFormatted}</b> ${pnlIcon})`;
 
@@ -543,7 +543,7 @@ async function executeScan() {
 
                 const confluenceScore = (hasFuel && Math.abs(fundingRate) > 0.0001) ? "95%" : "92%";
 
-                // VIP Message (Cleaned of extra icons)
+                // VIP Message (Clean)
                 const vipMessage = `⚡️ <b>${isInstitutionalBuy ? '🟢 BUY SIGNAL (LONG)' : '🔴 SELL SIGNAL (SHORT)'}</b>\n\n` +
                     `Coin: <b>#${symbol.replace('USDT', '')}</b>\n` +
                     `Entry Price: <code>$${currentPrice}</code>\n\n` +
@@ -553,15 +553,15 @@ async function executeScan() {
                     `Confluence Score: <b>${confluenceScore}</b>\n\n` +
                     `⏱ <code>${formattedDate}</code>`;
 
-                // Admin Message
-                const logMessage = `⚡️ <b>INSTITUTIONAL ALPHA SIGNAL [${signalType}]</b>\n` +
-                    `🪙 <b>#${symbol.replace('USDT', '')}</b> @ <code>$${currentPrice}</code>\n\n` +
-                    `🎯 <b>THE 3 PILLARS CONFLUENCE:</b>\n` +
-                    `1️⃣ <b>Location (RSI):</b> [${currZone1h.name}] ➔ 1H: <code>${currRsi1h}</code> | 5M: <code>${currRsi5m}</code>\n` +
-                    `2️⃣ <b>Crowd Trap (Funding):</b> <code>${fundingPercent}</code> ${isInstitutionalBuy ? '🔴 (Short Trap)' : '🟢 (Long Trap)'}\n` +
-                    `3️⃣ <b>Fuel (Volume Surge):</b> <code>${volumeRatio}x Avg</code> 🟢 (Whale Inflow)\n\n` +
-                    `💡 <b>Setup:</b> ${isInstitutionalBuy ? 'Short Squeeze Imminent' : 'Long Liquidation Cascade'}\n` +
-                    `⭐️ Confluence: <b>${confluenceScore} (3/3 Matched)</b>\n\n` +
+                // Admin Message (Clean & Minimalist)
+                const adminSideIcon = isInstitutionalBuy ? '🟢 [BUY] LONG' : '🔴 [SELL] SHORT';
+                const trapLabel = isInstitutionalBuy ? '(Short Trap)' : '(Long Trap)';
+
+                const logMessage = `<b>${adminSideIcon}</b>\n` +
+                    `#${symbol.replace('USDT', '')} @ <code>$${currentPrice}</code>\n\n` +
+                    `1️⃣ Location (RSI): [${currZone1h.name}] ➔ 1H: <code>${currRsi1h}</code> | 5M: <code>${currRsi5m}</code>\n` +
+                    `2️⃣ Crowd Trap (Funding): <code>${fundingPercent}</code> ${trapLabel}\n` +
+                    `3️⃣ Fuel (Volume Surge): <code>${volumeRatio}x Avg</code> (Whale Inflow)\n\n` +
                     `⏱ <code>${formattedDate}</code>`;
 
                 await sendTelegramMessage(TELEGRAM_CHAT_VIPI, vipMessage);
