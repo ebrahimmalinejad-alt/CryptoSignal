@@ -88,5 +88,25 @@
     "openTime": "2026-09-24T07:03:49.807Z",
     "closeTime": "2026-09-24T09:24:33.067Z",
     "reason": "Take Profit"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "type": "SELL",
+    "entryPrice": 10.251,
+    "exitPrice": 10.03,
+    "pnlPercent": 2.16,
+    "openTime": "2026-09-24T05:33:22.793Z",
+    "closeTime": "2026-09-24T09:34:36.390Z",
+    "reason": "Take Profit"
+  },
+  {
+    "symbol": "LTCUSDT",
+    "type": "SELL",
+    "entryPrice": 68.14,
+    "exitPrice": 66.17,
+    "pnlPercent": 2.89,
+    "openTime": "2026-09-24T08:34:18.714Z",
+    "closeTime": "2026-09-24T09:34:36.390Z",
+    "reason": "Take Profit"
   }
 ]

@@ -1,18 +1,1 @@
-{
-  "AVAXUSDT": {
-    "symbol": "AVAXUSDT",
-    "type": "SELL",
-    "entryPrice": 10.251,
-    "openTime": "2026-09-24T05:33:22.793Z",
-    "timestamp": 1790228002793,
-    "isRiskFree": false
-  },
-  "LTCUSDT": {
-    "symbol": "LTCUSDT",
-    "type": "SELL",
-    "entryPrice": 68.14,
-    "openTime": "2026-09-24T08:34:18.714Z",
-    "timestamp": 1790238858714,
-    "isRiskFree": false
-  }
-}
+{}
