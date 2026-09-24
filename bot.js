@@ -17,7 +17,7 @@ function pullLatestChanges() {
         execSync('git config --global user.email "github-actions[bot]@users.noreply.github.com"');
         execSync('git pull --rebase origin main || true');
     } catch (e) {
-        // Fallback for isolated runs
+        // Fallback
     }
 }
 
@@ -217,30 +217,12 @@ function evaluatePillars(trade, coinData) {
     return { p1Status, p1Desc, p2Status, p2Desc, p3Status, p3Desc, rationale, riskPoint };
 }
 
-// 1. Guaranteed 10-Minute Trade Status Report (With Breakeven & Risk Counters)
+// 1. Guaranteed 10-Minute Trade Status Report
 async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, avgRsi5m) {
     const tradeKeys = Object.keys(activeTrades);
     const now = new Date();
     const todayStr = now.toISOString().slice(0, 10);
     const nowUtc = now.toISOString().replace('T', ' ').slice(0, 19) + ' UTC';
-
-    const closedToday = history.filter(t => t.closeTime && t.closeTime.startsWith(todayStr));
-    const winsToday = closedToday.filter(t => t.pnlPercent > 0).length;
-    const lossesToday = closedToday.length - winsToday;
-    const closedSummary = `${closedToday.length} (${winsToday}W - ${lossesToday}L)`;
-
-    if (tradeKeys.length === 0) {
-        const idleMessage = `🛰 <b>INSTITUTIONAL TELEMETRY | 10M PULSE</b>\n` +
-            `━━━━━━━━━━━━━━━━━━━━\n` +
-            `💼 <b>Active Positions:</b> 0 | 🏁 <b>Closed Today:</b> ${closedSummary}\n` +
-            `🌐 <b>Market Climate:</b> 1H RSI [<code>${avgRsi1h}</code>] | 5M RSI [<code>${avgRsi5m}</code>]\n` +
-            `• <b>Status:</b> Scanning watchlist for institutional setups...\n` +
-            `━━━━━━━━━━━━━━━━━━━━\n` +
-            `⏱ <code>${nowUtc}</code>`;
-
-        await sendTelegramMessage(TELEGRAM_CHAT_LOG, idleMessage);
-        return;
-    }
 
     let vipCards = [];
     let logCards = [];
@@ -248,6 +230,7 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
     let updatedActiveTrades = { ...activeTrades };
     let hasChanges = false;
 
+    // Process all active trades first to determine closures
     for (const key of tradeKeys) {
         const trade = activeTrades[key];
         const coinData = validCoins.find(c => c.symbol === trade.symbol);
@@ -258,8 +241,6 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
         let pnlPercent = trade.type === 'BUY'
             ? ((currentPrice - trade.entryPrice) / trade.entryPrice) * 100
             : ((trade.entryPrice - currentPrice) / trade.entryPrice) * 100;
-
-        totalFloatingPnL += pnlPercent;
 
         // Auto Breakeven Trigger (+2.0% profit)
         if (pnlPercent >= 2.0 && !trade.isRiskFree) {
@@ -274,7 +255,6 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
             ? (trade.entryPrice * 1.035).toFixed(4) 
             : (trade.entryPrice * 0.965).toFixed(4);
 
-        // SL updates to Entry if Risk-Free is triggered
         const slPrice = trade.isRiskFree 
             ? trade.entryPrice.toFixed(4) 
             : (trade.type === 'BUY' ? (trade.entryPrice * 0.975).toFixed(4) : (trade.entryPrice * 1.025).toFixed(4));
@@ -313,6 +293,10 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
                 isClosed = true;
                 closeReason = "Stop Loss";
             }
+        }
+
+        if (!isClosed) {
+            totalFloatingPnL += pnlPercent;
         }
 
         // VIP Client Message Card
@@ -357,20 +341,36 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
         }
     }
 
+    // Accurately calculate stats AFTER all closures are accounted for
+    const remainingActiveCount = Object.keys(updatedActiveTrades).length;
+    const closedToday = history.filter(t => t.closeTime && t.closeTime.startsWith(todayStr));
+    const winsToday = closedToday.filter(t => t.pnlPercent > 0).length;
+    const lossesToday = closedToday.length - winsToday;
+    const netDailyPnL = closedToday.reduce((acc, t) => acc + (t.pnlPercent || 0), 0);
+    const netDailyFormatted = (netDailyPnL >= 0 ? '+' : '') + netDailyPnL.toFixed(2) + '%';
+    const closedSummary = `${closedToday.length} (${winsToday}W - ${lossesToday}L) ${netDailyFormatted}`;
+
+    // If completely idle (no active and no cards evaluated)
+    if (tradeKeys.length === 0) {
+        const idleMessage = `💼 <b>Active Positions:</b> 0 | 🏁 <b>Closed Today:</b> ${closedSummary}\n` +
+            `🌐 <b>Market Climate:</b> 1H RSI [<code>${avgRsi1h}</code>] | 5M RSI [<code>${avgRsi5m}</code>]\n` +
+            `━━━━━━━━━━━━━━━━━━━━\n` +
+            `⏱ <code>${nowUtc}</code>`;
+
+        await sendTelegramMessage(TELEGRAM_CHAT_LOG, idleMessage);
+        return updatedActiveTrades;
+    }
+
     const netIcon = totalFloatingPnL >= 0 ? '🟢' : '🔴';
     const netFormatted = (totalFloatingPnL >= 0 ? '+' : '') + totalFloatingPnL.toFixed(2) + '%';
 
-    const vipReport = `📊 <b>TRADE STATUS UPDATE (10M Check)</b>\n` +
-        `━━━━━━━━━━━━━━━━━━━━\n` +
-        `💼 <b>Active Positions:</b> ${tradeKeys.length} | 🏁 <b>Closed Today:</b> ${closedSummary}\n` +
+    const vipReport = `💼 <b>Active Positions:</b> ${remainingActiveCount} | 🏁 <b>Closed Today:</b> ${closedSummary}\n` +
         `━━━━━━━━━━━━━━━━━━━━\n\n` +
         vipCards.join('\n─────────────────────\n') +
         `\n\n━━━━━━━━━━━━━━━━━━━━\n` +
         `⏱ <code>${nowUtc}</code>`;
 
-    const logReport = `🛰 <b>INSTITUTIONAL TELEMETRY | 10M PULSE</b>\n` +
-        `━━━━━━━━━━━━━━━━━━━━\n` +
-        `💼 <b>Active Positions:</b> ${tradeKeys.length} | 🏁 <b>Closed Today:</b> ${closedSummary}\n` +
+    const logReport = `💼 <b>Active Positions:</b> ${remainingActiveCount} | 🏁 <b>Closed Today:</b> ${closedSummary}\n` +
         `📈 <b>Floating PnL:</b> <code>${netFormatted}</code> ${netIcon}\n` +
         `🌐 <b>Market Mood:</b> 1H RSI [<code>${avgRsi1h}</code>] • 5M RSI [<code>${avgRsi5m}</code>]\n` +
         `━━━━━━━━━━━━━━━━━━━━\n\n` +
@@ -519,7 +519,7 @@ async function executeScan() {
             let isInstitutionalBuy = isShiftUp && isFundingBullish && hasFuel && avgRsi1h >= 45 && currRsi5m <= 65;
             let isInstitutionalSell = !isShiftUp && isFundingBearish && hasFuel && avgRsi1h <= 65 && currRsi5m >= 35;
 
-            // BTC Correlation Guard: Discard buys if BTC is dumping (5M RSI <= 38), discard sells if BTC is pumping (5M RSI >= 65)
+            // BTC Correlation Guard
             if (btcCoin && symbol !== 'BTCUSDT') {
                 if (isInstitutionalBuy && btcCoin.currRsi5m <= 38) {
                     console.log(`[BTC Guard] Blocked BUY on ${symbol} due to BTC 5M dumping (${btcCoin.currRsi5m})`);
@@ -592,7 +592,7 @@ async function executeScan() {
 async function startContinuousLoop() {
     console.log("Starting 5-hour continuous live runner on GitHub...");
     
-    // 30 cycles x 10 minutes = 300 minutes (Exactly 5 Hours)
+    // 30 cycles x 10 minutes = 300 minutes (5 Hours)
     for (let cycle = 1; cycle <= 30; cycle++) {
         console.log(`\n--- Cycle ${cycle} of 30 ---`);
         await executeScan();
