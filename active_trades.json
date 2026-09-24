@@ -23,14 +23,6 @@
     "timestamp": 1790276653241,
     "isRiskFree": false
   },
-  "SKYUSDT": {
-    "symbol": "SKYUSDT",
-    "type": "SELL",
-    "entryPrice": 0.07589,
-    "openTime": "2026-09-24T19:04:15.007Z",
-    "timestamp": 1790276655007,
-    "isRiskFree": false
-  },
   "RENDERUSDT": {
     "symbol": "RENDERUSDT",
     "type": "SELL",
