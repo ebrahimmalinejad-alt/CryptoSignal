@@ -7,14 +7,6 @@
     "timestamp": 1790228002793,
     "isRiskFree": false
   },
-  "BTCUSDT": {
-    "symbol": "BTCUSDT",
-    "type": "BUY",
-    "entryPrice": 84148,
-    "openTime": "2026-09-24T06:13:34.741Z",
-    "timestamp": 1790230414741,
-    "isRiskFree": false
-  },
   "SUIUSDT": {
     "symbol": "SUIUSDT",
     "type": "SELL",
