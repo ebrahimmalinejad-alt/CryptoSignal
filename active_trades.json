@@ -14,5 +14,13 @@
     "openTime": "2026-09-24T19:04:10.849Z",
     "timestamp": 1790276650849,
     "isRiskFree": false
+  },
+  "OPUSDT": {
+    "symbol": "OPUSDT",
+    "type": "SELL",
+    "entryPrice": 0.1316,
+    "openTime": "2026-09-24T19:04:13.241Z",
+    "timestamp": 1790276653241,
+    "isRiskFree": false
   }
 }
