@@ -138,5 +138,35 @@
     "openTime": "2026-09-24T11:54:23.014Z",
     "closeTime": "2026-09-24T13:24:54.887Z",
     "reason": "Stop Loss"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "type": "BUY",
+    "entryPrice": 83751.52,
+    "exitPrice": 84134.01,
+    "pnlPercent": 0.46,
+    "openTime": "2026-09-24T13:04:45.101Z",
+    "closeTime": "2026-09-24T13:35:01.307Z",
+    "reason": "Take Profit"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.09312,
+    "exitPrice": 0.09419,
+    "pnlPercent": 1.15,
+    "openTime": "2026-09-24T13:04:46.737Z",
+    "closeTime": "2026-09-24T13:35:01.307Z",
+    "reason": "Take Profit"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "type": "BUY",
+    "entryPrice": 10.163,
+    "exitPrice": 10.287,
+    "pnlPercent": 1.22,
+    "openTime": "2026-09-24T13:24:56.967Z",
+    "closeTime": "2026-09-24T13:35:01.307Z",
+    "reason": "Take Profit"
   }
 ]
