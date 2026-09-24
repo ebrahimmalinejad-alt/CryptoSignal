@@ -1,20 +1,4 @@
 {
-  "LINKUSDT": {
-    "symbol": "LINKUSDT",
-    "type": "SELL",
-    "entryPrice": 12.191,
-    "openTime": "2026-09-24T09:54:42.762Z",
-    "timestamp": 1790243682762,
-    "isRiskFree": false
-  },
-  "ADAUSDT": {
-    "symbol": "ADAUSDT",
-    "type": "SELL",
-    "entryPrice": 0.2353,
-    "openTime": "2026-09-24T11:54:23.014Z",
-    "timestamp": 1790250863014,
-    "isRiskFree": false
-  },
   "BTCUSDT": {
     "symbol": "BTCUSDT",
     "type": "BUY",

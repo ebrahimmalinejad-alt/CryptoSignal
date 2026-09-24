@@ -118,5 +118,25 @@
     "openTime": "2026-09-24T11:14:10.678Z",
     "closeTime": "2026-09-24T13:14:51.031Z",
     "reason": "Stop Loss"
+  },
+  {
+    "symbol": "LINKUSDT",
+    "type": "SELL",
+    "entryPrice": 12.191,
+    "exitPrice": 12.38,
+    "pnlPercent": -1.55,
+    "openTime": "2026-09-24T09:54:42.762Z",
+    "closeTime": "2026-09-24T13:24:54.887Z",
+    "reason": "Stop Loss"
+  },
+  {
+    "symbol": "ADAUSDT",
+    "type": "SELL",
+    "entryPrice": 0.2353,
+    "exitPrice": 0.2394,
+    "pnlPercent": -1.74,
+    "openTime": "2026-09-24T11:54:23.014Z",
+    "closeTime": "2026-09-24T13:24:54.887Z",
+    "reason": "Stop Loss"
   }
 ]
