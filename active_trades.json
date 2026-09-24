@@ -7,14 +7,6 @@
     "timestamp": 1790228002793,
     "isRiskFree": false
   },
-  "SUIUSDT": {
-    "symbol": "SUIUSDT",
-    "type": "SELL",
-    "entryPrice": 0.9596,
-    "openTime": "2026-09-24T07:03:49.807Z",
-    "timestamp": 1790233429807,
-    "isRiskFree": false
-  },
   "LTCUSDT": {
     "symbol": "LTCUSDT",
     "type": "SELL",
