@@ -168,5 +168,15 @@
     "openTime": "2026-09-24T13:24:56.967Z",
     "closeTime": "2026-09-24T13:35:01.307Z",
     "reason": "Take Profit"
+  },
+  {
+    "symbol": "RENDERUSDT",
+    "type": "BUY",
+    "entryPrice": 1.891,
+    "exitPrice": 1.884,
+    "pnlPercent": -0.37,
+    "openTime": "2026-09-24T18:23:47.500Z",
+    "closeTime": "2026-09-24T18:33:51.141Z",
+    "reason": "Take Profit"
   }
 ]
