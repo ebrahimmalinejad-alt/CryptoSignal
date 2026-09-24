@@ -38,5 +38,13 @@
     "openTime": "2026-09-24T19:14:19.295Z",
     "timestamp": 1790277259295,
     "isRiskFree": false
+  },
+  "TIAUSDT": {
+    "symbol": "TIAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.4963,
+    "openTime": "2026-09-24T19:34:26.366Z",
+    "timestamp": 1790278466366,
+    "isRiskFree": false
   }
 }
