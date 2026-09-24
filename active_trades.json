@@ -6,13 +6,5 @@
     "openTime": "2026-09-24T18:33:53.319Z",
     "timestamp": 1790274833319,
     "isRiskFree": false
-  },
-  "FETUSDT": {
-    "symbol": "FETUSDT",
-    "type": "BUY",
-    "entryPrice": 0.2223,
-    "openTime": "2026-09-24T18:44:02.337Z",
-    "timestamp": 1790275442337,
-    "isRiskFree": false
   }
 }

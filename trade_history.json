@@ -188,5 +188,15 @@
     "openTime": "2026-09-24T18:33:55.044Z",
     "closeTime": "2026-09-24T18:43:59.750Z",
     "reason": "Take Profit"
+  },
+  {
+    "symbol": "FETUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2223,
+    "exitPrice": 0.2233,
+    "pnlPercent": 0.45,
+    "openTime": "2026-09-24T18:44:02.337Z",
+    "closeTime": "2026-09-24T18:54:05.639Z",
+    "reason": "Take Profit"
   }
 ]
