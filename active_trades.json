@@ -1,1 +1,10 @@
-{}
+{
+  "LINKUSDT": {
+    "symbol": "LINKUSDT",
+    "type": "SELL",
+    "entryPrice": 12.191,
+    "openTime": "2026-09-24T09:54:42.762Z",
+    "timestamp": 1790243682762,
+    "isRiskFree": false
+  }
+}
