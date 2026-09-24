@@ -14,5 +14,13 @@
     "openTime": "2026-09-24T07:03:49.807Z",
     "timestamp": 1790233429807,
     "isRiskFree": false
+  },
+  "BTCUSDT": {
+    "symbol": "BTCUSDT",
+    "type": "BUY",
+    "entryPrice": 84388.67,
+    "openTime": "2026-09-24T07:44:01.735Z",
+    "timestamp": 1790235841735,
+    "isRiskFree": false
   }
 }
