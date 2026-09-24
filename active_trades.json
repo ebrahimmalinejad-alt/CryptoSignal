@@ -14,5 +14,13 @@
     "openTime": "2026-09-24T07:03:49.807Z",
     "timestamp": 1790233429807,
     "isRiskFree": false
+  },
+  "XRPUSDT": {
+    "symbol": "XRPUSDT",
+    "type": "SELL",
+    "entryPrice": 1.4907,
+    "openTime": "2026-09-24T08:34:17.202Z",
+    "timestamp": 1790238857202,
+    "isRiskFree": false
   }
 }
