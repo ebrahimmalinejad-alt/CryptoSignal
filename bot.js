@@ -230,7 +230,6 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
     let updatedActiveTrades = { ...activeTrades };
     let hasChanges = false;
 
-    // Process all active trades first to determine closures
     for (const key of tradeKeys) {
         const trade = activeTrades[key];
         const coinData = validCoins.find(c => c.symbol === trade.symbol);
@@ -299,11 +298,13 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
             totalFloatingPnL += pnlPercent;
         }
 
-        // VIP Client Message Card
-        const vipCard = `🪙 <b>#${trade.symbol.replace('USDT', '')} [${trade.type} / ${trade.type === 'BUY' ? 'LONG' : 'SHORT'}]</b>\n` +
-            `• Price: <code>$${trade.entryPrice}</code> ➔ <code>$${currentPrice}</code> (<b>${pnlFormatted}</b> ${pnlIcon})\n` +
-            `• Target (TP): <code>$${tpPrice}</code> | Stop (SL): <code>$${slPrice}</code> ${trade.isRiskFree ? '🛡' : ''}\n` +
-            `👉 ACTION ➔ <b>${actionBanner}</b>`;
+        // VIP Client Message Card (Cleaned format)
+        let vipCard = `🪙 <b>#${trade.symbol.replace('USDT', '')} [${trade.type}]</b> ➔ <b>${actionBanner}</b>\n` +
+            `• Price: <code>$${trade.entryPrice}</code> ➔ <code>$${currentPrice}</code> (<b>${pnlFormatted}</b> ${pnlIcon})`;
+
+        if (!isClosed) {
+            vipCard += `\n• Target (TP): <code>$${tpPrice}</code> | Stop (SL): <code>$${slPrice}</code> ${trade.isRiskFree ? '🛡' : ''}`;
+        }
         vipCards.push(vipCard);
 
         // Admin Detailed 3-Pillars Diagnostic Card
@@ -341,7 +342,6 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
         }
     }
 
-    // Accurately calculate stats AFTER all closures are accounted for
     const remainingActiveCount = Object.keys(updatedActiveTrades).length;
     const closedToday = history.filter(t => t.closeTime && t.closeTime.startsWith(todayStr));
     const winsToday = closedToday.filter(t => t.pnlPercent > 0).length;
@@ -350,7 +350,6 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
     const netDailyFormatted = (netDailyPnL >= 0 ? '+' : '') + netDailyPnL.toFixed(2) + '%';
     const closedSummary = `${closedToday.length} (${winsToday}W - ${lossesToday}L) ${netDailyFormatted}`;
 
-    // If completely idle (no active and no cards evaluated)
     if (tradeKeys.length === 0) {
         const idleMessage = `💼 <b>Active Positions:</b> 0 | 🏁 <b>Closed Today:</b> ${closedSummary}\n` +
             `🌐 <b>Market Climate:</b> 1H RSI [<code>${avgRsi1h}</code>] | 5M RSI [<code>${avgRsi5m}</code>]\n` +
@@ -465,7 +464,6 @@ async function executeScan() {
         let activeTrades = loadJson(ACTIVE_TRADES_FILE, {});
         let history = loadJson(HISTORY_FILE, []);
 
-        // Always monitor BTC for correlation safety guard
         const openSymbols = Object.keys(activeTrades);
         const combinedSymbols = Array.from(new Set([...watchlist, ...openSymbols, 'BTCUSDT']));
 
@@ -492,7 +490,6 @@ async function executeScan() {
             const coin = validCoins.find(c => c.symbol === symbol);
             if (!coin) continue;
 
-            // Never duplicate open trade
             if (activeTrades[symbol]) {
                 continue; 
             }
@@ -546,14 +543,14 @@ async function executeScan() {
 
                 const confluenceScore = (hasFuel && Math.abs(fundingRate) > 0.0001) ? "95%" : "92%";
 
-                // VIP Message
+                // VIP Message (Cleaned of extra icons)
                 const vipMessage = `⚡️ <b>${isInstitutionalBuy ? '🟢 BUY SIGNAL (LONG)' : '🔴 SELL SIGNAL (SHORT)'}</b>\n\n` +
-                    `🪙 Coin: <b>#${symbol.replace('USDT', '')}</b>\n` +
-                    `💵 Entry Price: <code>$${currentPrice}</code>\n\n` +
-                    `🎯 Target (TP): <code>$${tpPrice}</code> (+3.5%)\n` +
-                    `🛑 Stop Loss (SL): <code>$${slPrice}</code> (-2.5%)\n` +
-                    `⚡️ Leverage: <b>3x - 5x</b>\n` +
-                    `⭐️ Confluence Score: <b>${confluenceScore}</b>\n\n` +
+                    `Coin: <b>#${symbol.replace('USDT', '')}</b>\n` +
+                    `Entry Price: <code>$${currentPrice}</code>\n\n` +
+                    `Target (TP): <code>$${tpPrice}</code> (+3.5%)\n` +
+                    `Stop Loss (SL): <code>$${slPrice}</code> (-2.5%)\n` +
+                    `Leverage: <b>3x - 5x</b>\n` +
+                    `Confluence Score: <b>${confluenceScore}</b>\n\n` +
                     `⏱ <code>${formattedDate}</code>`;
 
                 // Admin Message
