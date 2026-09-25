@@ -22,5 +22,13 @@
     "openTime": "2026-09-25T16:14:37.751Z",
     "timestamp": 1790352877751,
     "isRiskFree": false
+  },
+  "SKYUSDT": {
+    "symbol": "SKYUSDT",
+    "type": "BUY",
+    "entryPrice": 0.07516,
+    "openTime": "2026-09-25T16:14:39.343Z",
+    "timestamp": 1790352879343,
+    "isRiskFree": false
   }
 }
