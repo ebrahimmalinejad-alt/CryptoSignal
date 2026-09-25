@@ -238,5 +238,25 @@
     "openTime": "2026-09-24T19:14:19.295Z",
     "closeTime": "2026-09-25T01:56:48.980Z",
     "reason": "Take Profit"
+  },
+  {
+    "symbol": "TIAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.4963,
+    "exitPrice": 0.4807,
+    "pnlPercent": -3.14,
+    "openTime": "2026-09-24T19:34:26.366Z",
+    "closeTime": "2026-09-25T02:47:07.991Z",
+    "reason": "Stop Loss"
+  },
+  {
+    "symbol": "APTUSDT",
+    "type": "BUY",
+    "entryPrice": 0.8143,
+    "exitPrice": 0.7899,
+    "pnlPercent": -3,
+    "openTime": "2026-09-25T01:06:30.405Z",
+    "closeTime": "2026-09-25T02:47:07.991Z",
+    "reason": "Stop Loss"
   }
 ]

@@ -23,28 +23,12 @@
     "timestamp": 1790276653241,
     "isRiskFree": false
   },
-  "TIAUSDT": {
-    "symbol": "TIAUSDT",
-    "type": "BUY",
-    "entryPrice": 0.4963,
-    "openTime": "2026-09-24T19:34:26.366Z",
-    "timestamp": 1790278466366,
-    "isRiskFree": false
-  },
   "ADAUSDT": {
     "symbol": "ADAUSDT",
     "type": "SELL",
     "entryPrice": 0.2478,
     "openTime": "2026-09-24T19:44:34.965Z",
     "timestamp": 1790279074965,
-    "isRiskFree": false
-  },
-  "APTUSDT": {
-    "symbol": "APTUSDT",
-    "type": "BUY",
-    "entryPrice": 0.8143,
-    "openTime": "2026-09-25T01:06:30.405Z",
-    "timestamp": 1790298390405,
     "isRiskFree": false
   },
   "JUPUSDT": {
