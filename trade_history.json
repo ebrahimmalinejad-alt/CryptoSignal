@@ -398,5 +398,35 @@
     "openTime": "2026-09-25T06:23:47.160Z",
     "closeTime": "2026-09-25T13:45:20.618Z",
     "reason": "Stop Loss"
+  },
+  {
+    "symbol": "WIFUSDT",
+    "type": "BUY",
+    "entryPrice": 0.245,
+    "exitPrice": 0.2381,
+    "pnlPercent": -2.82,
+    "openTime": "2026-09-25T11:34:29.334Z",
+    "closeTime": "2026-09-25T14:05:28.692Z",
+    "reason": "Stop Loss"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "type": "BUY",
+    "entryPrice": 10.586,
+    "exitPrice": 10.23,
+    "pnlPercent": -3.36,
+    "openTime": "2026-09-25T11:44:32.696Z",
+    "closeTime": "2026-09-25T14:05:28.692Z",
+    "reason": "Stop Loss"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.00000457,
+    "exitPrice": 0.00000443,
+    "pnlPercent": -3.06,
+    "openTime": "2026-09-25T11:54:38.123Z",
+    "closeTime": "2026-09-25T14:05:28.692Z",
+    "reason": "Stop Loss"
   }
 ]
