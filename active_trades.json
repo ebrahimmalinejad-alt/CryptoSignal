@@ -46,5 +46,13 @@
     "openTime": "2026-09-25T01:06:30.405Z",
     "timestamp": 1790298390405,
     "isRiskFree": false
+  },
+  "JUPUSDT": {
+    "symbol": "JUPUSDT",
+    "type": "SELL",
+    "entryPrice": 0.3053,
+    "openTime": "2026-09-25T02:37:04.510Z",
+    "timestamp": 1790303824510,
+    "isRiskFree": false
   }
 }
