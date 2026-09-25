@@ -338,5 +338,15 @@
     "openTime": "2026-09-25T08:38:37.575Z",
     "closeTime": "2026-09-25T08:58:44.614Z",
     "reason": "Take Profit"
+  },
+  {
+    "symbol": "POLUSDT",
+    "type": "BUY",
+    "entryPrice": 0.10881,
+    "exitPrice": 0.11124,
+    "pnlPercent": 2.23,
+    "openTime": "2026-09-25T06:23:48.663Z",
+    "closeTime": "2026-09-25T11:14:20.975Z",
+    "reason": "Take Profit"
   }
 ]
