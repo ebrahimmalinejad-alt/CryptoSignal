@@ -11,6 +11,13 @@ const ACTIVE_TRADES_FILE = './active_trades.json';
 const HISTORY_FILE = './trade_history.json';
 const AUDIT_STATE_FILE = './daily_audit_lock.json';
 
+// Benchmark major assets representing the broader crypto market
+const BENCHMARK_MARKET_SYMBOLS = [
+    'BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'BNBUSDT', 'XRPUSDT', 
+    'DOGEUSDT', 'ADAUSDT', 'AVAXUSDT', 'LINKUSDT', 'SUIUSDT',
+    'NEARUSDT', 'APTUSDT', 'DOTUSDT', 'ICPUSDT', 'LTCUSDT'
+];
+
 function pullLatestChanges() {
     try {
         execSync('git config --global user.name "github-actions[bot]"');
@@ -173,7 +180,54 @@ async function processSymbol(symbol) {
     };
 }
 
-function evaluatePillars(trade, coinData) {
+function evaluateMacroRegime(validCoins) {
+    const benchmarkCoins = validCoins.filter(c => BENCHMARK_MARKET_SYMBOLS.includes(c.symbol));
+    if (benchmarkCoins.length === 0) return { regime: 'NEUTRAL', bias: 'ALL', desc: 'NEUTRAL (50/50)' };
+
+    let bullishScore = 0;
+    let bearishScore = 0;
+
+    for (const c of benchmarkCoins) {
+        // Bullish if 1H and 5M momentum are in upper zones
+        if (c.currRsi1h >= 50 && c.currRsi5m >= 48) bullishScore++;
+        // Bearish if 1H and 5M momentum are in lower zones
+        else if (c.currRsi1h <= 50 && c.currRsi5m <= 52) bearishScore++;
+    }
+
+    const total = benchmarkCoins.length;
+    const bullPercent = Math.round((bullishScore / total) * 100);
+    const bearPercent = Math.round((bearishScore / total) * 100);
+
+    if (bullScoreDifference(bullishScore, bearishScore, total)) {
+        return {
+            regime: 'BULLISH',
+            bias: 'BUY',
+            desc: `🟢 BULLISH (${bullPercent}% Up) ➔ LONGS ONLY`
+        };
+    } else if (bearScoreDifference(bearishScore, bullishScore, total)) {
+        return {
+            regime: 'BEARISH',
+            bias: 'SELL',
+            desc: `🔴 BEARISH (${bearPercent}% Down) ➔ SHORTS ONLY`
+        };
+    }
+
+    return {
+        regime: 'NEUTRAL',
+        bias: 'ALL',
+        desc: `🟡 NEUTRAL (${bullPercent}% Bull / ${bearPercent}% Bear)`
+    };
+}
+
+function bullScoreDifference(bullish, bearish, total) {
+    return bullish > bearish && (bullish / total) >= 0.50;
+}
+
+function bearScoreDifference(bearish, bullish, total) {
+    return bearish > bullish && (bearish / total) >= 0.50;
+}
+
+function evaluatePillars(trade, coinData, macroRegime) {
     const { currRsi1h, currRsi5m, fundingRate, volumeRatio } = coinData;
     const isLong = trade.type === 'BUY';
 
@@ -210,6 +264,14 @@ function evaluatePillars(trade, coinData) {
     let rationale = isLong 
         ? "Key structural pillars remain supportive." 
         : "Downside setup intact without counter volume breakout.";
+    
+    // Counter-trend warning
+    if (isLong && macroRegime.regime === 'BEARISH') {
+        rationale = "⚠️ Counter-Trend Warning: Broad market turned Bearish!";
+    } else if (!isLong && macroRegime.regime === 'BULLISH') {
+        rationale = "⚠️ Counter-Trend Warning: Broad market turned Bullish!";
+    }
+
     let riskPoint = isLong 
         ? "Watch 5M RSI breaking below 40.0." 
         : "Watch 1H RSI breaking above 60.0.";
@@ -217,8 +279,8 @@ function evaluatePillars(trade, coinData) {
     return { p1Status, p1Desc, p2Status, p2Desc, p3Status, p3Desc, rationale, riskPoint };
 }
 
-// 1. Guaranteed 10-Minute Trade Status Report
-async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, avgRsi5m) {
+// 1. Guaranteed 10-Minute Trade Status Report (With Early Defense & Macro Guard)
+async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, avgRsi5m, macroRegime) {
     const tradeKeys = Object.keys(activeTrades);
     const now = new Date();
     const todayStr = now.toISOString().slice(0, 10);
@@ -264,6 +326,7 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
         let isClosed = false;
         let closeReason = "";
 
+        // Standard exit logic
         if (trade.type === 'BUY') {
             if (currRsi5m >= 70 || currRsi1h >= 70) {
                 actionBanner = "💰 [TAKE PROFIT HIT]";
@@ -294,6 +357,28 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
             }
         }
 
+        // Defensive Protection: Prevent counter-trend losses if Macro market turned against this trade
+        if (!isClosed) {
+            const isCounterTrend = (trade.type === 'BUY' && macroRegime.regime === 'BEARISH') ||
+                                   (trade.type === 'SELL' && macroRegime.regime === 'BULLISH');
+
+            if (isCounterTrend) {
+                if (pnlPercent >= 0.5) {
+                    // Lock in positive gains early
+                    actionBanner = "🛡 [DEFENSE EXIT - PROFIT SECURED]";
+                    isClosed = true;
+                    closeReason = "Macro Shift (Profit Secured)";
+                } else if (pnlPercent <= -1.2) {
+                    // Early emergency stop to avoid full -2.5% loss
+                    actionBanner = "🛑 [DEFENSE STOP - LOSS MINIMIZED]";
+                    isClosed = true;
+                    closeReason = "Macro Shift (Defensive Stop)";
+                } else {
+                    actionBanner = "⚠️ [HOLD - MACRO DEFENSE MONITOR]";
+                }
+            }
+        }
+
         if (!isClosed) {
             totalFloatingPnL += pnlPercent;
         }
@@ -307,8 +392,8 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
         }
         vipCards.push(vipCard);
 
-        // Admin Detailed 3-Pillars Diagnostic Card
-        const pillars = evaluatePillars(trade, coinData);
+        // Admin Detailed Diagnostic Card
+        const pillars = evaluatePillars(trade, coinData, macroRegime);
         const fundingPercent = (fundingRate * 100).toFixed(4) + '%';
 
         const logCard = `🪙 <b>#${trade.symbol.replace('USDT', '')} [${trade.type} / ${trade.type === 'BUY' ? 'LONG' : 'SHORT'}]</b>\n` +
@@ -352,7 +437,8 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
 
     if (tradeKeys.length === 0) {
         const idleMessage = `💼 <b>Active Positions:</b> 0 | 🏁 <b>Closed Today:</b> ${closedSummary}\n` +
-            `🌐 <b>Market Climate:</b> 1H RSI [<code>${avgRsi1h}</code>] | 5M RSI [<code>${avgRsi5m}</code>]\n` +
+            `🌐 <b>Market Mood:</b> 1H RSI [<code>${avgRsi1h}</code>] • 5M RSI [<code>${avgRsi5m}</code>]\n` +
+            `🧭 <b>Macro Regime:</b> ${macroRegime.desc}\n` +
             `━━━━━━━━━━━━━━━━━━━━\n` +
             `⏱ <code>${nowUtc}</code>`;
 
@@ -372,6 +458,7 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
     const logReport = `💼 <b>Active Positions:</b> ${remainingActiveCount} | 🏁 <b>Closed Today:</b> ${closedSummary}\n` +
         `📈 <b>Floating PnL:</b> <code>${netFormatted}</code> ${netIcon}\n` +
         `🌐 <b>Market Mood:</b> 1H RSI [<code>${avgRsi1h}</code>] • 5M RSI [<code>${avgRsi5m}</code>]\n` +
+        `🧭 <b>Macro Regime:</b> ${macroRegime.desc}\n` +
         `━━━━━━━━━━━━━━━━━━━━\n\n` +
         logCards.join('\n────────────────────\n') +
         `\n\n━━━━━━━━━━━━━━━━━━━━\n` +
@@ -464,8 +551,9 @@ async function executeScan() {
         let activeTrades = loadJson(ACTIVE_TRADES_FILE, {});
         let history = loadJson(HISTORY_FILE, []);
 
+        // Combine symbols: Watchlist + Open Trades + Top Benchmark market coins
         const openSymbols = Object.keys(activeTrades);
-        const combinedSymbols = Array.from(new Set([...watchlist, ...openSymbols, 'BTCUSDT']));
+        const combinedSymbols = Array.from(new Set([...watchlist, ...openSymbols, ...BENCHMARK_MARKET_SYMBOLS]));
 
         const results = await Promise.all(combinedSymbols.map(sym => processSymbol(sym)));
         const validCoins = results.filter(r => r !== null);
@@ -479,8 +567,12 @@ async function executeScan() {
         const avgRsi1h = parseFloat((validCoins.reduce((acc, c) => acc + c.currRsi1h, 0) / validCoins.length).toFixed(2));
         const avgRsi5m = parseFloat((validCoins.reduce((acc, c) => acc + c.currRsi5m, 0) / validCoins.length).toFixed(2));
 
-        // 1. Send 10-Minute Telemetry Report
-        activeTrades = await sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, avgRsi5m) || activeTrades;
+        // Evaluate Broad Market Trend Regime
+        const macroRegime = evaluateMacroRegime(validCoins);
+        console.log(`[Macro Regime]: ${macroRegime.desc}`);
+
+        // 1. Send 10-Minute Telemetry Report (With Defense monitoring)
+        activeTrades = await sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, avgRsi5m, macroRegime) || activeTrades;
 
         // 2. Check Daily Midnight Audit
         await checkDailyPerformanceReport(history);
@@ -512,9 +604,19 @@ async function executeScan() {
             // Pillar 3: Fuel (Volume Surge)
             const hasFuel = volumeRatio >= 1.15;
 
-            // Confluence
+            // Base signals
             let isInstitutionalBuy = isShiftUp && isFundingBullish && hasFuel && avgRsi1h >= 45 && currRsi5m <= 65;
             let isInstitutionalSell = !isShiftUp && isFundingBearish && hasFuel && avgRsi1h <= 65 && currRsi5m >= 35;
+
+            // MACRO REGIME FILTER: Strictly obey overall top market trend
+            if (macroRegime.regime === 'BEARISH' && isInstitutionalBuy) {
+                console.log(`[Macro Guard] Discarded BUY signal on ${symbol} because macro market is BEARISH`);
+                isInstitutionalBuy = false;
+            }
+            if (macroRegime.regime === 'BULLISH' && isInstitutionalSell) {
+                console.log(`[Macro Guard] Discarded SELL signal on ${symbol} because macro market is BULLISH`);
+                isInstitutionalSell = false;
+            }
 
             // BTC Correlation Guard
             if (btcCoin && symbol !== 'BTCUSDT') {
