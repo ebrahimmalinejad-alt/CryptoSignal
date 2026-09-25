@@ -378,5 +378,15 @@
     "openTime": "2026-09-25T12:34:51.708Z",
     "closeTime": "2026-09-25T12:44:56.548Z",
     "reason": "Take Profit"
+  },
+  {
+    "symbol": "ADAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.257,
+    "exitPrice": 0.2574,
+    "pnlPercent": 0.16,
+    "openTime": "2026-09-25T12:44:58.245Z",
+    "closeTime": "2026-09-25T12:55:02.826Z",
+    "reason": "Take Profit"
   }
 ]

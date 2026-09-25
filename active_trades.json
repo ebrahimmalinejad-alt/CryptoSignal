@@ -38,13 +38,5 @@
     "openTime": "2026-09-25T11:54:38.123Z",
     "timestamp": 1790337278123,
     "isRiskFree": false
-  },
-  "ADAUSDT": {
-    "symbol": "ADAUSDT",
-    "type": "BUY",
-    "entryPrice": 0.257,
-    "openTime": "2026-09-25T12:44:58.245Z",
-    "timestamp": 1790340298245,
-    "isRiskFree": false
   }
 }
