@@ -31,14 +31,6 @@
     "timestamp": 1790336672696,
     "isRiskFree": false
   },
-  "LINKUSDT": {
-    "symbol": "LINKUSDT",
-    "type": "BUY",
-    "entryPrice": 14.091,
-    "openTime": "2026-09-25T11:54:36.732Z",
-    "timestamp": 1790337276732,
-    "isRiskFree": false
-  },
   "PEPEUSDT": {
     "symbol": "PEPEUSDT",
     "type": "BUY",
