@@ -39,14 +39,6 @@
     "timestamp": 1790278466366,
     "isRiskFree": false
   },
-  "JUPUSDT": {
-    "symbol": "JUPUSDT",
-    "type": "BUY",
-    "entryPrice": 0.3046,
-    "openTime": "2026-09-24T19:34:28.275Z",
-    "timestamp": 1790278468275,
-    "isRiskFree": false
-  },
   "ADAUSDT": {
     "symbol": "ADAUSDT",
     "type": "SELL",
