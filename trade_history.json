@@ -298,5 +298,25 @@
     "openTime": "2026-09-25T06:13:43.087Z",
     "closeTime": "2026-09-25T07:54:20.786Z",
     "reason": "Macro Shift (Defensive Stop)"
+  },
+  {
+    "symbol": "ADAUSDT",
+    "type": "SELL",
+    "entryPrice": 0.2478,
+    "exitPrice": 0.2511,
+    "pnlPercent": -1.33,
+    "openTime": "2026-09-24T19:44:34.965Z",
+    "closeTime": "2026-09-25T08:18:28.828Z",
+    "reason": "Confirmed Macro Shift (Defensive Stop)"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "type": "SELL",
+    "entryPrice": 10.126,
+    "exitPrice": 10.282,
+    "pnlPercent": -1.54,
+    "openTime": "2026-09-25T07:44:17.255Z",
+    "closeTime": "2026-09-25T08:18:28.828Z",
+    "reason": "Confirmed Macro Shift (Defensive Stop)"
   }
 ]

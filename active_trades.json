@@ -7,14 +7,6 @@
     "timestamp": 1790274833319,
     "isRiskFree": false
   },
-  "ADAUSDT": {
-    "symbol": "ADAUSDT",
-    "type": "SELL",
-    "entryPrice": 0.2478,
-    "openTime": "2026-09-24T19:44:34.965Z",
-    "timestamp": 1790279074965,
-    "isRiskFree": false
-  },
   "LTCUSDT": {
     "symbol": "LTCUSDT",
     "type": "BUY",
@@ -29,14 +21,6 @@
     "entryPrice": 0.10881,
     "openTime": "2026-09-25T06:23:48.663Z",
     "timestamp": 1790317428663,
-    "isRiskFree": false
-  },
-  "AVAXUSDT": {
-    "symbol": "AVAXUSDT",
-    "type": "SELL",
-    "entryPrice": 10.126,
-    "openTime": "2026-09-25T07:44:17.255Z",
-    "timestamp": 1790322257255,
     "isRiskFree": false
   }
 }
