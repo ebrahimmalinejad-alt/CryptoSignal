@@ -438,5 +438,15 @@
     "openTime": "2026-09-25T16:14:37.751Z",
     "closeTime": "2026-09-25T16:44:47.747Z",
     "reason": "Take Profit"
+  },
+  {
+    "symbol": "JUPUSDT",
+    "type": "BUY",
+    "entryPrice": 0.328,
+    "exitPrice": 0.33,
+    "pnlPercent": 0.61,
+    "openTime": "2026-09-25T16:44:51.137Z",
+    "closeTime": "2026-09-25T18:15:16.998Z",
+    "reason": "Take Profit"
   }
 ]
