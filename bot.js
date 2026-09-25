@@ -11,7 +11,6 @@ const ACTIVE_TRADES_FILE = './active_trades.json';
 const HISTORY_FILE = './trade_history.json';
 const AUDIT_STATE_FILE = './daily_audit_lock.json';
 
-// Benchmark major assets representing the broader crypto market
 const BENCHMARK_MARKET_SYMBOLS = [
     'BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'BNBUSDT', 'XRPUSDT', 
     'DOGEUSDT', 'ADAUSDT', 'AVAXUSDT', 'LINKUSDT', 'SUIUSDT',
@@ -180,17 +179,18 @@ async function processSymbol(symbol) {
     };
 }
 
+// Robust Transition Layer: Requires >= 60% consensus to switch regime. 40%-60% is Transition/Chop Zone.
 function evaluateMacroRegime(validCoins) {
     const benchmarkCoins = validCoins.filter(c => BENCHMARK_MARKET_SYMBOLS.includes(c.symbol));
-    if (benchmarkCoins.length === 0) return { regime: 'NEUTRAL', bias: 'ALL', desc: 'NEUTRAL (50/50)' };
+    if (benchmarkCoins.length === 0) {
+        return { regime: 'TRANSITION', bias: 'NONE', desc: '🟡 TRANSITION (50/50) ➔ NO NEW TRADES' };
+    }
 
     let bullishScore = 0;
     let bearishScore = 0;
 
     for (const c of benchmarkCoins) {
-        // Bullish if 1H and 5M momentum are in upper zones
         if (c.currRsi1h >= 50 && c.currRsi5m >= 48) bullishScore++;
-        // Bearish if 1H and 5M momentum are in lower zones
         else if (c.currRsi1h <= 50 && c.currRsi5m <= 52) bearishScore++;
     }
 
@@ -198,13 +198,16 @@ function evaluateMacroRegime(validCoins) {
     const bullPercent = Math.round((bullishScore / total) * 100);
     const bearPercent = Math.round((bearishScore / total) * 100);
 
-    if (bullScoreDifference(bullishScore, bearishScore, total)) {
+    // Definite Bullish Regime: at least 60% of top market confirms
+    if (bullPercent >= 60) {
         return {
             regime: 'BULLISH',
             bias: 'BUY',
             desc: `🟢 BULLISH (${bullPercent}% Up) ➔ LONGS ONLY`
         };
-    } else if (bearScoreDifference(bearishScore, bullishScore, total)) {
+    } 
+    // Definite Bearish Regime: at least 60% of top market confirms
+    else if (bearPercent >= 60) {
         return {
             regime: 'BEARISH',
             bias: 'SELL',
@@ -212,19 +215,12 @@ function evaluateMacroRegime(validCoins) {
         };
     }
 
+    // Transition / Chop Zone: 40% to 59% (No direction takes control)
     return {
-        regime: 'NEUTRAL',
-        bias: 'ALL',
-        desc: `🟡 NEUTRAL (${bullPercent}% Bull / ${bearPercent}% Bear)`
+        regime: 'TRANSITION',
+        bias: 'NONE',
+        desc: `🟡 TRANSITION / CHOP (${bearPercent}% Bear / ${bullPercent}% Bull) ➔ NO NEW TRADES`
     };
-}
-
-function bullScoreDifference(bullish, bearish, total) {
-    return bullish > bearish && (bullish / total) >= 0.50;
-}
-
-function bearScoreDifference(bearish, bullish, total) {
-    return bearish > bullish && (bearish / total) >= 0.50;
 }
 
 function evaluatePillars(trade, coinData, macroRegime) {
@@ -265,11 +261,12 @@ function evaluatePillars(trade, coinData, macroRegime) {
         ? "Key structural pillars remain supportive." 
         : "Downside setup intact without counter volume breakout.";
     
-    // Counter-trend warning
-    if (isLong && macroRegime.regime === 'BEARISH') {
-        rationale = "⚠️ Counter-Trend Warning: Broad market turned Bearish!";
+    if (macroRegime.regime === 'TRANSITION') {
+        rationale = "Market in Transition zone. Position held to standard rules.";
+    } else if (isLong && macroRegime.regime === 'BEARISH') {
+        rationale = "⚠️ Counter-Trend: Broader market entered confirmed Bearish regime!";
     } else if (!isLong && macroRegime.regime === 'BULLISH') {
-        rationale = "⚠️ Counter-Trend Warning: Broad market turned Bullish!";
+        rationale = "⚠️ Counter-Trend: Broader market entered confirmed Bullish regime!";
     }
 
     let riskPoint = isLong 
@@ -279,7 +276,7 @@ function evaluatePillars(trade, coinData, macroRegime) {
     return { p1Status, p1Desc, p2Status, p2Desc, p3Status, p3Desc, rationale, riskPoint };
 }
 
-// 1. Guaranteed 10-Minute Trade Status Report (With Early Defense & Macro Guard)
+// 1. Guaranteed 10-Minute Trade Status Report
 async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, avgRsi5m, macroRegime) {
     const tradeKeys = Object.keys(activeTrades);
     const now = new Date();
@@ -326,7 +323,7 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
         let isClosed = false;
         let closeReason = "";
 
-        // Standard exit logic
+        // Standard exit evaluations
         if (trade.type === 'BUY') {
             if (currRsi5m >= 70 || currRsi1h >= 70) {
                 actionBanner = "💰 [TAKE PROFIT HIT]";
@@ -357,24 +354,20 @@ async function sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, 
             }
         }
 
-        // Defensive Protection: Prevent counter-trend losses if Macro market turned against this trade
-        if (!isClosed) {
-            const isCounterTrend = (trade.type === 'BUY' && macroRegime.regime === 'BEARISH') ||
-                                   (trade.type === 'SELL' && macroRegime.regime === 'BULLISH');
+        // Defensive Protection: ONLY triggered when opposite regime is confirmed (>= 60%), NOT in transition
+        if (!isClosed && macroRegime.regime !== 'TRANSITION') {
+            const isConfirmedCounterTrend = (trade.type === 'BUY' && macroRegime.regime === 'BEARISH') ||
+                                            (trade.type === 'SELL' && macroRegime.regime === 'BULLISH');
 
-            if (isCounterTrend) {
+            if (isConfirmedCounterTrend) {
                 if (pnlPercent >= 0.5) {
-                    // Lock in positive gains early
                     actionBanner = "🛡 [DEFENSE EXIT - PROFIT SECURED]";
                     isClosed = true;
-                    closeReason = "Macro Shift (Profit Secured)";
+                    closeReason = "Confirmed Macro Reversal (Profit Secured)";
                 } else if (pnlPercent <= -1.2) {
-                    // Early emergency stop to avoid full -2.5% loss
                     actionBanner = "🛑 [DEFENSE STOP - LOSS MINIMIZED]";
                     isClosed = true;
-                    closeReason = "Macro Shift (Defensive Stop)";
-                } else {
-                    actionBanner = "⚠️ [HOLD - MACRO DEFENSE MONITOR]";
+                    closeReason = "Confirmed Macro Shift (Defensive Stop)";
                 }
             }
         }
@@ -551,7 +544,6 @@ async function executeScan() {
         let activeTrades = loadJson(ACTIVE_TRADES_FILE, {});
         let history = loadJson(HISTORY_FILE, []);
 
-        // Combine symbols: Watchlist + Open Trades + Top Benchmark market coins
         const openSymbols = Object.keys(activeTrades);
         const combinedSymbols = Array.from(new Set([...watchlist, ...openSymbols, ...BENCHMARK_MARKET_SYMBOLS]));
 
@@ -567,17 +559,23 @@ async function executeScan() {
         const avgRsi1h = parseFloat((validCoins.reduce((acc, c) => acc + c.currRsi1h, 0) / validCoins.length).toFixed(2));
         const avgRsi5m = parseFloat((validCoins.reduce((acc, c) => acc + c.currRsi5m, 0) / validCoins.length).toFixed(2));
 
-        // Evaluate Broad Market Trend Regime
+        // Evaluate Broad Market Trend with Transition Buffer (Hysteresis)
         const macroRegime = evaluateMacroRegime(validCoins);
         console.log(`[Macro Regime]: ${macroRegime.desc}`);
 
-        // 1. Send 10-Minute Telemetry Report (With Defense monitoring)
+        // 1. Send 10-Minute Telemetry Report
         activeTrades = await sendTenMinuteReport(validCoins, activeTrades, history, avgRsi1h, avgRsi5m, macroRegime) || activeTrades;
 
         // 2. Check Daily Midnight Audit
         await checkDailyPerformanceReport(history);
 
         // 3. Scan ONLY Watchlist coins for NEW setups
+        // Transition Rule: Lock new entries completely if market is inside Transition / Chop zone
+        if (macroRegime.regime === 'TRANSITION') {
+            console.log("[Transition Guard] Market is in Transition/Chop zone (40%-59%). No new signals opened.");
+            return;
+        }
+
         for (const symbol of watchlist) {
             const coin = validCoins.find(c => c.symbol === symbol);
             if (!coin) continue;
@@ -608,7 +606,7 @@ async function executeScan() {
             let isInstitutionalBuy = isShiftUp && isFundingBullish && hasFuel && avgRsi1h >= 45 && currRsi5m <= 65;
             let isInstitutionalSell = !isShiftUp && isFundingBearish && hasFuel && avgRsi1h <= 65 && currRsi5m >= 35;
 
-            // MACRO REGIME FILTER: Strictly obey overall top market trend
+            // MACRO REGIME FILTER: Must strictly agree with confirmed >= 60% regime
             if (macroRegime.regime === 'BEARISH' && isInstitutionalBuy) {
                 console.log(`[Macro Guard] Discarded BUY signal on ${symbol} because macro market is BEARISH`);
                 isInstitutionalBuy = false;
@@ -645,7 +643,7 @@ async function executeScan() {
 
                 const confluenceScore = (hasFuel && Math.abs(fundingRate) > 0.0001) ? "95%" : "92%";
 
-                // VIP Message (Clean)
+                // VIP Message
                 const vipMessage = `⚡️ <b>${isInstitutionalBuy ? '🟢 BUY SIGNAL (LONG)' : '🔴 SELL SIGNAL (SHORT)'}</b>\n\n` +
                     `Coin: <b>#${symbol.replace('USDT', '')}</b>\n` +
                     `Entry Price: <code>$${currentPrice}</code>\n\n` +
@@ -655,7 +653,7 @@ async function executeScan() {
                     `Confluence Score: <b>${confluenceScore}</b>\n\n` +
                     `⏱ <code>${formattedDate}</code>`;
 
-                // Admin Message (Clean & Minimalist)
+                // Admin Message
                 const adminSideIcon = isInstitutionalBuy ? '🟢 [BUY] LONG' : '🔴 [SELL] SHORT';
                 const trapLabel = isInstitutionalBuy ? '(Short Trap)' : '(Long Trap)';
 
