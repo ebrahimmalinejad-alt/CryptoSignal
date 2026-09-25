@@ -268,5 +268,25 @@
     "openTime": "2026-09-24T19:04:13.241Z",
     "closeTime": "2026-09-25T04:47:48.202Z",
     "reason": "Stop Loss"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "type": "SELL",
+    "entryPrice": 0.09623,
+    "exitPrice": 0.09533,
+    "pnlPercent": 0.94,
+    "openTime": "2026-09-24T19:04:10.849Z",
+    "closeTime": "2026-09-25T07:24:10.293Z",
+    "reason": "Macro Shift (Profit Secured)"
+  },
+  {
+    "symbol": "JUPUSDT",
+    "type": "SELL",
+    "entryPrice": 0.3053,
+    "exitPrice": 0.3098,
+    "pnlPercent": -1.47,
+    "openTime": "2026-09-25T02:37:04.510Z",
+    "closeTime": "2026-09-25T07:24:10.293Z",
+    "reason": "Macro Shift (Defensive Stop)"
   }
 ]
