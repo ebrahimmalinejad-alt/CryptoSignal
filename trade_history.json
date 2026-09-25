@@ -358,5 +358,25 @@
     "openTime": "2026-09-25T11:54:36.732Z",
     "closeTime": "2026-09-25T12:04:41.031Z",
     "reason": "Take Profit"
+  },
+  {
+    "symbol": "ADAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2567,
+    "exitPrice": 0.257,
+    "pnlPercent": 0.12,
+    "openTime": "2026-09-25T12:34:50.202Z",
+    "closeTime": "2026-09-25T12:44:56.548Z",
+    "reason": "Take Profit"
+  },
+  {
+    "symbol": "POLUSDT",
+    "type": "BUY",
+    "entryPrice": 0.11287,
+    "exitPrice": 0.11288,
+    "pnlPercent": 0.01,
+    "openTime": "2026-09-25T12:34:51.708Z",
+    "closeTime": "2026-09-25T12:44:56.548Z",
+    "reason": "Take Profit"
   }
 ]
