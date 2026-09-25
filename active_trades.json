@@ -15,14 +15,6 @@
     "timestamp": 1790279074965,
     "isRiskFree": false
   },
-  "FETUSDT": {
-    "symbol": "FETUSDT",
-    "type": "SELL",
-    "entryPrice": 0.2291,
-    "openTime": "2026-09-25T06:13:43.087Z",
-    "timestamp": 1790316823087,
-    "isRiskFree": false
-  },
   "LTCUSDT": {
     "symbol": "LTCUSDT",
     "type": "BUY",

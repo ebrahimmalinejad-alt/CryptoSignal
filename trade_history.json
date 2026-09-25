@@ -288,5 +288,15 @@
     "openTime": "2026-09-25T02:37:04.510Z",
     "closeTime": "2026-09-25T07:24:10.293Z",
     "reason": "Macro Shift (Defensive Stop)"
+  },
+  {
+    "symbol": "FETUSDT",
+    "type": "SELL",
+    "entryPrice": 0.2291,
+    "exitPrice": 0.2324,
+    "pnlPercent": -1.44,
+    "openTime": "2026-09-25T06:13:43.087Z",
+    "closeTime": "2026-09-25T07:54:20.786Z",
+    "reason": "Macro Shift (Defensive Stop)"
   }
 ]
