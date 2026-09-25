@@ -318,5 +318,15 @@
     "openTime": "2026-09-25T07:44:17.255Z",
     "closeTime": "2026-09-25T08:18:28.828Z",
     "reason": "Confirmed Macro Shift (Defensive Stop)"
+  },
+  {
+    "symbol": "SOLUSDT",
+    "type": "BUY",
+    "entryPrice": 117.15,
+    "exitPrice": 117.51,
+    "pnlPercent": 0.31,
+    "openTime": "2026-09-24T18:33:53.319Z",
+    "closeTime": "2026-09-25T08:28:32.901Z",
+    "reason": "Take Profit"
   }
 ]

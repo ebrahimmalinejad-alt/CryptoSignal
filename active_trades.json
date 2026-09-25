@@ -1,12 +1,4 @@
 {
-  "SOLUSDT": {
-    "symbol": "SOLUSDT",
-    "type": "BUY",
-    "entryPrice": 117.15,
-    "openTime": "2026-09-24T18:33:53.319Z",
-    "timestamp": 1790274833319,
-    "isRiskFree": false
-  },
   "LTCUSDT": {
     "symbol": "LTCUSDT",
     "type": "BUY",
