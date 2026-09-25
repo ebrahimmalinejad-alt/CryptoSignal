@@ -1,18 +1,1 @@
-{
-  "DOGEUSDT": {
-    "symbol": "DOGEUSDT",
-    "type": "BUY",
-    "entryPrice": 0.09779,
-    "openTime": "2026-09-25T11:24:25.107Z",
-    "timestamp": 1790335465107,
-    "isRiskFree": false
-  },
-  "WIFUSDT": {
-    "symbol": "WIFUSDT",
-    "type": "BUY",
-    "entryPrice": 0.2442,
-    "openTime": "2026-09-25T16:44:49.593Z",
-    "timestamp": 1790354689593,
-    "isRiskFree": false
-  }
-}
+{}
