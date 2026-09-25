@@ -15,14 +15,6 @@
     "timestamp": 1790352273831,
     "isRiskFree": false
   },
-  "FETUSDT": {
-    "symbol": "FETUSDT",
-    "type": "BUY",
-    "entryPrice": 0.2421,
-    "openTime": "2026-09-25T16:14:37.751Z",
-    "timestamp": 1790352877751,
-    "isRiskFree": false
-  },
   "SKYUSDT": {
     "symbol": "SKYUSDT",
     "type": "BUY",
