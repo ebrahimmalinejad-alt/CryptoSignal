@@ -218,5 +218,15 @@
     "openTime": "2026-09-24T19:34:28.275Z",
     "closeTime": "2026-09-25T01:06:28.576Z",
     "reason": "Take Profit"
+  },
+  {
+    "symbol": "ICPUSDT",
+    "type": "BUY",
+    "entryPrice": 3.115,
+    "exitPrice": 3.052,
+    "pnlPercent": -2.02,
+    "openTime": "2026-09-24T20:54:37.977Z",
+    "closeTime": "2026-09-25T01:36:40.779Z",
+    "reason": "Stop Loss"
   }
 ]
