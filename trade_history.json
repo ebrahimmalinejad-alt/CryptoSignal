@@ -258,5 +258,15 @@
     "openTime": "2026-09-25T01:06:30.405Z",
     "closeTime": "2026-09-25T02:47:07.991Z",
     "reason": "Stop Loss"
+  },
+  {
+    "symbol": "OPUSDT",
+    "type": "SELL",
+    "entryPrice": 0.1316,
+    "exitPrice": 0.1325,
+    "pnlPercent": -0.68,
+    "openTime": "2026-09-24T19:04:13.241Z",
+    "closeTime": "2026-09-25T04:47:48.202Z",
+    "reason": "Stop Loss"
   }
 ]
