@@ -54,5 +54,13 @@
     "openTime": "2026-09-24T20:54:37.977Z",
     "timestamp": 1790283277977,
     "isRiskFree": false
+  },
+  "APTUSDT": {
+    "symbol": "APTUSDT",
+    "type": "BUY",
+    "entryPrice": 0.8143,
+    "openTime": "2026-09-25T01:06:30.405Z",
+    "timestamp": 1790298390405,
+    "isRiskFree": false
   }
 }
