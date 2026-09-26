@@ -14,13 +14,5 @@
     "openTime": "2026-09-26T07:34:03.454Z",
     "timestamp": 1790408043454,
     "isRiskFree": false
-  },
-  "SUIUSDT": {
-    "symbol": "SUIUSDT",
-    "type": "BUY",
-    "entryPrice": 1.1627,
-    "openTime": "2026-09-26T07:44:07.483Z",
-    "timestamp": 1790408647483,
-    "isRiskFree": false
   }
 }
