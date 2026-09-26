@@ -538,5 +538,15 @@
     "openTime": "2026-09-26T07:44:07.483Z",
     "closeTime": "2026-09-26T10:23:49.486Z",
     "reason": "Take Profit"
+  },
+  {
+    "symbol": "OPUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1447,
+    "exitPrice": 0.1472,
+    "pnlPercent": 1.73,
+    "openTime": "2026-09-26T07:34:03.454Z",
+    "closeTime": "2026-09-26T10:53:58.154Z",
+    "reason": "Take Profit"
   }
 ]
