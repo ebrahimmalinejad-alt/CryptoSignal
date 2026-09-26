@@ -14,5 +14,13 @@
     "openTime": "2026-09-26T11:14:09.950Z",
     "timestamp": 1790421249950,
     "isRiskFree": false
+  },
+  "POLUSDT": {
+    "symbol": "POLUSDT",
+    "type": "BUY",
+    "entryPrice": 0.12005,
+    "openTime": "2026-09-26T11:54:26.655Z",
+    "timestamp": 1790423666655,
+    "isRiskFree": false
   }
 }
