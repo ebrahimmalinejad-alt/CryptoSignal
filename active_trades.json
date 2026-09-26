@@ -7,14 +7,6 @@
     "timestamp": 1790379878642,
     "isRiskFree": false
   },
-  "ICPUSDT": {
-    "symbol": "ICPUSDT",
-    "type": "BUY",
-    "entryPrice": 3.23,
-    "openTime": "2026-09-26T07:34:01.794Z",
-    "timestamp": 1790408041794,
-    "isRiskFree": false
-  },
   "OPUSDT": {
     "symbol": "OPUSDT",
     "type": "BUY",

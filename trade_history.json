@@ -508,5 +508,15 @@
     "openTime": "2026-09-26T00:14:51.522Z",
     "closeTime": "2026-09-26T03:15:48.515Z",
     "reason": "Stop Loss"
+  },
+  {
+    "symbol": "ICPUSDT",
+    "type": "BUY",
+    "entryPrice": 3.23,
+    "exitPrice": 3.162,
+    "pnlPercent": -2.11,
+    "openTime": "2026-09-26T07:34:01.794Z",
+    "closeTime": "2026-09-26T09:14:32.338Z",
+    "reason": "Stop Loss"
   }
 ]
