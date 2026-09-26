@@ -558,5 +558,15 @@
     "openTime": "2026-09-26T11:04:04.489Z",
     "closeTime": "2026-09-26T11:14:08.175Z",
     "reason": "Take Profit"
+  },
+  {
+    "symbol": "SKYUSDT",
+    "type": "BUY",
+    "entryPrice": 0.07951,
+    "exitPrice": 0.0775,
+    "pnlPercent": -2.53,
+    "openTime": "2026-09-26T11:14:09.950Z",
+    "closeTime": "2026-09-26T13:34:56.769Z",
+    "reason": "Stop Loss"
   }
 ]
