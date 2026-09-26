@@ -5,7 +5,7 @@
     "entryPrice": 13.928,
     "openTime": "2026-09-25T23:44:38.642Z",
     "timestamp": 1790379878642,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "SKYUSDT": {
     "symbol": "SKYUSDT",
