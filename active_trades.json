@@ -1,12 +1,4 @@
 {
-  "RENDERUSDT": {
-    "symbol": "RENDERUSDT",
-    "type": "BUY",
-    "entryPrice": 2.039,
-    "openTime": "2026-09-27T07:14:27.290Z",
-    "timestamp": 1790493267290,
-    "isRiskFree": false
-  },
   "POLUSDT": {
     "symbol": "POLUSDT",
     "type": "BUY",
