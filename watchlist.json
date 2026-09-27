@@ -2,16 +2,12 @@
   "BTCUSDT",
   "ETHUSDT",
   "SOLUSDT",
-  "BNBUSDT",
-  "XRPUSDT",
   "DOGEUSDT",
-  "ADAUSDT",
   "AVAXUSDT",
   "LINKUSDT",
   "SUIUSDT",
   "NEARUSDT",
   "APTUSDT",
-  "ICPUSDT",
   "LTCUSDT",
   "OPUSDT",
   "TIAUSDT",
@@ -19,8 +15,5 @@
   "RENDERUSDT",
   "PEPEUSDT",
   "WIFUSDT",
-  "ARBUSDT",
-  "SKYUSDT",
-  "POLUSDT",
-  "JUPUSDT"
+  "ARBUSDT"
 ]
