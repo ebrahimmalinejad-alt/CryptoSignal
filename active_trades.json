@@ -1,10 +1,1 @@
-{
-  "POLUSDT": {
-    "symbol": "POLUSDT",
-    "type": "BUY",
-    "entryPrice": 0.12121,
-    "openTime": "2026-09-27T07:54:37.965Z",
-    "timestamp": 1790495677965,
-    "isRiskFree": false
-  }
-}
+{}

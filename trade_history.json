@@ -618,5 +618,15 @@
     "openTime": "2026-09-27T07:14:27.290Z",
     "closeTime": "2026-09-27T08:04:41.441Z",
     "reason": "Take Profit"
+  },
+  {
+    "symbol": "POLUSDT",
+    "type": "BUY",
+    "entryPrice": 0.12121,
+    "exitPrice": 0.11936,
+    "pnlPercent": -1.53,
+    "openTime": "2026-09-27T07:54:37.965Z",
+    "closeTime": "2026-09-27T13:14:47.670Z",
+    "reason": "Confirmed Macro Shift (Defensive Stop)"
   }
 ]
