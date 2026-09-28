@@ -1,11 +1,4 @@
 {
-  "VIRTUALUSDT": {
-    "symbol": "VIRTUALUSDT",
-    "entryPrice": 0.8196,
-    "openTime": "2026-09-28T16:24:36.076Z",
-    "timestamp": 1790612676076,
-    "isRiskFree": true
-  },
   "ETHUSDT": {
     "symbol": "ETHUSDT",
     "entryPrice": 2719.17,

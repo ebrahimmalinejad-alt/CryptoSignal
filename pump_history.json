@@ -58,5 +58,15 @@
     "openTime": "2026-09-28T18:28:23.757Z",
     "closeTime": "2026-09-28T19:38:55.890Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "VIRTUALUSDT",
+    "type": "BUY",
+    "entryPrice": 0.8196,
+    "exitPrice": 0.8158,
+    "pnlPercent": -0.46,
+    "openTime": "2026-09-28T16:24:36.076Z",
+    "closeTime": "2026-09-28T21:39:53.268Z",
+    "reason": "Breakeven Stop"
   }
 ]
