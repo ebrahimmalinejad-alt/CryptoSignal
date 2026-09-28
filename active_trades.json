@@ -1,0 +1,10 @@
+{
+  "AVAXUSDT": {
+    "symbol": "AVAXUSDT",
+    "type": "SELL",
+    "entryPrice": 10.65,
+    "openTime": "2026-09-28T04:03:46.920Z",
+    "timestamp": 1790568226920,
+    "isRiskFree": false
+  }
+}
