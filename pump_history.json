@@ -28,5 +28,15 @@
     "openTime": "2026-09-28T09:19:49.264Z",
     "closeTime": "2026-09-28T11:55:54.634Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "XLMUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2231,
+    "exitPrice": 0.2228,
+    "pnlPercent": -0.13,
+    "openTime": "2026-09-28T12:23:00.686Z",
+    "closeTime": "2026-09-28T13:33:31.432Z",
+    "reason": "Breakeven Stop"
   }
 ]
