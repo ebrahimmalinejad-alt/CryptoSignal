@@ -18,5 +18,15 @@
     "openTime": "2026-09-28T08:14:25.834Z",
     "closeTime": "2026-09-28T08:39:36.900Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "GRAMUSDT",
+    "type": "BUY",
+    "entryPrice": 1.662,
+    "exitPrice": 1.655,
+    "pnlPercent": -0.42,
+    "openTime": "2026-09-28T09:19:49.264Z",
+    "closeTime": "2026-09-28T11:55:54.634Z",
+    "reason": "Breakeven Stop"
   }
 ]
