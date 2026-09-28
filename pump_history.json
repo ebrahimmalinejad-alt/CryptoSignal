@@ -38,5 +38,15 @@
     "openTime": "2026-09-28T12:23:00.686Z",
     "closeTime": "2026-09-28T13:33:31.432Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "LINKUSDT",
+    "type": "BUY",
+    "entryPrice": 14.796,
+    "exitPrice": 14.349,
+    "pnlPercent": -3.02,
+    "openTime": "2026-09-28T12:17:56.680Z",
+    "closeTime": "2026-09-28T14:18:53.382Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
