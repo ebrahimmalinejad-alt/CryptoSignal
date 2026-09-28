@@ -14,5 +14,13 @@
     "openTime": "2026-09-28T00:33:50.365Z",
     "timestamp": 1790555630365,
     "isRiskFree": false
+  },
+  "SOLUSDT": {
+    "symbol": "SOLUSDT",
+    "type": "SELL",
+    "entryPrice": 120.64,
+    "openTime": "2026-09-28T02:04:08.840Z",
+    "timestamp": 1790561048840,
+    "isRiskFree": false
   }
 }
