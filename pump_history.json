@@ -48,5 +48,15 @@
     "openTime": "2026-09-28T12:17:56.680Z",
     "closeTime": "2026-09-28T14:18:53.382Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "GRTUSDT",
+    "type": "BUY",
+    "entryPrice": 0.03097,
+    "exitPrice": 0.03014,
+    "pnlPercent": -2.68,
+    "openTime": "2026-09-28T18:28:23.757Z",
+    "closeTime": "2026-09-28T19:38:55.890Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

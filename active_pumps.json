@@ -12,12 +12,5 @@
     "openTime": "2026-09-28T17:14:58.431Z",
     "timestamp": 1790615698431,
     "isRiskFree": false
-  },
-  "GRTUSDT": {
-    "symbol": "GRTUSDT",
-    "entryPrice": 0.03097,
-    "openTime": "2026-09-28T18:28:23.757Z",
-    "timestamp": 1790620103757,
-    "isRiskFree": false
   }
 }
