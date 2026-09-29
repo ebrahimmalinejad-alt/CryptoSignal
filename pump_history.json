@@ -108,5 +108,15 @@
     "openTime": "2026-09-29T09:56:08.542Z",
     "closeTime": "2026-09-29T13:34:50.710Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ALGOUSDT",
+    "type": "BUY",
+    "entryPrice": 0.133,
+    "exitPrice": 0.129,
+    "pnlPercent": -3.01,
+    "openTime": "2026-09-29T12:39:21.732Z",
+    "closeTime": "2026-09-29T15:15:45.803Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

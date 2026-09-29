@@ -61,12 +61,5 @@
     "openTime": "2026-09-29T12:39:19.632Z",
     "timestamp": 1790685559632,
     "isRiskFree": false
-  },
-  "ALGOUSDT": {
-    "symbol": "ALGOUSDT",
-    "entryPrice": 0.133,
-    "openTime": "2026-09-29T12:39:21.732Z",
-    "timestamp": 1790685561732,
-    "isRiskFree": false
   }
 }
