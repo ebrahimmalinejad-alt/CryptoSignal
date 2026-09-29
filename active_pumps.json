@@ -6,13 +6,6 @@
     "timestamp": 1790615698431,
     "isRiskFree": false
   },
-  "BCHUSDT": {
-    "symbol": "BCHUSDT",
-    "entryPrice": 311.6,
-    "openTime": "2026-09-29T07:24:24.737Z",
-    "timestamp": 1790666664737,
-    "isRiskFree": false
-  },
   "BNBUSDT": {
     "symbol": "BNBUSDT",
     "entryPrice": 769.28,
