@@ -78,5 +78,15 @@
     "openTime": "2026-09-29T00:08:39.911Z",
     "closeTime": "2026-09-29T01:14:07.236Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "牛来USDT",
+    "type": "BUY",
+    "entryPrice": 0.11445,
+    "exitPrice": 0.11118,
+    "pnlPercent": -2.86,
+    "openTime": "2026-09-29T06:33:52.321Z",
+    "closeTime": "2026-09-29T09:10:32.073Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
