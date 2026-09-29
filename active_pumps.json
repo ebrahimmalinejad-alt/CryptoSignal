@@ -33,5 +33,12 @@
     "openTime": "2026-09-29T07:24:22.407Z",
     "timestamp": 1790666662407,
     "isRiskFree": false
+  },
+  "BCHUSDT": {
+    "symbol": "BCHUSDT",
+    "entryPrice": 311.6,
+    "openTime": "2026-09-29T07:24:24.737Z",
+    "timestamp": 1790666664737,
+    "isRiskFree": false
   }
 }
