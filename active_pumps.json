@@ -6,20 +6,6 @@
     "timestamp": 1790615698431,
     "isRiskFree": false
   },
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.00000422,
-    "openTime": "2026-09-29T06:59:05.898Z",
-    "timestamp": 1790665145898,
-    "isRiskFree": true
-  },
-  "ADAUSDT": {
-    "symbol": "ADAUSDT",
-    "entryPrice": 0.2505,
-    "openTime": "2026-09-29T07:24:22.407Z",
-    "timestamp": 1790666662407,
-    "isRiskFree": false
-  },
   "BCHUSDT": {
     "symbol": "BCHUSDT",
     "entryPrice": 311.6,
@@ -53,13 +39,6 @@
     "entryPrice": 120.07,
     "openTime": "2026-09-29T09:51:00.820Z",
     "timestamp": 1790675460820,
-    "isRiskFree": false
-  },
-  "XRPUSDT": {
-    "symbol": "XRPUSDT",
-    "entryPrice": 1.5486,
-    "openTime": "2026-09-29T12:39:19.632Z",
-    "timestamp": 1790685559632,
     "isRiskFree": false
   }
 }

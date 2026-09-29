@@ -118,5 +118,35 @@
     "openTime": "2026-09-29T12:39:21.732Z",
     "closeTime": "2026-09-29T15:15:45.803Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.00000422,
+    "exitPrice": 0.00000422,
+    "pnlPercent": 0,
+    "openTime": "2026-09-29T06:59:05.898Z",
+    "closeTime": "2026-09-29T16:41:34.104Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ADAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2505,
+    "exitPrice": 0.2437,
+    "pnlPercent": -2.71,
+    "openTime": "2026-09-29T07:24:22.407Z",
+    "closeTime": "2026-09-29T16:41:34.104Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "XRPUSDT",
+    "type": "BUY",
+    "entryPrice": 1.5486,
+    "exitPrice": 1.5058,
+    "pnlPercent": -2.76,
+    "openTime": "2026-09-29T12:39:19.632Z",
+    "closeTime": "2026-09-29T16:41:34.104Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
