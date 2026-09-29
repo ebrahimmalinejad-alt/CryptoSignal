@@ -40,5 +40,12 @@
     "openTime": "2026-09-29T07:24:24.737Z",
     "timestamp": 1790666664737,
     "isRiskFree": false
+  },
+  "BNBUSDT": {
+    "symbol": "BNBUSDT",
+    "entryPrice": 769.28,
+    "openTime": "2026-09-29T07:39:34.462Z",
+    "timestamp": 1790667574462,
+    "isRiskFree": false
   }
 }
