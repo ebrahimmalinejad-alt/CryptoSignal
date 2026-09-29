@@ -5,12 +5,5 @@
     "openTime": "2026-09-28T17:14:58.431Z",
     "timestamp": 1790615698431,
     "isRiskFree": false
-  },
-  "ONEUSDT": {
-    "symbol": "ONEUSDT",
-    "entryPrice": 0.002514,
-    "openTime": "2026-09-29T00:08:39.911Z",
-    "timestamp": 1790640519911,
-    "isRiskFree": false
   }
 }

@@ -68,5 +68,15 @@
     "openTime": "2026-09-28T16:24:36.076Z",
     "closeTime": "2026-09-28T21:39:53.268Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ONEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.002514,
+    "exitPrice": 0.00245,
+    "pnlPercent": -2.55,
+    "openTime": "2026-09-29T00:08:39.911Z",
+    "closeTime": "2026-09-29T01:14:07.236Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
