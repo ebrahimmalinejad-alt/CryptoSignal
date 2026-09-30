@@ -88,7 +88,7 @@
     "entryPrice": 1.1538,
     "openTime": "2026-09-30T04:11:50.029Z",
     "timestamp": 1790741510029,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "VTHOUSDT": {
     "symbol": "VTHOUSDT",
@@ -109,7 +109,7 @@
     "entryPrice": 1.5026,
     "openTime": "2026-09-30T05:32:41.075Z",
     "timestamp": 1790746361075,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "AVAXUSDT": {
     "symbol": "AVAXUSDT",
