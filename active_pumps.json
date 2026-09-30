@@ -13,13 +13,6 @@
     "timestamp": 1790667574462,
     "isRiskFree": false
   },
-  "DOGEUSDT": {
-    "symbol": "DOGEUSDT",
-    "entryPrice": 0.09478,
-    "openTime": "2026-09-29T08:09:55.795Z",
-    "timestamp": 1790669395795,
-    "isRiskFree": true
-  },
   "SPCXBUSDT": {
     "symbol": "SPCXBUSDT",
     "entryPrice": 149.73,
@@ -62,39 +55,11 @@
     "timestamp": 1790732096919,
     "isRiskFree": true
   },
-  "DASHUSDT": {
-    "symbol": "DASHUSDT",
-    "entryPrice": 61,
-    "openTime": "2026-09-30T03:11:09.188Z",
-    "timestamp": 1790737869188,
-    "isRiskFree": true
-  },
-  "SUIUSDT": {
-    "symbol": "SUIUSDT",
-    "entryPrice": 1.1538,
-    "openTime": "2026-09-30T04:11:50.029Z",
-    "timestamp": 1790741510029,
-    "isRiskFree": true
-  },
-  "AVAXUSDT": {
-    "symbol": "AVAXUSDT",
-    "entryPrice": 11.205,
-    "openTime": "2026-09-30T06:13:29.248Z",
-    "timestamp": 1790748809248,
-    "isRiskFree": false
-  },
   "TRUMPUSDT": {
     "symbol": "TRUMPUSDT",
     "entryPrice": 2.016,
     "openTime": "2026-09-30T06:48:54.683Z",
     "timestamp": 1790750934683,
-    "isRiskFree": true
-  },
-  "AAVEUSDT": {
-    "symbol": "AAVEUSDT",
-    "entryPrice": 159.71,
-    "openTime": "2026-09-30T06:53:58.947Z",
-    "timestamp": 1790751238947,
     "isRiskFree": true
   }
 }

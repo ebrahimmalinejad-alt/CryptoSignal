@@ -298,5 +298,55 @@
     "openTime": "2026-09-30T05:27:36.768Z",
     "closeTime": "2026-09-30T14:30:45.773Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.09478,
+    "exitPrice": 0.09439,
+    "pnlPercent": -0.41,
+    "openTime": "2026-09-29T08:09:55.795Z",
+    "closeTime": "2026-09-30T14:35:50.255Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "DASHUSDT",
+    "type": "BUY",
+    "entryPrice": 61,
+    "exitPrice": 60.86,
+    "pnlPercent": -0.23,
+    "openTime": "2026-09-30T03:11:09.188Z",
+    "closeTime": "2026-09-30T14:35:50.255Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "SUIUSDT",
+    "type": "BUY",
+    "entryPrice": 1.1538,
+    "exitPrice": 1.1517,
+    "pnlPercent": -0.18,
+    "openTime": "2026-09-30T04:11:50.029Z",
+    "closeTime": "2026-09-30T14:35:50.255Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "type": "BUY",
+    "entryPrice": 11.205,
+    "exitPrice": 10.834,
+    "pnlPercent": -3.31,
+    "openTime": "2026-09-30T06:13:29.248Z",
+    "closeTime": "2026-09-30T14:35:50.255Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "AAVEUSDT",
+    "type": "BUY",
+    "entryPrice": 159.71,
+    "exitPrice": 159.15,
+    "pnlPercent": -0.35,
+    "openTime": "2026-09-30T06:53:58.947Z",
+    "closeTime": "2026-09-30T14:35:50.255Z",
+    "reason": "Breakeven Stop"
   }
 ]
