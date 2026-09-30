@@ -188,5 +188,15 @@
     "openTime": "2026-09-29T23:48:53.879Z",
     "closeTime": "2026-09-30T03:56:36.577Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "BABYUSDT",
+    "type": "BUY",
+    "entryPrice": 0.0139,
+    "exitPrice": 0.01461,
+    "pnlPercent": 5.11,
+    "openTime": "2026-09-29T23:03:20.543Z",
+    "closeTime": "2026-09-30T04:26:59.004Z",
+    "reason": "Take Profit (+5%)"
   }
 ]

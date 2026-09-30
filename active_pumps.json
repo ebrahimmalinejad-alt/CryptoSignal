@@ -48,13 +48,6 @@
     "timestamp": 1790718442806,
     "isRiskFree": false
   },
-  "BABYUSDT": {
-    "symbol": "BABYUSDT",
-    "entryPrice": 0.0139,
-    "openTime": "2026-09-29T23:03:20.543Z",
-    "timestamp": 1790723000543,
-    "isRiskFree": true
-  },
   "PEPEUSDT": {
     "symbol": "PEPEUSDT",
     "entryPrice": 0.0000043,
