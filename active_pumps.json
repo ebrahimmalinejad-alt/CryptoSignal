@@ -76,13 +76,6 @@
     "timestamp": 1790725429729,
     "isRiskFree": false
   },
-  "NEARUSDT": {
-    "symbol": "NEARUSDT",
-    "entryPrice": 4.895,
-    "openTime": "2026-09-29T23:48:53.879Z",
-    "timestamp": 1790725733879,
-    "isRiskFree": true
-  },
   "XAUTUSDT": {
     "symbol": "XAUTUSDT",
     "entryPrice": 4185.85,
