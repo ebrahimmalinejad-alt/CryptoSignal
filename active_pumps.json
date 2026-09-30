@@ -110,5 +110,12 @@
     "openTime": "2026-09-30T01:34:59.535Z",
     "timestamp": 1790732099535,
     "isRiskFree": false
+  },
+  "DASHUSDT": {
+    "symbol": "DASHUSDT",
+    "entryPrice": 61,
+    "openTime": "2026-09-30T03:11:09.188Z",
+    "timestamp": 1790737869188,
+    "isRiskFree": false
   }
 }
