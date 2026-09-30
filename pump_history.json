@@ -368,5 +368,15 @@
     "openTime": "2026-09-30T01:34:56.919Z",
     "closeTime": "2026-09-30T15:26:15.522Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ICPUSDT",
+    "type": "BUY",
+    "entryPrice": 3.435,
+    "exitPrice": 3.342,
+    "pnlPercent": -2.71,
+    "openTime": "2026-09-30T17:42:54.003Z",
+    "closeTime": "2026-09-30T20:40:19.923Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

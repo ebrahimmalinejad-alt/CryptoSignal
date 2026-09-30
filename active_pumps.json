@@ -55,13 +55,6 @@
     "timestamp": 1790789868096,
     "isRiskFree": false
   },
-  "ICPUSDT": {
-    "symbol": "ICPUSDT",
-    "entryPrice": 3.435,
-    "openTime": "2026-09-30T17:42:54.003Z",
-    "timestamp": 1790790174003,
-    "isRiskFree": false
-  },
   "ASTERUSDT": {
     "symbol": "ASTERUSDT",
     "entryPrice": 0.7575,
