@@ -76,13 +76,6 @@
     "timestamp": 1790741510029,
     "isRiskFree": true
   },
-  "UNIUSDT": {
-    "symbol": "UNIUSDT",
-    "entryPrice": 8.829,
-    "openTime": "2026-09-30T05:27:36.768Z",
-    "timestamp": 1790746056768,
-    "isRiskFree": true
-  },
   "AVAXUSDT": {
     "symbol": "AVAXUSDT",
     "entryPrice": 11.205,
