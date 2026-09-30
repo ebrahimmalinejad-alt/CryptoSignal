@@ -268,5 +268,25 @@
     "openTime": "2026-09-29T09:51:00.820Z",
     "closeTime": "2026-09-30T14:20:37.921Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ARBUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2042,
+    "exitPrice": 0.2035,
+    "pnlPercent": -0.34,
+    "openTime": "2026-09-29T23:33:42.990Z",
+    "closeTime": "2026-09-30T14:25:41.789Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "XRPUSDT",
+    "type": "BUY",
+    "entryPrice": 1.5026,
+    "exitPrice": 1.5009,
+    "pnlPercent": -0.11,
+    "openTime": "2026-09-30T05:32:41.075Z",
+    "closeTime": "2026-09-30T14:25:41.789Z",
+    "reason": "Breakeven Stop"
   }
 ]

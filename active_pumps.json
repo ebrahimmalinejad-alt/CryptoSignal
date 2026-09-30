@@ -41,13 +41,6 @@
     "timestamp": 1790723609145,
     "isRiskFree": true
   },
-  "ARBUSDT": {
-    "symbol": "ARBUSDT",
-    "entryPrice": 0.2042,
-    "openTime": "2026-09-29T23:33:42.990Z",
-    "timestamp": 1790724822990,
-    "isRiskFree": true
-  },
   "PAXGUSDT": {
     "symbol": "PAXGUSDT",
     "entryPrice": 4186.76,
@@ -88,13 +81,6 @@
     "entryPrice": 8.829,
     "openTime": "2026-09-30T05:27:36.768Z",
     "timestamp": 1790746056768,
-    "isRiskFree": true
-  },
-  "XRPUSDT": {
-    "symbol": "XRPUSDT",
-    "entryPrice": 1.5026,
-    "openTime": "2026-09-30T05:32:41.075Z",
-    "timestamp": 1790746361075,
     "isRiskFree": true
   },
   "AVAXUSDT": {
