@@ -125,13 +125,6 @@
     "timestamp": 1790751238947,
     "isRiskFree": true
   },
-  "ICPUSDT": {
-    "symbol": "ICPUSDT",
-    "entryPrice": 3.456,
-    "openTime": "2026-09-30T08:34:52.810Z",
-    "timestamp": 1790757292810,
-    "isRiskFree": true
-  },
   "ENAUSDT": {
     "symbol": "ENAUSDT",
     "entryPrice": 0.26,
