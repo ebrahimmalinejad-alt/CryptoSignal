@@ -25,7 +25,7 @@
     "entryPrice": 120.07,
     "openTime": "2026-09-29T09:51:00.820Z",
     "timestamp": 1790675460820,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "SPCXBUSDT": {
     "symbol": "SPCXBUSDT",
@@ -137,13 +137,6 @@
     "entryPrice": 3.456,
     "openTime": "2026-09-30T08:34:52.810Z",
     "timestamp": 1790757292810,
-    "isRiskFree": true
-  },
-  "PENGUUSDT": {
-    "symbol": "PENGUUSDT",
-    "entryPrice": 0.009959,
-    "openTime": "2026-09-30T09:30:25.200Z",
-    "timestamp": 1790760625200,
     "isRiskFree": true
   },
   "ENAUSDT": {

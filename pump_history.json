@@ -218,5 +218,15 @@
     "openTime": "2026-09-30T01:34:59.535Z",
     "closeTime": "2026-09-30T07:14:11.194Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "PENGUUSDT",
+    "type": "BUY",
+    "entryPrice": 0.009959,
+    "exitPrice": 0.010465,
+    "pnlPercent": 5.08,
+    "openTime": "2026-09-30T09:30:25.200Z",
+    "closeTime": "2026-09-30T13:09:55.390Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
