@@ -138,5 +138,12 @@
     "openTime": "2026-09-30T08:34:52.810Z",
     "timestamp": 1790757292810,
     "isRiskFree": false
+  },
+  "PENGUUSDT": {
+    "symbol": "PENGUUSDT",
+    "entryPrice": 0.009959,
+    "openTime": "2026-09-30T09:30:25.200Z",
+    "timestamp": 1790760625200,
+    "isRiskFree": false
   }
 }
