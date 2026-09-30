@@ -208,5 +208,15 @@
     "openTime": "2026-09-29T21:42:18.646Z",
     "closeTime": "2026-09-30T06:33:42.475Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "XPLUSDT",
+    "type": "BUY",
+    "entryPrice": 0.09713,
+    "exitPrice": 0.09439,
+    "pnlPercent": -2.82,
+    "openTime": "2026-09-30T01:34:59.535Z",
+    "closeTime": "2026-09-30T07:14:11.194Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

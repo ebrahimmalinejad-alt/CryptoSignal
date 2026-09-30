@@ -76,13 +76,6 @@
     "timestamp": 1790732096919,
     "isRiskFree": false
   },
-  "XPLUSDT": {
-    "symbol": "XPLUSDT",
-    "entryPrice": 0.09713,
-    "openTime": "2026-09-30T01:34:59.535Z",
-    "timestamp": 1790732099535,
-    "isRiskFree": false
-  },
   "DASHUSDT": {
     "symbol": "DASHUSDT",
     "entryPrice": 61,
