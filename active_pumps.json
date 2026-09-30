@@ -18,7 +18,7 @@
     "entryPrice": 0.09478,
     "openTime": "2026-09-29T08:09:55.795Z",
     "timestamp": 1790669395795,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "SOLUSDT": {
     "symbol": "SOLUSDT",
@@ -46,14 +46,14 @@
     "entryPrice": 0.0000043,
     "openTime": "2026-09-29T23:13:29.145Z",
     "timestamp": 1790723609145,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "ARBUSDT": {
     "symbol": "ARBUSDT",
     "entryPrice": 0.2042,
     "openTime": "2026-09-29T23:33:42.990Z",
     "timestamp": 1790724822990,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "PAXGUSDT": {
     "symbol": "PAXGUSDT",
@@ -74,14 +74,14 @@
     "entryPrice": 1418.58,
     "openTime": "2026-09-30T01:34:56.919Z",
     "timestamp": 1790732096919,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "DASHUSDT": {
     "symbol": "DASHUSDT",
     "entryPrice": 61,
     "openTime": "2026-09-30T03:11:09.188Z",
     "timestamp": 1790737869188,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "SUIUSDT": {
     "symbol": "SUIUSDT",
@@ -102,7 +102,7 @@
     "entryPrice": 8.829,
     "openTime": "2026-09-30T05:27:36.768Z",
     "timestamp": 1790746056768,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "XRPUSDT": {
     "symbol": "XRPUSDT",
@@ -130,7 +130,7 @@
     "entryPrice": 159.71,
     "openTime": "2026-09-30T06:53:58.947Z",
     "timestamp": 1790751238947,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "ICPUSDT": {
     "symbol": "ICPUSDT",
