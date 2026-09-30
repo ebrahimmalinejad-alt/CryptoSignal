@@ -27,13 +27,6 @@
     "timestamp": 1790718442806,
     "isRiskFree": false
   },
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.0000043,
-    "openTime": "2026-09-29T23:13:29.145Z",
-    "timestamp": 1790723609145,
-    "isRiskFree": true
-  },
   "PAXGUSDT": {
     "symbol": "PAXGUSDT",
     "entryPrice": 4186.76,
@@ -47,13 +40,6 @@
     "openTime": "2026-09-30T00:09:05.443Z",
     "timestamp": 1790726945443,
     "isRiskFree": false
-  },
-  "ZECUSDT": {
-    "symbol": "ZECUSDT",
-    "entryPrice": 1418.58,
-    "openTime": "2026-09-30T01:34:56.919Z",
-    "timestamp": 1790732096919,
-    "isRiskFree": true
   },
   "TRUMPUSDT": {
     "symbol": "TRUMPUSDT",

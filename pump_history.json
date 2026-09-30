@@ -348,5 +348,25 @@
     "openTime": "2026-09-30T06:53:58.947Z",
     "closeTime": "2026-09-30T14:35:50.255Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.0000043,
+    "exitPrice": 0.00000429,
+    "pnlPercent": -0.23,
+    "openTime": "2026-09-29T23:13:29.145Z",
+    "closeTime": "2026-09-30T15:26:15.522Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ZECUSDT",
+    "type": "BUY",
+    "entryPrice": 1418.58,
+    "exitPrice": 1410.48,
+    "pnlPercent": -0.57,
+    "openTime": "2026-09-30T01:34:56.919Z",
+    "closeTime": "2026-09-30T15:26:15.522Z",
+    "reason": "Breakeven Stop"
   }
 ]
