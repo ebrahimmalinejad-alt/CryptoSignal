@@ -61,5 +61,12 @@
     "openTime": "2026-09-30T17:42:54.003Z",
     "timestamp": 1790790174003,
     "isRiskFree": false
+  },
+  "ASTERUSDT": {
+    "symbol": "ASTERUSDT",
+    "entryPrice": 0.7575,
+    "openTime": "2026-09-30T19:39:46.156Z",
+    "timestamp": 1790797186156,
+    "isRiskFree": false
   }
 }
