@@ -228,5 +228,15 @@
     "openTime": "2026-09-30T09:30:25.200Z",
     "closeTime": "2026-09-30T13:09:55.390Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "VTHOUSDT",
+    "type": "BUY",
+    "entryPrice": 0.000693,
+    "exitPrice": 0.00069,
+    "pnlPercent": -0.43,
+    "openTime": "2026-09-30T05:27:34.936Z",
+    "closeTime": "2026-09-30T13:20:04.654Z",
+    "reason": "Breakeven Stop"
   }
 ]
