@@ -88,7 +88,7 @@
     "entryPrice": 88.63,
     "openTime": "2026-10-01T07:26:48.657Z",
     "timestamp": 1790839608657,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "ENAUSDT": {
     "symbol": "ENAUSDT",
