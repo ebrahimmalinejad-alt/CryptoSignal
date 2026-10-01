@@ -60,7 +60,7 @@
     "entryPrice": 0.2249,
     "openTime": "2026-09-30T19:54:55.509Z",
     "timestamp": 1790798095509,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "HBARUSDT": {
     "symbol": "HBARUSDT",
