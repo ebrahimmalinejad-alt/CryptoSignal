@@ -68,5 +68,12 @@
     "openTime": "2026-09-30T22:06:04.346Z",
     "timestamp": 1790805964346,
     "isRiskFree": false
+  },
+  "TRXUSDT": {
+    "symbol": "TRXUSDT",
+    "entryPrice": 0.3381,
+    "openTime": "2026-10-01T00:08:33.752Z",
+    "timestamp": 1790813313752,
+    "isRiskFree": false
   }
 }
