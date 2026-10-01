@@ -518,5 +518,15 @@
     "openTime": "2026-10-01T11:48:53.090Z",
     "closeTime": "2026-10-01T14:57:24.859Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "HBARUSDT",
+    "type": "BUY",
+    "entryPrice": 0.10535,
+    "exitPrice": 0.10258,
+    "pnlPercent": -2.63,
+    "openTime": "2026-09-30T22:06:04.346Z",
+    "closeTime": "2026-10-01T16:38:17.389Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

@@ -41,13 +41,6 @@
     "timestamp": 1790726945443,
     "isRiskFree": false
   },
-  "HBARUSDT": {
-    "symbol": "HBARUSDT",
-    "entryPrice": 0.10535,
-    "openTime": "2026-09-30T22:06:04.346Z",
-    "timestamp": 1790805964346,
-    "isRiskFree": false
-  },
   "TRXUSDT": {
     "symbol": "TRXUSDT",
     "entryPrice": 0.3381,
