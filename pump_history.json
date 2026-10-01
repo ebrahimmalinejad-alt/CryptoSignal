@@ -418,5 +418,35 @@
     "openTime": "2026-10-01T02:04:33.002Z",
     "closeTime": "2026-10-01T05:36:50.539Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "XLMUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2249,
+    "exitPrice": 0.2237,
+    "pnlPercent": -0.53,
+    "openTime": "2026-09-30T19:54:55.509Z",
+    "closeTime": "2026-10-01T07:26:45.781Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ADAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2485,
+    "exitPrice": 0.2482,
+    "pnlPercent": -0.12,
+    "openTime": "2026-10-01T01:19:09.547Z",
+    "closeTime": "2026-10-01T07:26:45.781Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ZECUSDT",
+    "type": "BUY",
+    "entryPrice": 1447.1,
+    "exitPrice": 1409.65,
+    "pnlPercent": -2.59,
+    "openTime": "2026-10-01T06:31:11.086Z",
+    "closeTime": "2026-10-01T07:26:45.781Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

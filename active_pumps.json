@@ -48,13 +48,6 @@
     "timestamp": 1790797186156,
     "isRiskFree": false
   },
-  "XLMUSDT": {
-    "symbol": "XLMUSDT",
-    "entryPrice": 0.2249,
-    "openTime": "2026-09-30T19:54:55.509Z",
-    "timestamp": 1790798095509,
-    "isRiskFree": true
-  },
   "HBARUSDT": {
     "symbol": "HBARUSDT",
     "entryPrice": 0.10535,
@@ -68,13 +61,6 @@
     "openTime": "2026-10-01T00:08:33.752Z",
     "timestamp": 1790813313752,
     "isRiskFree": false
-  },
-  "ADAUSDT": {
-    "symbol": "ADAUSDT",
-    "entryPrice": 0.2485,
-    "openTime": "2026-10-01T01:19:09.547Z",
-    "timestamp": 1790817549547,
-    "isRiskFree": true
   },
   "DOGEUSDT": {
     "symbol": "DOGEUSDT",
@@ -102,13 +88,6 @@
     "entryPrice": 308.3,
     "openTime": "2026-10-01T05:16:37.403Z",
     "timestamp": 1790831797403,
-    "isRiskFree": false
-  },
-  "ZECUSDT": {
-    "symbol": "ZECUSDT",
-    "entryPrice": 1447.1,
-    "openTime": "2026-10-01T06:31:11.086Z",
-    "timestamp": 1790836271086,
     "isRiskFree": false
   }
 }
