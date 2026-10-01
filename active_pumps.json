@@ -83,13 +83,6 @@
     "timestamp": 1790817551432,
     "isRiskFree": false
   },
-  "NEARUSDT": {
-    "symbol": "NEARUSDT",
-    "entryPrice": 5.209,
-    "openTime": "2026-10-01T02:04:33.002Z",
-    "timestamp": 1790820273002,
-    "isRiskFree": true
-  },
   "AAVEUSDT": {
     "symbol": "AAVEUSDT",
     "entryPrice": 162.78,
