@@ -448,5 +448,15 @@
     "openTime": "2026-10-01T06:31:11.086Z",
     "closeTime": "2026-10-01T07:26:45.781Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ASTERUSDT",
+    "type": "BUY",
+    "entryPrice": 0.7575,
+    "exitPrice": 0.7355,
+    "pnlPercent": -2.9,
+    "openTime": "2026-09-30T19:39:46.156Z",
+    "closeTime": "2026-10-01T10:03:04.561Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
