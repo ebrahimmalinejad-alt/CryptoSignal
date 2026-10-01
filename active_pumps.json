@@ -89,5 +89,12 @@
     "openTime": "2026-10-01T02:04:33.002Z",
     "timestamp": 1790820273002,
     "isRiskFree": false
+  },
+  "AAVEUSDT": {
+    "symbol": "AAVEUSDT",
+    "entryPrice": 162.78,
+    "openTime": "2026-10-01T02:34:50.411Z",
+    "timestamp": 1790822090411,
+    "isRiskFree": false
   }
 }
