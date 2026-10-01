@@ -88,6 +88,6 @@
     "entryPrice": 165.47,
     "openTime": "2026-10-01T13:51:44.960Z",
     "timestamp": 1790862704960,
-    "isRiskFree": false
+    "isRiskFree": true
   }
 }
