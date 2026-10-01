@@ -62,13 +62,6 @@
     "timestamp": 1790817551432,
     "isRiskFree": false
   },
-  "SNDKBUSDT": {
-    "symbol": "SNDKBUSDT",
-    "entryPrice": 1774.75,
-    "openTime": "2026-10-01T04:00:45.319Z",
-    "timestamp": 1790827245319,
-    "isRiskFree": false
-  },
   "HYPEUSDT": {
     "symbol": "HYPEUSDT",
     "entryPrice": 88.63,
