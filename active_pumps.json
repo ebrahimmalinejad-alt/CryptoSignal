@@ -69,13 +69,6 @@
     "timestamp": 1790855333090,
     "isRiskFree": false
   },
-  "SUIUSDT": {
-    "symbol": "SUIUSDT",
-    "entryPrice": 1.1711,
-    "openTime": "2026-10-01T12:04:02.229Z",
-    "timestamp": 1790856242229,
-    "isRiskFree": false
-  },
   "AAVEUSDT": {
     "symbol": "AAVEUSDT",
     "entryPrice": 165.47,
