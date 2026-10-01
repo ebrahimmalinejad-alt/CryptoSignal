@@ -41,13 +41,6 @@
     "timestamp": 1790726945443,
     "isRiskFree": false
   },
-  "TRUMPUSDT": {
-    "symbol": "TRUMPUSDT",
-    "entryPrice": 2.016,
-    "openTime": "2026-09-30T06:48:54.683Z",
-    "timestamp": 1790750934683,
-    "isRiskFree": true
-  },
   "ASTERUSDT": {
     "symbol": "ASTERUSDT",
     "entryPrice": 0.7575,
