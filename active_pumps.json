@@ -62,13 +62,6 @@
     "timestamp": 1790817551432,
     "isRiskFree": false
   },
-  "ENAUSDT": {
-    "symbol": "ENAUSDT",
-    "entryPrice": 0.2591,
-    "openTime": "2026-10-01T11:48:53.090Z",
-    "timestamp": 1790855333090,
-    "isRiskFree": false
-  },
   "AAVEUSDT": {
     "symbol": "AAVEUSDT",
     "entryPrice": 165.47,
