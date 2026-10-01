@@ -18,7 +18,7 @@
     "entryPrice": 149.73,
     "openTime": "2026-09-29T19:50:56.070Z",
     "timestamp": 1790711456070,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "BCHUSDT": {
     "symbol": "BCHUSDT",
