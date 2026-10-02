@@ -145,5 +145,12 @@
     "openTime": "2026-10-02T01:54:42.883Z",
     "timestamp": 1790906082883,
     "isRiskFree": false
+  },
+  "AVAXUSDT": {
+    "symbol": "AVAXUSDT",
+    "entryPrice": 11.029,
+    "openTime": "2026-10-02T02:14:54.901Z",
+    "timestamp": 1790907294901,
+    "isRiskFree": false
   }
 }
