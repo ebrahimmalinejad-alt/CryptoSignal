@@ -648,5 +648,25 @@
     "openTime": "2026-10-02T08:19:56.479Z",
     "closeTime": "2026-10-02T14:35:27.040Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "CRCLBUSDT",
+    "type": "BUY",
+    "entryPrice": 84.37,
+    "exitPrice": 83.86,
+    "pnlPercent": -0.6,
+    "openTime": "2026-10-01T17:28:43.096Z",
+    "closeTime": "2026-10-02T14:55:40.237Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "MUBUSDT",
+    "type": "BUY",
+    "entryPrice": 1083.8,
+    "exitPrice": 1081.93,
+    "pnlPercent": -0.17,
+    "openTime": "2026-10-01T17:43:55.967Z",
+    "closeTime": "2026-10-02T14:55:40.237Z",
+    "reason": "Breakeven Stop"
   }
 ]
