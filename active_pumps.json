@@ -88,14 +88,14 @@
     "entryPrice": 0.00000442,
     "openTime": "2026-10-01T21:27:51.042Z",
     "timestamp": 1790890071042,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "UNIUSDT": {
     "symbol": "UNIUSDT",
     "entryPrice": 9.005,
     "openTime": "2026-10-01T21:43:01.337Z",
     "timestamp": 1790890981337,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "NVDABUSDT": {
     "symbol": "NVDABUSDT",
@@ -116,7 +116,7 @@
     "entryPrice": 84694.99,
     "openTime": "2026-10-01T22:43:41.988Z",
     "timestamp": 1790894621988,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "FETUSDT": {
     "symbol": "FETUSDT",
@@ -144,7 +144,7 @@
     "entryPrice": 119.42,
     "openTime": "2026-10-02T01:54:42.883Z",
     "timestamp": 1790906082883,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "AVAXUSDT": {
     "symbol": "AVAXUSDT",
