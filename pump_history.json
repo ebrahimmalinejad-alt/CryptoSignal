@@ -798,5 +798,25 @@
     "openTime": "2026-10-02T08:19:54.360Z",
     "closeTime": "2026-10-02T17:42:35.586Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ONDOUSDT",
+    "type": "BUY",
+    "entryPrice": 0.5095,
+    "exitPrice": 0.4938,
+    "pnlPercent": -3.08,
+    "openTime": "2026-10-02T12:34:11.683Z",
+    "closeTime": "2026-10-02T18:19:10.474Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "XPLUSDT",
+    "type": "BUY",
+    "entryPrice": 0.09753,
+    "exitPrice": 0.0947,
+    "pnlPercent": -2.9,
+    "openTime": "2026-10-02T17:17:20.509Z",
+    "closeTime": "2026-10-02T18:19:10.474Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
