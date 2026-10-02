@@ -578,5 +578,15 @@
     "openTime": "2026-10-01T22:33:35.626Z",
     "closeTime": "2026-10-02T05:01:09.492Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "NIGHTUSDT",
+    "type": "BUY",
+    "entryPrice": 0.04197,
+    "exitPrice": 0.04424,
+    "pnlPercent": 5.41,
+    "openTime": "2026-10-02T07:49:33.987Z",
+    "closeTime": "2026-10-02T09:35:39.155Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
