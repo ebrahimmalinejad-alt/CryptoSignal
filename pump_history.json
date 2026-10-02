@@ -588,5 +588,35 @@
     "openTime": "2026-10-02T07:49:33.987Z",
     "closeTime": "2026-10-02T09:35:39.155Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "UNIUSDT",
+    "type": "BUY",
+    "entryPrice": 9.005,
+    "exitPrice": 9.005,
+    "pnlPercent": 0,
+    "openTime": "2026-10-01T21:43:01.337Z",
+    "closeTime": "2026-10-02T11:52:00.468Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "FETUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2308,
+    "exitPrice": 0.2301,
+    "pnlPercent": -0.3,
+    "openTime": "2026-10-01T23:39:09.200Z",
+    "closeTime": "2026-10-02T11:52:00.468Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.00000455,
+    "exitPrice": 0.00000443,
+    "pnlPercent": -2.64,
+    "openTime": "2026-10-02T07:04:08.098Z",
+    "closeTime": "2026-10-02T11:52:00.468Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
