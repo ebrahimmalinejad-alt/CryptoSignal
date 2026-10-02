@@ -618,5 +618,15 @@
     "openTime": "2026-10-02T07:04:08.098Z",
     "closeTime": "2026-10-02T11:52:00.468Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SNDKBUSDT",
+    "type": "BUY",
+    "entryPrice": 1782.38,
+    "exitPrice": 1730.67,
+    "pnlPercent": -2.9,
+    "openTime": "2026-10-01T23:44:16.230Z",
+    "closeTime": "2026-10-02T13:34:46.903Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

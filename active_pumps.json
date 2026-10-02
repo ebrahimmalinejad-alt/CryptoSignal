@@ -60,7 +60,7 @@
     "entryPrice": 84.37,
     "openTime": "2026-10-01T17:28:43.096Z",
     "timestamp": 1790875723096,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "LTCUSDT": {
     "symbol": "LTCUSDT",
@@ -89,13 +89,6 @@
     "openTime": "2026-10-01T22:43:41.988Z",
     "timestamp": 1790894621988,
     "isRiskFree": true
-  },
-  "SNDKBUSDT": {
-    "symbol": "SNDKBUSDT",
-    "entryPrice": 1782.38,
-    "openTime": "2026-10-01T23:44:16.230Z",
-    "timestamp": 1790898256230,
-    "isRiskFree": false
   },
   "TAOUSDT": {
     "symbol": "TAOUSDT",
