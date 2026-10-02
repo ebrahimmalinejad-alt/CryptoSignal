@@ -46,7 +46,7 @@
     "entryPrice": 0.09496,
     "openTime": "2026-10-01T01:19:11.432Z",
     "timestamp": 1790817551432,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "HYPEUSDT": {
     "symbol": "HYPEUSDT",
