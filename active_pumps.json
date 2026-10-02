@@ -48,13 +48,6 @@
     "timestamp": 1790817551432,
     "isRiskFree": false
   },
-  "AAVEUSDT": {
-    "symbol": "AAVEUSDT",
-    "entryPrice": 165.47,
-    "openTime": "2026-10-01T13:51:44.960Z",
-    "timestamp": 1790862704960,
-    "isRiskFree": true
-  },
   "MSTRBUSDT": {
     "symbol": "MSTRBUSDT",
     "entryPrice": 158.41,
