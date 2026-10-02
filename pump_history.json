@@ -698,5 +698,15 @@
     "openTime": "2026-10-02T12:34:07.074Z",
     "closeTime": "2026-10-02T16:11:32.580Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "BCHUSDT",
+    "type": "BUY",
+    "entryPrice": 310.6,
+    "exitPrice": 310.5,
+    "pnlPercent": -0.03,
+    "openTime": "2026-09-29T21:47:22.806Z",
+    "closeTime": "2026-10-02T16:57:02.710Z",
+    "reason": "Breakeven Stop"
   }
 ]

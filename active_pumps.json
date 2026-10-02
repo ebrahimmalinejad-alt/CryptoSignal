@@ -13,13 +13,6 @@
     "timestamp": 1790667574462,
     "isRiskFree": false
   },
-  "BCHUSDT": {
-    "symbol": "BCHUSDT",
-    "entryPrice": 310.6,
-    "openTime": "2026-09-29T21:47:22.806Z",
-    "timestamp": 1790718442806,
-    "isRiskFree": true
-  },
   "PAXGUSDT": {
     "symbol": "PAXGUSDT",
     "entryPrice": 4186.76,
