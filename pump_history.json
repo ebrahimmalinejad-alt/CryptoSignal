@@ -718,5 +718,15 @@
     "openTime": "2026-10-02T02:14:54.901Z",
     "closeTime": "2026-10-02T17:17:17.836Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "type": "BUY",
+    "entryPrice": 84694.99,
+    "exitPrice": 84645.25,
+    "pnlPercent": -0.06,
+    "openTime": "2026-10-01T22:43:41.988Z",
+    "closeTime": "2026-10-02T17:27:25.900Z",
+    "reason": "Breakeven Stop"
   }
 ]
