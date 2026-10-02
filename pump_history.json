@@ -568,5 +568,15 @@
     "openTime": "2026-10-01T21:27:51.042Z",
     "closeTime": "2026-10-02T04:51:03.167Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "ZROUSDT",
+    "type": "BUY",
+    "entryPrice": 1.784,
+    "exitPrice": 1.88,
+    "pnlPercent": 5.38,
+    "openTime": "2026-10-01T22:33:35.626Z",
+    "closeTime": "2026-10-02T05:01:09.492Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
