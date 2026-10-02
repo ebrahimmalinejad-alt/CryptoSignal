@@ -146,13 +146,6 @@
     "timestamp": 1790944447074,
     "isRiskFree": false
   },
-  "SUIUSDT": {
-    "symbol": "SUIUSDT",
-    "entryPrice": 1.1882,
-    "openTime": "2026-10-02T12:34:08.697Z",
-    "timestamp": 1790944448697,
-    "isRiskFree": true
-  },
   "PEPEUSDT": {
     "symbol": "PEPEUSDT",
     "entryPrice": 0.00000446,
