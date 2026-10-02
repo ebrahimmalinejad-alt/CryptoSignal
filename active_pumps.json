@@ -34,13 +34,6 @@
     "timestamp": 1790813313752,
     "isRiskFree": false
   },
-  "HYPEUSDT": {
-    "symbol": "HYPEUSDT",
-    "entryPrice": 88.71,
-    "openTime": "2026-10-01T15:02:30.288Z",
-    "timestamp": 1790866950288,
-    "isRiskFree": true
-  },
   "LTCUSDT": {
     "symbol": "LTCUSDT",
     "entryPrice": 67.86,
@@ -54,27 +47,6 @@
     "openTime": "2026-10-01T22:03:15.119Z",
     "timestamp": 1790892195119,
     "isRiskFree": true
-  },
-  "TAOUSDT": {
-    "symbol": "TAOUSDT",
-    "entryPrice": 305.1,
-    "openTime": "2026-10-02T00:24:02.598Z",
-    "timestamp": 1790900642598,
-    "isRiskFree": true
-  },
-  "SOLUSDT": {
-    "symbol": "SOLUSDT",
-    "entryPrice": 119.42,
-    "openTime": "2026-10-02T01:54:42.883Z",
-    "timestamp": 1790906082883,
-    "isRiskFree": true
-  },
-  "ADAUSDT": {
-    "symbol": "ADAUSDT",
-    "entryPrice": 0.2568,
-    "openTime": "2026-10-02T08:19:54.360Z",
-    "timestamp": 1790929194360,
-    "isRiskFree": false
   },
   "ONDOUSDT": {
     "symbol": "ONDOUSDT",

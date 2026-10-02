@@ -758,5 +758,45 @@
     "openTime": "2026-10-02T12:34:13.136Z",
     "closeTime": "2026-10-02T17:32:29.608Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "HYPEUSDT",
+    "type": "BUY",
+    "entryPrice": 88.71,
+    "exitPrice": 88.45,
+    "pnlPercent": -0.29,
+    "openTime": "2026-10-01T15:02:30.288Z",
+    "closeTime": "2026-10-02T17:42:35.586Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "TAOUSDT",
+    "type": "BUY",
+    "entryPrice": 305.1,
+    "exitPrice": 304.2,
+    "pnlPercent": -0.29,
+    "openTime": "2026-10-02T00:24:02.598Z",
+    "closeTime": "2026-10-02T17:42:35.586Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "SOLUSDT",
+    "type": "BUY",
+    "entryPrice": 119.42,
+    "exitPrice": 119.3,
+    "pnlPercent": -0.1,
+    "openTime": "2026-10-02T01:54:42.883Z",
+    "closeTime": "2026-10-02T17:42:35.586Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ADAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2568,
+    "exitPrice": 0.2499,
+    "pnlPercent": -2.69,
+    "openTime": "2026-10-02T08:19:54.360Z",
+    "closeTime": "2026-10-02T17:42:35.586Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
