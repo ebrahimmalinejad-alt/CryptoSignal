@@ -678,5 +678,15 @@
     "openTime": "2026-10-01T01:19:11.432Z",
     "closeTime": "2026-10-02T15:25:59.755Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "XRPUSDT",
+    "type": "BUY",
+    "entryPrice": 1.5443,
+    "exitPrice": 1.5047,
+    "pnlPercent": -2.56,
+    "openTime": "2026-10-02T12:34:04.077Z",
+    "closeTime": "2026-10-02T15:41:09.730Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

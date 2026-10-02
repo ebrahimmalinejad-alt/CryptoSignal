@@ -97,13 +97,6 @@
     "timestamp": 1790929194360,
     "isRiskFree": false
   },
-  "XRPUSDT": {
-    "symbol": "XRPUSDT",
-    "entryPrice": 1.5443,
-    "openTime": "2026-10-02T12:34:04.077Z",
-    "timestamp": 1790944444077,
-    "isRiskFree": false
-  },
   "XLMUSDT": {
     "symbol": "XLMUSDT",
     "entryPrice": 0.2255,
