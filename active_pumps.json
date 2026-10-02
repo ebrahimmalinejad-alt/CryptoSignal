@@ -145,5 +145,12 @@
     "openTime": "2026-10-02T12:34:05.639Z",
     "timestamp": 1790944445639,
     "isRiskFree": false
+  },
+  "HBARUSDT": {
+    "symbol": "HBARUSDT",
+    "entryPrice": 0.10636,
+    "openTime": "2026-10-02T12:34:07.074Z",
+    "timestamp": 1790944447074,
+    "isRiskFree": false
   }
 }
