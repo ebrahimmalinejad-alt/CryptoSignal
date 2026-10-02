@@ -138,5 +138,12 @@
     "openTime": "2026-10-02T07:04:08.098Z",
     "timestamp": 1790924648098,
     "isRiskFree": false
+  },
+  "NIGHTUSDT": {
+    "symbol": "NIGHTUSDT",
+    "entryPrice": 0.04197,
+    "openTime": "2026-10-02T07:49:33.987Z",
+    "timestamp": 1790927373987,
+    "isRiskFree": false
   }
 }
