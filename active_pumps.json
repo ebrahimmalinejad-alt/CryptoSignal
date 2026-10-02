@@ -138,5 +138,12 @@
     "openTime": "2026-10-02T12:34:04.077Z",
     "timestamp": 1790944444077,
     "isRiskFree": false
+  },
+  "XLMUSDT": {
+    "symbol": "XLMUSDT",
+    "entryPrice": 0.2255,
+    "openTime": "2026-10-02T12:34:05.639Z",
+    "timestamp": 1790944445639,
+    "isRiskFree": false
   }
 }
