@@ -638,5 +638,15 @@
     "openTime": "2026-10-02T12:34:08.697Z",
     "closeTime": "2026-10-02T14:10:10.966Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "PENGUUSDT",
+    "type": "BUY",
+    "entryPrice": 0.01001,
+    "exitPrice": 0.009758,
+    "pnlPercent": -2.52,
+    "openTime": "2026-10-02T08:19:56.479Z",
+    "closeTime": "2026-10-02T14:35:27.040Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

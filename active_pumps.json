@@ -118,13 +118,6 @@
     "timestamp": 1790929194360,
     "isRiskFree": false
   },
-  "PENGUUSDT": {
-    "symbol": "PENGUUSDT",
-    "entryPrice": 0.01001,
-    "openTime": "2026-10-02T08:19:56.479Z",
-    "timestamp": 1790929196479,
-    "isRiskFree": false
-  },
   "XRPUSDT": {
     "symbol": "XRPUSDT",
     "entryPrice": 1.5443,
