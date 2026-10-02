@@ -41,13 +41,6 @@
     "timestamp": 1790813313752,
     "isRiskFree": false
   },
-  "DOGEUSDT": {
-    "symbol": "DOGEUSDT",
-    "entryPrice": 0.09496,
-    "openTime": "2026-10-01T01:19:11.432Z",
-    "timestamp": 1790817551432,
-    "isRiskFree": true
-  },
   "HYPEUSDT": {
     "symbol": "HYPEUSDT",
     "entryPrice": 88.71,
