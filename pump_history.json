@@ -728,5 +728,35 @@
     "openTime": "2026-10-01T22:43:41.988Z",
     "closeTime": "2026-10-02T17:27:25.900Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "XLMUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2255,
+    "exitPrice": 0.2194,
+    "pnlPercent": -2.71,
+    "openTime": "2026-10-02T12:34:05.639Z",
+    "closeTime": "2026-10-02T17:32:29.608Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.00000446,
+    "exitPrice": 0.00000434,
+    "pnlPercent": -2.69,
+    "openTime": "2026-10-02T12:34:10.122Z",
+    "closeTime": "2026-10-02T17:32:29.608Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "PUMPUSDT",
+    "type": "BUY",
+    "entryPrice": 0.005889,
+    "exitPrice": 0.005883,
+    "pnlPercent": -0.1,
+    "openTime": "2026-10-02T12:34:13.136Z",
+    "closeTime": "2026-10-02T17:32:29.608Z",
+    "reason": "Breakeven Stop"
   }
 ]
