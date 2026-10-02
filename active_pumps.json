@@ -138,5 +138,12 @@
     "openTime": "2026-10-02T00:24:02.598Z",
     "timestamp": 1790900642598,
     "isRiskFree": false
+  },
+  "SOLUSDT": {
+    "symbol": "SOLUSDT",
+    "entryPrice": 119.42,
+    "openTime": "2026-10-02T01:54:42.883Z",
+    "timestamp": 1790906082883,
+    "isRiskFree": false
   }
 }
