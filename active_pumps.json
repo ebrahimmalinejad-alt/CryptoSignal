@@ -53,7 +53,7 @@
     "entryPrice": 179.49,
     "openTime": "2026-10-03T00:33:35.717Z",
     "timestamp": 1790987615717,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "HYPEUSDT": {
     "symbol": "HYPEUSDT",
