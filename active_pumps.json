@@ -89,5 +89,12 @@
     "openTime": "2026-10-03T20:24:44.269Z",
     "timestamp": 1791059084269,
     "isRiskFree": false
+  },
+  "TAOUSDT": {
+    "symbol": "TAOUSDT",
+    "entryPrice": 298.8,
+    "openTime": "2026-10-03T20:39:55.573Z",
+    "timestamp": 1791059995573,
+    "isRiskFree": false
   }
 }
