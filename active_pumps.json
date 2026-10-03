@@ -75,12 +75,5 @@
     "openTime": "2026-10-03T07:34:52.184Z",
     "timestamp": 1791012892184,
     "isRiskFree": false
-  },
-  "AXSUSDT": {
-    "symbol": "AXSUSDT",
-    "entryPrice": 1.246,
-    "openTime": "2026-10-03T07:39:57.478Z",
-    "timestamp": 1791013197478,
-    "isRiskFree": false
   }
 }

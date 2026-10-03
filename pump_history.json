@@ -838,5 +838,15 @@
     "openTime": "2026-10-03T07:34:54.062Z",
     "closeTime": "2026-10-03T10:06:08.955Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "AXSUSDT",
+    "type": "BUY",
+    "entryPrice": 1.246,
+    "exitPrice": 1.213,
+    "pnlPercent": -2.65,
+    "openTime": "2026-10-03T07:39:57.478Z",
+    "closeTime": "2026-10-03T10:41:28.233Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
