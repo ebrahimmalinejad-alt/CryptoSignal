@@ -858,5 +858,15 @@
     "openTime": "2026-10-03T00:33:35.717Z",
     "closeTime": "2026-10-03T15:06:49.943Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "TRUMPUSDT",
+    "type": "BUY",
+    "entryPrice": 2.096,
+    "exitPrice": 2.042,
+    "pnlPercent": -2.58,
+    "openTime": "2026-10-03T03:14:53.666Z",
+    "closeTime": "2026-10-03T16:27:24.993Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
