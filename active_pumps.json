@@ -62,13 +62,6 @@
     "timestamp": 1791012892184,
     "isRiskFree": false
   },
-  "UNIUSDT": {
-    "symbol": "UNIUSDT",
-    "entryPrice": 9.201,
-    "openTime": "2026-10-03T11:16:48.005Z",
-    "timestamp": 1791026208005,
-    "isRiskFree": false
-  },
   "SUIUSDT": {
     "symbol": "SUIUSDT",
     "entryPrice": 1.186,
