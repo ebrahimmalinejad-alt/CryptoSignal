@@ -68,5 +68,12 @@
     "openTime": "2026-10-03T14:56:44.454Z",
     "timestamp": 1791039404454,
     "isRiskFree": false
+  },
+  "FETUSDT": {
+    "symbol": "FETUSDT",
+    "entryPrice": 0.2261,
+    "openTime": "2026-10-03T19:59:24.875Z",
+    "timestamp": 1791057564875,
+    "isRiskFree": false
   }
 }
