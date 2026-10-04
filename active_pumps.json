@@ -104,13 +104,6 @@
     "timestamp": 1791087800469,
     "isRiskFree": false
   },
-  "AAVEUSDT": {
-    "symbol": "AAVEUSDT",
-    "entryPrice": 182.32,
-    "openTime": "2026-10-04T05:28:52.148Z",
-    "timestamp": 1791091732148,
-    "isRiskFree": false
-  },
   "ZECUSDT": {
     "symbol": "ZECUSDT",
     "entryPrice": 1341,
