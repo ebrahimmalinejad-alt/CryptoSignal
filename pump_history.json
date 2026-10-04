@@ -938,5 +938,15 @@
     "openTime": "2026-10-03T14:56:44.454Z",
     "closeTime": "2026-10-04T15:44:30.680Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "INJUSDT",
+    "type": "BUY",
+    "entryPrice": 7.61,
+    "exitPrice": 7.415,
+    "pnlPercent": -2.56,
+    "openTime": "2026-10-03T07:34:52.184Z",
+    "closeTime": "2026-10-04T18:13:50.528Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

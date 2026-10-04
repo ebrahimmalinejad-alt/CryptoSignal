@@ -55,13 +55,6 @@
     "timestamp": 1790990340838,
     "isRiskFree": false
   },
-  "INJUSDT": {
-    "symbol": "INJUSDT",
-    "entryPrice": 7.61,
-    "openTime": "2026-10-03T07:34:52.184Z",
-    "timestamp": 1791012892184,
-    "isRiskFree": false
-  },
   "DOGEUSDT": {
     "symbol": "DOGEUSDT",
     "entryPrice": 0.09326,
