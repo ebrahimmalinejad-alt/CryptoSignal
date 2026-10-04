@@ -118,13 +118,6 @@
     "timestamp": 1791098687546,
     "isRiskFree": false
   },
-  "ADAUSDT": {
-    "symbol": "ADAUSDT",
-    "entryPrice": 0.2482,
-    "openTime": "2026-10-04T15:04:11.510Z",
-    "timestamp": 1791126251510,
-    "isRiskFree": true
-  },
   "NEARUSDT": {
     "symbol": "NEARUSDT",
     "entryPrice": 4.826,
