@@ -104,13 +104,6 @@
     "timestamp": 1791077866307,
     "isRiskFree": false
   },
-  "MOVRUSDT": {
-    "symbol": "MOVRUSDT",
-    "entryPrice": 1.893,
-    "openTime": "2026-10-04T02:03:01.142Z",
-    "timestamp": 1791079381142,
-    "isRiskFree": true
-  },
   "AVAXUSDT": {
     "symbol": "AVAXUSDT",
     "entryPrice": 11.066,

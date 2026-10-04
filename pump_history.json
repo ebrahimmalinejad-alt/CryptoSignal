@@ -888,5 +888,15 @@
     "openTime": "2026-10-03T17:58:12.413Z",
     "closeTime": "2026-10-03T19:49:15.634Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "MOVRUSDT",
+    "type": "BUY",
+    "entryPrice": 1.893,
+    "exitPrice": 1.891,
+    "pnlPercent": -0.11,
+    "openTime": "2026-10-04T02:03:01.142Z",
+    "closeTime": "2026-10-04T05:59:07.466Z",
+    "reason": "Breakeven Stop"
   }
 ]
