@@ -131,5 +131,12 @@
     "openTime": "2026-10-04T04:03:09.906Z",
     "timestamp": 1791086589906,
     "isRiskFree": false
+  },
+  "ENAUSDT": {
+    "symbol": "ENAUSDT",
+    "entryPrice": 0.238,
+    "openTime": "2026-10-04T04:23:20.469Z",
+    "timestamp": 1791087800469,
+    "isRiskFree": false
   }
 }
