@@ -76,13 +76,6 @@
     "timestamp": 1791057564875,
     "isRiskFree": false
   },
-  "NEARUSDT": {
-    "symbol": "NEARUSDT",
-    "entryPrice": 4.781,
-    "openTime": "2026-10-03T20:04:30.326Z",
-    "timestamp": 1791057870326,
-    "isRiskFree": true
-  },
   "DOGEUSDT": {
     "symbol": "DOGEUSDT",
     "entryPrice": 0.09326,
