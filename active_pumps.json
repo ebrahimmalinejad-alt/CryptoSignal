@@ -62,13 +62,6 @@
     "timestamp": 1791012892184,
     "isRiskFree": false
   },
-  "SUIUSDT": {
-    "symbol": "SUIUSDT",
-    "entryPrice": 1.186,
-    "openTime": "2026-10-03T14:56:44.454Z",
-    "timestamp": 1791039404454,
-    "isRiskFree": true
-  },
   "DOGEUSDT": {
     "symbol": "DOGEUSDT",
     "entryPrice": 0.09326,
