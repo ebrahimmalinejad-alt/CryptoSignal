@@ -908,5 +908,25 @@
     "openTime": "2026-10-03T20:04:30.326Z",
     "closeTime": "2026-10-04T07:39:54.580Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "FETUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2261,
+    "exitPrice": 0.2376,
+    "pnlPercent": 5.09,
+    "openTime": "2026-10-03T19:59:24.875Z",
+    "closeTime": "2026-10-04T12:33:01.386Z",
+    "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "SANDUSDT",
+    "type": "BUY",
+    "entryPrice": 0.07634,
+    "exitPrice": 0.07609,
+    "pnlPercent": -0.33,
+    "openTime": "2026-10-04T11:42:36.961Z",
+    "closeTime": "2026-10-04T12:33:01.386Z",
+    "reason": "Breakeven Stop"
   }
 ]
