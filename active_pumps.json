@@ -145,5 +145,12 @@
     "openTime": "2026-10-04T07:24:47.546Z",
     "timestamp": 1791098687546,
     "isRiskFree": false
+  },
+  "SANDUSDT": {
+    "symbol": "SANDUSDT",
+    "entryPrice": 0.07634,
+    "openTime": "2026-10-04T11:42:36.961Z",
+    "timestamp": 1791114156961,
+    "isRiskFree": false
   }
 }
