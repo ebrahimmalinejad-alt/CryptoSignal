@@ -48,13 +48,6 @@
     "timestamp": 1791059084269,
     "isRiskFree": true
   },
-  "TAOUSDT": {
-    "symbol": "TAOUSDT",
-    "entryPrice": 298.8,
-    "openTime": "2026-10-03T20:39:55.573Z",
-    "timestamp": 1791059995573,
-    "isRiskFree": true
-  },
   "ONDOUSDT": {
     "symbol": "ONDOUSDT",
     "entryPrice": 0.5006,
@@ -76,13 +69,6 @@
     "timestamp": 1791085076083,
     "isRiskFree": false
   },
-  "ENAUSDT": {
-    "symbol": "ENAUSDT",
-    "entryPrice": 0.238,
-    "openTime": "2026-10-04T04:23:20.469Z",
-    "timestamp": 1791087800469,
-    "isRiskFree": true
-  },
   "ZECUSDT": {
     "symbol": "ZECUSDT",
     "entryPrice": 1341,
@@ -95,13 +81,6 @@
     "entryPrice": 1.4981,
     "openTime": "2026-10-04T07:24:47.546Z",
     "timestamp": 1791098687546,
-    "isRiskFree": true
-  },
-  "NEARUSDT": {
-    "symbol": "NEARUSDT",
-    "entryPrice": 4.826,
-    "openTime": "2026-10-04T15:49:35.888Z",
-    "timestamp": 1791128975888,
     "isRiskFree": true
   },
   "SUIUSDT": {

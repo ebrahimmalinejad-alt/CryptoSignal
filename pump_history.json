@@ -998,5 +998,35 @@
     "openTime": "2026-10-03T00:03:18.774Z",
     "closeTime": "2026-10-05T04:00:54.956Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "TAOUSDT",
+    "type": "BUY",
+    "entryPrice": 298.8,
+    "exitPrice": 297.3,
+    "pnlPercent": -0.5,
+    "openTime": "2026-10-03T20:39:55.573Z",
+    "closeTime": "2026-10-05T04:36:11.068Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ENAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.238,
+    "exitPrice": 0.237,
+    "pnlPercent": -0.42,
+    "openTime": "2026-10-04T04:23:20.469Z",
+    "closeTime": "2026-10-05T04:36:11.068Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "NEARUSDT",
+    "type": "BUY",
+    "entryPrice": 4.826,
+    "exitPrice": 4.818,
+    "pnlPercent": -0.17,
+    "openTime": "2026-10-04T15:49:35.888Z",
+    "closeTime": "2026-10-05T04:36:11.068Z",
+    "reason": "Breakeven Stop"
   }
 ]
