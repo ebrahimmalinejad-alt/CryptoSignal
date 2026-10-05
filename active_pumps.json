@@ -110,5 +110,12 @@
     "openTime": "2026-10-05T22:03:15.356Z",
     "timestamp": 1791237795356,
     "isRiskFree": false
+  },
+  "ARBUSDT": {
+    "symbol": "ARBUSDT",
+    "entryPrice": 0.2081,
+    "openTime": "2026-10-05T23:44:17.544Z",
+    "timestamp": 1791243857544,
+    "isRiskFree": false
   }
 }
