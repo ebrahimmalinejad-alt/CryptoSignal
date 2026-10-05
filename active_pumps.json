@@ -6,13 +6,6 @@
     "timestamp": 1790615698431,
     "isRiskFree": false
   },
-  "BNBUSDT": {
-    "symbol": "BNBUSDT",
-    "entryPrice": 769.28,
-    "openTime": "2026-09-29T07:39:34.462Z",
-    "timestamp": 1790667574462,
-    "isRiskFree": true
-  },
   "PAXGUSDT": {
     "symbol": "PAXGUSDT",
     "entryPrice": 4186.76,

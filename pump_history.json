@@ -968,5 +968,15 @@
     "openTime": "2026-10-04T15:04:11.510Z",
     "closeTime": "2026-10-04T22:36:03.271Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "BNBUSDT",
+    "type": "BUY",
+    "entryPrice": 769.28,
+    "exitPrice": 809.46,
+    "pnlPercent": 5.22,
+    "openTime": "2026-09-29T07:39:34.462Z",
+    "closeTime": "2026-10-05T02:20:04.411Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
