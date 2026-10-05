@@ -1078,5 +1078,35 @@
     "openTime": "2026-10-05T10:34:27.410Z",
     "closeTime": "2026-10-05T14:31:39.748Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "XRPUSDT",
+    "type": "BUY",
+    "entryPrice": 1.4981,
+    "exitPrice": 1.4972,
+    "pnlPercent": -0.06,
+    "openTime": "2026-10-04T07:24:47.546Z",
+    "closeTime": "2026-10-05T14:56:54.873Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "NEARUSDT",
+    "type": "BUY",
+    "entryPrice": 4.976,
+    "exitPrice": 4.969,
+    "pnlPercent": -0.14,
+    "openTime": "2026-10-05T05:06:25.698Z",
+    "closeTime": "2026-10-05T14:56:54.873Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "TRUMPUSDT",
+    "type": "BUY",
+    "entryPrice": 2.081,
+    "exitPrice": 2.028,
+    "pnlPercent": -2.55,
+    "openTime": "2026-10-05T07:12:56.192Z",
+    "closeTime": "2026-10-05T14:56:54.873Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

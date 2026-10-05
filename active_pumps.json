@@ -69,13 +69,6 @@
     "timestamp": 1791085076083,
     "isRiskFree": false
   },
-  "XRPUSDT": {
-    "symbol": "XRPUSDT",
-    "entryPrice": 1.4981,
-    "openTime": "2026-10-04T07:24:47.546Z",
-    "timestamp": 1791098687546,
-    "isRiskFree": true
-  },
   "PUMPUSDT": {
     "symbol": "PUMPUSDT",
     "entryPrice": 0.006477,
@@ -90,25 +83,11 @@
     "timestamp": 1791162568649,
     "isRiskFree": false
   },
-  "NEARUSDT": {
-    "symbol": "NEARUSDT",
-    "entryPrice": 4.976,
-    "openTime": "2026-10-05T05:06:25.698Z",
-    "timestamp": 1791176785698,
-    "isRiskFree": true
-  },
   "ACEUSDT": {
     "symbol": "ACEUSDT",
     "entryPrice": 0.1907,
     "openTime": "2026-10-05T06:17:29.462Z",
     "timestamp": 1791181049462,
-    "isRiskFree": false
-  },
-  "TRUMPUSDT": {
-    "symbol": "TRUMPUSDT",
-    "entryPrice": 2.081,
-    "openTime": "2026-10-05T07:12:56.192Z",
-    "timestamp": 1791184376192,
     "isRiskFree": false
   },
   "TAOUSDT": {
