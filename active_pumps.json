@@ -69,13 +69,6 @@
     "timestamp": 1791085076083,
     "isRiskFree": false
   },
-  "PUMPUSDT": {
-    "symbol": "PUMPUSDT",
-    "entryPrice": 0.006477,
-    "openTime": "2026-10-05T00:14:00.746Z",
-    "timestamp": 1791159240746,
-    "isRiskFree": false
-  },
   "BTCUSDT": {
     "symbol": "BTCUSDT",
     "entryPrice": 86560.01,
