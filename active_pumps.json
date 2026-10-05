@@ -102,7 +102,7 @@
     "entryPrice": 4.976,
     "openTime": "2026-10-05T05:06:25.698Z",
     "timestamp": 1791176785698,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "ACEUSDT": {
     "symbol": "ACEUSDT",
