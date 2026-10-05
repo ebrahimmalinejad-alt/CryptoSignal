@@ -102,7 +102,7 @@
     "entryPrice": 0.238,
     "openTime": "2026-10-04T04:23:20.469Z",
     "timestamp": 1791087800469,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "ZECUSDT": {
     "symbol": "ZECUSDT",
