@@ -104,26 +104,12 @@
     "timestamp": 1791181049462,
     "isRiskFree": false
   },
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.00000446,
-    "openTime": "2026-10-05T06:22:33.157Z",
-    "timestamp": 1791181353157,
-    "isRiskFree": true
-  },
   "TRUMPUSDT": {
     "symbol": "TRUMPUSDT",
     "entryPrice": 2.081,
     "openTime": "2026-10-05T07:12:56.192Z",
     "timestamp": 1791184376192,
     "isRiskFree": false
-  },
-  "PENGUUSDT": {
-    "symbol": "PENGUUSDT",
-    "entryPrice": 0.009724,
-    "openTime": "2026-10-05T10:34:27.410Z",
-    "timestamp": 1791196467410,
-    "isRiskFree": true
   },
   "TAOUSDT": {
     "symbol": "TAOUSDT",

@@ -1058,5 +1058,25 @@
     "openTime": "2026-10-04T05:44:00.728Z",
     "closeTime": "2026-10-05T10:14:16.477Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.00000446,
+    "exitPrice": 0.00000446,
+    "pnlPercent": 0,
+    "openTime": "2026-10-05T06:22:33.157Z",
+    "closeTime": "2026-10-05T14:31:39.748Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "PENGUUSDT",
+    "type": "BUY",
+    "entryPrice": 0.009724,
+    "exitPrice": 0.009671,
+    "pnlPercent": -0.55,
+    "openTime": "2026-10-05T10:34:27.410Z",
+    "closeTime": "2026-10-05T14:31:39.748Z",
+    "reason": "Breakeven Stop"
   }
 ]
