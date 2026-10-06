@@ -83,13 +83,6 @@
     "timestamp": 1791235366076,
     "isRiskFree": false
   },
-  "ARBUSDT": {
-    "symbol": "ARBUSDT",
-    "entryPrice": 0.2081,
-    "openTime": "2026-10-05T23:44:17.544Z",
-    "timestamp": 1791243857544,
-    "isRiskFree": false
-  },
   "HYPEUSDT": {
     "symbol": "HYPEUSDT",
     "entryPrice": 94.39,
