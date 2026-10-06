@@ -90,13 +90,6 @@
     "timestamp": 1791235366076,
     "isRiskFree": false
   },
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.00000442,
-    "openTime": "2026-10-05T21:37:58.179Z",
-    "timestamp": 1791236278179,
-    "isRiskFree": false
-  },
   "TAOUSDT": {
     "symbol": "TAOUSDT",
     "entryPrice": 307.9,
