@@ -103,5 +103,12 @@
     "openTime": "2026-10-06T01:29:26.245Z",
     "timestamp": 1791250166245,
     "isRiskFree": false
+  },
+  "ICPUSDT": {
+    "symbol": "ICPUSDT",
+    "entryPrice": 3.497,
+    "openTime": "2026-10-06T02:29:55.260Z",
+    "timestamp": 1791253795260,
+    "isRiskFree": false
   }
 }
