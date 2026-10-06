@@ -96,5 +96,12 @@
     "openTime": "2026-10-06T17:18:10.787Z",
     "timestamp": 1791307090787,
     "isRiskFree": false
+  },
+  "RADUSDT": {
+    "symbol": "RADUSDT",
+    "entryPrice": 0.316,
+    "openTime": "2026-10-06T17:43:28.286Z",
+    "timestamp": 1791308608286,
+    "isRiskFree": false
   }
 }
