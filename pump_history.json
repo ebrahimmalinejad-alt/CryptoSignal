@@ -1288,5 +1288,15 @@
     "openTime": "2026-10-06T06:54:56.455Z",
     "closeTime": "2026-10-06T17:23:14.136Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "RADUSDT",
+    "type": "BUY",
+    "entryPrice": 0.316,
+    "exitPrice": 0.337,
+    "pnlPercent": 6.65,
+    "openTime": "2026-10-06T17:43:28.286Z",
+    "closeTime": "2026-10-06T18:39:15.676Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
