@@ -62,13 +62,6 @@
     "timestamp": 1791181049462,
     "isRiskFree": true
   },
-  "ASTERUSDT": {
-    "symbol": "ASTERUSDT",
-    "entryPrice": 0.7382,
-    "openTime": "2026-10-05T21:22:46.076Z",
-    "timestamp": 1791235366076,
-    "isRiskFree": true
-  },
   "AAVEUSDT": {
     "symbol": "AAVEUSDT",
     "entryPrice": 183.91,

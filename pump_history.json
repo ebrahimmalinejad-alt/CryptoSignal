@@ -1298,5 +1298,15 @@
     "openTime": "2026-10-06T17:43:28.286Z",
     "closeTime": "2026-10-06T18:39:15.676Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "ASTERUSDT",
+    "type": "BUY",
+    "entryPrice": 0.7382,
+    "exitPrice": 0.7358,
+    "pnlPercent": -0.33,
+    "openTime": "2026-10-05T21:22:46.076Z",
+    "closeTime": "2026-10-06T19:24:46.373Z",
+    "reason": "Breakeven Stop"
   }
 ]
