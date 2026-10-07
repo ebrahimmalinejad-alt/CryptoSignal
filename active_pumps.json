@@ -89,12 +89,5 @@
     "openTime": "2026-10-06T19:29:51.035Z",
     "timestamp": 1791314991035,
     "isRiskFree": true
-  },
-  "RLCUSDT": {
-    "symbol": "RLCUSDT",
-    "entryPrice": 0.7899,
-    "openTime": "2026-10-07T01:29:14.348Z",
-    "timestamp": 1791336554348,
-    "isRiskFree": false
   }
 }
