@@ -6,13 +6,6 @@
     "timestamp": 1790725429729,
     "isRiskFree": false
   },
-  "XAUTUSDT": {
-    "symbol": "XAUTUSDT",
-    "entryPrice": 4185.85,
-    "openTime": "2026-09-30T00:09:05.443Z",
-    "timestamp": 1790726945443,
-    "isRiskFree": false
-  },
   "TRXUSDT": {
     "symbol": "TRXUSDT",
     "entryPrice": 0.3381,
