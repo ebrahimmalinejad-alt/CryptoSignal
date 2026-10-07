@@ -34,13 +34,6 @@
     "timestamp": 1790892195119,
     "isRiskFree": true
   },
-  "DOGEUSDT": {
-    "symbol": "DOGEUSDT",
-    "entryPrice": 0.09326,
-    "openTime": "2026-10-03T20:24:44.269Z",
-    "timestamp": 1791059084269,
-    "isRiskFree": true
-  },
   "SOLUSDT": {
     "symbol": "SOLUSDT",
     "entryPrice": 120.89,
