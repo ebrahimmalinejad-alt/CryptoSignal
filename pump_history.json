@@ -1458,5 +1458,15 @@
     "openTime": "2026-10-06T19:14:41.082Z",
     "closeTime": "2026-10-07T14:11:45.958Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "PUMPUSDT",
+    "type": "BUY",
+    "entryPrice": 0.00646,
+    "exitPrice": 0.006241,
+    "pnlPercent": -3.39,
+    "openTime": "2026-10-07T19:20:40.534Z",
+    "closeTime": "2026-10-07T21:31:42.628Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
