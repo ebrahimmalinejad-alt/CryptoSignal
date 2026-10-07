@@ -62,13 +62,6 @@
     "timestamp": 1791181049462,
     "isRiskFree": true
   },
-  "AAVEUSDT": {
-    "symbol": "AAVEUSDT",
-    "entryPrice": 183.91,
-    "openTime": "2026-10-06T04:51:00.480Z",
-    "timestamp": 1791262260480,
-    "isRiskFree": false
-  },
   "ADAUSDT": {
     "symbol": "ADAUSDT",
     "entryPrice": 0.271,
