@@ -1,11 +1,4 @@
 {
-  "ETHUSDT": {
-    "symbol": "ETHUSDT",
-    "entryPrice": 2719.17,
-    "openTime": "2026-09-28T17:14:58.431Z",
-    "timestamp": 1790615698431,
-    "isRiskFree": false
-  },
   "PAXGUSDT": {
     "symbol": "PAXGUSDT",
     "entryPrice": 4186.76,
@@ -34,27 +27,6 @@
     "timestamp": 1790892195119,
     "isRiskFree": true
   },
-  "SOLUSDT": {
-    "symbol": "SOLUSDT",
-    "entryPrice": 120.89,
-    "openTime": "2026-10-04T03:37:56.083Z",
-    "timestamp": 1791085076083,
-    "isRiskFree": false
-  },
-  "BTCUSDT": {
-    "symbol": "BTCUSDT",
-    "entryPrice": 86560.01,
-    "openTime": "2026-10-05T01:09:28.649Z",
-    "timestamp": 1791162568649,
-    "isRiskFree": false
-  },
-  "ACEUSDT": {
-    "symbol": "ACEUSDT",
-    "entryPrice": 0.1907,
-    "openTime": "2026-10-05T06:17:29.462Z",
-    "timestamp": 1791181049462,
-    "isRiskFree": true
-  },
   "ZROUSDT": {
     "symbol": "ZROUSDT",
     "entryPrice": 2.178,
@@ -62,25 +34,11 @@
     "timestamp": 1791307090787,
     "isRiskFree": true
   },
-  "ZECUSDT": {
-    "symbol": "ZECUSDT",
-    "entryPrice": 1354.92,
-    "openTime": "2026-10-06T19:14:39.066Z",
-    "timestamp": 1791314079066,
-    "isRiskFree": false
-  },
   "SPCXBUSDT": {
     "symbol": "SPCXBUSDT",
     "entryPrice": 172.04,
     "openTime": "2026-10-06T19:14:41.082Z",
     "timestamp": 1791314081082,
     "isRiskFree": false
-  },
-  "AVAXUSDT": {
-    "symbol": "AVAXUSDT",
-    "entryPrice": 11.383,
-    "openTime": "2026-10-06T19:29:51.035Z",
-    "timestamp": 1791314991035,
-    "isRiskFree": true
   }
 }

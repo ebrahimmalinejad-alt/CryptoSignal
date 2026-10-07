@@ -1368,5 +1368,65 @@
     "openTime": "2026-10-03T20:24:44.269Z",
     "closeTime": "2026-10-07T01:54:29.558Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "type": "BUY",
+    "entryPrice": 2719.17,
+    "exitPrice": 2611.94,
+    "pnlPercent": -3.94,
+    "openTime": "2026-09-28T17:14:58.431Z",
+    "closeTime": "2026-10-07T02:04:34.963Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SOLUSDT",
+    "type": "BUY",
+    "entryPrice": 120.89,
+    "exitPrice": 117.49,
+    "pnlPercent": -2.81,
+    "openTime": "2026-10-04T03:37:56.083Z",
+    "closeTime": "2026-10-07T02:04:34.963Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "type": "BUY",
+    "entryPrice": 86560.01,
+    "exitPrice": 83778.24,
+    "pnlPercent": -3.21,
+    "openTime": "2026-10-05T01:09:28.649Z",
+    "closeTime": "2026-10-07T02:04:34.963Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ACEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1907,
+    "exitPrice": 0.1891,
+    "pnlPercent": -0.84,
+    "openTime": "2026-10-05T06:17:29.462Z",
+    "closeTime": "2026-10-07T02:04:34.963Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ZECUSDT",
+    "type": "BUY",
+    "entryPrice": 1354.92,
+    "exitPrice": 1309.11,
+    "pnlPercent": -3.38,
+    "openTime": "2026-10-06T19:14:39.066Z",
+    "closeTime": "2026-10-07T02:04:34.963Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "type": "BUY",
+    "entryPrice": 11.383,
+    "exitPrice": 11.093,
+    "pnlPercent": -2.55,
+    "openTime": "2026-10-06T19:29:51.035Z",
+    "closeTime": "2026-10-07T02:04:34.963Z",
+    "reason": "Breakeven Stop"
   }
 ]
