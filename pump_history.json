@@ -1498,5 +1498,15 @@
     "openTime": "2026-10-08T02:29:39.872Z",
     "closeTime": "2026-10-08T04:20:42.922Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SANDUSDT",
+    "type": "BUY",
+    "entryPrice": 0.0716,
+    "exitPrice": 0.06883,
+    "pnlPercent": -3.87,
+    "openTime": "2026-10-08T13:41:25.387Z",
+    "closeTime": "2026-10-08T15:22:13.378Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
