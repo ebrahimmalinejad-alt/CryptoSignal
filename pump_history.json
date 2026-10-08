@@ -1468,5 +1468,15 @@
     "openTime": "2026-10-07T19:20:40.534Z",
     "closeTime": "2026-10-07T21:31:42.628Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ACEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1992,
+    "exitPrice": 0.1902,
+    "pnlPercent": -4.52,
+    "openTime": "2026-10-08T01:08:49.781Z",
+    "closeTime": "2026-10-08T01:59:18.034Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
