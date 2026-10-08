@@ -19,5 +19,12 @@
     "openTime": "2026-10-08T20:04:56.733Z",
     "timestamp": 1791489896733,
     "isRiskFree": false
+  },
+  "JUPUSDT": {
+    "symbol": "JUPUSDT",
+    "entryPrice": 0.3375,
+    "openTime": "2026-10-08T20:04:58.423Z",
+    "timestamp": 1791489898423,
+    "isRiskFree": false
   }
 }
