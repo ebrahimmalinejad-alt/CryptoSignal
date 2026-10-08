@@ -1488,5 +1488,15 @@
     "openTime": "2026-10-08T02:04:23.542Z",
     "closeTime": "2026-10-08T04:05:34.186Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "INJUSDT",
+    "type": "BUY",
+    "entryPrice": 7.458,
+    "exitPrice": 7.27,
+    "pnlPercent": -2.52,
+    "openTime": "2026-10-08T02:29:39.872Z",
+    "closeTime": "2026-10-08T04:20:42.922Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
