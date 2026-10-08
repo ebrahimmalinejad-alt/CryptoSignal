@@ -19,5 +19,12 @@
     "openTime": "2026-10-01T22:03:15.119Z",
     "timestamp": 1790892195119,
     "isRiskFree": true
+  },
+  "ACEUSDT": {
+    "symbol": "ACEUSDT",
+    "entryPrice": 0.1992,
+    "openTime": "2026-10-08T01:08:49.781Z",
+    "timestamp": 1791421729781,
+    "isRiskFree": false
   }
 }
