@@ -34,13 +34,6 @@
     "timestamp": 1791546524229,
     "isRiskFree": false
   },
-  "HYPEUSDT": {
-    "symbol": "HYPEUSDT",
-    "entryPrice": 86.53,
-    "openTime": "2026-10-09T11:48:46.469Z",
-    "timestamp": 1791546526469,
-    "isRiskFree": false
-  },
   "AAVEUSDT": {
     "symbol": "AAVEUSDT",
     "entryPrice": 167.76,
