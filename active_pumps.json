@@ -25,7 +25,7 @@
     "entryPrice": 82.5,
     "openTime": "2026-10-09T05:36:59.130Z",
     "timestamp": 1791524219130,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "XAUTUSDT": {
     "symbol": "XAUTUSDT",
