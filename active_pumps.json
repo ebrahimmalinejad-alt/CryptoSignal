@@ -34,13 +34,6 @@
     "timestamp": 1791525732068,
     "isRiskFree": false
   },
-  "ZROUSDT": {
-    "symbol": "ZROUSDT",
-    "entryPrice": 2.167,
-    "openTime": "2026-10-09T08:57:15.730Z",
-    "timestamp": 1791536235730,
-    "isRiskFree": false
-  },
   "BTCUSDT": {
     "symbol": "BTCUSDT",
     "entryPrice": 83474.01,
