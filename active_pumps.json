@@ -20,13 +20,6 @@
     "timestamp": 1791489896733,
     "isRiskFree": true
   },
-  "RAYUSDT": {
-    "symbol": "RAYUSDT",
-    "entryPrice": 2.4646,
-    "openTime": "2026-10-09T04:26:24.625Z",
-    "timestamp": 1791519984625,
-    "isRiskFree": false
-  },
   "CRCLBUSDT": {
     "symbol": "CRCLBUSDT",
     "entryPrice": 82.5,

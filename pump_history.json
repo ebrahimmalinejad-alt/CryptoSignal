@@ -1538,5 +1538,15 @@
     "openTime": "2026-10-08T20:04:58.423Z",
     "closeTime": "2026-10-09T05:06:43.021Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "RAYUSDT",
+    "type": "BUY",
+    "entryPrice": 2.4646,
+    "exitPrice": 2.3972,
+    "pnlPercent": -2.73,
+    "openTime": "2026-10-09T04:26:24.625Z",
+    "closeTime": "2026-10-09T09:22:28.949Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
