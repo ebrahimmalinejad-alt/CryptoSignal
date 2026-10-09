@@ -1548,5 +1548,15 @@
     "openTime": "2026-10-09T04:26:24.625Z",
     "closeTime": "2026-10-09T09:22:28.949Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "TIAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.4944,
+    "exitPrice": 0.4683,
+    "pnlPercent": -5.28,
+    "openTime": "2026-10-09T10:33:05.536Z",
+    "closeTime": "2026-10-09T10:38:08.333Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
