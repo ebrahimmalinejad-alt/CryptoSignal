@@ -26,5 +26,12 @@
     "openTime": "2026-10-09T04:26:24.625Z",
     "timestamp": 1791519984625,
     "isRiskFree": false
+  },
+  "CRCLBUSDT": {
+    "symbol": "CRCLBUSDT",
+    "entryPrice": 82.5,
+    "openTime": "2026-10-09T05:36:59.130Z",
+    "timestamp": 1791524219130,
+    "isRiskFree": false
   }
 }
