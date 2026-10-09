@@ -54,5 +54,12 @@
     "openTime": "2026-10-09T19:45:48.452Z",
     "timestamp": 1791575148452,
     "isRiskFree": false
+  },
+  "SPCXBUSDT": {
+    "symbol": "SPCXBUSDT",
+    "entryPrice": 162.63,
+    "openTime": "2026-10-09T19:55:56.530Z",
+    "timestamp": 1791575756530,
+    "isRiskFree": false
   }
 }
