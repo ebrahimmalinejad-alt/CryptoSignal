@@ -1528,5 +1528,15 @@
     "openTime": "2026-10-01T22:03:15.119Z",
     "closeTime": "2026-10-08T17:18:05.251Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "JUPUSDT",
+    "type": "BUY",
+    "entryPrice": 0.3375,
+    "exitPrice": 0.3557,
+    "pnlPercent": 5.39,
+    "openTime": "2026-10-08T20:04:58.423Z",
+    "closeTime": "2026-10-09T05:06:43.021Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
