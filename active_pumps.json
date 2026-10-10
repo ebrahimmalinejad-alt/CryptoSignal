@@ -152,5 +152,12 @@
     "openTime": "2026-10-10T16:04:56.272Z",
     "timestamp": 1791648296272,
     "isRiskFree": true
+  },
+  "FILUSDT": {
+    "symbol": "FILUSDT",
+    "entryPrice": 1.125,
+    "openTime": "2026-10-10T18:32:46.745Z",
+    "timestamp": 1791657166745,
+    "isRiskFree": false
   }
 }
