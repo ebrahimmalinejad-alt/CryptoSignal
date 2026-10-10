@@ -32,7 +32,7 @@
     "entryPrice": 167.76,
     "openTime": "2026-10-09T17:48:22.080Z",
     "timestamp": 1791568102080,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "UNIUSDT": {
     "symbol": "UNIUSDT",
@@ -116,7 +116,7 @@
     "entryPrice": 0.216,
     "openTime": "2026-10-10T00:14:17.776Z",
     "timestamp": 1791591257776,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "QNTUSDT": {
     "symbol": "QNTUSDT",
