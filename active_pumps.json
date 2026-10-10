@@ -13,13 +13,6 @@
     "timestamp": 1790813313752,
     "isRiskFree": false
   },
-  "FILUSDT": {
-    "symbol": "FILUSDT",
-    "entryPrice": 1.0493,
-    "openTime": "2026-10-08T20:04:56.733Z",
-    "timestamp": 1791489896733,
-    "isRiskFree": true
-  },
   "XAUTUSDT": {
     "symbol": "XAUTUSDT",
     "entryPrice": 4189.15,

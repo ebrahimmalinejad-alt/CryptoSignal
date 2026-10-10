@@ -1598,5 +1598,15 @@
     "openTime": "2026-10-09T22:37:35.267Z",
     "closeTime": "2026-10-10T02:10:20.525Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "FILUSDT",
+    "type": "BUY",
+    "entryPrice": 1.0493,
+    "exitPrice": 1.103,
+    "pnlPercent": 5.12,
+    "openTime": "2026-10-08T20:04:56.733Z",
+    "closeTime": "2026-10-10T02:15:24.208Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
