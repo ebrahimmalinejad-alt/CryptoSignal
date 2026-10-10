@@ -152,5 +152,12 @@
     "openTime": "2026-10-10T21:24:15.381Z",
     "timestamp": 1791667455381,
     "isRiskFree": false
+  },
+  "KAIAUSDT": {
+    "symbol": "KAIAUSDT",
+    "entryPrice": 0.0568,
+    "openTime": "2026-10-10T21:44:26.536Z",
+    "timestamp": 1791668666536,
+    "isRiskFree": false
   }
 }
