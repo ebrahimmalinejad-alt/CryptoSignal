@@ -1658,5 +1658,15 @@
     "openTime": "2026-10-10T14:39:14.552Z",
     "closeTime": "2026-10-10T19:08:03.627Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "MAGICUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1018,
+    "exitPrice": 0.1018,
+    "pnlPercent": 0,
+    "openTime": "2026-10-10T16:04:56.272Z",
+    "closeTime": "2026-10-10T19:13:07.352Z",
+    "reason": "Breakeven Stop"
   }
 ]
