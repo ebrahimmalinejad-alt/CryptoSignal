@@ -60,7 +60,7 @@
     "entryPrice": 10.328,
     "openTime": "2026-10-09T21:26:50.872Z",
     "timestamp": 1791581210872,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "CRCLBUSDT": {
     "symbol": "CRCLBUSDT",
