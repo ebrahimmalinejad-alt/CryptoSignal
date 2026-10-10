@@ -1628,5 +1628,15 @@
     "openTime": "2026-10-10T13:48:45.799Z",
     "closeTime": "2026-10-10T14:19:00.952Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "QNTUSDT",
+    "type": "BUY",
+    "entryPrice": 248.55,
+    "exitPrice": 247.88,
+    "pnlPercent": -0.27,
+    "openTime": "2026-10-10T00:34:29.679Z",
+    "closeTime": "2026-10-10T14:24:03.942Z",
+    "reason": "Breakeven Stop"
   }
 ]
