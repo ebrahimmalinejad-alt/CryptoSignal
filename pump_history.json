@@ -1618,5 +1618,15 @@
     "openTime": "2026-10-10T00:09:13.354Z",
     "closeTime": "2026-10-10T04:41:34.750Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "STRKUSDT",
+    "type": "BUY",
+    "entryPrice": 0.07388,
+    "exitPrice": 0.07889,
+    "pnlPercent": 6.78,
+    "openTime": "2026-10-10T13:48:45.799Z",
+    "closeTime": "2026-10-10T14:19:00.952Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
