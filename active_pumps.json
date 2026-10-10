@@ -116,7 +116,7 @@
     "entryPrice": 248.55,
     "openTime": "2026-10-10T00:34:29.679Z",
     "timestamp": 1791592469679,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "ONDOUSDT": {
     "symbol": "ONDOUSDT",
