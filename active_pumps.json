@@ -138,5 +138,12 @@
     "openTime": "2026-10-10T00:34:29.679Z",
     "timestamp": 1791592469679,
     "isRiskFree": false
+  },
+  "ONDOUSDT": {
+    "symbol": "ONDOUSDT",
+    "entryPrice": 0.4856,
+    "openTime": "2026-10-10T01:14:51.060Z",
+    "timestamp": 1791594891060,
+    "isRiskFree": false
   }
 }
