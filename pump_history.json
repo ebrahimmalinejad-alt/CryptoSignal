@@ -1668,5 +1668,15 @@
     "openTime": "2026-10-10T16:04:56.272Z",
     "closeTime": "2026-10-10T19:13:07.352Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "KAIAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.0568,
+    "exitPrice": 0.0552,
+    "pnlPercent": -2.82,
+    "openTime": "2026-10-10T21:44:26.536Z",
+    "closeTime": "2026-10-11T00:28:41.481Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
