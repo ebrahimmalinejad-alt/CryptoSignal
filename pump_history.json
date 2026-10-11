@@ -1848,5 +1848,15 @@
     "openTime": "2026-10-09T19:45:48.452Z",
     "closeTime": "2026-10-11T17:21:16.813Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "ZKUSDT",
+    "type": "BUY",
+    "entryPrice": 0.01584,
+    "exitPrice": 0.01584,
+    "pnlPercent": 0,
+    "openTime": "2026-10-11T19:43:58.199Z",
+    "closeTime": "2026-10-11T20:49:46.735Z",
+    "reason": "Breakeven Stop"
   }
 ]
