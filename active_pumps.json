@@ -48,13 +48,6 @@
     "timestamp": 1791575756530,
     "isRiskFree": false
   },
-  "AVAXUSDT": {
-    "symbol": "AVAXUSDT",
-    "entryPrice": 10.328,
-    "openTime": "2026-10-09T21:26:50.872Z",
-    "timestamp": 1791581210872,
-    "isRiskFree": true
-  },
   "CRCLBUSDT": {
     "symbol": "CRCLBUSDT",
     "entryPrice": 84.69,
