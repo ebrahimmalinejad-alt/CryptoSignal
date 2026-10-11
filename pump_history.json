@@ -1758,5 +1758,15 @@
     "openTime": "2026-10-10T11:06:09.400Z",
     "closeTime": "2026-10-11T10:41:29.173Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "SUIUSDT",
+    "type": "BUY",
+    "entryPrice": 1.1169,
+    "exitPrice": 1.0884,
+    "pnlPercent": -2.55,
+    "openTime": "2026-10-10T08:09:51.861Z",
+    "closeTime": "2026-10-11T10:51:34.905Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
