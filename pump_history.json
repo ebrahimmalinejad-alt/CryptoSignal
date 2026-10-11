@@ -1788,5 +1788,25 @@
     "openTime": "2026-10-11T12:59:02.738Z",
     "closeTime": "2026-10-11T15:55:25.020Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.00000396,
+    "exitPrice": 0.00000417,
+    "pnlPercent": 5.3,
+    "openTime": "2026-10-09T23:48:13.407Z",
+    "closeTime": "2026-10-11T16:00:28.295Z",
+    "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "WLDUSDT",
+    "type": "BUY",
+    "entryPrice": 0.5533,
+    "exitPrice": 0.5811,
+    "pnlPercent": 5.02,
+    "openTime": "2026-10-11T11:47:00.864Z",
+    "closeTime": "2026-10-11T16:00:28.295Z",
+    "reason": "Take Profit (+5%)"
   }
 ]

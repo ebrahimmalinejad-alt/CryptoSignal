@@ -55,13 +55,6 @@
     "timestamp": 1791582123003,
     "isRiskFree": false
   },
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.00000396,
-    "openTime": "2026-10-09T23:48:13.407Z",
-    "timestamp": 1791589693407,
-    "isRiskFree": true
-  },
   "ZECUSDT": {
     "symbol": "ZECUSDT",
     "entryPrice": 1206.32,
@@ -81,7 +74,7 @@
     "entryPrice": 0.08533,
     "openTime": "2026-10-10T00:04:08.794Z",
     "timestamp": 1791590648794,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "TAOUSDT": {
     "symbol": "TAOUSDT",
@@ -117,13 +110,6 @@
     "openTime": "2026-10-10T22:49:59.141Z",
     "timestamp": 1791672599141,
     "isRiskFree": false
-  },
-  "WLDUSDT": {
-    "symbol": "WLDUSDT",
-    "entryPrice": 0.5533,
-    "openTime": "2026-10-11T11:47:00.864Z",
-    "timestamp": 1791719220864,
-    "isRiskFree": true
   },
   "FETUSDT": {
     "symbol": "FETUSDT",
