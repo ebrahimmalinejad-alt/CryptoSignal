@@ -1838,5 +1838,15 @@
     "openTime": "2026-10-11T13:29:16.870Z",
     "closeTime": "2026-10-11T16:40:51.015Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "LINKUSDT",
+    "type": "BUY",
+    "entryPrice": 12.764,
+    "exitPrice": 13.459,
+    "pnlPercent": 5.45,
+    "openTime": "2026-10-09T19:45:48.452Z",
+    "closeTime": "2026-10-11T17:21:16.813Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
