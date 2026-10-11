@@ -124,5 +124,12 @@
     "openTime": "2026-10-10T22:49:59.141Z",
     "timestamp": 1791672599141,
     "isRiskFree": false
+  },
+  "WLDUSDT": {
+    "symbol": "WLDUSDT",
+    "entryPrice": 0.5533,
+    "openTime": "2026-10-11T11:47:00.864Z",
+    "timestamp": 1791719220864,
+    "isRiskFree": false
   }
 }
