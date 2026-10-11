@@ -88,7 +88,7 @@
     "entryPrice": 7.555,
     "openTime": "2026-10-10T21:24:15.381Z",
     "timestamp": 1791667455381,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "SOLUSDT": {
     "symbol": "SOLUSDT",
