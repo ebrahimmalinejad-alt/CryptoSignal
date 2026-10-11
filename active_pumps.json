@@ -125,13 +125,6 @@
     "timestamp": 1791630369400,
     "isRiskFree": true
   },
-  "FILUSDT": {
-    "symbol": "FILUSDT",
-    "entryPrice": 1.125,
-    "openTime": "2026-10-10T18:32:46.745Z",
-    "timestamp": 1791657166745,
-    "isRiskFree": false
-  },
   "UNIUSDT": {
     "symbol": "UNIUSDT",
     "entryPrice": 7.555,
@@ -158,13 +151,6 @@
     "entryPrice": 0.2507,
     "openTime": "2026-10-10T22:49:59.141Z",
     "timestamp": 1791672599141,
-    "isRiskFree": false
-  },
-  "OPUSDT": {
-    "symbol": "OPUSDT",
-    "entryPrice": 0.143,
-    "openTime": "2026-10-11T01:49:26.213Z",
-    "timestamp": 1791683366213,
     "isRiskFree": false
   }
 }
