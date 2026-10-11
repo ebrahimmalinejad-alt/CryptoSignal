@@ -1748,5 +1748,15 @@
     "openTime": "2026-10-09T17:48:22.080Z",
     "closeTime": "2026-10-11T05:56:30.676Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "POLUSDT",
+    "type": "BUY",
+    "entryPrice": 0.10073,
+    "exitPrice": 0.10066,
+    "pnlPercent": -0.07,
+    "openTime": "2026-10-10T11:06:09.400Z",
+    "closeTime": "2026-10-11T10:41:29.173Z",
+    "reason": "Breakeven Stop"
   }
 ]
