@@ -97,13 +97,6 @@
     "timestamp": 1791591257776,
     "isRiskFree": true
   },
-  "ONDOUSDT": {
-    "symbol": "ONDOUSDT",
-    "entryPrice": 0.4856,
-    "openTime": "2026-10-10T01:14:51.060Z",
-    "timestamp": 1791594891060,
-    "isRiskFree": true
-  },
   "TAOUSDT": {
     "symbol": "TAOUSDT",
     "entryPrice": 282,

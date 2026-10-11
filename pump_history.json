@@ -1728,5 +1728,15 @@
     "openTime": "2026-10-11T01:49:26.213Z",
     "closeTime": "2026-10-11T03:25:13.182Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ONDOUSDT",
+    "type": "BUY",
+    "entryPrice": 0.4856,
+    "exitPrice": 0.4851,
+    "pnlPercent": -0.1,
+    "openTime": "2026-10-10T01:14:51.060Z",
+    "closeTime": "2026-10-11T03:30:17.097Z",
+    "reason": "Breakeven Stop"
   }
 ]
