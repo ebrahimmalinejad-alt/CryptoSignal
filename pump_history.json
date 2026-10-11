@@ -1688,5 +1688,15 @@
     "openTime": "2026-10-09T21:26:50.872Z",
     "closeTime": "2026-10-11T02:14:37.367Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "RLCUSDT",
+    "type": "BUY",
+    "entryPrice": 1.0615,
+    "exitPrice": 1.1198,
+    "pnlPercent": 5.49,
+    "openTime": "2026-10-11T02:24:44.153Z",
+    "closeTime": "2026-10-11T02:29:46.736Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
