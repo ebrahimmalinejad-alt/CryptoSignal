@@ -130,7 +130,7 @@
     "entryPrice": 0.5533,
     "openTime": "2026-10-11T11:47:00.864Z",
     "timestamp": 1791719220864,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "NEARUSDT": {
     "symbol": "NEARUSDT",
