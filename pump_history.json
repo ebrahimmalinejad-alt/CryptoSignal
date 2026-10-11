@@ -1778,5 +1778,15 @@
     "openTime": "2026-10-10T00:14:17.776Z",
     "closeTime": "2026-10-11T15:04:59.014Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "NEARUSDT",
+    "type": "BUY",
+    "entryPrice": 5.376,
+    "exitPrice": 5.761,
+    "pnlPercent": 7.16,
+    "openTime": "2026-10-11T12:59:02.738Z",
+    "closeTime": "2026-10-11T15:55:25.020Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
