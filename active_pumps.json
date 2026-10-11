@@ -46,7 +46,7 @@
     "entryPrice": 84.69,
     "openTime": "2026-10-09T21:31:56.296Z",
     "timestamp": 1791581516296,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "BNBUSDT": {
     "symbol": "BNBUSDT",
@@ -54,13 +54,6 @@
     "openTime": "2026-10-09T21:42:03.003Z",
     "timestamp": 1791582123003,
     "isRiskFree": false
-  },
-  "ZECUSDT": {
-    "symbol": "ZECUSDT",
-    "entryPrice": 1206.32,
-    "openTime": "2026-10-09T23:58:19.836Z",
-    "timestamp": 1791590299836,
-    "isRiskFree": true
   },
   "XRPUSDT": {
     "symbol": "XRPUSDT",
@@ -74,13 +67,6 @@
     "entryPrice": 0.08533,
     "openTime": "2026-10-10T00:04:08.794Z",
     "timestamp": 1791590648794,
-    "isRiskFree": true
-  },
-  "TAOUSDT": {
-    "symbol": "TAOUSDT",
-    "entryPrice": 282,
-    "openTime": "2026-10-10T06:49:12.322Z",
-    "timestamp": 1791614952322,
     "isRiskFree": true
   },
   "UNIUSDT": {

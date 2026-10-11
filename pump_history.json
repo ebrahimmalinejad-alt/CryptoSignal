@@ -1808,5 +1808,25 @@
     "openTime": "2026-10-11T11:47:00.864Z",
     "closeTime": "2026-10-11T16:00:28.295Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "ZECUSDT",
+    "type": "BUY",
+    "entryPrice": 1206.32,
+    "exitPrice": 1285.44,
+    "pnlPercent": 6.56,
+    "openTime": "2026-10-09T23:58:19.836Z",
+    "closeTime": "2026-10-11T16:30:44.724Z",
+    "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "TAOUSDT",
+    "type": "BUY",
+    "entryPrice": 282,
+    "exitPrice": 296.9,
+    "pnlPercent": 5.28,
+    "openTime": "2026-10-10T06:49:12.322Z",
+    "closeTime": "2026-10-11T16:30:44.724Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
