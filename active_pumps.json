@@ -109,7 +109,7 @@
     "entryPrice": 10.892,
     "openTime": "2026-10-11T20:39:40.465Z",
     "timestamp": 1791751180465,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "ETHUSDT": {
     "symbol": "ETHUSDT",
