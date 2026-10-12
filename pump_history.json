@@ -1918,5 +1918,15 @@
     "openTime": "2026-10-12T04:38:09.768Z",
     "closeTime": "2026-10-12T10:29:03.131Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "TAOUSDT",
+    "type": "BUY",
+    "entryPrice": 291.7,
+    "exitPrice": 291.5,
+    "pnlPercent": -0.07,
+    "openTime": "2026-10-11T19:13:36.282Z",
+    "closeTime": "2026-10-12T11:14:32.883Z",
+    "reason": "Breakeven Stop"
   }
 ]
