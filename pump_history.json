@@ -2008,5 +2008,15 @@
     "openTime": "2026-10-12T10:44:14.696Z",
     "closeTime": "2026-10-12T12:40:27.043Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "MUBARAKUSDT",
+    "type": "BUY",
+    "entryPrice": 0.07431,
+    "exitPrice": 0.07226,
+    "pnlPercent": -2.76,
+    "openTime": "2026-10-12T10:59:24.891Z",
+    "closeTime": "2026-10-12T14:11:16.321Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
