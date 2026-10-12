@@ -138,5 +138,12 @@
     "openTime": "2026-10-12T10:44:12.918Z",
     "timestamp": 1791801852918,
     "isRiskFree": false
+  },
+  "PUMPUSDT": {
+    "symbol": "PUMPUSDT",
+    "entryPrice": 0.00566,
+    "openTime": "2026-10-12T10:44:14.696Z",
+    "timestamp": 1791801854696,
+    "isRiskFree": false
   }
 }
