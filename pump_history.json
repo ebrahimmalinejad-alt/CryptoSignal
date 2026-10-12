@@ -2028,5 +2028,45 @@
     "openTime": "2026-10-12T02:51:32.799Z",
     "closeTime": "2026-10-12T14:26:25.777Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.08533,
+    "exitPrice": 0.0851,
+    "pnlPercent": -0.27,
+    "openTime": "2026-10-10T00:04:08.794Z",
+    "closeTime": "2026-10-12T14:41:34.987Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "SUIUSDT",
+    "type": "BUY",
+    "entryPrice": 1.1198,
+    "exitPrice": 1.0883,
+    "pnlPercent": -2.81,
+    "openTime": "2026-10-12T04:28:02.548Z",
+    "closeTime": "2026-10-12T14:41:34.987Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "APTUSDT",
+    "type": "BUY",
+    "entryPrice": 0.8748,
+    "exitPrice": 0.8462,
+    "pnlPercent": -3.27,
+    "openTime": "2026-10-12T11:19:39.309Z",
+    "closeTime": "2026-10-12T14:41:34.987Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ENAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2297,
+    "exitPrice": 0.2233,
+    "pnlPercent": -2.79,
+    "openTime": "2026-10-12T11:39:53.466Z",
+    "closeTime": "2026-10-12T14:41:34.987Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

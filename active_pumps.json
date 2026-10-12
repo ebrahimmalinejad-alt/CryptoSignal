@@ -48,13 +48,6 @@
     "timestamp": 1791590603986,
     "isRiskFree": false
   },
-  "DOGEUSDT": {
-    "symbol": "DOGEUSDT",
-    "entryPrice": 0.08533,
-    "openTime": "2026-10-10T00:04:08.794Z",
-    "timestamp": 1791590648794,
-    "isRiskFree": true
-  },
   "LINKUSDT": {
     "symbol": "LINKUSDT",
     "entryPrice": 13.298,
@@ -67,27 +60,6 @@
     "entryPrice": 2544.74,
     "openTime": "2026-10-12T00:45:01.062Z",
     "timestamp": 1791765901062,
-    "isRiskFree": false
-  },
-  "SUIUSDT": {
-    "symbol": "SUIUSDT",
-    "entryPrice": 1.1198,
-    "openTime": "2026-10-12T04:28:02.548Z",
-    "timestamp": 1791779282548,
-    "isRiskFree": false
-  },
-  "APTUSDT": {
-    "symbol": "APTUSDT",
-    "entryPrice": 0.8748,
-    "openTime": "2026-10-12T11:19:39.309Z",
-    "timestamp": 1791803979309,
-    "isRiskFree": false
-  },
-  "ENAUSDT": {
-    "symbol": "ENAUSDT",
-    "entryPrice": 0.2297,
-    "openTime": "2026-10-12T11:39:53.466Z",
-    "timestamp": 1791805193466,
     "isRiskFree": false
   }
 }
