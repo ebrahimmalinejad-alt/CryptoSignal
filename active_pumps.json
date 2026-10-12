@@ -53,7 +53,7 @@
     "entryPrice": 2.184,
     "openTime": "2026-10-12T18:39:57.602Z",
     "timestamp": 1791830397602,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "MUBARAKUSDT": {
     "symbol": "MUBARAKUSDT",
