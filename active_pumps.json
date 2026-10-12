@@ -47,5 +47,12 @@
     "openTime": "2026-10-12T00:45:01.062Z",
     "timestamp": 1791765901062,
     "isRiskFree": false
+  },
+  "ZROUSDT": {
+    "symbol": "ZROUSDT",
+    "entryPrice": 2.184,
+    "openTime": "2026-10-12T18:39:57.602Z",
+    "timestamp": 1791830397602,
+    "isRiskFree": false
   }
 }
