@@ -2068,5 +2068,15 @@
     "openTime": "2026-10-12T11:39:53.466Z",
     "closeTime": "2026-10-12T14:41:34.987Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "LINKUSDT",
+    "type": "BUY",
+    "entryPrice": 13.298,
+    "exitPrice": 12.952,
+    "pnlPercent": -2.6,
+    "openTime": "2026-10-11T20:29:32.351Z",
+    "closeTime": "2026-10-12T16:52:39.374Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
