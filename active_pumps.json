@@ -131,5 +131,12 @@
     "openTime": "2026-10-12T04:28:02.548Z",
     "timestamp": 1791779282548,
     "isRiskFree": false
+  },
+  "MAGICUSDT": {
+    "symbol": "MAGICUSDT",
+    "entryPrice": 0.1309,
+    "openTime": "2026-10-12T10:44:12.918Z",
+    "timestamp": 1791801852918,
+    "isRiskFree": false
   }
 }
