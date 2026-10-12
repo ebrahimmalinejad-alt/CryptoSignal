@@ -1978,5 +1978,35 @@
     "openTime": "2026-10-10T22:09:41.027Z",
     "closeTime": "2026-10-12T12:35:23.310Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "CRCLBUSDT",
+    "type": "BUY",
+    "entryPrice": 84.69,
+    "exitPrice": 84.64,
+    "pnlPercent": -0.06,
+    "openTime": "2026-10-09T21:31:56.296Z",
+    "closeTime": "2026-10-12T12:40:27.043Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "type": "BUY",
+    "entryPrice": 10.892,
+    "exitPrice": 10.866,
+    "pnlPercent": -0.24,
+    "openTime": "2026-10-11T20:39:40.465Z",
+    "closeTime": "2026-10-12T12:40:27.043Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "PUMPUSDT",
+    "type": "BUY",
+    "entryPrice": 0.00566,
+    "exitPrice": 0.005513,
+    "pnlPercent": -2.6,
+    "openTime": "2026-10-12T10:44:14.696Z",
+    "closeTime": "2026-10-12T12:40:27.043Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

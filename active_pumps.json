@@ -34,13 +34,6 @@
     "timestamp": 1791575756530,
     "isRiskFree": false
   },
-  "CRCLBUSDT": {
-    "symbol": "CRCLBUSDT",
-    "entryPrice": 84.69,
-    "openTime": "2026-10-09T21:31:56.296Z",
-    "timestamp": 1791581516296,
-    "isRiskFree": true
-  },
   "BNBUSDT": {
     "symbol": "BNBUSDT",
     "entryPrice": 742.63,
@@ -69,13 +62,6 @@
     "timestamp": 1791750572351,
     "isRiskFree": false
   },
-  "AVAXUSDT": {
-    "symbol": "AVAXUSDT",
-    "entryPrice": 10.892,
-    "openTime": "2026-10-11T20:39:40.465Z",
-    "timestamp": 1791751180465,
-    "isRiskFree": true
-  },
   "ETHUSDT": {
     "symbol": "ETHUSDT",
     "entryPrice": 2544.74,
@@ -95,13 +81,6 @@
     "entryPrice": 1.1198,
     "openTime": "2026-10-12T04:28:02.548Z",
     "timestamp": 1791779282548,
-    "isRiskFree": false
-  },
-  "PUMPUSDT": {
-    "symbol": "PUMPUSDT",
-    "entryPrice": 0.00566,
-    "openTime": "2026-10-12T10:44:14.696Z",
-    "timestamp": 1791801854696,
     "isRiskFree": false
   },
   "MUBARAKUSDT": {
