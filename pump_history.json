@@ -2098,5 +2098,15 @@
     "openTime": "2026-10-12T18:39:57.602Z",
     "closeTime": "2026-10-12T21:01:02.316Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "BNBUSDT",
+    "type": "BUY",
+    "entryPrice": 742.63,
+    "exitPrice": 741.46,
+    "pnlPercent": -0.16,
+    "openTime": "2026-10-09T21:42:03.003Z",
+    "closeTime": "2026-10-12T21:46:22.045Z",
+    "reason": "Breakeven Stop"
   }
 ]

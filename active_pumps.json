@@ -34,13 +34,6 @@
     "timestamp": 1791575756530,
     "isRiskFree": false
   },
-  "BNBUSDT": {
-    "symbol": "BNBUSDT",
-    "entryPrice": 742.63,
-    "openTime": "2026-10-09T21:42:03.003Z",
-    "timestamp": 1791582123003,
-    "isRiskFree": true
-  },
   "ETHUSDT": {
     "symbol": "ETHUSDT",
     "entryPrice": 2544.74,
