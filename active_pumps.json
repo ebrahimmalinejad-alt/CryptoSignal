@@ -95,7 +95,7 @@
     "entryPrice": 0.00000419,
     "openTime": "2026-10-11T20:24:28.122Z",
     "timestamp": 1791750268122,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "LINKUSDT": {
     "symbol": "LINKUSDT",
