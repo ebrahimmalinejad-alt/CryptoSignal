@@ -88,7 +88,7 @@
     "entryPrice": 291.7,
     "openTime": "2026-10-11T19:13:36.282Z",
     "timestamp": 1791746016282,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "PEPEUSDT": {
     "symbol": "PEPEUSDT",
@@ -123,13 +123,6 @@
     "entryPrice": 0.005629,
     "openTime": "2026-10-12T00:04:33.056Z",
     "timestamp": 1791763473056,
-    "isRiskFree": false
-  },
-  "CHIPUSDT": {
-    "symbol": "CHIPUSDT",
-    "entryPrice": 0.06944,
-    "openTime": "2026-10-12T00:09:37.026Z",
-    "timestamp": 1791763777026,
     "isRiskFree": false
   },
   "ETHUSDT": {
