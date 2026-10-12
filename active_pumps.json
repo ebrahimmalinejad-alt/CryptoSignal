@@ -145,5 +145,12 @@
     "openTime": "2026-10-12T10:44:14.696Z",
     "timestamp": 1791801854696,
     "isRiskFree": false
+  },
+  "MUBARAKUSDT": {
+    "symbol": "MUBARAKUSDT",
+    "entryPrice": 0.07431,
+    "openTime": "2026-10-12T10:59:24.891Z",
+    "timestamp": 1791802764891,
+    "isRiskFree": false
   }
 }
