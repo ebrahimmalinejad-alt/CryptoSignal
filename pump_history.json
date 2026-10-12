@@ -2118,5 +2118,15 @@
     "openTime": "2026-10-12T00:45:01.062Z",
     "closeTime": "2026-10-12T23:01:52.515Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "TRXUSDT",
+    "type": "BUY",
+    "entryPrice": 0.3381,
+    "exitPrice": 0.3294,
+    "pnlPercent": -2.57,
+    "openTime": "2026-10-01T00:08:33.752Z",
+    "closeTime": "2026-10-12T23:06:55.585Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
