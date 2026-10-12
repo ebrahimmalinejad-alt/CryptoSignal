@@ -1908,5 +1908,15 @@
     "openTime": "2026-10-11T23:51:39.684Z",
     "closeTime": "2026-10-12T09:48:42.764Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "WLDUSDT",
+    "type": "BUY",
+    "entryPrice": 0.5601,
+    "exitPrice": 0.5458,
+    "pnlPercent": -2.55,
+    "openTime": "2026-10-12T04:38:09.768Z",
+    "closeTime": "2026-10-12T10:29:03.131Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
