@@ -2088,5 +2088,15 @@
     "openTime": "2026-10-10T00:03:23.986Z",
     "closeTime": "2026-10-12T16:57:42.882Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ZROUSDT",
+    "type": "BUY",
+    "entryPrice": 2.184,
+    "exitPrice": 2.169,
+    "pnlPercent": -0.69,
+    "openTime": "2026-10-12T18:39:57.602Z",
+    "closeTime": "2026-10-12T21:01:02.316Z",
+    "reason": "Breakeven Stop"
   }
 ]
