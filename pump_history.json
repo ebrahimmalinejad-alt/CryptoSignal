@@ -2018,5 +2018,15 @@
     "openTime": "2026-10-12T10:59:24.891Z",
     "closeTime": "2026-10-12T14:11:16.321Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ARBUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1951,
+    "exitPrice": 0.1896,
+    "pnlPercent": -2.82,
+    "openTime": "2026-10-12T02:51:32.799Z",
+    "closeTime": "2026-10-12T14:26:25.777Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
