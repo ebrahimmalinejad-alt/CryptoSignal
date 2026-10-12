@@ -1948,5 +1948,15 @@
     "openTime": "2026-10-10T21:24:15.381Z",
     "closeTime": "2026-10-12T11:39:50.869Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.00000419,
+    "exitPrice": 0.00000419,
+    "pnlPercent": 0,
+    "openTime": "2026-10-11T20:24:28.122Z",
+    "closeTime": "2026-10-12T11:49:59.201Z",
+    "reason": "Breakeven Stop"
   }
 ]
