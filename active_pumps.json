@@ -34,13 +34,6 @@
     "timestamp": 1791575756530,
     "isRiskFree": false
   },
-  "ETHUSDT": {
-    "symbol": "ETHUSDT",
-    "entryPrice": 2544.74,
-    "openTime": "2026-10-12T00:45:01.062Z",
-    "timestamp": 1791765901062,
-    "isRiskFree": false
-  },
   "MUBARAKUSDT": {
     "symbol": "MUBARAKUSDT",
     "entryPrice": 0.07204,
