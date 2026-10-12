@@ -130,7 +130,7 @@
     "entryPrice": 0.1309,
     "openTime": "2026-10-12T10:44:12.918Z",
     "timestamp": 1791801852918,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "PUMPUSDT": {
     "symbol": "PUMPUSDT",
