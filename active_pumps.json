@@ -41,13 +41,6 @@
     "timestamp": 1791582123003,
     "isRiskFree": true
   },
-  "XRPUSDT": {
-    "symbol": "XRPUSDT",
-    "entryPrice": 1.3968,
-    "openTime": "2026-10-10T00:03:23.986Z",
-    "timestamp": 1791590603986,
-    "isRiskFree": false
-  },
   "ETHUSDT": {
     "symbol": "ETHUSDT",
     "entryPrice": 2544.74,
