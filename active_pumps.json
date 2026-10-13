@@ -26,5 +26,12 @@
     "openTime": "2026-10-13T15:14:33.539Z",
     "timestamp": 1791904473539,
     "isRiskFree": false
+  },
+  "PEPEUSDT": {
+    "symbol": "PEPEUSDT",
+    "entryPrice": 0.00000418,
+    "openTime": "2026-10-13T15:39:47.616Z",
+    "timestamp": 1791905987616,
+    "isRiskFree": false
   }
 }
