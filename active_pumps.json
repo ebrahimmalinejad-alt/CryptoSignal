@@ -13,13 +13,6 @@
     "timestamp": 1791525732068,
     "isRiskFree": false
   },
-  "BTCUSDT": {
-    "symbol": "BTCUSDT",
-    "entryPrice": 83474.01,
-    "openTime": "2026-10-09T11:48:44.229Z",
-    "timestamp": 1791546524229,
-    "isRiskFree": false
-  },
   "SPCXBUSDT": {
     "symbol": "SPCXBUSDT",
     "entryPrice": 162.63,
