@@ -2168,5 +2168,15 @@
     "openTime": "2026-10-09T19:55:56.530Z",
     "closeTime": "2026-10-13T14:13:59.034Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SUSDT",
+    "type": "BUY",
+    "entryPrice": 0.059,
+    "exitPrice": 0.05496,
+    "pnlPercent": -6.85,
+    "openTime": "2026-10-13T15:49:53.831Z",
+    "closeTime": "2026-10-13T15:54:57.732Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
