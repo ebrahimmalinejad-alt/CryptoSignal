@@ -13,13 +13,6 @@
     "timestamp": 1791525732068,
     "isRiskFree": false
   },
-  "MUBARAKUSDT": {
-    "symbol": "MUBARAKUSDT",
-    "entryPrice": 0.07204,
-    "openTime": "2026-10-12T19:35:24.340Z",
-    "timestamp": 1791833724340,
-    "isRiskFree": false
-  },
   "TIAUSDT": {
     "symbol": "TIAUSDT",
     "entryPrice": 0.5855,
