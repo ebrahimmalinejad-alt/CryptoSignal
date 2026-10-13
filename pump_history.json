@@ -2138,5 +2138,15 @@
     "openTime": "2026-10-09T11:48:44.229Z",
     "closeTime": "2026-10-13T00:31:26.441Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "OGNUSDT",
+    "type": "BUY",
+    "entryPrice": 0.03343,
+    "exitPrice": 0.03522,
+    "pnlPercent": 5.35,
+    "openTime": "2026-10-13T03:12:32.794Z",
+    "closeTime": "2026-10-13T05:13:19.121Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
