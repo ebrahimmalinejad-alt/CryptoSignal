@@ -2148,5 +2148,15 @@
     "openTime": "2026-10-13T03:12:32.794Z",
     "closeTime": "2026-10-13T05:13:19.121Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "MAGICUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1224,
+    "exitPrice": 0.1222,
+    "pnlPercent": -0.16,
+    "openTime": "2026-10-13T05:48:35.214Z",
+    "closeTime": "2026-10-13T07:27:41.351Z",
+    "reason": "Breakeven Stop"
   }
 ]
