@@ -13,13 +13,6 @@
     "timestamp": 1791525732068,
     "isRiskFree": false
   },
-  "TIAUSDT": {
-    "symbol": "TIAUSDT",
-    "entryPrice": 0.5855,
-    "openTime": "2026-10-13T15:14:33.539Z",
-    "timestamp": 1791904473539,
-    "isRiskFree": false
-  },
   "PEPEUSDT": {
     "symbol": "PEPEUSDT",
     "entryPrice": 0.00000418,
