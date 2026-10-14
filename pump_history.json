@@ -2438,5 +2438,35 @@
     "openTime": "2026-10-14T12:33:31.852Z",
     "closeTime": "2026-10-14T14:05:09.020Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "type": "BUY",
+    "entryPrice": 2503.41,
+    "exitPrice": 2436.52,
+    "pnlPercent": -2.67,
+    "openTime": "2026-10-13T23:04:40.696Z",
+    "closeTime": "2026-10-14T14:15:14.200Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "HYPEUSDT",
+    "type": "BUY",
+    "entryPrice": 82.21,
+    "exitPrice": 79.84,
+    "pnlPercent": -2.88,
+    "openTime": "2026-10-14T00:31:33.201Z",
+    "closeTime": "2026-10-14T14:15:14.200Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "QNTUSDT",
+    "type": "BUY",
+    "entryPrice": 209.36,
+    "exitPrice": 203.68,
+    "pnlPercent": -2.71,
+    "openTime": "2026-10-14T13:44:41.961Z",
+    "closeTime": "2026-10-14T14:15:14.200Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

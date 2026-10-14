@@ -20,20 +20,6 @@
     "timestamp": 1791932678982,
     "isRiskFree": false
   },
-  "ETHUSDT": {
-    "symbol": "ETHUSDT",
-    "entryPrice": 2503.41,
-    "openTime": "2026-10-13T23:04:40.696Z",
-    "timestamp": 1791932680696,
-    "isRiskFree": false
-  },
-  "HYPEUSDT": {
-    "symbol": "HYPEUSDT",
-    "entryPrice": 82.21,
-    "openTime": "2026-10-14T00:31:33.201Z",
-    "timestamp": 1791937893201,
-    "isRiskFree": false
-  },
   "TRXUSDT": {
     "symbol": "TRXUSDT",
     "entryPrice": 0.3339,
@@ -46,13 +32,6 @@
     "entryPrice": 1447.06,
     "openTime": "2026-10-14T12:03:41.813Z",
     "timestamp": 1791979421813,
-    "isRiskFree": false
-  },
-  "QNTUSDT": {
-    "symbol": "QNTUSDT",
-    "entryPrice": 209.36,
-    "openTime": "2026-10-14T13:44:41.961Z",
-    "timestamp": 1791985481961,
     "isRiskFree": false
   }
 }
