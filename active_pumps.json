@@ -97,13 +97,6 @@
     "timestamp": 1791951554231,
     "isRiskFree": false
   },
-  "FILUSDT": {
-    "symbol": "FILUSDT",
-    "entryPrice": 1.1952,
-    "openTime": "2026-10-14T04:39:31.598Z",
-    "timestamp": 1791952771598,
-    "isRiskFree": false
-  },
   "PEPEUSDT": {
     "symbol": "PEPEUSDT",
     "entryPrice": 0.00000423,
