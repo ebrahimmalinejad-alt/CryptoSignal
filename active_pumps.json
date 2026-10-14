@@ -18,7 +18,7 @@
     "entryPrice": 0.00000418,
     "openTime": "2026-10-13T15:39:47.616Z",
     "timestamp": 1791905987616,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "SNDKBUSDT": {
     "symbol": "SNDKBUSDT",
