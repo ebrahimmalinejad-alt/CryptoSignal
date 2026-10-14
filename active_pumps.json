@@ -61,5 +61,12 @@
     "openTime": "2026-10-13T23:30:00.582Z",
     "timestamp": 1791934200582,
     "isRiskFree": false
+  },
+  "SUSDT": {
+    "symbol": "SUSDT",
+    "entryPrice": 0.05753,
+    "openTime": "2026-10-14T00:11:06.809Z",
+    "timestamp": 1791936666809,
+    "isRiskFree": false
   }
 }
