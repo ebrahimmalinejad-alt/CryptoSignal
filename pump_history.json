@@ -2278,5 +2278,25 @@
     "openTime": "2026-10-13T23:04:43.499Z",
     "closeTime": "2026-10-14T09:32:14.035Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.00000423,
+    "exitPrice": 0.00000412,
+    "pnlPercent": -2.6,
+    "openTime": "2026-10-14T04:49:39.000Z",
+    "closeTime": "2026-10-14T12:33:29.259Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SOXLBUSDT",
+    "type": "BUY",
+    "entryPrice": 125.17,
+    "exitPrice": 121.94,
+    "pnlPercent": -2.58,
+    "openTime": "2026-10-14T10:47:51.086Z",
+    "closeTime": "2026-10-14T12:33:29.259Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
