@@ -27,13 +27,6 @@
     "timestamp": 1791932680696,
     "isRiskFree": false
   },
-  "LINKUSDT": {
-    "symbol": "LINKUSDT",
-    "entryPrice": 12.877,
-    "openTime": "2026-10-13T23:30:00.582Z",
-    "timestamp": 1791934200582,
-    "isRiskFree": false
-  },
   "HYPEUSDT": {
     "symbol": "HYPEUSDT",
     "entryPrice": 82.21,
@@ -53,20 +46,6 @@
     "entryPrice": 1447.06,
     "openTime": "2026-10-14T12:03:41.813Z",
     "timestamp": 1791979421813,
-    "isRiskFree": false
-  },
-  "INJUSDT": {
-    "symbol": "INJUSDT",
-    "entryPrice": 8.001,
-    "openTime": "2026-10-14T12:13:49.062Z",
-    "timestamp": 1791980029062,
-    "isRiskFree": false
-  },
-  "ZKUSDT": {
-    "symbol": "ZKUSDT",
-    "entryPrice": 0.01551,
-    "openTime": "2026-10-14T12:33:31.852Z",
-    "timestamp": 1791981211852,
     "isRiskFree": false
   },
   "QNTUSDT": {

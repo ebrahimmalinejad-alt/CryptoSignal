@@ -2408,5 +2408,35 @@
     "openTime": "2026-10-14T12:33:33.662Z",
     "closeTime": "2026-10-14T13:29:24.557Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "LINKUSDT",
+    "type": "BUY",
+    "entryPrice": 12.877,
+    "exitPrice": 12.508,
+    "pnlPercent": -2.87,
+    "openTime": "2026-10-13T23:30:00.582Z",
+    "closeTime": "2026-10-14T14:05:09.020Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "INJUSDT",
+    "type": "BUY",
+    "entryPrice": 8.001,
+    "exitPrice": 7.798,
+    "pnlPercent": -2.54,
+    "openTime": "2026-10-14T12:13:49.062Z",
+    "closeTime": "2026-10-14T14:05:09.020Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ZKUSDT",
+    "type": "BUY",
+    "entryPrice": 0.01551,
+    "exitPrice": 0.01512,
+    "pnlPercent": -2.51,
+    "openTime": "2026-10-14T12:33:31.852Z",
+    "closeTime": "2026-10-14T14:05:09.020Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
