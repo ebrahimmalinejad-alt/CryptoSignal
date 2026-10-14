@@ -96,5 +96,12 @@
     "openTime": "2026-10-14T00:31:33.201Z",
     "timestamp": 1791937893201,
     "isRiskFree": false
+  },
+  "OGNUSDT": {
+    "symbol": "OGNUSDT",
+    "entryPrice": 0.03454,
+    "openTime": "2026-10-14T01:37:24.606Z",
+    "timestamp": 1791941844606,
+    "isRiskFree": false
   }
 }
