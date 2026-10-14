@@ -34,13 +34,6 @@
     "timestamp": 1791934200582,
     "isRiskFree": false
   },
-  "DOGEUSDT": {
-    "symbol": "DOGEUSDT",
-    "entryPrice": 0.08492,
-    "openTime": "2026-10-14T00:31:30.461Z",
-    "timestamp": 1791937890461,
-    "isRiskFree": false
-  },
   "HYPEUSDT": {
     "symbol": "HYPEUSDT",
     "entryPrice": 82.21,
@@ -53,13 +46,6 @@
     "entryPrice": 0.3339,
     "openTime": "2026-10-14T12:03:37.329Z",
     "timestamp": 1791979417329,
-    "isRiskFree": false
-  },
-  "SOLUSDT": {
-    "symbol": "SOLUSDT",
-    "entryPrice": 107.45,
-    "openTime": "2026-10-14T12:03:39.291Z",
-    "timestamp": 1791979419291,
     "isRiskFree": false
   },
   "SNDKBUSDT": {

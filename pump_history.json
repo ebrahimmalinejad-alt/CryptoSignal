@@ -2378,5 +2378,25 @@
     "openTime": "2026-10-14T12:13:50.965Z",
     "closeTime": "2026-10-14T13:14:04.213Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.08492,
+    "exitPrice": 0.08259,
+    "pnlPercent": -2.74,
+    "openTime": "2026-10-14T00:31:30.461Z",
+    "closeTime": "2026-10-14T13:19:11.267Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SOLUSDT",
+    "type": "BUY",
+    "entryPrice": 107.45,
+    "exitPrice": 104.69,
+    "pnlPercent": -2.57,
+    "openTime": "2026-10-14T12:03:39.291Z",
+    "closeTime": "2026-10-14T13:19:11.267Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
