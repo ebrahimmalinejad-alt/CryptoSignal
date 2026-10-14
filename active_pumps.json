@@ -76,13 +76,6 @@
     "timestamp": 1791980029062,
     "isRiskFree": false
   },
-  "TAOUSDT": {
-    "symbol": "TAOUSDT",
-    "entryPrice": 280.5,
-    "openTime": "2026-10-14T12:13:50.965Z",
-    "timestamp": 1791980030965,
-    "isRiskFree": false
-  },
   "ZKUSDT": {
     "symbol": "ZKUSDT",
     "entryPrice": 0.01551,
