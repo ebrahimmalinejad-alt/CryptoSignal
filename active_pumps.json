@@ -32,7 +32,7 @@
     "entryPrice": 278.3,
     "openTime": "2026-10-13T23:04:43.499Z",
     "timestamp": 1791932683499,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "APTUSDT": {
     "symbol": "APTUSDT",
