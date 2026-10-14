@@ -34,13 +34,6 @@
     "timestamp": 1791934200582,
     "isRiskFree": false
   },
-  "FETUSDT": {
-    "symbol": "FETUSDT",
-    "entryPrice": 0.2158,
-    "openTime": "2026-10-14T00:21:19.769Z",
-    "timestamp": 1791937279769,
-    "isRiskFree": false
-  },
   "DOGEUSDT": {
     "symbol": "DOGEUSDT",
     "entryPrice": 0.08492,
@@ -53,13 +46,6 @@
     "entryPrice": 82.21,
     "openTime": "2026-10-14T00:31:33.201Z",
     "timestamp": 1791937893201,
-    "isRiskFree": false
-  },
-  "WLDUSDT": {
-    "symbol": "WLDUSDT",
-    "entryPrice": 0.5131,
-    "openTime": "2026-10-14T02:38:09.999Z",
-    "timestamp": 1791945489999,
     "isRiskFree": false
   },
   "TRXUSDT": {
@@ -95,13 +81,6 @@
     "entryPrice": 280.5,
     "openTime": "2026-10-14T12:13:50.965Z",
     "timestamp": 1791980030965,
-    "isRiskFree": false
-  },
-  "SUIUSDT": {
-    "symbol": "SUIUSDT",
-    "entryPrice": 1.06,
-    "openTime": "2026-10-14T12:18:20.853Z",
-    "timestamp": 1791980300853,
     "isRiskFree": false
   },
   "ZKUSDT": {
