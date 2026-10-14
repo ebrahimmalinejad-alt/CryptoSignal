@@ -2238,5 +2238,25 @@
     "openTime": "2026-10-14T04:39:29.984Z",
     "closeTime": "2026-10-14T05:50:15.962Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "OGNUSDT",
+    "type": "BUY",
+    "entryPrice": 0.03454,
+    "exitPrice": 0.03358,
+    "pnlPercent": -2.78,
+    "openTime": "2026-10-14T01:37:24.606Z",
+    "closeTime": "2026-10-14T06:05:25.178Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SOXLBUSDT",
+    "type": "BUY",
+    "entryPrice": 127.23,
+    "exitPrice": 123.53,
+    "pnlPercent": -2.91,
+    "openTime": "2026-10-14T05:04:48.356Z",
+    "closeTime": "2026-10-14T06:05:25.178Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

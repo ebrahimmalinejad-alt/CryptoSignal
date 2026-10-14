@@ -83,13 +83,6 @@
     "timestamp": 1791937893201,
     "isRiskFree": false
   },
-  "OGNUSDT": {
-    "symbol": "OGNUSDT",
-    "entryPrice": 0.03454,
-    "openTime": "2026-10-14T01:37:24.606Z",
-    "timestamp": 1791941844606,
-    "isRiskFree": false
-  },
   "WLDUSDT": {
     "symbol": "WLDUSDT",
     "entryPrice": 0.5131,
@@ -116,13 +109,6 @@
     "entryPrice": 0.00000423,
     "openTime": "2026-10-14T04:49:39.000Z",
     "timestamp": 1791953379000,
-    "isRiskFree": false
-  },
-  "SOXLBUSDT": {
-    "symbol": "SOXLBUSDT",
-    "entryPrice": 127.23,
-    "openTime": "2026-10-14T05:04:48.356Z",
-    "timestamp": 1791954288356,
     "isRiskFree": false
   }
 }
