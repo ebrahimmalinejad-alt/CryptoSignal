@@ -2298,5 +2298,15 @@
     "openTime": "2026-10-14T10:47:51.086Z",
     "closeTime": "2026-10-14T12:33:29.259Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "APTUSDT",
+    "type": "BUY",
+    "entryPrice": 0.832,
+    "exitPrice": 0.8108,
+    "pnlPercent": -2.55,
+    "openTime": "2026-10-13T23:09:48.336Z",
+    "closeTime": "2026-10-14T12:38:36.432Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
