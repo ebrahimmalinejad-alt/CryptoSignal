@@ -2208,5 +2208,15 @@
     "openTime": "2026-10-13T15:39:47.616Z",
     "closeTime": "2026-10-14T01:37:22.315Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "SUSDT",
+    "type": "BUY",
+    "entryPrice": 0.05753,
+    "exitPrice": 0.06046,
+    "pnlPercent": 5.09,
+    "openTime": "2026-10-14T00:11:06.809Z",
+    "closeTime": "2026-10-14T04:24:18.114Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
