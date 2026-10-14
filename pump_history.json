@@ -2468,5 +2468,15 @@
     "openTime": "2026-10-14T13:44:41.961Z",
     "closeTime": "2026-10-14T14:15:14.200Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "XAUTUSDT",
+    "type": "BUY",
+    "entryPrice": 4189.15,
+    "exitPrice": 4082.32,
+    "pnlPercent": -2.55,
+    "openTime": "2026-10-09T06:02:12.068Z",
+    "closeTime": "2026-10-14T16:01:26.117Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
