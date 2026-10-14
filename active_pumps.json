@@ -34,13 +34,6 @@
     "timestamp": 1791934200582,
     "isRiskFree": false
   },
-  "PUMPUSDT": {
-    "symbol": "PUMPUSDT",
-    "entryPrice": 0.005033,
-    "openTime": "2026-10-14T00:16:13.257Z",
-    "timestamp": 1791936973257,
-    "isRiskFree": false
-  },
   "FETUSDT": {
     "symbol": "FETUSDT",
     "entryPrice": 0.2158,
@@ -67,13 +60,6 @@
     "entryPrice": 0.5131,
     "openTime": "2026-10-14T02:38:09.999Z",
     "timestamp": 1791945489999,
-    "isRiskFree": false
-  },
-  "ZECUSDT": {
-    "symbol": "ZECUSDT",
-    "entryPrice": 1257.12,
-    "openTime": "2026-10-14T04:19:14.231Z",
-    "timestamp": 1791951554231,
     "isRiskFree": false
   },
   "TRXUSDT": {

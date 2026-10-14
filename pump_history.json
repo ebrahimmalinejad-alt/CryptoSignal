@@ -2318,5 +2318,25 @@
     "openTime": "2026-10-14T00:21:17.961Z",
     "closeTime": "2026-10-14T12:43:39.604Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "PUMPUSDT",
+    "type": "BUY",
+    "entryPrice": 0.005033,
+    "exitPrice": 0.004907,
+    "pnlPercent": -2.5,
+    "openTime": "2026-10-14T00:16:13.257Z",
+    "closeTime": "2026-10-14T12:48:43.015Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ZECUSDT",
+    "type": "BUY",
+    "entryPrice": 1257.12,
+    "exitPrice": 1221.12,
+    "pnlPercent": -2.86,
+    "openTime": "2026-10-14T04:19:14.231Z",
+    "closeTime": "2026-10-14T12:48:43.015Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
