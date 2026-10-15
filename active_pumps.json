@@ -25,7 +25,7 @@
     "entryPrice": 0.00000407,
     "openTime": "2026-10-15T15:04:00.824Z",
     "timestamp": 1792076640824,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "XLMUSDT": {
     "symbol": "XLMUSDT",
