@@ -6,13 +6,6 @@
     "timestamp": 1790725429729,
     "isRiskFree": false
   },
-  "BTCUSDT": {
-    "symbol": "BTCUSDT",
-    "entryPrice": 83315.2,
-    "openTime": "2026-10-13T23:04:38.982Z",
-    "timestamp": 1791932678982,
-    "isRiskFree": false
-  },
   "TRXUSDT": {
     "symbol": "TRXUSDT",
     "entryPrice": 0.3339,
