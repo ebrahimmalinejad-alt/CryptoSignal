@@ -41,13 +41,6 @@
     "timestamp": 1792103088133,
     "isRiskFree": false
   },
-  "LTCUSDT": {
-    "symbol": "LTCUSDT",
-    "entryPrice": 61.34,
-    "openTime": "2026-10-16T00:18:45.354Z",
-    "timestamp": 1792109925354,
-    "isRiskFree": false
-  },
   "SOLUSDT": {
     "symbol": "SOLUSDT",
     "entryPrice": 105.23,
