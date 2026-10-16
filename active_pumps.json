@@ -152,5 +152,12 @@
     "openTime": "2026-10-16T13:32:12.020Z",
     "timestamp": 1792157532020,
     "isRiskFree": false
+  },
+  "TSLABUSDT": {
+    "symbol": "TSLABUSDT",
+    "entryPrice": 363.92,
+    "openTime": "2026-10-16T14:32:46.511Z",
+    "timestamp": 1792161166511,
+    "isRiskFree": false
   }
 }
