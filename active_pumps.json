@@ -74,7 +74,7 @@
     "entryPrice": 1.0303,
     "openTime": "2026-10-15T20:58:56.159Z",
     "timestamp": 1792097936159,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "LINKUSDT": {
     "symbol": "LINKUSDT",
@@ -116,7 +116,7 @@
     "entryPrice": 9.999,
     "openTime": "2026-10-16T01:29:30.409Z",
     "timestamp": 1792114170409,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "PEPEUSDT": {
     "symbol": "PEPEUSDT",
