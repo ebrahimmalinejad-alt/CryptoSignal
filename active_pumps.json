@@ -27,13 +27,6 @@
     "timestamp": 1792076947297,
     "isRiskFree": false
   },
-  "TRUMPUSDT": {
-    "symbol": "TRUMPUSDT",
-    "entryPrice": 1.872,
-    "openTime": "2026-10-15T15:09:10.610Z",
-    "timestamp": 1792076950610,
-    "isRiskFree": false
-  },
   "XRPUSDT": {
     "symbol": "XRPUSDT",
     "entryPrice": 1.3391,
@@ -60,13 +53,6 @@
     "entryPrice": 61.34,
     "openTime": "2026-10-16T00:18:45.354Z",
     "timestamp": 1792109925354,
-    "isRiskFree": false
-  },
-  "ADAUSDT": {
-    "symbol": "ADAUSDT",
-    "entryPrice": 0.2311,
-    "openTime": "2026-10-16T01:19:21.390Z",
-    "timestamp": 1792113561390,
     "isRiskFree": false
   },
   "SOLUSDT": {
@@ -117,13 +103,6 @@
     "openTime": "2026-10-16T11:14:34.369Z",
     "timestamp": 1792149274369,
     "isRiskFree": false
-  },
-  "PYTHUSDT": {
-    "symbol": "PYTHUSDT",
-    "entryPrice": 0.087,
-    "openTime": "2026-10-16T12:46:45.469Z",
-    "timestamp": 1792154805469,
-    "isRiskFree": true
   },
   "SNDKBUSDT": {
     "symbol": "SNDKBUSDT",
