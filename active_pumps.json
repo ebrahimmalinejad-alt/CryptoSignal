@@ -61,5 +61,12 @@
     "openTime": "2026-10-16T17:54:53.916Z",
     "timestamp": 1792173293916,
     "isRiskFree": false
+  },
+  "DOTUSDT": {
+    "symbol": "DOTUSDT",
+    "entryPrice": 1.153,
+    "openTime": "2026-10-16T21:01:03.811Z",
+    "timestamp": 1792184463811,
+    "isRiskFree": false
   }
 }
