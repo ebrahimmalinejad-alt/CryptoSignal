@@ -41,13 +41,6 @@
     "timestamp": 1792114168941,
     "isRiskFree": false
   },
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.00000407,
-    "openTime": "2026-10-16T03:40:53.454Z",
-    "timestamp": 1792122053454,
-    "isRiskFree": false
-  },
   "ETHUSDT": {
     "symbol": "ETHUSDT",
     "entryPrice": 2456.35,
