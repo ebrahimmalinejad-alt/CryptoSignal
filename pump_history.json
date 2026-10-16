@@ -2768,5 +2768,55 @@
     "openTime": "2026-10-16T03:40:53.454Z",
     "closeTime": "2026-10-16T17:09:29.285Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "XLMUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1845,
+    "exitPrice": 0.1789,
+    "pnlPercent": -3.04,
+    "openTime": "2026-10-15T15:09:07.297Z",
+    "closeTime": "2026-10-16T17:19:35.399Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "LINKUSDT",
+    "type": "BUY",
+    "entryPrice": 12.558,
+    "exitPrice": 12.162,
+    "pnlPercent": -3.15,
+    "openTime": "2026-10-15T22:24:48.133Z",
+    "closeTime": "2026-10-16T17:19:35.399Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "type": "BUY",
+    "entryPrice": 2456.35,
+    "exitPrice": 2394.19,
+    "pnlPercent": -2.53,
+    "openTime": "2026-10-16T07:17:17.851Z",
+    "closeTime": "2026-10-16T17:19:35.399Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "type": "BUY",
+    "entryPrice": 10.191,
+    "exitPrice": 9.901,
+    "pnlPercent": -2.85,
+    "openTime": "2026-10-16T15:08:13.156Z",
+    "closeTime": "2026-10-16T17:19:35.399Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "TAOUSDT",
+    "type": "BUY",
+    "entryPrice": 280.8,
+    "exitPrice": 272.5,
+    "pnlPercent": -2.96,
+    "openTime": "2026-10-16T15:23:30.684Z",
+    "closeTime": "2026-10-16T17:19:35.399Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

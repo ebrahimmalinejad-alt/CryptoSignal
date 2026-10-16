@@ -20,32 +20,11 @@
     "timestamp": 1792072100407,
     "isRiskFree": false
   },
-  "XLMUSDT": {
-    "symbol": "XLMUSDT",
-    "entryPrice": 0.1845,
-    "openTime": "2026-10-15T15:09:07.297Z",
-    "timestamp": 1792076947297,
-    "isRiskFree": false
-  },
-  "LINKUSDT": {
-    "symbol": "LINKUSDT",
-    "entryPrice": 12.558,
-    "openTime": "2026-10-15T22:24:48.133Z",
-    "timestamp": 1792103088133,
-    "isRiskFree": false
-  },
   "SOLUSDT": {
     "symbol": "SOLUSDT",
     "entryPrice": 105.23,
     "openTime": "2026-10-16T01:29:28.941Z",
     "timestamp": 1792114168941,
-    "isRiskFree": false
-  },
-  "ETHUSDT": {
-    "symbol": "ETHUSDT",
-    "entryPrice": 2456.35,
-    "openTime": "2026-10-16T07:17:17.851Z",
-    "timestamp": 1792135037851,
     "isRiskFree": false
   },
   "BTCUSDT": {
@@ -69,13 +48,6 @@
     "timestamp": 1792157530167,
     "isRiskFree": false
   },
-  "AVAXUSDT": {
-    "symbol": "AVAXUSDT",
-    "entryPrice": 10.191,
-    "openTime": "2026-10-16T15:08:13.156Z",
-    "timestamp": 1792163293156,
-    "isRiskFree": false
-  },
   "ONDOUSDT": {
     "symbol": "ONDOUSDT",
     "entryPrice": 0.4578,
@@ -88,13 +60,6 @@
     "entryPrice": 0.1997,
     "openTime": "2026-10-16T15:23:28.809Z",
     "timestamp": 1792164208809,
-    "isRiskFree": false
-  },
-  "TAOUSDT": {
-    "symbol": "TAOUSDT",
-    "entryPrice": 280.8,
-    "openTime": "2026-10-16T15:23:30.684Z",
-    "timestamp": 1792164210684,
     "isRiskFree": false
   }
 }
