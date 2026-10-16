@@ -62,13 +62,6 @@
     "timestamp": 1792103088133,
     "isRiskFree": false
   },
-  "QNTUSDT": {
-    "symbol": "QNTUSDT",
-    "entryPrice": 206.07,
-    "openTime": "2026-10-15T22:24:50.009Z",
-    "timestamp": 1792103090009,
-    "isRiskFree": true
-  },
   "LTCUSDT": {
     "symbol": "LTCUSDT",
     "entryPrice": 61.34,
