@@ -2558,5 +2558,15 @@
     "openTime": "2026-10-16T01:29:30.409Z",
     "closeTime": "2026-10-16T10:39:09.499Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "AAVEUSDT",
+    "type": "BUY",
+    "entryPrice": 156.98,
+    "exitPrice": 165.14,
+    "pnlPercent": 5.2,
+    "openTime": "2026-10-15T19:27:43.473Z",
+    "closeTime": "2026-10-16T11:29:42.822Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
