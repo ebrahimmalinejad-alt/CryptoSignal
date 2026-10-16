@@ -34,13 +34,6 @@
     "timestamp": 1792076950610,
     "isRiskFree": false
   },
-  "MUBUSDT": {
-    "symbol": "MUBUSDT",
-    "entryPrice": 929.02,
-    "openTime": "2026-10-15T19:53:05.266Z",
-    "timestamp": 1792093985266,
-    "isRiskFree": false
-  },
   "HYPEUSDT": {
     "symbol": "HYPEUSDT",
     "entryPrice": 82.28,
@@ -118,13 +111,6 @@
     "timestamp": 1792135037851,
     "isRiskFree": false
   },
-  "SNDKBUSDT": {
-    "symbol": "SNDKBUSDT",
-    "entryPrice": 1379.71,
-    "openTime": "2026-10-16T08:02:43.201Z",
-    "timestamp": 1792137763201,
-    "isRiskFree": false
-  },
   "PUMPUSDT": {
     "symbol": "PUMPUSDT",
     "entryPrice": 0.00446,
@@ -151,13 +137,6 @@
     "entryPrice": 0.0827,
     "openTime": "2026-10-16T11:14:34.369Z",
     "timestamp": 1792149274369,
-    "isRiskFree": false
-  },
-  "SOXLBUSDT": {
-    "symbol": "SOXLBUSDT",
-    "entryPrice": 104.15,
-    "openTime": "2026-10-16T11:19:38.314Z",
-    "timestamp": 1792149578314,
     "isRiskFree": false
   },
   "PYTHUSDT": {

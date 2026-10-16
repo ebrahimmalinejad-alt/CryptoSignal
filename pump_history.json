@@ -2588,5 +2588,35 @@
     "openTime": "2026-10-16T05:57:30.849Z",
     "closeTime": "2026-10-16T13:01:52.563Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "MUBUSDT",
+    "type": "BUY",
+    "entryPrice": 929.02,
+    "exitPrice": 899.81,
+    "pnlPercent": -3.14,
+    "openTime": "2026-10-15T19:53:05.266Z",
+    "closeTime": "2026-10-16T13:32:07.444Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SNDKBUSDT",
+    "type": "BUY",
+    "entryPrice": 1379.71,
+    "exitPrice": 1344.66,
+    "pnlPercent": -2.54,
+    "openTime": "2026-10-16T08:02:43.201Z",
+    "closeTime": "2026-10-16T13:32:07.444Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SOXLBUSDT",
+    "type": "BUY",
+    "entryPrice": 104.15,
+    "exitPrice": 101.11,
+    "pnlPercent": -2.92,
+    "openTime": "2026-10-16T11:19:38.314Z",
+    "closeTime": "2026-10-16T13:32:07.444Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
