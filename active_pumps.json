@@ -39,7 +39,7 @@
     "entryPrice": 156.98,
     "openTime": "2026-10-15T19:27:43.473Z",
     "timestamp": 1792092463473,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "MUBUSDT": {
     "symbol": "MUBUSDT",
