@@ -2528,5 +2528,15 @@
     "openTime": "2026-10-15T15:04:00.824Z",
     "closeTime": "2026-10-15T23:25:29.675Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "WLDUSDT",
+    "type": "BUY",
+    "entryPrice": 0.5013,
+    "exitPrice": 0.5318,
+    "pnlPercent": 6.08,
+    "openTime": "2026-10-15T20:58:57.805Z",
+    "closeTime": "2026-10-16T08:43:07.244Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
