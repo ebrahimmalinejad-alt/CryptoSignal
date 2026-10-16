@@ -152,5 +152,12 @@
     "openTime": "2026-10-16T08:02:43.201Z",
     "timestamp": 1792137763201,
     "isRiskFree": false
+  },
+  "ZKUSDT": {
+    "symbol": "ZKUSDT",
+    "entryPrice": 0.01806,
+    "openTime": "2026-10-16T08:33:00.481Z",
+    "timestamp": 1792139580481,
+    "isRiskFree": false
   }
 }
