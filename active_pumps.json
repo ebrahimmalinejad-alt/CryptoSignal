@@ -111,13 +111,6 @@
     "timestamp": 1792114168941,
     "isRiskFree": false
   },
-  "AVAXUSDT": {
-    "symbol": "AVAXUSDT",
-    "entryPrice": 9.999,
-    "openTime": "2026-10-16T01:29:30.409Z",
-    "timestamp": 1792114170409,
-    "isRiskFree": true
-  },
   "PEPEUSDT": {
     "symbol": "PEPEUSDT",
     "entryPrice": 0.00000407,
