@@ -166,5 +166,12 @@
     "openTime": "2026-10-16T11:19:38.314Z",
     "timestamp": 1792149578314,
     "isRiskFree": false
+  },
+  "PYTHUSDT": {
+    "symbol": "PYTHUSDT",
+    "entryPrice": 0.087,
+    "openTime": "2026-10-16T12:46:45.469Z",
+    "timestamp": 1792154805469,
+    "isRiskFree": false
   }
 }
