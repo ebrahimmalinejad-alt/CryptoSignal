@@ -2568,5 +2568,15 @@
     "openTime": "2026-10-15T19:27:43.473Z",
     "closeTime": "2026-10-16T11:29:42.822Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "PYTHUSDT",
+    "type": "BUY",
+    "entryPrice": 0.08912,
+    "exitPrice": 0.087,
+    "pnlPercent": -2.38,
+    "openTime": "2026-10-16T11:39:49.132Z",
+    "closeTime": "2026-10-16T12:46:43.050Z",
+    "reason": "Breakeven Stop"
   }
 ]
