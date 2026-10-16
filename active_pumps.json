@@ -27,13 +27,6 @@
     "timestamp": 1792076947297,
     "isRiskFree": false
   },
-  "XRPUSDT": {
-    "symbol": "XRPUSDT",
-    "entryPrice": 1.3391,
-    "openTime": "2026-10-15T20:58:54.120Z",
-    "timestamp": 1792097934120,
-    "isRiskFree": false
-  },
   "LINKUSDT": {
     "symbol": "LINKUSDT",
     "entryPrice": 12.558,
@@ -81,13 +74,6 @@
     "entryPrice": 1344.66,
     "openTime": "2026-10-16T13:32:10.167Z",
     "timestamp": 1792157530167,
-    "isRiskFree": false
-  },
-  "TSLABUSDT": {
-    "symbol": "TSLABUSDT",
-    "entryPrice": 363.92,
-    "openTime": "2026-10-16T14:32:46.511Z",
-    "timestamp": 1792161166511,
     "isRiskFree": false
   },
   "AVAXUSDT": {

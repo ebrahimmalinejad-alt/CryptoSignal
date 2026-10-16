@@ -2738,5 +2738,25 @@
     "openTime": "2026-10-16T00:18:45.354Z",
     "closeTime": "2026-10-16T16:54:19.429Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "XRPUSDT",
+    "type": "BUY",
+    "entryPrice": 1.3391,
+    "exitPrice": 1.3049,
+    "pnlPercent": -2.55,
+    "openTime": "2026-10-15T20:58:54.120Z",
+    "closeTime": "2026-10-16T17:04:25.443Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "TSLABUSDT",
+    "type": "BUY",
+    "entryPrice": 363.92,
+    "exitPrice": 352.83,
+    "pnlPercent": -3.05,
+    "openTime": "2026-10-16T14:32:46.511Z",
+    "closeTime": "2026-10-16T17:04:25.443Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
