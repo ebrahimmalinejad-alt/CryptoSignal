@@ -145,5 +145,12 @@
     "openTime": "2026-10-16T10:03:52.553Z",
     "timestamp": 1792145032553,
     "isRiskFree": false
+  },
+  "BTCUSDT": {
+    "symbol": "BTCUSDT",
+    "entryPrice": 82570.93,
+    "openTime": "2026-10-16T11:14:30.435Z",
+    "timestamp": 1792149270435,
+    "isRiskFree": false
   }
 }
