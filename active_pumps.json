@@ -96,5 +96,12 @@
     "openTime": "2026-10-15T22:24:50.009Z",
     "timestamp": 1792103090009,
     "isRiskFree": false
+  },
+  "LTCUSDT": {
+    "symbol": "LTCUSDT",
+    "entryPrice": 61.34,
+    "openTime": "2026-10-16T00:18:45.354Z",
+    "timestamp": 1792109925354,
+    "isRiskFree": false
   }
 }
