@@ -34,13 +34,6 @@
     "timestamp": 1792076950610,
     "isRiskFree": false
   },
-  "HYPEUSDT": {
-    "symbol": "HYPEUSDT",
-    "entryPrice": 82.28,
-    "openTime": "2026-10-15T20:33:34.229Z",
-    "timestamp": 1792096414229,
-    "isRiskFree": false
-  },
   "XRPUSDT": {
     "symbol": "XRPUSDT",
     "entryPrice": 1.3391,
@@ -138,13 +131,6 @@
     "openTime": "2026-10-16T13:32:10.167Z",
     "timestamp": 1792157530167,
     "isRiskFree": false
-  },
-  "SOXLBUSDT": {
-    "symbol": "SOXLBUSDT",
-    "entryPrice": 101.11,
-    "openTime": "2026-10-16T13:32:12.020Z",
-    "timestamp": 1792157532020,
-    "isRiskFree": true
   },
   "TSLABUSDT": {
     "symbol": "TSLABUSDT",
