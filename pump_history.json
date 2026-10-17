@@ -2878,5 +2878,25 @@
     "openTime": "2026-10-17T03:41:57.388Z",
     "closeTime": "2026-10-17T12:15:49.550Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "FILUSDT",
+    "type": "BUY",
+    "entryPrice": 1.1496,
+    "exitPrice": 1.1208,
+    "pnlPercent": -2.51,
+    "openTime": "2026-10-17T08:18:44.326Z",
+    "closeTime": "2026-10-17T12:46:03.246Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "WLDUSDT",
+    "type": "BUY",
+    "entryPrice": 0.523,
+    "exitPrice": 0.5095,
+    "pnlPercent": -2.58,
+    "openTime": "2026-10-17T08:28:50.274Z",
+    "closeTime": "2026-10-17T12:46:03.246Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
