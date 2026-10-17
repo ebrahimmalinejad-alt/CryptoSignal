@@ -2908,5 +2908,15 @@
     "openTime": "2026-10-16T15:23:28.809Z",
     "closeTime": "2026-10-17T12:51:06.538Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ONDOUSDT",
+    "type": "BUY",
+    "entryPrice": 0.4578,
+    "exitPrice": 0.4459,
+    "pnlPercent": -2.6,
+    "openTime": "2026-10-16T15:08:15.245Z",
+    "closeTime": "2026-10-17T12:56:09.969Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
