@@ -55,13 +55,6 @@
     "timestamp": 1792164208809,
     "isRiskFree": false
   },
-  "PUMPUSDT": {
-    "symbol": "PUMPUSDT",
-    "entryPrice": 0.004674,
-    "openTime": "2026-10-17T03:41:57.388Z",
-    "timestamp": 1792208517388,
-    "isRiskFree": false
-  },
   "FILUSDT": {
     "symbol": "FILUSDT",
     "entryPrice": 1.1496,

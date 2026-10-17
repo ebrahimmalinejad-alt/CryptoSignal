@@ -2868,5 +2868,15 @@
     "openTime": "2026-10-16T22:31:47.201Z",
     "closeTime": "2026-10-17T12:05:28.463Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "PUMPUSDT",
+    "type": "BUY",
+    "entryPrice": 0.004674,
+    "exitPrice": 0.004535,
+    "pnlPercent": -2.97,
+    "openTime": "2026-10-17T03:41:57.388Z",
+    "closeTime": "2026-10-17T12:15:49.550Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
