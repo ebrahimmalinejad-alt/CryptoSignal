@@ -34,13 +34,6 @@
     "timestamp": 1792149270435,
     "isRiskFree": false
   },
-  "BNBUSDT": {
-    "symbol": "BNBUSDT",
-    "entryPrice": 733.9,
-    "openTime": "2026-10-16T11:14:32.302Z",
-    "timestamp": 1792149272302,
-    "isRiskFree": false
-  },
   "PUMPUSDT": {
     "symbol": "PUMPUSDT",
     "entryPrice": 0.004433,
