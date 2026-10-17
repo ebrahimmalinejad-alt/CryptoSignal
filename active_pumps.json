@@ -55,13 +55,6 @@
     "timestamp": 1792164208809,
     "isRiskFree": false
   },
-  "APTUSDT": {
-    "symbol": "APTUSDT",
-    "entryPrice": 0.8477,
-    "openTime": "2026-10-16T17:54:53.916Z",
-    "timestamp": 1792173293916,
-    "isRiskFree": false
-  },
   "DOTUSDT": {
     "symbol": "DOTUSDT",
     "entryPrice": 1.153,
