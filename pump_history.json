@@ -2928,5 +2928,35 @@
     "openTime": "2026-10-16T11:14:32.302Z",
     "closeTime": "2026-10-17T16:02:25.212Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SOLUSDT",
+    "type": "BUY",
+    "entryPrice": 105.23,
+    "exitPrice": 102.09,
+    "pnlPercent": -2.98,
+    "openTime": "2026-10-16T01:29:28.941Z",
+    "closeTime": "2026-10-17T21:34:59.512Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "PUMPUSDT",
+    "type": "BUY",
+    "entryPrice": 0.004433,
+    "exitPrice": 0.004291,
+    "pnlPercent": -3.2,
+    "openTime": "2026-10-17T15:47:18.805Z",
+    "closeTime": "2026-10-17T21:34:59.512Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "WLDUSDT",
+    "type": "BUY",
+    "entryPrice": 0.5037,
+    "exitPrice": 0.4888,
+    "pnlPercent": -2.96,
+    "openTime": "2026-10-17T19:34:07.711Z",
+    "closeTime": "2026-10-17T21:34:59.512Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

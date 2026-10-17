@@ -20,32 +20,11 @@
     "timestamp": 1792072100407,
     "isRiskFree": false
   },
-  "SOLUSDT": {
-    "symbol": "SOLUSDT",
-    "entryPrice": 105.23,
-    "openTime": "2026-10-16T01:29:28.941Z",
-    "timestamp": 1792114168941,
-    "isRiskFree": false
-  },
   "BTCUSDT": {
     "symbol": "BTCUSDT",
     "entryPrice": 82570.93,
     "openTime": "2026-10-16T11:14:30.435Z",
     "timestamp": 1792149270435,
-    "isRiskFree": false
-  },
-  "PUMPUSDT": {
-    "symbol": "PUMPUSDT",
-    "entryPrice": 0.004433,
-    "openTime": "2026-10-17T15:47:18.805Z",
-    "timestamp": 1792252038805,
-    "isRiskFree": false
-  },
-  "WLDUSDT": {
-    "symbol": "WLDUSDT",
-    "entryPrice": 0.5037,
-    "openTime": "2026-10-17T19:34:07.711Z",
-    "timestamp": 1792265647711,
     "isRiskFree": false
   }
 }
