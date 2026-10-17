@@ -82,12 +82,5 @@
     "openTime": "2026-10-17T08:28:50.274Z",
     "timestamp": 1792225730274,
     "isRiskFree": false
-  },
-  "TIAUSDT": {
-    "symbol": "TIAUSDT",
-    "entryPrice": 0.6931,
-    "openTime": "2026-10-17T10:04:34.772Z",
-    "timestamp": 1792231474772,
-    "isRiskFree": false
   }
 }
