@@ -2968,5 +2968,15 @@
     "openTime": "2026-10-18T09:48:26.126Z",
     "closeTime": "2026-10-18T13:30:43.538Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "HBARUSDT",
+    "type": "BUY",
+    "entryPrice": 0.0853,
+    "exitPrice": 0.08295,
+    "pnlPercent": -2.75,
+    "openTime": "2026-10-18T15:41:39.702Z",
+    "closeTime": "2026-10-18T19:24:04.101Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
