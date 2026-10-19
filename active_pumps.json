@@ -62,20 +62,6 @@
     "timestamp": 1792388555160,
     "isRiskFree": false
   },
-  "HYPEUSDT": {
-    "symbol": "HYPEUSDT",
-    "entryPrice": 79.9,
-    "openTime": "2026-10-19T05:57:47.888Z",
-    "timestamp": 1792389467888,
-    "isRiskFree": false
-  },
-  "LINKUSDT": {
-    "symbol": "LINKUSDT",
-    "entryPrice": 12.181,
-    "openTime": "2026-10-19T09:42:22.567Z",
-    "timestamp": 1792402942567,
-    "isRiskFree": false
-  },
   "SUIUSDT": {
     "symbol": "SUIUSDT",
     "entryPrice": 0.9992,

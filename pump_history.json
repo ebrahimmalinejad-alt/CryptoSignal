@@ -3008,5 +3008,25 @@
     "openTime": "2026-10-19T00:54:37.667Z",
     "closeTime": "2026-10-19T14:01:22.686Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "HYPEUSDT",
+    "type": "BUY",
+    "entryPrice": 79.9,
+    "exitPrice": 77.83,
+    "pnlPercent": -2.59,
+    "openTime": "2026-10-19T05:57:47.888Z",
+    "closeTime": "2026-10-19T18:27:31.424Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "LINKUSDT",
+    "type": "BUY",
+    "entryPrice": 12.181,
+    "exitPrice": 11.855,
+    "pnlPercent": -2.68,
+    "openTime": "2026-10-19T09:42:22.567Z",
+    "closeTime": "2026-10-19T18:27:31.424Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
