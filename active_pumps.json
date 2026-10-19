@@ -41,13 +41,6 @@
     "timestamp": 1792370669051,
     "isRiskFree": true
   },
-  "ENAUSDT": {
-    "symbol": "ENAUSDT",
-    "entryPrice": 0.1907,
-    "openTime": "2026-10-19T00:54:37.667Z",
-    "timestamp": 1792371277667,
-    "isRiskFree": false
-  },
   "SOLUSDT": {
     "symbol": "SOLUSDT",
     "entryPrice": 105.82,
