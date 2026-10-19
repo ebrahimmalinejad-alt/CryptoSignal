@@ -110,5 +110,12 @@
     "openTime": "2026-10-19T17:18:28.412Z",
     "timestamp": 1792430308412,
     "isRiskFree": false
+  },
+  "QNTUSDT": {
+    "symbol": "QNTUSDT",
+    "entryPrice": 194.45,
+    "openTime": "2026-10-19T18:17:25.055Z",
+    "timestamp": 1792433845055,
+    "isRiskFree": false
   }
 }
