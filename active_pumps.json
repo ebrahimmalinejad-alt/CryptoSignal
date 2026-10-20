@@ -60,7 +60,7 @@
     "entryPrice": 268.1,
     "openTime": "2026-10-19T17:18:28.412Z",
     "timestamp": 1792430308412,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "MSTRBUSDT": {
     "symbol": "MSTRBUSDT",
@@ -88,7 +88,7 @@
     "entryPrice": 12.072,
     "openTime": "2026-10-19T22:19:40.924Z",
     "timestamp": 1792448380924,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "TSLABUSDT": {
     "symbol": "TSLABUSDT",
@@ -102,7 +102,7 @@
     "entryPrice": 7.278,
     "openTime": "2026-10-20T00:14:19.253Z",
     "timestamp": 1792455259253,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "PUMPUSDT": {
     "symbol": "PUMPUSDT",
