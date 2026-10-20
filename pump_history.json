@@ -3158,5 +3158,15 @@
     "openTime": "2026-10-19T19:53:23.076Z",
     "closeTime": "2026-10-20T14:28:20.319Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "SOLUSDT",
+    "type": "BUY",
+    "entryPrice": 105.82,
+    "exitPrice": 105.68,
+    "pnlPercent": -0.13,
+    "openTime": "2026-10-19T04:51:57.364Z",
+    "closeTime": "2026-10-20T15:13:44.909Z",
+    "reason": "Breakeven Stop"
   }
 ]
