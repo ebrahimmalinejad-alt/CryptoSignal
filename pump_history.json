@@ -3078,5 +3078,15 @@
     "openTime": "2026-10-19T18:17:25.055Z",
     "closeTime": "2026-10-20T05:06:39.490Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ARBUSDT",
+    "type": "BUY",
+    "entryPrice": 0.198,
+    "exitPrice": 0.1926,
+    "pnlPercent": -2.73,
+    "openTime": "2026-10-20T06:17:53.578Z",
+    "closeTime": "2026-10-20T07:38:31.071Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

@@ -139,13 +139,6 @@
     "timestamp": 1792458888046,
     "isRiskFree": true
   },
-  "ARBUSDT": {
-    "symbol": "ARBUSDT",
-    "entryPrice": 0.198,
-    "openTime": "2026-10-20T06:17:53.578Z",
-    "timestamp": 1792477073578,
-    "isRiskFree": false
-  },
   "PEPEUSDT": {
     "symbol": "PEPEUSDT",
     "entryPrice": 0.00000415,
