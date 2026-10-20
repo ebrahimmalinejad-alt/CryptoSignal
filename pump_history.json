@@ -3088,5 +3088,15 @@
     "openTime": "2026-10-20T06:17:53.578Z",
     "closeTime": "2026-10-20T07:38:31.071Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SPCXBUSDT",
+    "type": "BUY",
+    "entryPrice": 146.67,
+    "exitPrice": 146.6,
+    "pnlPercent": -0.05,
+    "openTime": "2026-10-19T00:01:06.875Z",
+    "closeTime": "2026-10-20T09:19:18.486Z",
+    "reason": "Breakeven Stop"
   }
 ]
