@@ -83,13 +83,6 @@
     "timestamp": 1792441119194,
     "isRiskFree": false
   },
-  "INTCBUSDT": {
-    "symbol": "INTCBUSDT",
-    "entryPrice": 92.55,
-    "openTime": "2026-10-19T22:09:33.440Z",
-    "timestamp": 1792447773440,
-    "isRiskFree": false
-  },
   "LINKUSDT": {
     "symbol": "LINKUSDT",
     "entryPrice": 12.072,

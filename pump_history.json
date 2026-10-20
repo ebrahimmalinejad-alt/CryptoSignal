@@ -3118,5 +3118,15 @@
     "openTime": "2026-10-19T05:42:35.160Z",
     "closeTime": "2026-10-20T11:35:21.241Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "INTCBUSDT",
+    "type": "BUY",
+    "entryPrice": 92.55,
+    "exitPrice": 90.13,
+    "pnlPercent": -2.61,
+    "openTime": "2026-10-19T22:09:33.440Z",
+    "closeTime": "2026-10-20T12:10:38.311Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
