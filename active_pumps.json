@@ -102,7 +102,7 @@
     "entryPrice": 152.96,
     "openTime": "2026-10-20T16:49:45.779Z",
     "timestamp": 1792514985779,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "TAOUSDT": {
     "symbol": "TAOUSDT",
