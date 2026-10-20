@@ -3108,5 +3108,15 @@
     "openTime": "2026-10-19T19:38:13.138Z",
     "closeTime": "2026-10-20T11:30:17.802Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "LTCUSDT",
+    "type": "BUY",
+    "entryPrice": 59.84,
+    "exitPrice": 58.3,
+    "pnlPercent": -2.57,
+    "openTime": "2026-10-19T05:42:35.160Z",
+    "closeTime": "2026-10-20T11:35:21.241Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
