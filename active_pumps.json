@@ -53,7 +53,7 @@
     "entryPrice": 0.07937,
     "openTime": "2026-10-19T16:38:01.658Z",
     "timestamp": 1792427881658,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "TAOUSDT": {
     "symbol": "TAOUSDT",
@@ -67,7 +67,7 @@
     "entryPrice": 136.35,
     "openTime": "2026-10-19T19:53:23.076Z",
     "timestamp": 1792439603076,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "XRPUSDT": {
     "symbol": "XRPUSDT",
