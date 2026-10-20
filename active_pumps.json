@@ -32,7 +32,7 @@
     "entryPrice": 105.82,
     "openTime": "2026-10-19T04:51:57.364Z",
     "timestamp": 1792385517364,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "SUIUSDT": {
     "symbol": "SUIUSDT",
@@ -74,14 +74,14 @@
     "entryPrice": 1.3042,
     "openTime": "2026-10-19T20:18:37.234Z",
     "timestamp": 1792441117234,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "AVAXUSDT": {
     "symbol": "AVAXUSDT",
     "entryPrice": 9.589,
     "openTime": "2026-10-19T20:18:39.194Z",
     "timestamp": 1792441119194,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "LINKUSDT": {
     "symbol": "LINKUSDT",
@@ -109,7 +109,7 @@
     "entryPrice": 0.004562,
     "openTime": "2026-10-20T14:02:58.292Z",
     "timestamp": 1792504978292,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "HYPEUSDT": {
     "symbol": "HYPEUSDT",
