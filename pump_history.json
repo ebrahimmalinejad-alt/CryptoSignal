@@ -3208,5 +3208,15 @@
     "openTime": "2026-10-19T17:18:28.412Z",
     "closeTime": "2026-10-20T15:49:09.866Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "TIAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.6229,
+    "exitPrice": 0.6218,
+    "pnlPercent": -0.18,
+    "openTime": "2026-10-20T17:09:58.686Z",
+    "closeTime": "2026-10-20T19:58:59.796Z",
+    "reason": "Breakeven Stop"
   }
 ]
