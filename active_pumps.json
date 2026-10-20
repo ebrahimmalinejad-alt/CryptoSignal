@@ -104,13 +104,6 @@
     "timestamp": 1792514985779,
     "isRiskFree": false
   },
-  "SPCXBUSDT": {
-    "symbol": "SPCXBUSDT",
-    "entryPrice": 149.81,
-    "openTime": "2026-10-20T20:04:05.783Z",
-    "timestamp": 1792526645783,
-    "isRiskFree": true
-  },
   "TAOUSDT": {
     "symbol": "TAOUSDT",
     "entryPrice": 274.5,
