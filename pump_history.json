@@ -3148,5 +3148,15 @@
     "openTime": "2026-10-20T06:17:55.232Z",
     "closeTime": "2026-10-20T14:02:55.750Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "MSTRBUSDT",
+    "type": "BUY",
+    "entryPrice": 136.35,
+    "exitPrice": 143.39,
+    "pnlPercent": 5.16,
+    "openTime": "2026-10-19T19:53:23.076Z",
+    "closeTime": "2026-10-20T14:28:20.319Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
