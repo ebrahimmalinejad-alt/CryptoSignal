@@ -117,5 +117,12 @@
     "openTime": "2026-10-20T14:03:00.135Z",
     "timestamp": 1792504980135,
     "isRiskFree": false
+  },
+  "ETHUSDT": {
+    "symbol": "ETHUSDT",
+    "entryPrice": 2442.72,
+    "openTime": "2026-10-20T14:08:05.386Z",
+    "timestamp": 1792505285386,
+    "isRiskFree": false
   }
 }
