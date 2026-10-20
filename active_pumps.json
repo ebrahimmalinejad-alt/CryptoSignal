@@ -39,7 +39,7 @@
     "entryPrice": 0.9992,
     "openTime": "2026-10-19T10:27:52.103Z",
     "timestamp": 1792405672103,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "BNBUSDT": {
     "symbol": "BNBUSDT",
@@ -103,19 +103,5 @@
     "openTime": "2026-10-20T00:14:19.253Z",
     "timestamp": 1792455259253,
     "isRiskFree": false
-  },
-  "PUMPUSDT": {
-    "symbol": "PUMPUSDT",
-    "entryPrice": 0.004344,
-    "openTime": "2026-10-20T01:14:48.046Z",
-    "timestamp": 1792458888046,
-    "isRiskFree": true
-  },
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.00000415,
-    "openTime": "2026-10-20T06:17:55.232Z",
-    "timestamp": 1792477075232,
-    "isRiskFree": true
   }
 }
