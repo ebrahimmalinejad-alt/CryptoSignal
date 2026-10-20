@@ -132,13 +132,6 @@
     "timestamp": 1792448380924,
     "isRiskFree": false
   },
-  "ENAUSDT": {
-    "symbol": "ENAUSDT",
-    "entryPrice": 0.192,
-    "openTime": "2026-10-19T22:19:42.792Z",
-    "timestamp": 1792448382792,
-    "isRiskFree": false
-  },
   "TSLABUSDT": {
     "symbol": "TSLABUSDT",
     "entryPrice": 368.9,

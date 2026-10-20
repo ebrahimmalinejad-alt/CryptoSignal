@@ -3048,5 +3048,15 @@
     "openTime": "2026-10-19T05:17:16.872Z",
     "closeTime": "2026-10-20T00:10:37.322Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ENAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.192,
+    "exitPrice": 0.1867,
+    "pnlPercent": -2.76,
+    "openTime": "2026-10-19T22:19:42.792Z",
+    "closeTime": "2026-10-20T01:09:43.899Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
