@@ -88,7 +88,7 @@
     "entryPrice": 368.9,
     "openTime": "2026-10-19T22:39:53.536Z",
     "timestamp": 1792449593536,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "UNIUSDT": {
     "symbol": "UNIUSDT",
