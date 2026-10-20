@@ -90,13 +90,6 @@
     "timestamp": 1792455259253,
     "isRiskFree": true
   },
-  "PUMPUSDT": {
-    "symbol": "PUMPUSDT",
-    "entryPrice": 0.004562,
-    "openTime": "2026-10-20T14:02:58.292Z",
-    "timestamp": 1792504978292,
-    "isRiskFree": true
-  },
   "HYPEUSDT": {
     "symbol": "HYPEUSDT",
     "entryPrice": 80.19,
