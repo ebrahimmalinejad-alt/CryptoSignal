@@ -83,13 +83,6 @@
     "timestamp": 1792449593536,
     "isRiskFree": true
   },
-  "UNIUSDT": {
-    "symbol": "UNIUSDT",
-    "entryPrice": 7.278,
-    "openTime": "2026-10-20T00:14:19.253Z",
-    "timestamp": 1792455259253,
-    "isRiskFree": true
-  },
   "HYPEUSDT": {
     "symbol": "HYPEUSDT",
     "entryPrice": 80.19,
