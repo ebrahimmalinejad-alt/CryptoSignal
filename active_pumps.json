@@ -34,13 +34,6 @@
     "timestamp": 1792416662197,
     "isRiskFree": true
   },
-  "LINKUSDT": {
-    "symbol": "LINKUSDT",
-    "entryPrice": 12.072,
-    "openTime": "2026-10-19T22:19:40.924Z",
-    "timestamp": 1792448380924,
-    "isRiskFree": true
-  },
   "HYPEUSDT": {
     "symbol": "HYPEUSDT",
     "entryPrice": 80.19,
