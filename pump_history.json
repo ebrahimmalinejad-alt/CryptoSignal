@@ -3258,5 +3258,15 @@
     "openTime": "2026-10-19T22:39:53.536Z",
     "closeTime": "2026-10-21T13:50:23.130Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "XRPUSDT",
+    "type": "BUY",
+    "entryPrice": 1.3042,
+    "exitPrice": 1.371,
+    "pnlPercent": 5.12,
+    "openTime": "2026-10-19T20:18:37.234Z",
+    "closeTime": "2026-10-21T14:25:55.919Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
