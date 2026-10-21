@@ -25,7 +25,7 @@
     "entryPrice": 82570.93,
     "openTime": "2026-10-16T11:14:30.435Z",
     "timestamp": 1792149270435,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "SUIUSDT": {
     "symbol": "SUIUSDT",
@@ -67,7 +67,7 @@
     "entryPrice": 2442.72,
     "openTime": "2026-10-20T14:08:05.386Z",
     "timestamp": 1792505285386,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "LTCUSDT": {
     "symbol": "LTCUSDT",
