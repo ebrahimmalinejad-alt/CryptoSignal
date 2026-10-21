@@ -117,5 +117,12 @@
     "openTime": "2026-10-21T19:59:55.257Z",
     "timestamp": 1792612795257,
     "isRiskFree": false
+  },
+  "STRKUSDT": {
+    "symbol": "STRKUSDT",
+    "entryPrice": 0.05833,
+    "openTime": "2026-10-21T22:46:33.571Z",
+    "timestamp": 1792622793571,
+    "isRiskFree": false
   }
 }
