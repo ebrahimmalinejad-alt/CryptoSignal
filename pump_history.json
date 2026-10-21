@@ -3248,5 +3248,15 @@
     "openTime": "2026-10-20T20:59:53.730Z",
     "closeTime": "2026-10-21T05:50:19.883Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "TSLABUSDT",
+    "type": "BUY",
+    "entryPrice": 368.9,
+    "exitPrice": 387.88,
+    "pnlPercent": 5.15,
+    "openTime": "2026-10-19T22:39:53.536Z",
+    "closeTime": "2026-10-21T13:50:23.130Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
