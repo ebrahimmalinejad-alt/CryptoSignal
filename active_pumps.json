@@ -90,13 +90,6 @@
     "timestamp": 1792546708558,
     "isRiskFree": true
   },
-  "INJUSDT": {
-    "symbol": "INJUSDT",
-    "entryPrice": 8.894,
-    "openTime": "2026-10-21T04:34:46.930Z",
-    "timestamp": 1792557286930,
-    "isRiskFree": false
-  },
   "UNIUSDT": {
     "symbol": "UNIUSDT",
     "entryPrice": 7.491,
