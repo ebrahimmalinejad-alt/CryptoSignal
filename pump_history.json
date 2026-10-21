@@ -3328,5 +3328,15 @@
     "openTime": "2026-10-20T20:39:36.098Z",
     "closeTime": "2026-10-21T20:20:09.405Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "type": "BUY",
+    "entryPrice": 9.777,
+    "exitPrice": 9.777,
+    "pnlPercent": 0,
+    "openTime": "2026-10-20T20:59:55.560Z",
+    "closeTime": "2026-10-21T22:06:10.536Z",
+    "reason": "Breakeven Stop"
   }
 ]
