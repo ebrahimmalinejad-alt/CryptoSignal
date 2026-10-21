@@ -3268,5 +3268,15 @@
     "openTime": "2026-10-19T20:18:37.234Z",
     "closeTime": "2026-10-21T14:25:55.919Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.07937,
+    "exitPrice": 0.08359,
+    "pnlPercent": 5.32,
+    "openTime": "2026-10-19T16:38:01.658Z",
+    "closeTime": "2026-10-21T15:11:33.517Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
