@@ -27,13 +27,6 @@
     "timestamp": 1792149270435,
     "isRiskFree": true
   },
-  "SUIUSDT": {
-    "symbol": "SUIUSDT",
-    "entryPrice": 0.9992,
-    "openTime": "2026-10-19T10:27:52.103Z",
-    "timestamp": 1792405672103,
-    "isRiskFree": true
-  },
   "BNBUSDT": {
     "symbol": "BNBUSDT",
     "entryPrice": 729.47,
@@ -74,7 +67,7 @@
     "entryPrice": 106.18,
     "openTime": "2026-10-20T16:44:41.230Z",
     "timestamp": 1792514681230,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "AAVEUSDT": {
     "symbol": "AAVEUSDT",
@@ -116,6 +109,6 @@
     "entryPrice": 7.491,
     "openTime": "2026-10-21T12:49:37.782Z",
     "timestamp": 1792586977782,
-    "isRiskFree": false
+    "isRiskFree": true
   }
 }

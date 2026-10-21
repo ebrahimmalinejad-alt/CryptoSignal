@@ -3278,5 +3278,15 @@
     "openTime": "2026-10-19T16:38:01.658Z",
     "closeTime": "2026-10-21T15:11:33.517Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "SUIUSDT",
+    "type": "BUY",
+    "entryPrice": 0.9992,
+    "exitPrice": 1.0492,
+    "pnlPercent": 5,
+    "openTime": "2026-10-19T10:27:52.103Z",
+    "closeTime": "2026-10-21T15:26:51.717Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
