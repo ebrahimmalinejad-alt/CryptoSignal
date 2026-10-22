@@ -27,13 +27,6 @@
     "timestamp": 1792416662197,
     "isRiskFree": true
   },
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.00000456,
-    "openTime": "2026-10-22T04:03:51.529Z",
-    "timestamp": 1792641831529,
-    "isRiskFree": false
-  },
   "CRCLBUSDT": {
     "symbol": "CRCLBUSDT",
     "entryPrice": 87.1,
