@@ -20,13 +20,6 @@
     "timestamp": 1792072100407,
     "isRiskFree": false
   },
-  "BTCUSDT": {
-    "symbol": "BTCUSDT",
-    "entryPrice": 82570.93,
-    "openTime": "2026-10-16T11:14:30.435Z",
-    "timestamp": 1792149270435,
-    "isRiskFree": true
-  },
   "BNBUSDT": {
     "symbol": "BNBUSDT",
     "entryPrice": 729.47,
@@ -53,13 +46,6 @@
     "entryPrice": 87.1,
     "openTime": "2026-10-22T04:08:55.796Z",
     "timestamp": 1792642135796,
-    "isRiskFree": false
-  },
-  "ENAUSDT": {
-    "symbol": "ENAUSDT",
-    "entryPrice": 0.2047,
-    "openTime": "2026-10-22T04:34:09.136Z",
-    "timestamp": 1792643649136,
     "isRiskFree": false
   },
   "NEARUSDT": {
