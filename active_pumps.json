@@ -34,13 +34,6 @@
     "timestamp": 1792416662197,
     "isRiskFree": true
   },
-  "ZECUSDT": {
-    "symbol": "ZECUSDT",
-    "entryPrice": 1300.91,
-    "openTime": "2026-10-22T01:42:39.385Z",
-    "timestamp": 1792633359385,
-    "isRiskFree": false
-  },
   "MSTRBUSDT": {
     "symbol": "MSTRBUSDT",
     "entryPrice": 148.77,
@@ -74,13 +67,6 @@
     "entryPrice": 5.07,
     "openTime": "2026-10-22T05:29:33.618Z",
     "timestamp": 1792646973618,
-    "isRiskFree": false
-  },
-  "ALTUSDT": {
-    "symbol": "ALTUSDT",
-    "entryPrice": 0.01045,
-    "openTime": "2026-10-22T05:59:47.677Z",
-    "timestamp": 1792648787677,
     "isRiskFree": false
   }
 }
