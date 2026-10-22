@@ -27,13 +27,6 @@
     "timestamp": 1792416662197,
     "isRiskFree": true
   },
-  "MSTRBUSDT": {
-    "symbol": "MSTRBUSDT",
-    "entryPrice": 148.77,
-    "openTime": "2026-10-22T02:23:01.479Z",
-    "timestamp": 1792635781479,
-    "isRiskFree": false
-  },
   "PEPEUSDT": {
     "symbol": "PEPEUSDT",
     "entryPrice": 0.00000456,

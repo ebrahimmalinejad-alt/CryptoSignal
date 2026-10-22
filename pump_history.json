@@ -3508,5 +3508,15 @@
     "openTime": "2026-10-22T04:34:09.136Z",
     "closeTime": "2026-10-22T06:30:11.468Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "MSTRBUSDT",
+    "type": "BUY",
+    "entryPrice": 148.77,
+    "exitPrice": 144.99,
+    "pnlPercent": -2.54,
+    "openTime": "2026-10-22T02:23:01.479Z",
+    "closeTime": "2026-10-22T08:20:58.109Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
