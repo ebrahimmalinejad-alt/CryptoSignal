@@ -34,13 +34,6 @@
     "timestamp": 1792416662197,
     "isRiskFree": true
   },
-  "LTCUSDT": {
-    "symbol": "LTCUSDT",
-    "entryPrice": 60.68,
-    "openTime": "2026-10-20T14:18:14.427Z",
-    "timestamp": 1792505894427,
-    "isRiskFree": true
-  },
   "ZECUSDT": {
     "symbol": "ZECUSDT",
     "entryPrice": 1300.91,
