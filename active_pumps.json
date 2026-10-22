@@ -34,40 +34,12 @@
     "timestamp": 1792416662197,
     "isRiskFree": true
   },
-  "ETHUSDT": {
-    "symbol": "ETHUSDT",
-    "entryPrice": 2442.72,
-    "openTime": "2026-10-20T14:08:05.386Z",
-    "timestamp": 1792505285386,
-    "isRiskFree": true
-  },
   "LTCUSDT": {
     "symbol": "LTCUSDT",
     "entryPrice": 60.68,
     "openTime": "2026-10-20T14:18:14.427Z",
     "timestamp": 1792505894427,
     "isRiskFree": true
-  },
-  "XRPUSDT": {
-    "symbol": "XRPUSDT",
-    "entryPrice": 1.3804,
-    "openTime": "2026-10-21T19:04:12.554Z",
-    "timestamp": 1792609452554,
-    "isRiskFree": false
-  },
-  "DOGEUSDT": {
-    "symbol": "DOGEUSDT",
-    "entryPrice": 0.08273,
-    "openTime": "2026-10-21T19:04:14.594Z",
-    "timestamp": 1792609454594,
-    "isRiskFree": false
-  },
-  "CRCLBUSDT": {
-    "symbol": "CRCLBUSDT",
-    "entryPrice": 89.73,
-    "openTime": "2026-10-21T19:59:55.257Z",
-    "timestamp": 1792612795257,
-    "isRiskFree": false
   },
   "ZECUSDT": {
     "symbol": "ZECUSDT",

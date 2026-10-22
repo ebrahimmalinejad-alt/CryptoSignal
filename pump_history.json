@@ -3418,5 +3418,45 @@
     "openTime": "2026-10-21T19:54:49.686Z",
     "closeTime": "2026-10-22T02:17:56.879Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "type": "BUY",
+    "entryPrice": 2442.72,
+    "exitPrice": 2439.26,
+    "pnlPercent": -0.14,
+    "openTime": "2026-10-20T14:08:05.386Z",
+    "closeTime": "2026-10-22T02:28:04.156Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "XRPUSDT",
+    "type": "BUY",
+    "entryPrice": 1.3804,
+    "exitPrice": 1.3441,
+    "pnlPercent": -2.63,
+    "openTime": "2026-10-21T19:04:12.554Z",
+    "closeTime": "2026-10-22T02:28:04.156Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.08273,
+    "exitPrice": 0.0803,
+    "pnlPercent": -2.94,
+    "openTime": "2026-10-21T19:04:14.594Z",
+    "closeTime": "2026-10-22T02:28:04.156Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "CRCLBUSDT",
+    "type": "BUY",
+    "entryPrice": 89.73,
+    "exitPrice": 87.44,
+    "pnlPercent": -2.55,
+    "openTime": "2026-10-21T19:59:55.257Z",
+    "closeTime": "2026-10-22T02:28:04.156Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
