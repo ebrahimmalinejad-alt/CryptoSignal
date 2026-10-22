@@ -34,13 +34,6 @@
     "timestamp": 1792416662197,
     "isRiskFree": true
   },
-  "HYPEUSDT": {
-    "symbol": "HYPEUSDT",
-    "entryPrice": 80.19,
-    "openTime": "2026-10-20T14:03:00.135Z",
-    "timestamp": 1792504980135,
-    "isRiskFree": true
-  },
   "ETHUSDT": {
     "symbol": "ETHUSDT",
     "entryPrice": 2442.72,
@@ -55,33 +48,12 @@
     "timestamp": 1792505894427,
     "isRiskFree": true
   },
-  "SOLUSDT": {
-    "symbol": "SOLUSDT",
-    "entryPrice": 106.18,
-    "openTime": "2026-10-20T16:44:41.230Z",
-    "timestamp": 1792514681230,
-    "isRiskFree": true
-  },
   "AAVEUSDT": {
     "symbol": "AAVEUSDT",
     "entryPrice": 152.96,
     "openTime": "2026-10-20T16:49:45.779Z",
     "timestamp": 1792514985779,
     "isRiskFree": true
-  },
-  "ADAUSDT": {
-    "symbol": "ADAUSDT",
-    "entryPrice": 0.2244,
-    "openTime": "2026-10-21T01:38:28.558Z",
-    "timestamp": 1792546708558,
-    "isRiskFree": true
-  },
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.0000047,
-    "openTime": "2026-10-21T18:08:55.419Z",
-    "timestamp": 1792606135419,
-    "isRiskFree": false
   },
   "XRPUSDT": {
     "symbol": "XRPUSDT",
@@ -109,13 +81,6 @@
     "entryPrice": 89.73,
     "openTime": "2026-10-21T19:59:55.257Z",
     "timestamp": 1792612795257,
-    "isRiskFree": false
-  },
-  "STRKUSDT": {
-    "symbol": "STRKUSDT",
-    "entryPrice": 0.05833,
-    "openTime": "2026-10-21T22:46:33.571Z",
-    "timestamp": 1792622793571,
     "isRiskFree": false
   }
 }

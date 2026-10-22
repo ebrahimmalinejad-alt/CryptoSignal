@@ -3348,5 +3348,55 @@
     "openTime": "2026-10-21T12:49:37.782Z",
     "closeTime": "2026-10-21T23:06:44.030Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "HYPEUSDT",
+    "type": "BUY",
+    "entryPrice": 80.19,
+    "exitPrice": 80.19,
+    "pnlPercent": 0,
+    "openTime": "2026-10-20T14:03:00.135Z",
+    "closeTime": "2026-10-22T01:42:36.416Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "SOLUSDT",
+    "type": "BUY",
+    "entryPrice": 106.18,
+    "exitPrice": 106.08,
+    "pnlPercent": -0.09,
+    "openTime": "2026-10-20T16:44:41.230Z",
+    "closeTime": "2026-10-22T01:42:36.416Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ADAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2244,
+    "exitPrice": 0.223,
+    "pnlPercent": -0.62,
+    "openTime": "2026-10-21T01:38:28.558Z",
+    "closeTime": "2026-10-22T01:42:36.416Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.0000047,
+    "exitPrice": 0.00000454,
+    "pnlPercent": -3.4,
+    "openTime": "2026-10-21T18:08:55.419Z",
+    "closeTime": "2026-10-22T01:42:36.416Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "STRKUSDT",
+    "type": "BUY",
+    "entryPrice": 0.05833,
+    "exitPrice": 0.05681,
+    "pnlPercent": -2.61,
+    "openTime": "2026-10-21T22:46:33.571Z",
+    "closeTime": "2026-10-22T01:42:36.416Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
