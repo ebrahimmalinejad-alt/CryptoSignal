@@ -62,13 +62,6 @@
     "timestamp": 1792609454594,
     "isRiskFree": false
   },
-  "LINKUSDT": {
-    "symbol": "LINKUSDT",
-    "entryPrice": 12.708,
-    "openTime": "2026-10-21T19:54:49.686Z",
-    "timestamp": 1792612489686,
-    "isRiskFree": false
-  },
   "CRCLBUSDT": {
     "symbol": "CRCLBUSDT",
     "entryPrice": 89.73,
