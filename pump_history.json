@@ -3538,5 +3538,15 @@
     "openTime": "2026-10-22T05:29:33.618Z",
     "closeTime": "2026-10-22T08:56:14.361Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "PAXGUSDT",
+    "type": "BUY",
+    "entryPrice": 4186.76,
+    "exitPrice": 4082,
+    "pnlPercent": -2.5,
+    "openTime": "2026-09-29T23:43:49.729Z",
+    "closeTime": "2026-10-22T11:17:09.815Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
