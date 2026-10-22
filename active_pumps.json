@@ -75,5 +75,12 @@
     "openTime": "2026-10-22T05:29:33.618Z",
     "timestamp": 1792646973618,
     "isRiskFree": false
+  },
+  "ALTUSDT": {
+    "symbol": "ALTUSDT",
+    "entryPrice": 0.01045,
+    "openTime": "2026-10-22T05:59:47.677Z",
+    "timestamp": 1792648787677,
+    "isRiskFree": false
   }
 }
