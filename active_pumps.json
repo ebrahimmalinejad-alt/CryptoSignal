@@ -27,13 +27,6 @@
     "timestamp": 1792750571570,
     "isRiskFree": false
   },
-  "ENAUSDT": {
-    "symbol": "ENAUSDT",
-    "entryPrice": 0.2031,
-    "openTime": "2026-10-23T12:41:23.294Z",
-    "timestamp": 1792759283294,
-    "isRiskFree": true
-  },
   "MUBUSDT": {
     "symbol": "MUBUSDT",
     "entryPrice": 888.44,
