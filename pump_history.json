@@ -3608,5 +3608,25 @@
     "openTime": "2026-10-23T12:41:23.294Z",
     "closeTime": "2026-10-23T22:25:11.457Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "LINKUSDT",
+    "type": "BUY",
+    "entryPrice": 12.079,
+    "exitPrice": 11.757,
+    "pnlPercent": -2.67,
+    "openTime": "2026-10-23T16:48:27.385Z",
+    "closeTime": "2026-10-23T22:50:23.894Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "HYPEUSDT",
+    "type": "BUY",
+    "entryPrice": 78.7,
+    "exitPrice": 76.67,
+    "pnlPercent": -2.58,
+    "openTime": "2026-10-23T17:08:43.389Z",
+    "closeTime": "2026-10-23T22:50:23.894Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

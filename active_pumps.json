@@ -34,20 +34,6 @@
     "timestamp": 1792770773902,
     "isRiskFree": false
   },
-  "LINKUSDT": {
-    "symbol": "LINKUSDT",
-    "entryPrice": 12.079,
-    "openTime": "2026-10-23T16:48:27.385Z",
-    "timestamp": 1792774107385,
-    "isRiskFree": false
-  },
-  "HYPEUSDT": {
-    "symbol": "HYPEUSDT",
-    "entryPrice": 78.7,
-    "openTime": "2026-10-23T17:08:43.389Z",
-    "timestamp": 1792775323389,
-    "isRiskFree": false
-  },
   "SPCXBUSDT": {
     "symbol": "SPCXBUSDT",
     "entryPrice": 148.16,
