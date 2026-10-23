@@ -3578,5 +3578,15 @@
     "openTime": "2026-10-22T19:31:54.734Z",
     "closeTime": "2026-10-22T21:12:35.199Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "AIUSDT",
+    "type": "BUY",
+    "entryPrice": 0.0197,
+    "exitPrice": 0.0207,
+    "pnlPercent": 5.08,
+    "openTime": "2026-10-22T23:23:29.498Z",
+    "closeTime": "2026-10-23T03:30:25.166Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
