@@ -26,5 +26,12 @@
     "openTime": "2026-10-23T07:34:52.108Z",
     "timestamp": 1792740892108,
     "isRiskFree": false
+  },
+  "AIUSDT": {
+    "symbol": "AIUSDT",
+    "entryPrice": 0.0204,
+    "openTime": "2026-10-23T10:16:11.570Z",
+    "timestamp": 1792750571570,
+    "isRiskFree": false
   }
 }
