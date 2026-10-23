@@ -3628,5 +3628,15 @@
     "openTime": "2026-10-23T17:08:43.389Z",
     "closeTime": "2026-10-23T22:50:23.894Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "CRCLBUSDT",
+    "type": "BUY",
+    "entryPrice": 87.1,
+    "exitPrice": 84.78,
+    "pnlPercent": -2.66,
+    "openTime": "2026-10-22T04:08:55.796Z",
+    "closeTime": "2026-10-23T23:10:34.384Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
