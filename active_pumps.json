@@ -13,13 +13,6 @@
     "timestamp": 1792740892108,
     "isRiskFree": false
   },
-  "AIUSDT": {
-    "symbol": "AIUSDT",
-    "entryPrice": 0.0204,
-    "openTime": "2026-10-23T10:16:11.570Z",
-    "timestamp": 1792750571570,
-    "isRiskFree": false
-  },
   "MUBUSDT": {
     "symbol": "MUBUSDT",
     "entryPrice": 888.44,
