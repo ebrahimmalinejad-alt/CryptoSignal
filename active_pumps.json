@@ -20,13 +20,6 @@
     "timestamp": 1792778653240,
     "isRiskFree": false
   },
-  "ZECUSDT": {
-    "symbol": "ZECUSDT",
-    "entryPrice": 1203.73,
-    "openTime": "2026-10-24T23:07:11.553Z",
-    "timestamp": 1792883231553,
-    "isRiskFree": true
-  },
   "BNBUSDT": {
     "symbol": "BNBUSDT",
     "entryPrice": 745.06,
