@@ -68,5 +68,12 @@
     "openTime": "2026-10-25T16:57:34.266Z",
     "timestamp": 1792947454266,
     "isRiskFree": false
+  },
+  "NEARUSDT": {
+    "symbol": "NEARUSDT",
+    "entryPrice": 4.579,
+    "openTime": "2026-10-25T23:28:54.362Z",
+    "timestamp": 1792970934362,
+    "isRiskFree": false
   }
 }
