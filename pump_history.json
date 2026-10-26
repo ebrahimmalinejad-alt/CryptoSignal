@@ -3708,5 +3708,15 @@
     "openTime": "2026-10-25T16:57:34.266Z",
     "closeTime": "2026-10-26T03:51:10.825Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "type": "BUY",
+    "entryPrice": 2356.69,
+    "exitPrice": 2297.67,
+    "pnlPercent": -2.5,
+    "openTime": "2026-10-25T16:57:27.512Z",
+    "closeTime": "2026-10-26T03:56:14.137Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
