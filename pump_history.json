@@ -3688,5 +3688,15 @@
     "openTime": "2026-10-25T17:07:40.047Z",
     "closeTime": "2026-10-25T23:28:52.374Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "NEARUSDT",
+    "type": "BUY",
+    "entryPrice": 4.579,
+    "exitPrice": 4.46,
+    "pnlPercent": -2.6,
+    "openTime": "2026-10-25T23:28:54.362Z",
+    "closeTime": "2026-10-26T01:39:46.460Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
