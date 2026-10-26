@@ -11,7 +11,7 @@
     "entryPrice": 888.44,
     "openTime": "2026-10-23T15:52:53.902Z",
     "timestamp": 1792770773902,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "SPCXBUSDT": {
     "symbol": "SPCXBUSDT",
@@ -32,7 +32,7 @@
     "entryPrice": 76.64,
     "openTime": "2026-10-25T13:19:54.632Z",
     "timestamp": 1792934394632,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "XRPUSDT": {
     "symbol": "XRPUSDT",
@@ -60,13 +60,13 @@
     "entryPrice": 4.541,
     "openTime": "2026-10-26T05:26:55.929Z",
     "timestamp": 1792992415929,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "UNIUSDT": {
     "symbol": "UNIUSDT",
     "entryPrice": 6.95,
     "openTime": "2026-10-26T13:35:44.441Z",
     "timestamp": 1793021744441,
-    "isRiskFree": false
+    "isRiskFree": true
   }
 }
