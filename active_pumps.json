@@ -69,13 +69,6 @@
     "timestamp": 1793118876701,
     "isRiskFree": false
   },
-  "NILUSDT": {
-    "symbol": "NILUSDT",
-    "entryPrice": 0.09058,
-    "openTime": "2026-10-27T16:54:53.807Z",
-    "timestamp": 1793120093807,
-    "isRiskFree": true
-  },
   "HYPEUSDT": {
     "symbol": "HYPEUSDT",
     "entryPrice": 80.82,

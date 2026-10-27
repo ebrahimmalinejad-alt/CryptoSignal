@@ -3788,5 +3788,15 @@
     "openTime": "2026-10-25T13:19:54.632Z",
     "closeTime": "2026-10-27T17:08:46.696Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "NILUSDT",
+    "type": "BUY",
+    "entryPrice": 0.09058,
+    "exitPrice": 0.09557,
+    "pnlPercent": 5.51,
+    "openTime": "2026-10-27T16:54:53.807Z",
+    "closeTime": "2026-10-27T18:39:32.340Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
