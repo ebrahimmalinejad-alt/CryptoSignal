@@ -3748,5 +3748,15 @@
     "openTime": "2026-10-27T04:14:55.356Z",
     "closeTime": "2026-10-27T07:46:26.008Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "ENAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2086,
+    "exitPrice": 0.2028,
+    "pnlPercent": -2.78,
+    "openTime": "2026-10-27T03:49:43.347Z",
+    "closeTime": "2026-10-27T11:21:55.749Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
