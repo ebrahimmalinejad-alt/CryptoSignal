@@ -3728,5 +3728,15 @@
     "openTime": "2026-10-26T05:26:55.929Z",
     "closeTime": "2026-10-26T16:22:02.502Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "HUMAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.02396,
+    "exitPrice": 0.02301,
+    "pnlPercent": -3.96,
+    "openTime": "2026-10-26T21:09:23.884Z",
+    "closeTime": "2026-10-27T00:02:12.601Z",
+    "reason": "Breakeven Stop"
   }
 ]
