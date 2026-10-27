@@ -25,14 +25,14 @@
     "entryPrice": 1.3068,
     "openTime": "2026-10-25T16:57:29.181Z",
     "timestamp": 1792947449181,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "DOGEUSDT": {
     "symbol": "DOGEUSDT",
     "entryPrice": 0.07748,
     "openTime": "2026-10-25T16:57:31.007Z",
     "timestamp": 1792947451007,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "SOLUSDT": {
     "symbol": "SOLUSDT",
