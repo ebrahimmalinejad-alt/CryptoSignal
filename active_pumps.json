@@ -6,13 +6,6 @@
     "timestamp": 1791979417329,
     "isRiskFree": false
   },
-  "MUBUSDT": {
-    "symbol": "MUBUSDT",
-    "entryPrice": 888.44,
-    "openTime": "2026-10-23T15:52:53.902Z",
-    "timestamp": 1792770773902,
-    "isRiskFree": true
-  },
   "SPCXBUSDT": {
     "symbol": "SPCXBUSDT",
     "entryPrice": 148.16,
