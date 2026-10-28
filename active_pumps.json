@@ -83,13 +83,6 @@
     "timestamp": 1793136816448,
     "isRiskFree": false
   },
-  "PUMPUSDT": {
-    "symbol": "PUMPUSDT",
-    "entryPrice": 0.004366,
-    "openTime": "2026-10-27T21:33:45.268Z",
-    "timestamp": 1793136825268,
-    "isRiskFree": false
-  },
   "XAUTUSDT": {
     "symbol": "XAUTUSDT",
     "entryPrice": 4060.97,
