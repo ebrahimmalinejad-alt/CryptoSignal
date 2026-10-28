@@ -62,13 +62,6 @@
     "timestamp": 1793111605144,
     "isRiskFree": true
   },
-  "NEARUSDT": {
-    "symbol": "NEARUSDT",
-    "entryPrice": 4.644,
-    "openTime": "2026-10-27T16:34:36.701Z",
-    "timestamp": 1793118876701,
-    "isRiskFree": true
-  },
   "HYPEUSDT": {
     "symbol": "HYPEUSDT",
     "entryPrice": 80.82,
