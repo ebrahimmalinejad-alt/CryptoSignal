@@ -4138,5 +4138,25 @@
     "openTime": "2026-10-29T20:04:55.741Z",
     "closeTime": "2026-10-29T20:35:10.729Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.07748,
+    "exitPrice": 0.07724,
+    "pnlPercent": -0.31,
+    "openTime": "2026-10-25T16:57:31.007Z",
+    "closeTime": "2026-10-29T20:40:14.473Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "LTCUSDT",
+    "type": "BUY",
+    "entryPrice": 58.12,
+    "exitPrice": 56.53,
+    "pnlPercent": -2.74,
+    "openTime": "2026-10-29T02:33:38.403Z",
+    "closeTime": "2026-10-29T20:40:14.473Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
