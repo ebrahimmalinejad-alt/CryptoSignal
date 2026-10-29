@@ -48,13 +48,6 @@
     "timestamp": 1793277254142,
     "isRiskFree": true
   },
-  "PUMPUSDT": {
-    "symbol": "PUMPUSDT",
-    "entryPrice": 0.004376,
-    "openTime": "2026-10-29T12:54:25.555Z",
-    "timestamp": 1793278465555,
-    "isRiskFree": true
-  },
   "SNDKBUSDT": {
     "symbol": "SNDKBUSDT",
     "entryPrice": 1381.66,
