@@ -4028,5 +4028,25 @@
     "openTime": "2026-10-28T21:57:58.297Z",
     "closeTime": "2026-10-29T02:13:25.603Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SOLUSDT",
+    "type": "BUY",
+    "entryPrice": 102.02,
+    "exitPrice": 99.39,
+    "pnlPercent": -2.58,
+    "openTime": "2026-10-25T16:57:32.645Z",
+    "closeTime": "2026-10-29T02:38:41.314Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "type": "BUY",
+    "entryPrice": 2360,
+    "exitPrice": 2296.07,
+    "pnlPercent": -2.71,
+    "openTime": "2026-10-27T21:33:36.448Z",
+    "closeTime": "2026-10-29T02:38:41.314Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
