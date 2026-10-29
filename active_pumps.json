@@ -6,13 +6,6 @@
     "timestamp": 1791979417329,
     "isRiskFree": false
   },
-  "BNBUSDT": {
-    "symbol": "BNBUSDT",
-    "entryPrice": 745.06,
-    "openTime": "2026-10-25T07:41:47.546Z",
-    "timestamp": 1792914107546,
-    "isRiskFree": true
-  },
   "DOGEUSDT": {
     "symbol": "DOGEUSDT",
     "entryPrice": 0.07748,
@@ -46,13 +39,6 @@
     "entryPrice": 58.12,
     "openTime": "2026-10-29T02:33:38.403Z",
     "timestamp": 1793241218403,
-    "isRiskFree": false
-  },
-  "AIUSDT": {
-    "symbol": "AIUSDT",
-    "entryPrice": 0.02,
-    "openTime": "2026-10-29T08:16:43.802Z",
-    "timestamp": 1793261803802,
     "isRiskFree": false
   }
 }
