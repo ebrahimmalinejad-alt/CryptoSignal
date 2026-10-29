@@ -4118,5 +4118,25 @@
     "openTime": "2026-10-29T17:37:20.432Z",
     "closeTime": "2026-10-29T20:04:53.516Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ENAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2094,
+    "exitPrice": 0.1993,
+    "pnlPercent": -4.82,
+    "openTime": "2026-10-29T18:34:10.858Z",
+    "closeTime": "2026-10-29T20:35:10.729Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.00000517,
+    "exitPrice": 0.00000496,
+    "pnlPercent": -4.06,
+    "openTime": "2026-10-29T20:04:55.741Z",
+    "closeTime": "2026-10-29T20:35:10.729Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
