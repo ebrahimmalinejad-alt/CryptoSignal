@@ -4158,5 +4158,15 @@
     "openTime": "2026-10-29T02:33:38.403Z",
     "closeTime": "2026-10-29T20:40:14.473Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "type": "BUY",
+    "entryPrice": 81276.97,
+    "exitPrice": 78806.01,
+    "pnlPercent": -3.04,
+    "openTime": "2026-10-27T21:33:34.430Z",
+    "closeTime": "2026-10-29T20:45:18.188Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

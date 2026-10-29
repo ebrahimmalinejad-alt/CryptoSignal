@@ -6,13 +6,6 @@
     "timestamp": 1791979417329,
     "isRiskFree": false
   },
-  "BTCUSDT": {
-    "symbol": "BTCUSDT",
-    "entryPrice": 81276.97,
-    "openTime": "2026-10-27T21:33:34.430Z",
-    "timestamp": 1793136814430,
-    "isRiskFree": false
-  },
   "XAUTUSDT": {
     "symbol": "XAUTUSDT",
     "entryPrice": 4060.97,
