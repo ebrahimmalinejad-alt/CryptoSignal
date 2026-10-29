@@ -47,5 +47,12 @@
     "openTime": "2026-10-27T21:33:47.242Z",
     "timestamp": 1793136827242,
     "isRiskFree": false
+  },
+  "SKHYBUSDT": {
+    "symbol": "SKHYBUSDT",
+    "entryPrice": 159.85,
+    "openTime": "2026-10-29T02:28:35.018Z",
+    "timestamp": 1793240915018,
+    "isRiskFree": false
   }
 }
