@@ -69,13 +69,6 @@
     "timestamp": 1793136827242,
     "isRiskFree": false
   },
-  "LINKUSDT": {
-    "symbol": "LINKUSDT",
-    "entryPrice": 11.917,
-    "openTime": "2026-10-28T20:04:42.185Z",
-    "timestamp": 1793217882185,
-    "isRiskFree": false
-  },
   "MUBUSDT": {
     "symbol": "MUBUSDT",
     "entryPrice": 969.09,
