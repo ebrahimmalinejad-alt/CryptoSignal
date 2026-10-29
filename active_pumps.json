@@ -39,7 +39,7 @@
     "entryPrice": 159.85,
     "openTime": "2026-10-29T02:28:35.018Z",
     "timestamp": 1793240915018,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "LTCUSDT": {
     "symbol": "LTCUSDT",
