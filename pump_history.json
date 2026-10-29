@@ -3988,5 +3988,15 @@
     "openTime": "2026-10-25T16:57:29.181Z",
     "closeTime": "2026-10-29T01:48:08.717Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "UNIUSDT",
+    "type": "BUY",
+    "entryPrice": 7.257,
+    "exitPrice": 7.067,
+    "pnlPercent": -2.62,
+    "openTime": "2026-10-29T00:02:10.931Z",
+    "closeTime": "2026-10-29T01:58:15.903Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
