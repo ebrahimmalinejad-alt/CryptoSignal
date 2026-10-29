@@ -69,13 +69,6 @@
     "timestamp": 1793136827242,
     "isRiskFree": false
   },
-  "NEARUSDT": {
-    "symbol": "NEARUSDT",
-    "entryPrice": 4.665,
-    "openTime": "2026-10-28T18:03:36.963Z",
-    "timestamp": 1793210616963,
-    "isRiskFree": true
-  },
   "SUIUSDT": {
     "symbol": "SUIUSDT",
     "entryPrice": 0.9372,
