@@ -83,13 +83,6 @@
     "timestamp": 1793217882185,
     "isRiskFree": false
   },
-  "SOXLBUSDT": {
-    "symbol": "SOXLBUSDT",
-    "entryPrice": 102.77,
-    "openTime": "2026-10-28T20:29:58.930Z",
-    "timestamp": 1793219398930,
-    "isRiskFree": false
-  },
   "MUBUSDT": {
     "symbol": "MUBUSDT",
     "entryPrice": 969.09,
