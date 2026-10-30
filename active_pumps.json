@@ -4,7 +4,7 @@
     "entryPrice": 285,
     "openTime": "2026-10-30T06:29:01.878Z",
     "timestamp": 1793341741878,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "ZROUSDT": {
     "symbol": "ZROUSDT",
