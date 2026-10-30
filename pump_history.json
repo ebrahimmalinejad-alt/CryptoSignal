@@ -4218,5 +4218,15 @@
     "openTime": "2026-10-30T07:34:36.538Z",
     "closeTime": "2026-10-30T15:19:23.242Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "XPLUSDT",
+    "type": "BUY",
+    "entryPrice": 0.07899,
+    "exitPrice": 0.07697,
+    "pnlPercent": -2.56,
+    "openTime": "2026-10-30T15:09:18.319Z",
+    "closeTime": "2026-10-30T16:34:53.583Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
