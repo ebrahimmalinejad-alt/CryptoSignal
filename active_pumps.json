@@ -12,5 +12,12 @@
     "openTime": "2026-10-30T07:34:36.538Z",
     "timestamp": 1793345676538,
     "isRiskFree": true
+  },
+  "XPLUSDT": {
+    "symbol": "XPLUSDT",
+    "entryPrice": 0.07899,
+    "openTime": "2026-10-30T15:09:18.319Z",
+    "timestamp": 1793372958319,
+    "isRiskFree": false
   }
 }
