@@ -1,11 +1,4 @@
 {
-  "XAUTUSDT": {
-    "symbol": "XAUTUSDT",
-    "entryPrice": 4060.97,
-    "openTime": "2026-10-27T21:33:47.242Z",
-    "timestamp": 1793136827242,
-    "isRiskFree": false
-  },
   "BCHUSDT": {
     "symbol": "BCHUSDT",
     "entryPrice": 285,
