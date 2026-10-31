@@ -89,5 +89,12 @@
     "openTime": "2026-10-31T06:03:46.602Z",
     "timestamp": 1793426626602,
     "isRiskFree": false
+  },
+  "MSTRBUSDT": {
+    "symbol": "MSTRBUSDT",
+    "entryPrice": 134,
+    "openTime": "2026-10-31T11:46:30.445Z",
+    "timestamp": 1793447190445,
+    "isRiskFree": false
   }
 }
