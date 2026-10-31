@@ -88,7 +88,7 @@
     "entryPrice": 131.57,
     "openTime": "2026-10-31T06:03:46.602Z",
     "timestamp": 1793426626602,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "MSTRBUSDT": {
     "symbol": "MSTRBUSDT",
