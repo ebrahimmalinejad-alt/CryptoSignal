@@ -74,7 +74,7 @@
     "entryPrice": 4.299,
     "openTime": "2026-10-31T04:02:45.082Z",
     "timestamp": 1793419365082,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "LINKUSDT": {
     "symbol": "LINKUSDT",
