@@ -4228,5 +4228,15 @@
     "openTime": "2026-10-30T15:09:18.319Z",
     "closeTime": "2026-10-30T16:34:53.583Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "QNTUSDT",
+    "type": "BUY",
+    "entryPrice": 190.28,
+    "exitPrice": 200,
+    "pnlPercent": 5.11,
+    "openTime": "2026-10-30T20:54:52.313Z",
+    "closeTime": "2026-10-31T12:31:56.101Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
