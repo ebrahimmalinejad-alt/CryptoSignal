@@ -4248,5 +4248,15 @@
     "openTime": "2026-10-31T04:02:45.082Z",
     "closeTime": "2026-10-31T16:37:25.436Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "BCHUSDT",
+    "type": "BUY",
+    "entryPrice": 285,
+    "exitPrice": 284.5,
+    "pnlPercent": -0.18,
+    "openTime": "2026-10-30T06:29:01.878Z",
+    "closeTime": "2026-10-31T21:05:37.280Z",
+    "reason": "Breakeven Stop"
   }
 ]

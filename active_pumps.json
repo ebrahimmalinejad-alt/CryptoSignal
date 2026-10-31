@@ -1,11 +1,4 @@
 {
-  "BCHUSDT": {
-    "symbol": "BCHUSDT",
-    "entryPrice": 285,
-    "openTime": "2026-10-30T06:29:01.878Z",
-    "timestamp": 1793341741878,
-    "isRiskFree": true
-  },
   "EURUSDT": {
     "symbol": "EURUSDT",
     "entryPrice": 1.133,
