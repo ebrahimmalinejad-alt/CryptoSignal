@@ -67,7 +67,7 @@
     "entryPrice": 11.449,
     "openTime": "2026-10-31T06:03:44.779Z",
     "timestamp": 1793426624779,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "AAVEUSDT": {
     "symbol": "AAVEUSDT",
