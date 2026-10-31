@@ -11,7 +11,7 @@
     "entryPrice": 190.28,
     "openTime": "2026-10-30T20:54:52.313Z",
     "timestamp": 1793393692313,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "EURUSDT": {
     "symbol": "EURUSDT",
