@@ -4298,5 +4298,15 @@
     "openTime": "2026-10-31T06:03:46.602Z",
     "closeTime": "2026-11-01T03:31:49.209Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "type": "BUY",
+    "entryPrice": 8.829,
+    "exitPrice": 8.817,
+    "pnlPercent": -0.14,
+    "openTime": "2026-11-01T05:02:30.146Z",
+    "closeTime": "2026-11-01T08:18:53.924Z",
+    "reason": "Breakeven Stop"
   }
 ]
