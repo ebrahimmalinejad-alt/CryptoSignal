@@ -4288,5 +4288,15 @@
     "openTime": "2026-10-30T22:16:56.526Z",
     "closeTime": "2026-11-01T02:23:34.227Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "AAVEUSDT",
+    "type": "BUY",
+    "entryPrice": 131.57,
+    "exitPrice": 138.35,
+    "pnlPercent": 5.15,
+    "openTime": "2026-10-31T06:03:46.602Z",
+    "closeTime": "2026-11-01T03:31:49.209Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
