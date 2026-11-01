@@ -4318,5 +4318,25 @@
     "openTime": "2026-11-01T01:23:03.839Z",
     "closeTime": "2026-11-01T12:22:50.126Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "WLDUSDT",
+    "type": "BUY",
+    "entryPrice": 0.4013,
+    "exitPrice": 0.3902,
+    "pnlPercent": -2.77,
+    "openTime": "2026-10-31T03:42:34.146Z",
+    "closeTime": "2026-11-01T21:26:42.208Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "LINKUSDT",
+    "type": "BUY",
+    "entryPrice": 11.449,
+    "exitPrice": 11.381,
+    "pnlPercent": -0.59,
+    "openTime": "2026-10-31T06:03:44.779Z",
+    "closeTime": "2026-11-01T21:26:42.208Z",
+    "reason": "Breakeven Stop"
   }
 ]
