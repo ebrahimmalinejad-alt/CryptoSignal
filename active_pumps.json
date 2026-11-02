@@ -13,13 +13,6 @@
     "timestamp": 1793408618935,
     "isRiskFree": false
   },
-  "BNBUSDT": {
-    "symbol": "BNBUSDT",
-    "entryPrice": 713.39,
-    "openTime": "2026-11-01T12:17:45.338Z",
-    "timestamp": 1793535465338,
-    "isRiskFree": false
-  },
   "TRXUSDT": {
     "symbol": "TRXUSDT",
     "entryPrice": 0.3134,
