@@ -4428,5 +4428,35 @@
     "openTime": "2026-10-31T18:23:20.853Z",
     "closeTime": "2026-11-02T17:28:12.899Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "type": "BUY",
+    "entryPrice": 2247.17,
+    "exitPrice": 2246.04,
+    "pnlPercent": -0.05,
+    "openTime": "2026-10-31T00:23:14.648Z",
+    "closeTime": "2026-11-02T17:48:25.594Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "UNIUSDT",
+    "type": "BUY",
+    "entryPrice": 7.112,
+    "exitPrice": 7.104,
+    "pnlPercent": -0.11,
+    "openTime": "2026-10-31T20:34:28.147Z",
+    "closeTime": "2026-11-02T17:48:25.594Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "TRUMPUSDT",
+    "type": "BUY",
+    "entryPrice": 1.648,
+    "exitPrice": 1.606,
+    "pnlPercent": -2.55,
+    "openTime": "2026-11-02T07:36:47.980Z",
+    "closeTime": "2026-11-02T17:48:25.594Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
