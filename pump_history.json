@@ -4398,5 +4398,25 @@
     "openTime": "2026-11-02T03:24:59.828Z",
     "closeTime": "2026-11-02T16:32:46.751Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SUIUSDT",
+    "type": "BUY",
+    "entryPrice": 0.9028,
+    "exitPrice": 0.8793,
+    "pnlPercent": -2.6,
+    "openTime": "2026-10-30T22:42:12.343Z",
+    "closeTime": "2026-11-02T17:23:09.447Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "MSTRBUSDT",
+    "type": "BUY",
+    "entryPrice": 134,
+    "exitPrice": 133.73,
+    "pnlPercent": -0.2,
+    "openTime": "2026-10-31T11:46:30.445Z",
+    "closeTime": "2026-11-02T17:23:09.447Z",
+    "reason": "Breakeven Stop"
   }
 ]

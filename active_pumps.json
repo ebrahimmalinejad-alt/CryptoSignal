@@ -6,13 +6,6 @@
     "timestamp": 1793397703957,
     "isRiskFree": false
   },
-  "SUIUSDT": {
-    "symbol": "SUIUSDT",
-    "entryPrice": 0.9028,
-    "openTime": "2026-10-30T22:42:12.343Z",
-    "timestamp": 1793400132343,
-    "isRiskFree": false
-  },
   "ETHUSDT": {
     "symbol": "ETHUSDT",
     "entryPrice": 2247.17,
@@ -26,13 +19,6 @@
     "openTime": "2026-10-31T01:03:38.935Z",
     "timestamp": 1793408618935,
     "isRiskFree": false
-  },
-  "MSTRBUSDT": {
-    "symbol": "MSTRBUSDT",
-    "entryPrice": 134,
-    "openTime": "2026-10-31T11:46:30.445Z",
-    "timestamp": 1793447190445,
-    "isRiskFree": true
   },
   "DOGEUSDT": {
     "symbol": "DOGEUSDT",
