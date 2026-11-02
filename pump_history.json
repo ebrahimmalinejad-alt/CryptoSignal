@@ -4418,5 +4418,15 @@
     "openTime": "2026-10-31T11:46:30.445Z",
     "closeTime": "2026-11-02T17:23:09.447Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.076,
+    "exitPrice": 0.07407,
+    "pnlPercent": -2.54,
+    "openTime": "2026-10-31T18:23:20.853Z",
+    "closeTime": "2026-11-02T17:28:12.899Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
