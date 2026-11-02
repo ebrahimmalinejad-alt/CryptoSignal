@@ -27,13 +27,6 @@
     "timestamp": 1793408618935,
     "isRiskFree": false
   },
-  "ADAUSDT": {
-    "symbol": "ADAUSDT",
-    "entryPrice": 0.1958,
-    "openTime": "2026-10-31T01:08:43.274Z",
-    "timestamp": 1793408923274,
-    "isRiskFree": false
-  },
   "MSTRBUSDT": {
     "symbol": "MSTRBUSDT",
     "entryPrice": 134,

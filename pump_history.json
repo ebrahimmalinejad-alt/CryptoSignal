@@ -4368,5 +4368,15 @@
     "openTime": "2026-11-01T12:17:47.156Z",
     "closeTime": "2026-11-01T22:22:09.056Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ADAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1958,
+    "exitPrice": 0.1908,
+    "pnlPercent": -2.55,
+    "openTime": "2026-10-31T01:08:43.274Z",
+    "closeTime": "2026-11-02T06:26:18.289Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
