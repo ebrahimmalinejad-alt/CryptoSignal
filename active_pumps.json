@@ -34,13 +34,6 @@
     "timestamp": 1793712898390,
     "isRiskFree": false
   },
-  "UNIUSDT": {
-    "symbol": "UNIUSDT",
-    "entryPrice": 7.387,
-    "openTime": "2026-11-03T13:35:00.896Z",
-    "timestamp": 1793712900896,
-    "isRiskFree": false
-  },
   "SPCXBUSDT": {
     "symbol": "SPCXBUSDT",
     "entryPrice": 141.44,
