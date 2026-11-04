@@ -6,13 +6,6 @@
     "timestamp": 1793397703957,
     "isRiskFree": false
   },
-  "XRPUSDT": {
-    "symbol": "XRPUSDT",
-    "entryPrice": 1.262,
-    "openTime": "2026-10-31T01:03:38.935Z",
-    "timestamp": 1793408618935,
-    "isRiskFree": true
-  },
   "TRXUSDT": {
     "symbol": "TRXUSDT",
     "entryPrice": 0.3134,
