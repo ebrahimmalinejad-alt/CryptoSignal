@@ -39,7 +39,7 @@
     "entryPrice": 0.8942,
     "openTime": "2026-11-04T07:04:17.963Z",
     "timestamp": 1793775857963,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "DOGEUSDT": {
     "symbol": "DOGEUSDT",
