@@ -74,7 +74,7 @@
     "entryPrice": 3.984,
     "openTime": "2026-11-04T14:05:00.854Z",
     "timestamp": 1793801100854,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "BTCUSDT": {
     "symbol": "BTCUSDT",
