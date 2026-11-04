@@ -61,5 +61,12 @@
     "openTime": "2026-11-04T18:02:35.571Z",
     "timestamp": 1793815355571,
     "isRiskFree": false
+  },
+  "GOOGLBUSDT": {
+    "symbol": "GOOGLBUSDT",
+    "entryPrice": 291.01,
+    "openTime": "2026-11-04T18:48:05.864Z",
+    "timestamp": 1793818085864,
+    "isRiskFree": false
   }
 }
