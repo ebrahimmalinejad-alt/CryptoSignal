@@ -34,13 +34,6 @@
     "timestamp": 1793777074354,
     "isRiskFree": true
   },
-  "HYPEUSDT": {
-    "symbol": "HYPEUSDT",
-    "entryPrice": 85.27,
-    "openTime": "2026-11-04T07:29:39.338Z",
-    "timestamp": 1793777379338,
-    "isRiskFree": true
-  },
   "CRCLBUSDT": {
     "symbol": "CRCLBUSDT",
     "entryPrice": 73.95,
