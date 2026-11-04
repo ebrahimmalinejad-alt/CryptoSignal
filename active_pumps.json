@@ -20,20 +20,6 @@
     "timestamp": 1793641401613,
     "isRiskFree": true
   },
-  "AVAXUSDT": {
-    "symbol": "AVAXUSDT",
-    "entryPrice": 8.523,
-    "openTime": "2026-11-04T07:04:16.051Z",
-    "timestamp": 1793775856051,
-    "isRiskFree": true
-  },
-  "SUIUSDT": {
-    "symbol": "SUIUSDT",
-    "entryPrice": 0.8942,
-    "openTime": "2026-11-04T07:04:17.963Z",
-    "timestamp": 1793775857963,
-    "isRiskFree": true
-  },
   "DOGEUSDT": {
     "symbol": "DOGEUSDT",
     "entryPrice": 0.07482,
@@ -69,18 +55,11 @@
     "timestamp": 1793800493041,
     "isRiskFree": false
   },
-  "NEARUSDT": {
-    "symbol": "NEARUSDT",
-    "entryPrice": 3.984,
-    "openTime": "2026-11-04T14:05:00.854Z",
-    "timestamp": 1793801100854,
-    "isRiskFree": true
-  },
   "BTCUSDT": {
     "symbol": "BTCUSDT",
     "entryPrice": 78360,
     "openTime": "2026-11-04T14:25:15.271Z",
     "timestamp": 1793802315271,
-    "isRiskFree": false
+    "isRiskFree": true
   }
 }

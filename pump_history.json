@@ -4528,5 +4528,35 @@
     "openTime": "2026-11-04T05:58:27.836Z",
     "closeTime": "2026-11-04T13:24:30.649Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "type": "BUY",
+    "entryPrice": 8.523,
+    "exitPrice": 9.032,
+    "pnlPercent": 5.97,
+    "openTime": "2026-11-04T07:04:16.051Z",
+    "closeTime": "2026-11-04T15:05:42.532Z",
+    "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "SUIUSDT",
+    "type": "BUY",
+    "entryPrice": 0.8942,
+    "exitPrice": 0.9464,
+    "pnlPercent": 5.84,
+    "openTime": "2026-11-04T07:04:17.963Z",
+    "closeTime": "2026-11-04T15:05:42.532Z",
+    "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "NEARUSDT",
+    "type": "BUY",
+    "entryPrice": 3.984,
+    "exitPrice": 4.224,
+    "pnlPercent": 6.02,
+    "openTime": "2026-11-04T14:05:00.854Z",
+    "closeTime": "2026-11-04T15:05:42.532Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
