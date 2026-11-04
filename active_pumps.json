@@ -20,13 +20,6 @@
     "timestamp": 1793641401613,
     "isRiskFree": false
   },
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.00000478,
-    "openTime": "2026-11-04T03:01:47.428Z",
-    "timestamp": 1793761307428,
-    "isRiskFree": true
-  },
   "SNDKBUSDT": {
     "symbol": "SNDKBUSDT",
     "entryPrice": 1109.34,
