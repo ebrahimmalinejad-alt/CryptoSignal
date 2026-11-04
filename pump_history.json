@@ -4558,5 +4558,15 @@
     "openTime": "2026-11-04T14:05:00.854Z",
     "closeTime": "2026-11-04T15:05:42.532Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "WLDUSDT",
+    "type": "BUY",
+    "entryPrice": 0.3812,
+    "exitPrice": 0.401,
+    "pnlPercent": 5.19,
+    "openTime": "2026-11-04T13:44:44.802Z",
+    "closeTime": "2026-11-04T15:10:46.644Z",
+    "reason": "Take Profit (+5%)"
   }
 ]

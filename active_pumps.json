@@ -32,7 +32,7 @@
     "entryPrice": 703.25,
     "openTime": "2026-11-04T07:24:34.354Z",
     "timestamp": 1793777074354,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "HYPEUSDT": {
     "symbol": "HYPEUSDT",
@@ -41,19 +41,12 @@
     "timestamp": 1793777379338,
     "isRiskFree": true
   },
-  "WLDUSDT": {
-    "symbol": "WLDUSDT",
-    "entryPrice": 0.3812,
-    "openTime": "2026-11-04T13:44:44.802Z",
-    "timestamp": 1793799884802,
-    "isRiskFree": true
-  },
   "CRCLBUSDT": {
     "symbol": "CRCLBUSDT",
     "entryPrice": 73.95,
     "openTime": "2026-11-04T13:54:53.041Z",
     "timestamp": 1793800493041,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "BTCUSDT": {
     "symbol": "BTCUSDT",
