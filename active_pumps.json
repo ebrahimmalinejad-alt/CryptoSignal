@@ -39,7 +39,7 @@
     "entryPrice": 0.07482,
     "openTime": "2026-11-04T07:14:26.655Z",
     "timestamp": 1793776466655,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "BNBUSDT": {
     "symbol": "BNBUSDT",
@@ -53,14 +53,14 @@
     "entryPrice": 85.27,
     "openTime": "2026-11-04T07:29:39.338Z",
     "timestamp": 1793777379338,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "WLDUSDT": {
     "symbol": "WLDUSDT",
     "entryPrice": 0.3812,
     "openTime": "2026-11-04T13:44:44.802Z",
     "timestamp": 1793799884802,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "CRCLBUSDT": {
     "symbol": "CRCLBUSDT",
