@@ -32,7 +32,7 @@
     "entryPrice": 8.523,
     "openTime": "2026-11-04T07:04:16.051Z",
     "timestamp": 1793775856051,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "SUIUSDT": {
     "symbol": "SUIUSDT",
