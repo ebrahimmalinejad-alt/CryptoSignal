@@ -110,5 +110,12 @@
     "openTime": "2026-11-05T00:34:05.941Z",
     "timestamp": 1793838845941,
     "isRiskFree": false
+  },
+  "BMTUSDT": {
+    "symbol": "BMTUSDT",
+    "entryPrice": 0.02988,
+    "openTime": "2026-11-05T00:59:19.833Z",
+    "timestamp": 1793840359833,
+    "isRiskFree": false
   }
 }
