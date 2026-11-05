@@ -34,13 +34,6 @@
     "timestamp": 1793777074354,
     "isRiskFree": true
   },
-  "CRCLBUSDT": {
-    "symbol": "CRCLBUSDT",
-    "entryPrice": 73.95,
-    "openTime": "2026-11-04T13:54:53.041Z",
-    "timestamp": 1793800493041,
-    "isRiskFree": true
-  },
   "BTCUSDT": {
     "symbol": "BTCUSDT",
     "entryPrice": 78360,
@@ -95,13 +88,6 @@
     "entryPrice": 4085.18,
     "openTime": "2026-11-05T00:34:03.922Z",
     "timestamp": 1793838843922,
-    "isRiskFree": false
-  },
-  "PUMPUSDT": {
-    "symbol": "PUMPUSDT",
-    "entryPrice": 0.004314,
-    "openTime": "2026-11-05T00:34:05.941Z",
-    "timestamp": 1793838845941,
     "isRiskFree": false
   },
   "XRPUSDT": {

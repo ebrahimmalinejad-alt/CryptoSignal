@@ -4608,5 +4608,25 @@
     "openTime": "2026-11-04T17:12:00.146Z",
     "closeTime": "2026-11-05T14:04:26.367Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "CRCLBUSDT",
+    "type": "BUY",
+    "entryPrice": 73.95,
+    "exitPrice": 73.87,
+    "pnlPercent": -0.11,
+    "openTime": "2026-11-04T13:54:53.041Z",
+    "closeTime": "2026-11-05T14:24:37.105Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "PUMPUSDT",
+    "type": "BUY",
+    "entryPrice": 0.004314,
+    "exitPrice": 0.004204,
+    "pnlPercent": -2.55,
+    "openTime": "2026-11-05T00:34:05.941Z",
+    "closeTime": "2026-11-05T14:24:37.105Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
