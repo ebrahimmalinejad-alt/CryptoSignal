@@ -4728,5 +4728,15 @@
     "openTime": "2026-11-04T19:03:16.143Z",
     "closeTime": "2026-11-05T15:00:07.424Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SOLUSDT",
+    "type": "BUY",
+    "entryPrice": 95.08,
+    "exitPrice": 92.35,
+    "pnlPercent": -2.87,
+    "openTime": "2026-11-05T14:34:46.521Z",
+    "closeTime": "2026-11-05T15:05:11.179Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
