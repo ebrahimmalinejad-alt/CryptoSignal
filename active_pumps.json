@@ -20,13 +20,6 @@
     "timestamp": 1793641401613,
     "isRiskFree": true
   },
-  "GOOGLBUSDT": {
-    "symbol": "GOOGLBUSDT",
-    "entryPrice": 291.01,
-    "openTime": "2026-11-04T18:48:05.864Z",
-    "timestamp": 1793818085864,
-    "isRiskFree": false
-  },
   "PAXGUSDT": {
     "symbol": "PAXGUSDT",
     "entryPrice": 4085.18,

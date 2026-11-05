@@ -4758,5 +4758,15 @@
     "openTime": "2026-11-05T14:39:50.412Z",
     "closeTime": "2026-11-05T15:10:15.675Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "GOOGLBUSDT",
+    "type": "BUY",
+    "entryPrice": 291.01,
+    "exitPrice": 282.01,
+    "pnlPercent": -3.09,
+    "openTime": "2026-11-04T18:48:05.864Z",
+    "closeTime": "2026-11-05T15:45:33.164Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
