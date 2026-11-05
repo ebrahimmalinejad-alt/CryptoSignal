@@ -4598,5 +4598,15 @@
     "openTime": "2026-11-05T01:19:32.203Z",
     "closeTime": "2026-11-05T13:39:10.826Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "WLDUSDT",
+    "type": "BUY",
+    "entryPrice": 0.3769,
+    "exitPrice": 0.3671,
+    "pnlPercent": -2.6,
+    "openTime": "2026-11-04T17:12:00.146Z",
+    "closeTime": "2026-11-05T14:04:26.367Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

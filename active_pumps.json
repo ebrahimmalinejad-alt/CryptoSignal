@@ -48,13 +48,6 @@
     "timestamp": 1793802315271,
     "isRiskFree": true
   },
-  "WLDUSDT": {
-    "symbol": "WLDUSDT",
-    "entryPrice": 0.3769,
-    "openTime": "2026-11-04T17:12:00.146Z",
-    "timestamp": 1793812320146,
-    "isRiskFree": false
-  },
   "AAVEUSDT": {
     "symbol": "AAVEUSDT",
     "entryPrice": 132.95,
