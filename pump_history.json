@@ -4738,5 +4738,25 @@
     "openTime": "2026-11-05T14:34:46.521Z",
     "closeTime": "2026-11-05T15:05:11.179Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "XRPUSDT",
+    "type": "BUY",
+    "entryPrice": 1.3027,
+    "exitPrice": 1.2637,
+    "pnlPercent": -2.99,
+    "openTime": "2026-11-05T01:04:23.836Z",
+    "closeTime": "2026-11-05T15:10:15.675Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "type": "BUY",
+    "entryPrice": 2371.41,
+    "exitPrice": 2298.56,
+    "pnlPercent": -3.07,
+    "openTime": "2026-11-05T14:39:50.412Z",
+    "closeTime": "2026-11-05T15:10:15.675Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
