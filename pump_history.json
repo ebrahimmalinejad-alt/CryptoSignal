@@ -4678,5 +4678,25 @@
     "openTime": "2026-11-05T13:44:15.708Z",
     "closeTime": "2026-11-05T14:49:56.653Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.07482,
+    "exitPrice": 0.07452,
+    "pnlPercent": -0.4,
+    "openTime": "2026-11-04T07:14:26.655Z",
+    "closeTime": "2026-11-05T14:55:01.861Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "AAVEUSDT",
+    "type": "BUY",
+    "entryPrice": 132.95,
+    "exitPrice": 129.52,
+    "pnlPercent": -2.58,
+    "openTime": "2026-11-04T18:02:35.571Z",
+    "closeTime": "2026-11-05T14:55:01.861Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
