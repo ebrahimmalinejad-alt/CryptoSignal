@@ -20,32 +20,11 @@
     "timestamp": 1793641401613,
     "isRiskFree": true
   },
-  "BNBUSDT": {
-    "symbol": "BNBUSDT",
-    "entryPrice": 703.25,
-    "openTime": "2026-11-04T07:24:34.354Z",
-    "timestamp": 1793777074354,
-    "isRiskFree": true
-  },
-  "BTCUSDT": {
-    "symbol": "BTCUSDT",
-    "entryPrice": 78360,
-    "openTime": "2026-11-04T14:25:15.271Z",
-    "timestamp": 1793802315271,
-    "isRiskFree": true
-  },
   "GOOGLBUSDT": {
     "symbol": "GOOGLBUSDT",
     "entryPrice": 291.01,
     "openTime": "2026-11-04T18:48:05.864Z",
     "timestamp": 1793818085864,
-    "isRiskFree": false
-  },
-  "LINKUSDT": {
-    "symbol": "LINKUSDT",
-    "entryPrice": 11.433,
-    "openTime": "2026-11-04T19:03:16.143Z",
-    "timestamp": 1793818996143,
     "isRiskFree": false
   },
   "PAXGUSDT": {

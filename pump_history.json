@@ -4698,5 +4698,35 @@
     "openTime": "2026-11-04T18:02:35.571Z",
     "closeTime": "2026-11-05T14:55:01.861Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "BNBUSDT",
+    "type": "BUY",
+    "entryPrice": 703.25,
+    "exitPrice": 702.2,
+    "pnlPercent": -0.15,
+    "openTime": "2026-11-04T07:24:34.354Z",
+    "closeTime": "2026-11-05T15:00:07.424Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "BTCUSDT",
+    "type": "BUY",
+    "entryPrice": 78360,
+    "exitPrice": 78245.72,
+    "pnlPercent": -0.15,
+    "openTime": "2026-11-04T14:25:15.271Z",
+    "closeTime": "2026-11-05T15:00:07.424Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "LINKUSDT",
+    "type": "BUY",
+    "entryPrice": 11.433,
+    "exitPrice": 11.142,
+    "pnlPercent": -2.55,
+    "openTime": "2026-11-04T19:03:16.143Z",
+    "closeTime": "2026-11-05T15:00:07.424Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
