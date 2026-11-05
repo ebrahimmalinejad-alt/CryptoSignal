@@ -4628,5 +4628,45 @@
     "openTime": "2026-11-05T00:34:05.941Z",
     "closeTime": "2026-11-05T14:24:37.105Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SUIUSDT",
+    "type": "BUY",
+    "entryPrice": 0.9242,
+    "exitPrice": 0.8949,
+    "pnlPercent": -3.17,
+    "openTime": "2026-11-04T19:03:18.568Z",
+    "closeTime": "2026-11-05T14:44:53.429Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "NEARUSDT",
+    "type": "BUY",
+    "entryPrice": 4.002,
+    "exitPrice": 3.897,
+    "pnlPercent": -2.62,
+    "openTime": "2026-11-05T00:03:45.160Z",
+    "closeTime": "2026-11-05T14:44:53.429Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.000005,
+    "exitPrice": 0.00000485,
+    "pnlPercent": -3,
+    "openTime": "2026-11-05T00:18:55.003Z",
+    "closeTime": "2026-11-05T14:44:53.429Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ADAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1969,
+    "exitPrice": 0.1919,
+    "pnlPercent": -2.54,
+    "openTime": "2026-11-05T07:56:55.474Z",
+    "closeTime": "2026-11-05T14:44:53.429Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

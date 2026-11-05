@@ -62,27 +62,6 @@
     "timestamp": 1793818996143,
     "isRiskFree": false
   },
-  "SUIUSDT": {
-    "symbol": "SUIUSDT",
-    "entryPrice": 0.9242,
-    "openTime": "2026-11-04T19:03:18.568Z",
-    "timestamp": 1793818998568,
-    "isRiskFree": false
-  },
-  "NEARUSDT": {
-    "symbol": "NEARUSDT",
-    "entryPrice": 4.002,
-    "openTime": "2026-11-05T00:03:45.160Z",
-    "timestamp": 1793837025160,
-    "isRiskFree": false
-  },
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.000005,
-    "openTime": "2026-11-05T00:18:55.003Z",
-    "timestamp": 1793837935003,
-    "isRiskFree": false
-  },
   "PAXGUSDT": {
     "symbol": "PAXGUSDT",
     "entryPrice": 4085.18,
@@ -95,13 +74,6 @@
     "entryPrice": 1.3027,
     "openTime": "2026-11-05T01:04:23.836Z",
     "timestamp": 1793840663836,
-    "isRiskFree": false
-  },
-  "ADAUSDT": {
-    "symbol": "ADAUSDT",
-    "entryPrice": 0.1969,
-    "openTime": "2026-11-05T07:56:55.474Z",
-    "timestamp": 1793865415474,
     "isRiskFree": false
   },
   "ZECUSDT": {
