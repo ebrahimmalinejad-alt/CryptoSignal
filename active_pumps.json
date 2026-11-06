@@ -34,13 +34,6 @@
     "timestamp": 1793940560383,
     "isRiskFree": true
   },
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.00000513,
-    "openTime": "2026-11-06T09:31:23.789Z",
-    "timestamp": 1793957483789,
-    "isRiskFree": false
-  },
   "AAVEUSDT": {
     "symbol": "AAVEUSDT",
     "entryPrice": 132.63,
