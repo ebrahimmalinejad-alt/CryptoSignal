@@ -47,5 +47,12 @@
     "openTime": "2026-11-06T14:43:20.389Z",
     "timestamp": 1793976200389,
     "isRiskFree": false
+  },
+  "INJUSDT": {
+    "symbol": "INJUSDT",
+    "entryPrice": 8.413,
+    "openTime": "2026-11-06T14:43:23.726Z",
+    "timestamp": 1793976203726,
+    "isRiskFree": false
   }
 }
