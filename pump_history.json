@@ -4768,5 +4768,15 @@
     "openTime": "2026-11-04T18:48:05.864Z",
     "closeTime": "2026-11-05T15:45:33.164Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "TRUMPUSDT",
+    "type": "BUY",
+    "entryPrice": 1.254,
+    "exitPrice": 1.219,
+    "pnlPercent": -2.79,
+    "openTime": "2026-11-06T14:43:25.990Z",
+    "closeTime": "2026-11-06T17:39:59.724Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
