@@ -54,5 +54,12 @@
     "openTime": "2026-11-06T14:43:23.726Z",
     "timestamp": 1793976203726,
     "isRiskFree": false
+  },
+  "TRUMPUSDT": {
+    "symbol": "TRUMPUSDT",
+    "entryPrice": 1.254,
+    "openTime": "2026-11-06T14:43:25.990Z",
+    "timestamp": 1793976205990,
+    "isRiskFree": false
   }
 }
