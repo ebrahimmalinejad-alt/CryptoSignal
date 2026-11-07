@@ -62,13 +62,6 @@
     "timestamp": 1794006279496,
     "isRiskFree": false
   },
-  "ENAUSDT": {
-    "symbol": "ENAUSDT",
-    "entryPrice": 0.1638,
-    "openTime": "2026-11-06T23:04:40.960Z",
-    "timestamp": 1794006280960,
-    "isRiskFree": false
-  },
   "ARBUSDT": {
     "symbol": "ARBUSDT",
     "entryPrice": 0.1647,
