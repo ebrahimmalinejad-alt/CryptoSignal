@@ -4818,5 +4818,15 @@
     "openTime": "2026-11-06T14:43:23.726Z",
     "closeTime": "2026-11-07T12:00:24.353Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ZECUSDT",
+    "type": "BUY",
+    "entryPrice": 1310.79,
+    "exitPrice": 1274.49,
+    "pnlPercent": -2.77,
+    "openTime": "2026-11-07T06:29:31.264Z",
+    "closeTime": "2026-11-07T13:11:00.516Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
