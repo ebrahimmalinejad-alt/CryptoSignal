@@ -4878,5 +4878,15 @@
     "openTime": "2026-11-07T04:53:40.884Z",
     "closeTime": "2026-11-08T16:53:23.360Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "NVDABUSDT",
+    "type": "BUY",
+    "entryPrice": 188.26,
+    "exitPrice": 183.05,
+    "pnlPercent": -2.77,
+    "openTime": "2026-11-06T22:34:13.062Z",
+    "closeTime": "2026-11-08T21:31:20.295Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

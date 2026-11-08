@@ -34,13 +34,6 @@
     "timestamp": 1793983771443,
     "isRiskFree": false
   },
-  "NVDABUSDT": {
-    "symbol": "NVDABUSDT",
-    "entryPrice": 188.26,
-    "openTime": "2026-11-06T22:34:13.062Z",
-    "timestamp": 1794004453062,
-    "isRiskFree": false
-  },
   "MSTRBUSDT": {
     "symbol": "MSTRBUSDT",
     "entryPrice": 129.36,
