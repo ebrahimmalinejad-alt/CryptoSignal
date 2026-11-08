@@ -4908,5 +4908,65 @@
     "openTime": "2026-11-08T04:33:08.943Z",
     "closeTime": "2026-11-08T21:46:27.751Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "GOOGLBUSDT",
+    "type": "BUY",
+    "entryPrice": 287.39,
+    "exitPrice": 280.15,
+    "pnlPercent": -2.52,
+    "openTime": "2026-11-06T16:49:31.443Z",
+    "closeTime": "2026-11-08T21:56:32.670Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "MSTRBUSDT",
+    "type": "BUY",
+    "entryPrice": 129.36,
+    "exitPrice": 124.1,
+    "pnlPercent": -4.07,
+    "openTime": "2026-11-06T22:39:19.599Z",
+    "closeTime": "2026-11-08T21:56:32.670Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ARBUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1647,
+    "exitPrice": 0.1623,
+    "pnlPercent": -1.46,
+    "openTime": "2026-11-07T01:11:03.748Z",
+    "closeTime": "2026-11-08T21:56:32.670Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "MUBUSDT",
+    "type": "BUY",
+    "entryPrice": 698.6,
+    "exitPrice": 678.93,
+    "pnlPercent": -2.82,
+    "openTime": "2026-11-07T01:51:52.398Z",
+    "closeTime": "2026-11-08T21:56:32.670Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "type": "BUY",
+    "entryPrice": 2249.16,
+    "exitPrice": 2132.69,
+    "pnlPercent": -5.18,
+    "openTime": "2026-11-07T05:39:04.503Z",
+    "closeTime": "2026-11-08T21:56:32.670Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.00000505,
+    "exitPrice": 0.00000486,
+    "pnlPercent": -3.76,
+    "openTime": "2026-11-08T13:16:57.328Z",
+    "closeTime": "2026-11-08T21:56:32.670Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

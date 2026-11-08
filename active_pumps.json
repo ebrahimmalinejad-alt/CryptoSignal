@@ -26,47 +26,5 @@
     "openTime": "2026-11-05T00:34:03.922Z",
     "timestamp": 1793838843922,
     "isRiskFree": false
-  },
-  "GOOGLBUSDT": {
-    "symbol": "GOOGLBUSDT",
-    "entryPrice": 287.39,
-    "openTime": "2026-11-06T16:49:31.443Z",
-    "timestamp": 1793983771443,
-    "isRiskFree": false
-  },
-  "MSTRBUSDT": {
-    "symbol": "MSTRBUSDT",
-    "entryPrice": 129.36,
-    "openTime": "2026-11-06T22:39:19.599Z",
-    "timestamp": 1794004759599,
-    "isRiskFree": false
-  },
-  "ARBUSDT": {
-    "symbol": "ARBUSDT",
-    "entryPrice": 0.1647,
-    "openTime": "2026-11-07T01:11:03.748Z",
-    "timestamp": 1794013863748,
-    "isRiskFree": true
-  },
-  "MUBUSDT": {
-    "symbol": "MUBUSDT",
-    "entryPrice": 698.6,
-    "openTime": "2026-11-07T01:51:52.398Z",
-    "timestamp": 1794016312398,
-    "isRiskFree": false
-  },
-  "ETHUSDT": {
-    "symbol": "ETHUSDT",
-    "entryPrice": 2249.16,
-    "openTime": "2026-11-07T05:39:04.503Z",
-    "timestamp": 1794029944503,
-    "isRiskFree": false
-  },
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.00000505,
-    "openTime": "2026-11-08T13:16:57.328Z",
-    "timestamp": 1794143817328,
-    "isRiskFree": false
   }
 }
