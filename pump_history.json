@@ -4888,5 +4888,25 @@
     "openTime": "2026-11-06T22:34:13.062Z",
     "closeTime": "2026-11-08T21:31:20.295Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "LINKUSDT",
+    "type": "BUY",
+    "entryPrice": 10.877,
+    "exitPrice": 10.588,
+    "pnlPercent": -2.66,
+    "openTime": "2026-11-06T22:59:33.979Z",
+    "closeTime": "2026-11-08T21:46:27.751Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "UNIUSDT",
+    "type": "BUY",
+    "entryPrice": 7.105,
+    "exitPrice": 6.922,
+    "pnlPercent": -2.58,
+    "openTime": "2026-11-08T04:33:08.943Z",
+    "closeTime": "2026-11-08T21:46:27.751Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
