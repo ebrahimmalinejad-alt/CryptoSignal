@@ -32,6 +32,6 @@
     "entryPrice": 137.64,
     "openTime": "2026-11-09T14:34:35.457Z",
     "timestamp": 1794234875457,
-    "isRiskFree": false
+    "isRiskFree": true
   }
 }
