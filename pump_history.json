@@ -5018,5 +5018,35 @@
     "openTime": "2026-11-10T05:53:40.497Z",
     "closeTime": "2026-11-10T15:34:36.871Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ONDOUSDT",
+    "type": "BUY",
+    "entryPrice": 0.3694,
+    "exitPrice": 0.3685,
+    "pnlPercent": -0.24,
+    "openTime": "2026-11-10T03:57:45.585Z",
+    "closeTime": "2026-11-10T15:39:44.043Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "LINKUSDT",
+    "type": "BUY",
+    "entryPrice": 10.62,
+    "exitPrice": 10.282,
+    "pnlPercent": -3.18,
+    "openTime": "2026-11-10T06:34:01.426Z",
+    "closeTime": "2026-11-10T15:39:44.043Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "NEARUSDT",
+    "type": "BUY",
+    "entryPrice": 3.694,
+    "exitPrice": 3.58,
+    "pnlPercent": -3.09,
+    "openTime": "2026-11-10T14:39:00.830Z",
+    "closeTime": "2026-11-10T15:39:44.043Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

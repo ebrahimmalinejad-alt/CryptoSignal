@@ -34,32 +34,11 @@
     "timestamp": 1794252423871,
     "isRiskFree": false
   },
-  "ONDOUSDT": {
-    "symbol": "ONDOUSDT",
-    "entryPrice": 0.3694,
-    "openTime": "2026-11-10T03:57:45.585Z",
-    "timestamp": 1794283065585,
-    "isRiskFree": true
-  },
   "UNIUSDT": {
     "symbol": "UNIUSDT",
     "entryPrice": 7.002,
     "openTime": "2026-11-10T05:38:31.229Z",
     "timestamp": 1794289111229,
-    "isRiskFree": false
-  },
-  "LINKUSDT": {
-    "symbol": "LINKUSDT",
-    "entryPrice": 10.62,
-    "openTime": "2026-11-10T06:34:01.426Z",
-    "timestamp": 1794292441426,
-    "isRiskFree": false
-  },
-  "NEARUSDT": {
-    "symbol": "NEARUSDT",
-    "entryPrice": 3.694,
-    "openTime": "2026-11-10T14:39:00.830Z",
-    "timestamp": 1794321540830,
     "isRiskFree": false
   }
 }
