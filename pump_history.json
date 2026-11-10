@@ -4998,5 +4998,25 @@
     "openTime": "2026-11-09T14:34:35.457Z",
     "closeTime": "2026-11-10T15:14:21.060Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "ENAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1536,
+    "exitPrice": 0.1524,
+    "pnlPercent": -0.78,
+    "openTime": "2026-11-10T05:33:27.168Z",
+    "closeTime": "2026-11-10T15:34:36.871Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.07029,
+    "exitPrice": 0.06848,
+    "pnlPercent": -2.58,
+    "openTime": "2026-11-10T05:53:40.497Z",
+    "closeTime": "2026-11-10T15:34:36.871Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

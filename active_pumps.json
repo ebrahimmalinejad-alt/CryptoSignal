@@ -41,25 +41,11 @@
     "timestamp": 1794283065585,
     "isRiskFree": true
   },
-  "ENAUSDT": {
-    "symbol": "ENAUSDT",
-    "entryPrice": 0.1536,
-    "openTime": "2026-11-10T05:33:27.168Z",
-    "timestamp": 1794288807168,
-    "isRiskFree": true
-  },
   "UNIUSDT": {
     "symbol": "UNIUSDT",
     "entryPrice": 7.002,
     "openTime": "2026-11-10T05:38:31.229Z",
     "timestamp": 1794289111229,
-    "isRiskFree": false
-  },
-  "DOGEUSDT": {
-    "symbol": "DOGEUSDT",
-    "entryPrice": 0.07029,
-    "openTime": "2026-11-10T05:53:40.497Z",
-    "timestamp": 1794290020497,
     "isRiskFree": false
   },
   "LINKUSDT": {
