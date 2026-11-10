@@ -4988,5 +4988,15 @@
     "openTime": "2026-11-10T02:47:17.378Z",
     "closeTime": "2026-11-10T13:53:37.537Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SPCXBUSDT",
+    "type": "BUY",
+    "entryPrice": 137.64,
+    "exitPrice": 144.73,
+    "pnlPercent": 5.15,
+    "openTime": "2026-11-09T14:34:35.457Z",
+    "closeTime": "2026-11-10T15:14:21.060Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
