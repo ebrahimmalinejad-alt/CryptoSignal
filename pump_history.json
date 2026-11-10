@@ -4978,5 +4978,15 @@
     "openTime": "2026-11-09T14:59:50.230Z",
     "closeTime": "2026-11-09T16:50:42.380Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "CRCLBUSDT",
+    "type": "BUY",
+    "entryPrice": 67.92,
+    "exitPrice": 65.7,
+    "pnlPercent": -3.27,
+    "openTime": "2026-11-10T02:47:17.378Z",
+    "closeTime": "2026-11-10T13:53:37.537Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
