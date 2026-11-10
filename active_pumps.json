@@ -75,5 +75,12 @@
     "openTime": "2026-11-10T05:53:40.497Z",
     "timestamp": 1794290020497,
     "isRiskFree": false
+  },
+  "LINKUSDT": {
+    "symbol": "LINKUSDT",
+    "entryPrice": 10.62,
+    "openTime": "2026-11-10T06:34:01.426Z",
+    "timestamp": 1794292441426,
+    "isRiskFree": false
   }
 }
