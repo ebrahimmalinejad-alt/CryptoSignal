@@ -27,13 +27,6 @@
     "timestamp": 1793838843922,
     "isRiskFree": false
   },
-  "NEARUSDT": {
-    "symbol": "NEARUSDT",
-    "entryPrice": 3.683,
-    "openTime": "2026-11-11T01:33:51.191Z",
-    "timestamp": 1794360831191,
-    "isRiskFree": false
-  },
   "SNDKBUSDT": {
     "symbol": "SNDKBUSDT",
     "entryPrice": 894.13,
