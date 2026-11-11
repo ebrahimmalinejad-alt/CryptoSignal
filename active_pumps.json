@@ -32,7 +32,7 @@
     "entryPrice": 894.13,
     "openTime": "2026-11-11T02:44:25.376Z",
     "timestamp": 1794365065376,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "SPCXBUSDT": {
     "symbol": "SPCXBUSDT",
