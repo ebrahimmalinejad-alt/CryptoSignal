@@ -47,5 +47,12 @@
     "openTime": "2026-11-11T15:37:28.754Z",
     "timestamp": 1794411448754,
     "isRiskFree": false
+  },
+  "DOGEUSDT": {
+    "symbol": "DOGEUSDT",
+    "entryPrice": 0.06912,
+    "openTime": "2026-11-11T15:37:30.837Z",
+    "timestamp": 1794411450837,
+    "isRiskFree": false
   }
 }
