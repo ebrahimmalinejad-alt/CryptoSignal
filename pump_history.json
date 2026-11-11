@@ -5118,5 +5118,15 @@
     "openTime": "2026-11-11T02:49:32.051Z",
     "closeTime": "2026-11-11T13:06:07.710Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "SNDKBUSDT",
+    "type": "BUY",
+    "entryPrice": 894.13,
+    "exitPrice": 938.96,
+    "pnlPercent": 5.01,
+    "openTime": "2026-11-11T02:44:25.376Z",
+    "closeTime": "2026-11-11T14:31:48.662Z",
+    "reason": "Take Profit (+5%)"
   }
 ]

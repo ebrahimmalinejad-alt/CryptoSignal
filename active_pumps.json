@@ -27,13 +27,6 @@
     "timestamp": 1793838843922,
     "isRiskFree": false
   },
-  "SNDKBUSDT": {
-    "symbol": "SNDKBUSDT",
-    "entryPrice": 894.13,
-    "openTime": "2026-11-11T02:44:25.376Z",
-    "timestamp": 1794365065376,
-    "isRiskFree": true
-  },
   "SPCXBUSDT": {
     "symbol": "SPCXBUSDT",
     "entryPrice": 144.9,
