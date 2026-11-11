@@ -20,13 +20,6 @@
     "timestamp": 1793641401613,
     "isRiskFree": true
   },
-  "AVAXUSDT": {
-    "symbol": "AVAXUSDT",
-    "entryPrice": 8.517,
-    "openTime": "2026-11-11T15:27:18.329Z",
-    "timestamp": 1794410838329,
-    "isRiskFree": true
-  },
   "ETHUSDT": {
     "symbol": "ETHUSDT",
     "entryPrice": 2081.65,
@@ -39,48 +32,6 @@
     "entryPrice": 1.0751,
     "openTime": "2026-11-11T15:37:28.754Z",
     "timestamp": 1794411448754,
-    "isRiskFree": false
-  },
-  "DOGEUSDT": {
-    "symbol": "DOGEUSDT",
-    "entryPrice": 0.06912,
-    "openTime": "2026-11-11T15:37:30.837Z",
-    "timestamp": 1794411450837,
-    "isRiskFree": false
-  },
-  "SUIUSDT": {
-    "symbol": "SUIUSDT",
-    "entryPrice": 0.8453,
-    "openTime": "2026-11-11T15:37:33.248Z",
-    "timestamp": 1794411453248,
-    "isRiskFree": false
-  },
-  "SOLUSDT": {
-    "symbol": "SOLUSDT",
-    "entryPrice": 85.65,
-    "openTime": "2026-11-11T17:23:31.758Z",
-    "timestamp": 1794417811758,
-    "isRiskFree": false
-  },
-  "SPCXBUSDT": {
-    "symbol": "SPCXBUSDT",
-    "entryPrice": 143.29,
-    "openTime": "2026-11-11T17:43:43.957Z",
-    "timestamp": 1794419023957,
-    "isRiskFree": false
-  },
-  "ENAUSDT": {
-    "symbol": "ENAUSDT",
-    "entryPrice": 0.1541,
-    "openTime": "2026-11-11T17:48:48.061Z",
-    "timestamp": 1794419328061,
-    "isRiskFree": false
-  },
-  "NEARUSDT": {
-    "symbol": "NEARUSDT",
-    "entryPrice": 3.722,
-    "openTime": "2026-11-11T18:54:23.883Z",
-    "timestamp": 1794423263883,
     "isRiskFree": false
   }
 }

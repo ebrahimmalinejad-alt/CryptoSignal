@@ -5158,5 +5158,75 @@
     "openTime": "2026-11-05T00:34:03.922Z",
     "closeTime": "2026-11-11T18:54:20.765Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "type": "BUY",
+    "entryPrice": 8.517,
+    "exitPrice": 8.503,
+    "pnlPercent": -0.16,
+    "openTime": "2026-11-11T15:27:18.329Z",
+    "closeTime": "2026-11-11T23:47:37.678Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.06912,
+    "exitPrice": 0.06727,
+    "pnlPercent": -2.68,
+    "openTime": "2026-11-11T15:37:30.837Z",
+    "closeTime": "2026-11-11T23:47:37.678Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SUIUSDT",
+    "type": "BUY",
+    "entryPrice": 0.8453,
+    "exitPrice": 0.8203,
+    "pnlPercent": -2.96,
+    "openTime": "2026-11-11T15:37:33.248Z",
+    "closeTime": "2026-11-11T23:47:37.678Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SOLUSDT",
+    "type": "BUY",
+    "entryPrice": 85.65,
+    "exitPrice": 82.93,
+    "pnlPercent": -3.18,
+    "openTime": "2026-11-11T17:23:31.758Z",
+    "closeTime": "2026-11-11T23:47:37.678Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SPCXBUSDT",
+    "type": "BUY",
+    "entryPrice": 143.29,
+    "exitPrice": 137.76,
+    "pnlPercent": -3.86,
+    "openTime": "2026-11-11T17:43:43.957Z",
+    "closeTime": "2026-11-11T23:47:37.678Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ENAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1541,
+    "exitPrice": 0.1451,
+    "pnlPercent": -5.84,
+    "openTime": "2026-11-11T17:48:48.061Z",
+    "closeTime": "2026-11-11T23:47:37.678Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "NEARUSDT",
+    "type": "BUY",
+    "entryPrice": 3.722,
+    "exitPrice": 3.572,
+    "pnlPercent": -4.03,
+    "openTime": "2026-11-11T18:54:23.883Z",
+    "closeTime": "2026-11-11T23:47:37.678Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
