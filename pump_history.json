@@ -5108,5 +5108,15 @@
     "openTime": "2026-11-11T01:33:51.191Z",
     "closeTime": "2026-11-11T07:08:26.406Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "GRAMUSDT",
+    "type": "BUY",
+    "entryPrice": 1.14,
+    "exitPrice": 1.239,
+    "pnlPercent": 8.68,
+    "openTime": "2026-11-11T02:49:32.051Z",
+    "closeTime": "2026-11-11T13:06:07.710Z",
+    "reason": "Take Profit (+5%)"
   }
 ]

@@ -41,18 +41,11 @@
     "timestamp": 1794365369843,
     "isRiskFree": false
   },
-  "GRAMUSDT": {
-    "symbol": "GRAMUSDT",
-    "entryPrice": 1.14,
-    "openTime": "2026-11-11T02:49:32.051Z",
-    "timestamp": 1794365372051,
-    "isRiskFree": true
-  },
   "MUBUSDT": {
     "symbol": "MUBUSDT",
     "entryPrice": 751.11,
     "openTime": "2026-11-11T02:54:35.744Z",
     "timestamp": 1794365675744,
-    "isRiskFree": false
+    "isRiskFree": true
   }
 }
