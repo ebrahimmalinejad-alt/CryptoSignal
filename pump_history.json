@@ -5148,5 +5148,15 @@
     "openTime": "2026-11-11T02:54:35.744Z",
     "closeTime": "2026-11-11T15:07:07.302Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "PAXGUSDT",
+    "type": "BUY",
+    "entryPrice": 4085.18,
+    "exitPrice": 3983.04,
+    "pnlPercent": -2.5,
+    "openTime": "2026-11-05T00:34:03.922Z",
+    "closeTime": "2026-11-11T18:54:20.765Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
