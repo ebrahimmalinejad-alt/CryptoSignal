@@ -5138,5 +5138,15 @@
     "openTime": "2026-11-11T02:49:29.843Z",
     "closeTime": "2026-11-11T14:46:58.045Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "MUBUSDT",
+    "type": "BUY",
+    "entryPrice": 751.11,
+    "exitPrice": 795.66,
+    "pnlPercent": 5.93,
+    "openTime": "2026-11-11T02:54:35.744Z",
+    "closeTime": "2026-11-11T15:07:07.302Z",
+    "reason": "Take Profit (+5%)"
   }
 ]

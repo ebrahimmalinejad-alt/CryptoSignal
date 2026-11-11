@@ -26,12 +26,5 @@
     "openTime": "2026-11-05T00:34:03.922Z",
     "timestamp": 1793838843922,
     "isRiskFree": false
-  },
-  "MUBUSDT": {
-    "symbol": "MUBUSDT",
-    "entryPrice": 751.11,
-    "openTime": "2026-11-11T02:54:35.744Z",
-    "timestamp": 1794365675744,
-    "isRiskFree": true
   }
 }
