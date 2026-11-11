@@ -34,13 +34,6 @@
     "timestamp": 1794353875528,
     "isRiskFree": true
   },
-  "SOXLBUSDT": {
-    "symbol": "SOXLBUSDT",
-    "entryPrice": 58.4,
-    "openTime": "2026-11-11T01:03:35.144Z",
-    "timestamp": 1794359015144,
-    "isRiskFree": true
-  },
   "NEARUSDT": {
     "symbol": "NEARUSDT",
     "entryPrice": 3.683,
