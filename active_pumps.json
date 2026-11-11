@@ -61,5 +61,12 @@
     "openTime": "2026-11-11T02:49:29.843Z",
     "timestamp": 1794365369843,
     "isRiskFree": false
+  },
+  "GRAMUSDT": {
+    "symbol": "GRAMUSDT",
+    "entryPrice": 1.14,
+    "openTime": "2026-11-11T02:49:32.051Z",
+    "timestamp": 1794365372051,
+    "isRiskFree": false
   }
 }
