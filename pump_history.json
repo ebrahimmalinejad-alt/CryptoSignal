@@ -5268,5 +5268,45 @@
     "openTime": "2026-11-12T02:54:08.749Z",
     "closeTime": "2026-11-12T10:29:55.084Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "type": "BUY",
+    "entryPrice": 2081.65,
+    "exitPrice": 2010.81,
+    "pnlPercent": -3.4,
+    "openTime": "2026-11-11T15:37:25.715Z",
+    "closeTime": "2026-11-12T14:08:44.546Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "type": "BUY",
+    "entryPrice": 8.594,
+    "exitPrice": 8.302,
+    "pnlPercent": -3.4,
+    "openTime": "2026-11-12T00:33:02.225Z",
+    "closeTime": "2026-11-12T14:08:44.546Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "INTCBUSDT",
+    "type": "BUY",
+    "entryPrice": 61.49,
+    "exitPrice": 59.81,
+    "pnlPercent": -2.73,
+    "openTime": "2026-11-12T02:08:48.423Z",
+    "closeTime": "2026-11-12T14:08:44.546Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SNDKBUSDT",
+    "type": "BUY",
+    "entryPrice": 950.88,
+    "exitPrice": 897.6,
+    "pnlPercent": -5.6,
+    "openTime": "2026-11-12T10:04:40.895Z",
+    "closeTime": "2026-11-12T14:08:44.546Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

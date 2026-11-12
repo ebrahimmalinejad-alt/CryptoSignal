@@ -13,27 +13,6 @@
     "timestamp": 1793582006397,
     "isRiskFree": true
   },
-  "ETHUSDT": {
-    "symbol": "ETHUSDT",
-    "entryPrice": 2081.65,
-    "openTime": "2026-11-11T15:37:25.715Z",
-    "timestamp": 1794411445715,
-    "isRiskFree": false
-  },
-  "AVAXUSDT": {
-    "symbol": "AVAXUSDT",
-    "entryPrice": 8.594,
-    "openTime": "2026-11-12T00:33:02.225Z",
-    "timestamp": 1794443582225,
-    "isRiskFree": false
-  },
-  "INTCBUSDT": {
-    "symbol": "INTCBUSDT",
-    "entryPrice": 61.49,
-    "openTime": "2026-11-12T02:08:48.423Z",
-    "timestamp": 1794449328423,
-    "isRiskFree": false
-  },
   "GOOGLBUSDT": {
     "symbol": "GOOGLBUSDT",
     "entryPrice": 294.04,
@@ -46,13 +25,6 @@
     "entryPrice": 781.53,
     "openTime": "2026-11-12T09:04:07.822Z",
     "timestamp": 1794474247822,
-    "isRiskFree": false
-  },
-  "SNDKBUSDT": {
-    "symbol": "SNDKBUSDT",
-    "entryPrice": 950.88,
-    "openTime": "2026-11-12T10:04:40.895Z",
-    "timestamp": 1794477880895,
     "isRiskFree": false
   },
   "GRAMUSDT": {
