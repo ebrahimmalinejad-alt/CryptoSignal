@@ -47,5 +47,12 @@
     "openTime": "2026-11-12T02:54:08.749Z",
     "timestamp": 1794452048749,
     "isRiskFree": false
+  },
+  "ERAUSDT": {
+    "symbol": "ERAUSDT",
+    "entryPrice": 0.0897,
+    "openTime": "2026-11-12T04:04:40.776Z",
+    "timestamp": 1794456280776,
+    "isRiskFree": false
   }
 }
