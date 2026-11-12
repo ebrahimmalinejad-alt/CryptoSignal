@@ -13,13 +13,6 @@
     "timestamp": 1793582006397,
     "isRiskFree": true
   },
-  "XAUTUSDT": {
-    "symbol": "XAUTUSDT",
-    "entryPrice": 3943.37,
-    "openTime": "2026-11-02T17:43:21.613Z",
-    "timestamp": 1793641401613,
-    "isRiskFree": true
-  },
   "ETHUSDT": {
     "symbol": "ETHUSDT",
     "entryPrice": 2081.65,
@@ -46,7 +39,7 @@
     "entryPrice": 1.189,
     "openTime": "2026-11-12T02:54:08.749Z",
     "timestamp": 1794452048749,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "GOOGLBUSDT": {
     "symbol": "GOOGLBUSDT",

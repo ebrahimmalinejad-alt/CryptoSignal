@@ -5248,5 +5248,15 @@
     "openTime": "2026-11-12T04:04:40.776Z",
     "closeTime": "2026-11-12T04:46:38.347Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "XAUTUSDT",
+    "type": "BUY",
+    "entryPrice": 3943.37,
+    "exitPrice": 3941.71,
+    "pnlPercent": -0.04,
+    "openTime": "2026-11-02T17:43:21.613Z",
+    "closeTime": "2026-11-12T08:28:43.172Z",
+    "reason": "Breakeven Stop"
   }
 ]
