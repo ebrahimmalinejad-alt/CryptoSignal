@@ -34,13 +34,6 @@
     "timestamp": 1794449328423,
     "isRiskFree": false
   },
-  "GRAMUSDT": {
-    "symbol": "GRAMUSDT",
-    "entryPrice": 1.189,
-    "openTime": "2026-11-12T02:54:08.749Z",
-    "timestamp": 1794452048749,
-    "isRiskFree": true
-  },
   "GOOGLBUSDT": {
     "symbol": "GOOGLBUSDT",
     "entryPrice": 294.04,
