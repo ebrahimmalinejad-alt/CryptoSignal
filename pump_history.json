@@ -5238,5 +5238,15 @@
     "openTime": "2026-11-11T15:37:28.754Z",
     "closeTime": "2026-11-12T01:28:29.181Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ERAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.0897,
+    "exitPrice": 0.0951,
+    "pnlPercent": 6.02,
+    "openTime": "2026-11-12T04:04:40.776Z",
+    "closeTime": "2026-11-12T04:46:38.347Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
