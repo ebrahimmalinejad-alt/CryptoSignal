@@ -33,5 +33,12 @@
     "openTime": "2026-11-12T00:33:02.225Z",
     "timestamp": 1794443582225,
     "isRiskFree": false
+  },
+  "INTCBUSDT": {
+    "symbol": "INTCBUSDT",
+    "entryPrice": 61.49,
+    "openTime": "2026-11-12T02:08:48.423Z",
+    "timestamp": 1794449328423,
+    "isRiskFree": false
   }
 }
