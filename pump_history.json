@@ -5328,5 +5328,15 @@
     "openTime": "2026-11-12T09:04:07.822Z",
     "closeTime": "2026-11-13T00:06:59.993Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "TRXUSDT",
+    "type": "BUY",
+    "entryPrice": 0.3134,
+    "exitPrice": 0.3132,
+    "pnlPercent": -0.06,
+    "openTime": "2026-11-02T01:13:26.397Z",
+    "closeTime": "2026-11-13T03:28:27.654Z",
+    "reason": "Breakeven Stop"
   }
 ]

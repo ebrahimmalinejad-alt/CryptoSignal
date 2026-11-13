@@ -6,13 +6,6 @@
     "timestamp": 1793397703957,
     "isRiskFree": false
   },
-  "TRXUSDT": {
-    "symbol": "TRXUSDT",
-    "entryPrice": 0.3134,
-    "openTime": "2026-11-02T01:13:26.397Z",
-    "timestamp": 1793582006397,
-    "isRiskFree": true
-  },
   "GOOGLBUSDT": {
     "symbol": "GOOGLBUSDT",
     "entryPrice": 294.04,
