@@ -1,11 +1,4 @@
 {
-  "EURUSDT": {
-    "symbol": "EURUSDT",
-    "entryPrice": 1.133,
-    "openTime": "2026-10-30T22:01:43.957Z",
-    "timestamp": 1793397703957,
-    "isRiskFree": false
-  },
   "GOOGLBUSDT": {
     "symbol": "GOOGLBUSDT",
     "entryPrice": 294.04,
@@ -39,20 +32,6 @@
     "entryPrice": 0.1736,
     "openTime": "2026-11-13T13:33:35.271Z",
     "timestamp": 1794576815271,
-    "isRiskFree": false
-  },
-  "LINKUSDT": {
-    "symbol": "LINKUSDT",
-    "entryPrice": 10.122,
-    "openTime": "2026-11-13T13:33:37.078Z",
-    "timestamp": 1794576817078,
-    "isRiskFree": false
-  },
-  "AVAXUSDT": {
-    "symbol": "AVAXUSDT",
-    "entryPrice": 8.596,
-    "openTime": "2026-11-13T13:33:40.506Z",
-    "timestamp": 1794576820506,
     "isRiskFree": false
   },
   "ARBUSDT": {

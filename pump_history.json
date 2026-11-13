@@ -5428,5 +5428,35 @@
     "openTime": "2026-11-13T14:29:24.687Z",
     "closeTime": "2026-11-13T15:15:03.513Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "EURUSDT",
+    "type": "BUY",
+    "entryPrice": 1.133,
+    "exitPrice": 1.1043,
+    "pnlPercent": -2.53,
+    "openTime": "2026-10-30T22:01:43.957Z",
+    "closeTime": "2026-11-13T15:30:19.276Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "LINKUSDT",
+    "type": "BUY",
+    "entryPrice": 10.122,
+    "exitPrice": 9.867,
+    "pnlPercent": -2.52,
+    "openTime": "2026-11-13T13:33:37.078Z",
+    "closeTime": "2026-11-13T15:30:19.276Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "type": "BUY",
+    "entryPrice": 8.596,
+    "exitPrice": 8.374,
+    "pnlPercent": -2.58,
+    "openTime": "2026-11-13T13:33:40.506Z",
+    "closeTime": "2026-11-13T15:30:19.276Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
