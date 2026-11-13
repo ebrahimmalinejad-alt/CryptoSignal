@@ -1,11 +1,4 @@
 {
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.00000454,
-    "openTime": "2026-11-13T08:16:01.697Z",
-    "timestamp": 1794557761697,
-    "isRiskFree": false
-  },
   "LTCUSDT": {
     "symbol": "LTCUSDT",
     "entryPrice": 49.89,
