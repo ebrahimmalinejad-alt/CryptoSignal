@@ -13,13 +13,6 @@
     "timestamp": 1794557761697,
     "isRiskFree": false
   },
-  "SPCXBUSDT": {
-    "symbol": "SPCXBUSDT",
-    "entryPrice": 140.53,
-    "openTime": "2026-11-13T09:01:29.397Z",
-    "timestamp": 1794560489397,
-    "isRiskFree": false
-  },
   "LTCUSDT": {
     "symbol": "LTCUSDT",
     "entryPrice": 49.89,
