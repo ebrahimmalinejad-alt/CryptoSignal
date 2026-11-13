@@ -5408,5 +5408,25 @@
     "openTime": "2026-11-13T13:33:38.810Z",
     "closeTime": "2026-11-13T14:54:47.713Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ENAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1413,
+    "exitPrice": 0.1377,
+    "pnlPercent": -2.55,
+    "openTime": "2026-11-13T13:33:45.579Z",
+    "closeTime": "2026-11-13T15:15:03.513Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "MUBUSDT",
+    "type": "BUY",
+    "entryPrice": 782.33,
+    "exitPrice": 760.68,
+    "pnlPercent": -2.77,
+    "openTime": "2026-11-13T14:29:24.687Z",
+    "closeTime": "2026-11-13T15:15:03.513Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
