@@ -5368,5 +5368,15 @@
     "openTime": "2026-11-13T13:33:50.486Z",
     "closeTime": "2026-11-13T14:29:19.962Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SOXLBUSDT",
+    "type": "BUY",
+    "entryPrice": 64.35,
+    "exitPrice": 62.63,
+    "pnlPercent": -2.67,
+    "openTime": "2026-11-13T13:48:59.222Z",
+    "closeTime": "2026-11-13T14:39:33.174Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
