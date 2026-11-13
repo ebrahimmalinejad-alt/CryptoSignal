@@ -34,20 +34,6 @@
     "timestamp": 1794576815271,
     "isRiskFree": false
   },
-  "ARBUSDT": {
-    "symbol": "ARBUSDT",
-    "entryPrice": 0.1495,
-    "openTime": "2026-11-13T13:33:42.092Z",
-    "timestamp": 1794576822092,
-    "isRiskFree": false
-  },
-  "SUIUSDT": {
-    "symbol": "SUIUSDT",
-    "entryPrice": 0.824,
-    "openTime": "2026-11-13T13:33:43.909Z",
-    "timestamp": 1794576823909,
-    "isRiskFree": false
-  },
   "TAOUSDT": {
     "symbol": "TAOUSDT",
     "entryPrice": 215.3,

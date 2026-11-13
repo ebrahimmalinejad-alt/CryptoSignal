@@ -5458,5 +5458,25 @@
     "openTime": "2026-11-13T13:33:40.506Z",
     "closeTime": "2026-11-13T15:30:19.276Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ARBUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1495,
+    "exitPrice": 0.1456,
+    "pnlPercent": -2.61,
+    "openTime": "2026-11-13T13:33:42.092Z",
+    "closeTime": "2026-11-13T15:40:28.719Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SUIUSDT",
+    "type": "BUY",
+    "entryPrice": 0.824,
+    "exitPrice": 0.7991,
+    "pnlPercent": -3.02,
+    "openTime": "2026-11-13T13:33:43.909Z",
+    "closeTime": "2026-11-13T15:40:28.719Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
