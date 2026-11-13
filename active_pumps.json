@@ -6,13 +6,6 @@
     "timestamp": 1794576812395,
     "isRiskFree": false
   },
-  "ADAUSDT": {
-    "symbol": "ADAUSDT",
-    "entryPrice": 0.1736,
-    "openTime": "2026-11-13T13:33:35.271Z",
-    "timestamp": 1794576815271,
-    "isRiskFree": false
-  },
   "TAOUSDT": {
     "symbol": "TAOUSDT",
     "entryPrice": 215.3,
