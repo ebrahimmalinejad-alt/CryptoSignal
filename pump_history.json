@@ -5548,5 +5548,25 @@
     "openTime": "2026-11-13T13:33:47.236Z",
     "closeTime": "2026-11-14T04:02:59.659Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "TAOUSDT",
+    "type": "BUY",
+    "entryPrice": 209.7,
+    "exitPrice": 203.1,
+    "pnlPercent": -3.15,
+    "openTime": "2026-11-14T05:38:32.740Z",
+    "closeTime": "2026-11-14T14:03:52.301Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "NEARUSDT",
+    "type": "BUY",
+    "entryPrice": 3.385,
+    "exitPrice": 3.283,
+    "pnlPercent": -3.01,
+    "openTime": "2026-11-14T06:03:45.001Z",
+    "closeTime": "2026-11-14T14:03:52.301Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
