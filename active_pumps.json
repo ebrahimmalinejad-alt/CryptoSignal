@@ -1,1 +1,9 @@
-{}
+{
+  "TAOUSDT": {
+    "symbol": "TAOUSDT",
+    "entryPrice": 209.7,
+    "openTime": "2026-11-14T05:38:32.740Z",
+    "timestamp": 1794634712740,
+    "isRiskFree": false
+  }
+}
