@@ -5608,5 +5608,15 @@
     "openTime": "2026-11-15T23:03:33.922Z",
     "closeTime": "2026-11-16T03:48:31.154Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "INITUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1044,
+    "exitPrice": 0.10163,
+    "pnlPercent": -2.65,
+    "openTime": "2026-11-16T03:48:36.222Z",
+    "closeTime": "2026-11-16T05:09:19.702Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
