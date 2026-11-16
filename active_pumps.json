@@ -54,5 +54,12 @@
     "openTime": "2026-11-16T00:50:00.304Z",
     "timestamp": 1794790200304,
     "isRiskFree": false
+  },
+  "INITUSDT": {
+    "symbol": "INITUSDT",
+    "entryPrice": 0.1044,
+    "openTime": "2026-11-16T03:48:36.222Z",
+    "timestamp": 1794800916222,
+    "isRiskFree": false
   }
 }
