@@ -13,13 +13,6 @@
     "timestamp": 1794783815475,
     "isRiskFree": false
   },
-  "BTCUSDT": {
-    "symbol": "BTCUSDT",
-    "entryPrice": 65320.01,
-    "openTime": "2026-11-16T00:04:09.978Z",
-    "timestamp": 1794787449978,
-    "isRiskFree": false
-  },
   "ADAUSDT": {
     "symbol": "ADAUSDT",
     "entryPrice": 0.1528,
