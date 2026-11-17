@@ -5688,5 +5688,15 @@
     "openTime": "2026-11-15T23:49:00.096Z",
     "closeTime": "2026-11-17T15:18:30.327Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "type": "BUY",
+    "entryPrice": 1841.86,
+    "exitPrice": 1783.04,
+    "pnlPercent": -3.19,
+    "openTime": "2026-11-17T05:21:21.200Z",
+    "closeTime": "2026-11-17T15:43:46.463Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

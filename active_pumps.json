@@ -34,13 +34,6 @@
     "timestamp": 1794878056069,
     "isRiskFree": true
   },
-  "ETHUSDT": {
-    "symbol": "ETHUSDT",
-    "entryPrice": 1841.86,
-    "openTime": "2026-11-17T05:21:21.200Z",
-    "timestamp": 1794892881200,
-    "isRiskFree": false
-  },
   "NEARUSDT": {
     "symbol": "NEARUSDT",
     "entryPrice": 3.22,
