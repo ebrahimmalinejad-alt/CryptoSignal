@@ -13,13 +13,6 @@
     "timestamp": 1794783815475,
     "isRiskFree": false
   },
-  "MSTRBUSDT": {
-    "symbol": "MSTRBUSDT",
-    "entryPrice": 101.63,
-    "openTime": "2026-11-15T23:49:00.096Z",
-    "timestamp": 1794786540096,
-    "isRiskFree": true
-  },
   "BTCUSDT": {
     "symbol": "BTCUSDT",
     "entryPrice": 65320.01,
