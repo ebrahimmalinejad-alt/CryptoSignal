@@ -61,5 +61,12 @@
     "openTime": "2026-11-17T06:47:10.282Z",
     "timestamp": 1794898030282,
     "isRiskFree": false
+  },
+  "HUMAUSDT": {
+    "symbol": "HUMAUSDT",
+    "entryPrice": 0.0077,
+    "openTime": "2026-11-17T15:13:27.217Z",
+    "timestamp": 1794928407217,
+    "isRiskFree": false
   }
 }
