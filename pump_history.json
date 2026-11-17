@@ -5698,5 +5698,25 @@
     "openTime": "2026-11-17T05:21:21.200Z",
     "closeTime": "2026-11-17T15:43:46.463Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "NEARUSDT",
+    "type": "BUY",
+    "entryPrice": 3.22,
+    "exitPrice": 3.118,
+    "pnlPercent": -3.17,
+    "openTime": "2026-11-17T06:26:58.611Z",
+    "closeTime": "2026-11-17T15:48:50.297Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "HUMAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.0077,
+    "exitPrice": 0.00749,
+    "pnlPercent": -2.73,
+    "openTime": "2026-11-17T15:13:27.217Z",
+    "closeTime": "2026-11-17T15:48:50.297Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

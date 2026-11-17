@@ -34,25 +34,11 @@
     "timestamp": 1794878056069,
     "isRiskFree": true
   },
-  "NEARUSDT": {
-    "symbol": "NEARUSDT",
-    "entryPrice": 3.22,
-    "openTime": "2026-11-17T06:26:58.611Z",
-    "timestamp": 1794896818611,
-    "isRiskFree": false
-  },
   "TRXUSDT": {
     "symbol": "TRXUSDT",
     "entryPrice": 0.3063,
     "openTime": "2026-11-17T06:47:10.282Z",
     "timestamp": 1794898030282,
-    "isRiskFree": false
-  },
-  "HUMAUSDT": {
-    "symbol": "HUMAUSDT",
-    "entryPrice": 0.0077,
-    "openTime": "2026-11-17T15:13:27.217Z",
-    "timestamp": 1794928407217,
     "isRiskFree": false
   }
 }
