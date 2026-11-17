@@ -5658,5 +5658,15 @@
     "openTime": "2026-11-16T05:34:38.726Z",
     "closeTime": "2026-11-16T15:25:43.625Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "HYPEUSDT",
+    "type": "BUY",
+    "entryPrice": 66.92,
+    "exitPrice": 70.31,
+    "pnlPercent": 5.07,
+    "openTime": "2026-11-16T00:50:00.304Z",
+    "closeTime": "2026-11-17T03:55:35.574Z",
+    "reason": "Take Profit (+5%)"
   }
 ]

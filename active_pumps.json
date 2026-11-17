@@ -34,13 +34,6 @@
     "timestamp": 1794789580030,
     "isRiskFree": false
   },
-  "HYPEUSDT": {
-    "symbol": "HYPEUSDT",
-    "entryPrice": 66.92,
-    "openTime": "2026-11-16T00:50:00.304Z",
-    "timestamp": 1794790200304,
-    "isRiskFree": true
-  },
   "ZECUSDT": {
     "symbol": "ZECUSDT",
     "entryPrice": 903.57,
