@@ -54,12 +54,5 @@
     "openTime": "2026-11-18T01:04:00.585Z",
     "timestamp": 1794963840585,
     "isRiskFree": false
-  },
-  "SOXLBUSDT": {
-    "symbol": "SOXLBUSDT",
-    "entryPrice": 51.68,
-    "openTime": "2026-11-18T01:39:25.049Z",
-    "timestamp": 1794965965049,
-    "isRiskFree": false
   }
 }
