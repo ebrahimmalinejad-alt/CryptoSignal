@@ -5778,5 +5778,35 @@
     "openTime": "2026-11-18T00:43:47.075Z",
     "closeTime": "2026-11-18T02:50:05.309Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "XAUTUSDT",
+    "type": "BUY",
+    "entryPrice": 3863.1,
+    "exitPrice": 3765.77,
+    "pnlPercent": -2.52,
+    "openTime": "2026-11-15T23:03:35.475Z",
+    "closeTime": "2026-11-18T14:43:19.750Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "AAVEUSDT",
+    "type": "BUY",
+    "entryPrice": 110.4,
+    "exitPrice": 109.3,
+    "pnlPercent": -1,
+    "openTime": "2026-11-17T20:01:18.034Z",
+    "closeTime": "2026-11-18T14:43:19.750Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "SOXLBUSDT",
+    "type": "BUY",
+    "entryPrice": 51.96,
+    "exitPrice": 47.86,
+    "pnlPercent": -7.89,
+    "openTime": "2026-11-18T05:41:42.091Z",
+    "closeTime": "2026-11-18T14:43:19.750Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

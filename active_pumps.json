@@ -6,13 +6,6 @@
     "timestamp": 1794782288527,
     "isRiskFree": false
   },
-  "XAUTUSDT": {
-    "symbol": "XAUTUSDT",
-    "entryPrice": 3863.1,
-    "openTime": "2026-11-15T23:03:35.475Z",
-    "timestamp": 1794783815475,
-    "isRiskFree": false
-  },
   "ADAUSDT": {
     "symbol": "ADAUSDT",
     "entryPrice": 0.1528,
@@ -27,13 +20,6 @@
     "timestamp": 1794898030282,
     "isRiskFree": false
   },
-  "AAVEUSDT": {
-    "symbol": "AAVEUSDT",
-    "entryPrice": 110.4,
-    "openTime": "2026-11-17T20:01:18.034Z",
-    "timestamp": 1794945678034,
-    "isRiskFree": true
-  },
   "UNIUSDT": {
     "symbol": "UNIUSDT",
     "entryPrice": 5.284,
@@ -46,13 +32,6 @@
     "entryPrice": 0.9778,
     "openTime": "2026-11-18T01:04:00.585Z",
     "timestamp": 1794963840585,
-    "isRiskFree": false
-  },
-  "SOXLBUSDT": {
-    "symbol": "SOXLBUSDT",
-    "entryPrice": 51.96,
-    "openTime": "2026-11-18T05:41:42.091Z",
-    "timestamp": 1794980502091,
     "isRiskFree": false
   }
 }
