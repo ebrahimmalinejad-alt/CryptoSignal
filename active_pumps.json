@@ -41,13 +41,6 @@
     "timestamp": 1794962320545,
     "isRiskFree": false
   },
-  "ENAUSDT": {
-    "symbol": "ENAUSDT",
-    "entryPrice": 0.1168,
-    "openTime": "2026-11-18T00:43:47.075Z",
-    "timestamp": 1794962627075,
-    "isRiskFree": false
-  },
   "XRPUSDT": {
     "symbol": "XRPUSDT",
     "entryPrice": 0.9778,
