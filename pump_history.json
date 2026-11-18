@@ -5738,5 +5738,15 @@
     "openTime": "2026-11-17T15:48:52.791Z",
     "closeTime": "2026-11-17T18:00:04.910Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ZECUSDT",
+    "type": "BUY",
+    "entryPrice": 903.57,
+    "exitPrice": 967.12,
+    "pnlPercent": 7.03,
+    "openTime": "2026-11-17T01:14:16.069Z",
+    "closeTime": "2026-11-18T00:08:16.242Z",
+    "reason": "Take Profit (+5%)"
   }
 ]

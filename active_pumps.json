@@ -20,13 +20,6 @@
     "timestamp": 1794789580030,
     "isRiskFree": false
   },
-  "ZECUSDT": {
-    "symbol": "ZECUSDT",
-    "entryPrice": 903.57,
-    "openTime": "2026-11-17T01:14:16.069Z",
-    "timestamp": 1794878056069,
-    "isRiskFree": true
-  },
   "TRXUSDT": {
     "symbol": "TRXUSDT",
     "entryPrice": 0.3063,
