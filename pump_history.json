@@ -5828,5 +5828,15 @@
     "openTime": "2026-11-18T14:48:25.547Z",
     "closeTime": "2026-11-18T15:48:52.637Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "BNBUSDT",
+    "type": "BUY",
+    "entryPrice": 595.32,
+    "exitPrice": 578.59,
+    "pnlPercent": -2.81,
+    "openTime": "2026-11-15T22:38:08.527Z",
+    "closeTime": "2026-11-18T16:19:08.838Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

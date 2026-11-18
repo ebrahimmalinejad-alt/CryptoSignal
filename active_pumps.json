@@ -1,11 +1,4 @@
 {
-  "BNBUSDT": {
-    "symbol": "BNBUSDT",
-    "entryPrice": 595.32,
-    "openTime": "2026-11-15T22:38:08.527Z",
-    "timestamp": 1794782288527,
-    "isRiskFree": false
-  },
   "ADAUSDT": {
     "symbol": "ADAUSDT",
     "entryPrice": 0.1528,
