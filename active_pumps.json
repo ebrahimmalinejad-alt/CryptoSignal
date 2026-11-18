@@ -55,13 +55,6 @@
     "timestamp": 1794963840585,
     "isRiskFree": false
   },
-  "SNDKBUSDT": {
-    "symbol": "SNDKBUSDT",
-    "entryPrice": 835.4,
-    "openTime": "2026-11-18T01:09:05.816Z",
-    "timestamp": 1794964145816,
-    "isRiskFree": false
-  },
   "SOXLBUSDT": {
     "symbol": "SOXLBUSDT",
     "entryPrice": 51.68,
