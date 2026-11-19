@@ -11,7 +11,7 @@
     "entryPrice": 0.3063,
     "openTime": "2026-11-17T06:47:10.282Z",
     "timestamp": 1794898030282,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "XRPUSDT": {
     "symbol": "XRPUSDT",
