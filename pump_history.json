@@ -5858,5 +5858,25 @@
     "openTime": "2026-11-19T06:42:05.756Z",
     "closeTime": "2026-11-19T15:30:23.958Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "NEARUSDT",
+    "type": "BUY",
+    "entryPrice": 3.4,
+    "exitPrice": 3.298,
+    "pnlPercent": -3,
+    "openTime": "2026-11-19T10:18:47.751Z",
+    "closeTime": "2026-11-19T15:35:27.713Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ZECUSDT",
+    "type": "BUY",
+    "entryPrice": 954.03,
+    "exitPrice": 926.79,
+    "pnlPercent": -2.86,
+    "openTime": "2026-11-19T10:49:03.503Z",
+    "closeTime": "2026-11-19T15:35:27.713Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
