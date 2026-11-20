@@ -19,12 +19,5 @@
     "openTime": "2026-11-18T01:04:00.585Z",
     "timestamp": 1794963840585,
     "isRiskFree": false
-  },
-  "SENTUSDT": {
-    "symbol": "SENTUSDT",
-    "entryPrice": 0.02124,
-    "openTime": "2026-11-20T00:03:50.920Z",
-    "timestamp": 1795133030920,
-    "isRiskFree": false
   }
 }
