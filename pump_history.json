@@ -5898,5 +5898,25 @@
     "openTime": "2026-11-20T00:03:50.920Z",
     "closeTime": "2026-11-20T01:44:29.518Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "ADAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1528,
+    "exitPrice": 0.1485,
+    "pnlPercent": -2.81,
+    "openTime": "2026-11-16T00:39:40.030Z",
+    "closeTime": "2026-11-20T01:54:34.386Z",
+    "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "XRPUSDT",
+    "type": "BUY",
+    "entryPrice": 0.9778,
+    "exitPrice": 0.9512,
+    "pnlPercent": -2.72,
+    "openTime": "2026-11-18T01:04:00.585Z",
+    "closeTime": "2026-11-20T01:54:34.386Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]

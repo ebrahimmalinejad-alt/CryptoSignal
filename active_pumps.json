@@ -1,23 +1,9 @@
 {
-  "ADAUSDT": {
-    "symbol": "ADAUSDT",
-    "entryPrice": 0.1528,
-    "openTime": "2026-11-16T00:39:40.030Z",
-    "timestamp": 1794789580030,
-    "isRiskFree": false
-  },
   "TRXUSDT": {
     "symbol": "TRXUSDT",
     "entryPrice": 0.3063,
     "openTime": "2026-11-17T06:47:10.282Z",
     "timestamp": 1794898030282,
     "isRiskFree": true
-  },
-  "XRPUSDT": {
-    "symbol": "XRPUSDT",
-    "entryPrice": 0.9778,
-    "openTime": "2026-11-18T01:04:00.585Z",
-    "timestamp": 1794963840585,
-    "isRiskFree": false
   }
 }
