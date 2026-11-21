@@ -1,1 +1,9 @@
-{}
+{
+  "SPCXBUSDT": {
+    "symbol": "SPCXBUSDT",
+    "entryPrice": 131.04,
+    "openTime": "2026-11-21T13:54:55.224Z",
+    "timestamp": 1795269295224,
+    "isRiskFree": false
+  }
+}
