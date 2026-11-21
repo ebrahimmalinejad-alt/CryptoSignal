@@ -5928,5 +5928,15 @@
     "openTime": "2026-11-17T06:47:10.282Z",
     "closeTime": "2026-11-20T14:31:38.642Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "MMTUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2665,
+    "exitPrice": 0.2556,
+    "pnlPercent": -4.09,
+    "openTime": "2026-11-21T02:33:34.161Z",
+    "closeTime": "2026-11-21T03:03:46.503Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
