@@ -60,7 +60,7 @@
     "entryPrice": 185.1,
     "openTime": "2026-11-22T02:44:58.289Z",
     "timestamp": 1795315498289,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "PEPEUSDT": {
     "symbol": "PEPEUSDT",
