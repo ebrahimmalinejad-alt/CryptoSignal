@@ -46,14 +46,14 @@
     "entryPrice": 80.78,
     "openTime": "2026-11-22T02:24:45.460Z",
     "timestamp": 1795314285460,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "BTCUSDT": {
     "symbol": "BTCUSDT",
     "entryPrice": 59595.74,
     "openTime": "2026-11-22T02:34:51.675Z",
     "timestamp": 1795314891675,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "TAOUSDT": {
     "symbol": "TAOUSDT",
@@ -88,7 +88,7 @@
     "entryPrice": 48.49,
     "openTime": "2026-11-22T07:52:59.311Z",
     "timestamp": 1795333979311,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "HYPEUSDT": {
     "symbol": "HYPEUSDT",
@@ -102,7 +102,7 @@
     "entryPrice": 0.646,
     "openTime": "2026-11-22T08:18:17.209Z",
     "timestamp": 1795335497209,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "ETHUSDT": {
     "symbol": "ETHUSDT",
