@@ -18,7 +18,7 @@
     "entryPrice": 548.01,
     "openTime": "2026-11-21T22:57:12.220Z",
     "timestamp": 1795301832220,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "TRXUSDT": {
     "symbol": "TRXUSDT",
