@@ -97,20 +97,6 @@
     "timestamp": 1795335802339,
     "isRiskFree": true
   },
-  "SOXLBUSDT": {
-    "symbol": "SOXLBUSDT",
-    "entryPrice": 33.4,
-    "openTime": "2026-11-22T08:43:34.433Z",
-    "timestamp": 1795337014433,
-    "isRiskFree": true
-  },
-  "NVDABUSDT": {
-    "symbol": "NVDABUSDT",
-    "entryPrice": 134.67,
-    "openTime": "2026-11-22T22:59:54.001Z",
-    "timestamp": 1795388394001,
-    "isRiskFree": false
-  },
   "NEARUSDT": {
     "symbol": "NEARUSDT",
     "entryPrice": 2.97,

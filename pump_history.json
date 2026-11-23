@@ -5978,5 +5978,25 @@
     "openTime": "2026-11-22T08:18:17.209Z",
     "closeTime": "2026-11-23T02:31:32.442Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "SOXLBUSDT",
+    "type": "BUY",
+    "entryPrice": 33.4,
+    "exitPrice": 33.37,
+    "pnlPercent": -0.09,
+    "openTime": "2026-11-22T08:43:34.433Z",
+    "closeTime": "2026-11-23T02:36:35.555Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "NVDABUSDT",
+    "type": "BUY",
+    "entryPrice": 134.67,
+    "exitPrice": 130.99,
+    "pnlPercent": -2.73,
+    "openTime": "2026-11-22T22:59:54.001Z",
+    "closeTime": "2026-11-23T02:36:35.555Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
