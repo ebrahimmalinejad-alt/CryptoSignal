@@ -76,13 +76,6 @@
     "timestamp": 1795333979311,
     "isRiskFree": true
   },
-  "HYPEUSDT": {
-    "symbol": "HYPEUSDT",
-    "entryPrice": 60.32,
-    "openTime": "2026-11-22T08:13:11.843Z",
-    "timestamp": 1795335191843,
-    "isRiskFree": true
-  },
   "ETHUSDT": {
     "symbol": "ETHUSDT",
     "entryPrice": 1686.42,
