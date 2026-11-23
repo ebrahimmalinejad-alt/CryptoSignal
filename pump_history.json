@@ -6018,5 +6018,15 @@
     "openTime": "2026-11-22T08:13:11.843Z",
     "closeTime": "2026-11-23T08:36:17.394Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "CRCLBUSDT",
+    "type": "BUY",
+    "entryPrice": 48.49,
+    "exitPrice": 51.02,
+    "pnlPercent": 5.22,
+    "openTime": "2026-11-22T07:52:59.311Z",
+    "closeTime": "2026-11-23T09:06:33.451Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
