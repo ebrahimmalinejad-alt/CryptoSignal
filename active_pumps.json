@@ -90,13 +90,6 @@
     "timestamp": 1795335191843,
     "isRiskFree": true
   },
-  "SUIUSDT": {
-    "symbol": "SUIUSDT",
-    "entryPrice": 0.646,
-    "openTime": "2026-11-22T08:18:17.209Z",
-    "timestamp": 1795335497209,
-    "isRiskFree": true
-  },
   "ETHUSDT": {
     "symbol": "ETHUSDT",
     "entryPrice": 1686.42,
