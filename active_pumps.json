@@ -4,14 +4,14 @@
     "entryPrice": 131.04,
     "openTime": "2026-11-21T13:54:55.224Z",
     "timestamp": 1795269295224,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "XAUTUSDT": {
     "symbol": "XAUTUSDT",
     "entryPrice": 3560.81,
     "openTime": "2026-11-21T18:47:53.211Z",
     "timestamp": 1795286873211,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "BNBUSDT": {
     "symbol": "BNBUSDT",
@@ -27,46 +27,11 @@
     "timestamp": 1795310336191,
     "isRiskFree": false
   },
-  "SOLUSDT": {
-    "symbol": "SOLUSDT",
-    "entryPrice": 70.29,
-    "openTime": "2026-11-22T02:04:29.533Z",
-    "timestamp": 1795313069533,
-    "isRiskFree": true
-  },
-  "ZECUSDT": {
-    "symbol": "ZECUSDT",
-    "entryPrice": 773.74,
-    "openTime": "2026-11-22T02:19:40.538Z",
-    "timestamp": 1795313980538,
-    "isRiskFree": true
-  },
   "BTCUSDT": {
     "symbol": "BTCUSDT",
     "entryPrice": 59595.74,
     "openTime": "2026-11-22T02:34:51.675Z",
     "timestamp": 1795314891675,
-    "isRiskFree": true
-  },
-  "TAOUSDT": {
-    "symbol": "TAOUSDT",
-    "entryPrice": 185.1,
-    "openTime": "2026-11-22T02:44:58.289Z",
-    "timestamp": 1795315498289,
-    "isRiskFree": true
-  },
-  "DOGEUSDT": {
-    "symbol": "DOGEUSDT",
-    "entryPrice": 0.05416,
-    "openTime": "2026-11-22T07:02:23.785Z",
-    "timestamp": 1795330943785,
-    "isRiskFree": true
-  },
-  "ADAUSDT": {
-    "symbol": "ADAUSDT",
-    "entryPrice": 0.1421,
-    "openTime": "2026-11-22T07:52:57.340Z",
-    "timestamp": 1795333977340,
     "isRiskFree": true
   },
   "ETHUSDT": {
@@ -88,14 +53,14 @@
     "entryPrice": 0.9364,
     "openTime": "2026-11-23T03:22:00.302Z",
     "timestamp": 1795404120302,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "UNIUSDT": {
     "symbol": "UNIUSDT",
     "entryPrice": 4.789,
     "openTime": "2026-11-23T03:22:02.180Z",
     "timestamp": 1795404122180,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "PAXGUSDT": {
     "symbol": "PAXGUSDT",
@@ -104,18 +69,11 @@
     "timestamp": 1795407147801,
     "isRiskFree": false
   },
-  "NVDABUSDT": {
-    "symbol": "NVDABUSDT",
-    "entryPrice": 134.64,
-    "openTime": "2026-11-23T05:04:38.591Z",
-    "timestamp": 1795410278591,
-    "isRiskFree": true
-  },
   "PEPEUSDT": {
     "symbol": "PEPEUSDT",
     "entryPrice": 0.00000346,
     "openTime": "2026-11-23T09:21:44.652Z",
     "timestamp": 1795425704652,
-    "isRiskFree": false
+    "isRiskFree": true
   }
 }

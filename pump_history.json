@@ -6028,5 +6028,65 @@
     "openTime": "2026-11-22T07:52:59.311Z",
     "closeTime": "2026-11-23T09:06:33.451Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "SOLUSDT",
+    "type": "BUY",
+    "entryPrice": 70.29,
+    "exitPrice": 74.13,
+    "pnlPercent": 5.46,
+    "openTime": "2026-11-22T02:04:29.533Z",
+    "closeTime": "2026-11-23T16:42:59.259Z",
+    "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "ZECUSDT",
+    "type": "BUY",
+    "entryPrice": 773.74,
+    "exitPrice": 833.86,
+    "pnlPercent": 7.77,
+    "openTime": "2026-11-22T02:19:40.538Z",
+    "closeTime": "2026-11-23T16:42:59.259Z",
+    "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "TAOUSDT",
+    "type": "BUY",
+    "entryPrice": 185.1,
+    "exitPrice": 195.6,
+    "pnlPercent": 5.67,
+    "openTime": "2026-11-22T02:44:58.289Z",
+    "closeTime": "2026-11-23T16:42:59.259Z",
+    "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.05416,
+    "exitPrice": 0.05781,
+    "pnlPercent": 6.74,
+    "openTime": "2026-11-22T07:02:23.785Z",
+    "closeTime": "2026-11-23T16:42:59.259Z",
+    "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "ADAUSDT",
+    "type": "BUY",
+    "entryPrice": 0.1421,
+    "exitPrice": 0.1525,
+    "pnlPercent": 7.32,
+    "openTime": "2026-11-22T07:52:57.340Z",
+    "closeTime": "2026-11-23T16:42:59.259Z",
+    "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "NVDABUSDT",
+    "type": "BUY",
+    "entryPrice": 134.64,
+    "exitPrice": 163.89,
+    "pnlPercent": 21.72,
+    "openTime": "2026-11-23T05:04:38.591Z",
+    "closeTime": "2026-11-23T16:42:59.259Z",
+    "reason": "Take Profit (+5%)"
   }
 ]
