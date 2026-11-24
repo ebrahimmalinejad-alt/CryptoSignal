@@ -1,18 +1,4 @@
 {
-  "SPCXBUSDT": {
-    "symbol": "SPCXBUSDT",
-    "entryPrice": 131.04,
-    "openTime": "2026-11-21T13:54:55.224Z",
-    "timestamp": 1795269295224,
-    "isRiskFree": true
-  },
-  "XAUTUSDT": {
-    "symbol": "XAUTUSDT",
-    "entryPrice": 3560.81,
-    "openTime": "2026-11-21T18:47:53.211Z",
-    "timestamp": 1795286873211,
-    "isRiskFree": true
-  },
   "TRXUSDT": {
     "symbol": "TRXUSDT",
     "entryPrice": 0.3056,
@@ -20,39 +6,11 @@
     "timestamp": 1795310336191,
     "isRiskFree": true
   },
-  "BTCUSDT": {
-    "symbol": "BTCUSDT",
-    "entryPrice": 59595.74,
-    "openTime": "2026-11-22T02:34:51.675Z",
-    "timestamp": 1795314891675,
-    "isRiskFree": true
-  },
   "PAXGUSDT": {
     "symbol": "PAXGUSDT",
     "entryPrice": 3596.22,
     "openTime": "2026-11-23T04:12:27.801Z",
     "timestamp": 1795407147801,
-    "isRiskFree": false
-  },
-  "ADAUSDT": {
-    "symbol": "ADAUSDT",
-    "entryPrice": 0.149,
-    "openTime": "2026-11-24T05:04:29.412Z",
-    "timestamp": 1795496669412,
-    "isRiskFree": false
-  },
-  "CRCLBUSDT": {
-    "symbol": "CRCLBUSDT",
-    "entryPrice": 50.99,
-    "openTime": "2026-11-24T05:04:32.198Z",
-    "timestamp": 1795496672198,
-    "isRiskFree": false
-  },
-  "HYPEUSDT": {
-    "symbol": "HYPEUSDT",
-    "entryPrice": 63.94,
-    "openTime": "2026-11-24T07:46:05.246Z",
-    "timestamp": 1795506365246,
     "isRiskFree": false
   }
 }
