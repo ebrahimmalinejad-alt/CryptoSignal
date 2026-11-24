@@ -6128,5 +6128,35 @@
     "openTime": "2026-11-23T03:22:00.302Z",
     "closeTime": "2026-11-24T09:01:43.821Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "type": "BUY",
+    "entryPrice": 1686.42,
+    "exitPrice": 1683.54,
+    "pnlPercent": -0.17,
+    "openTime": "2026-11-22T08:23:22.339Z",
+    "closeTime": "2026-11-24T09:06:47.911Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "UNIUSDT",
+    "type": "BUY",
+    "entryPrice": 4.789,
+    "exitPrice": 4.774,
+    "pnlPercent": -0.31,
+    "openTime": "2026-11-23T03:22:02.180Z",
+    "closeTime": "2026-11-24T09:06:47.911Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.00000349,
+    "exitPrice": 0.00000349,
+    "pnlPercent": 0,
+    "openTime": "2026-11-24T04:13:59.846Z",
+    "closeTime": "2026-11-24T09:06:47.911Z",
+    "reason": "Breakeven Stop"
   }
 ]
