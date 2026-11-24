@@ -67,7 +67,7 @@
     "entryPrice": 0.00000349,
     "openTime": "2026-11-24T04:13:59.846Z",
     "timestamp": 1795493639846,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "ADAUSDT": {
     "symbol": "ADAUSDT",
