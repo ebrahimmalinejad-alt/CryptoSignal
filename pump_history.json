@@ -6088,5 +6088,25 @@
     "openTime": "2026-11-23T05:04:38.591Z",
     "closeTime": "2026-11-23T16:42:59.259Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "NEARUSDT",
+    "type": "BUY",
+    "entryPrice": 2.97,
+    "exitPrice": 2.931,
+    "pnlPercent": -1.31,
+    "openTime": "2026-11-23T02:01:17.919Z",
+    "closeTime": "2026-11-24T03:33:35.702Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.00000346,
+    "exitPrice": 0.00000344,
+    "pnlPercent": -0.58,
+    "openTime": "2026-11-23T09:21:44.652Z",
+    "closeTime": "2026-11-24T03:33:35.702Z",
+    "reason": "Breakeven Stop"
   }
 ]

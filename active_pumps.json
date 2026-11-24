@@ -41,13 +41,6 @@
     "timestamp": 1795335802339,
     "isRiskFree": true
   },
-  "NEARUSDT": {
-    "symbol": "NEARUSDT",
-    "entryPrice": 2.97,
-    "openTime": "2026-11-23T02:01:17.919Z",
-    "timestamp": 1795399277919,
-    "isRiskFree": true
-  },
   "XRPUSDT": {
     "symbol": "XRPUSDT",
     "entryPrice": 0.9364,
@@ -68,12 +61,5 @@
     "openTime": "2026-11-23T04:12:27.801Z",
     "timestamp": 1795407147801,
     "isRiskFree": false
-  },
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.00000346,
-    "openTime": "2026-11-23T09:21:44.652Z",
-    "timestamp": 1795425704652,
-    "isRiskFree": true
   }
 }
