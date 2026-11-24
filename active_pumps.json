@@ -89,5 +89,12 @@
     "openTime": "2026-11-24T06:00:08.937Z",
     "timestamp": 1795500008937,
     "isRiskFree": false
+  },
+  "HYPEUSDT": {
+    "symbol": "HYPEUSDT",
+    "entryPrice": 63.94,
+    "openTime": "2026-11-24T07:46:05.246Z",
+    "timestamp": 1795506365246,
+    "isRiskFree": false
   }
 }
