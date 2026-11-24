@@ -6108,5 +6108,15 @@
     "openTime": "2026-11-23T09:21:44.652Z",
     "closeTime": "2026-11-24T03:33:35.702Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "SNDKBUSDT",
+    "type": "BUY",
+    "entryPrice": 88.08,
+    "exitPrice": 85.75,
+    "pnlPercent": -2.65,
+    "openTime": "2026-11-24T06:00:08.937Z",
+    "closeTime": "2026-11-24T08:56:39.602Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
