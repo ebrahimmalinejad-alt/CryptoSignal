@@ -12,5 +12,12 @@
     "openTime": "2026-11-25T21:03:02.736Z",
     "timestamp": 1795640582736,
     "isRiskFree": false
+  },
+  "SOXSBUSDT": {
+    "symbol": "SOXSBUSDT",
+    "entryPrice": 62.39,
+    "openTime": "2026-11-25T21:33:23.033Z",
+    "timestamp": 1795642403033,
+    "isRiskFree": false
   }
 }
