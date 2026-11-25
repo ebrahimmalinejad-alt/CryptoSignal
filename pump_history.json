@@ -6228,5 +6228,15 @@
     "openTime": "2026-11-24T07:46:05.246Z",
     "closeTime": "2026-11-24T16:39:05.033Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "MMTUSDT",
+    "type": "BUY",
+    "entryPrice": 0.2349,
+    "exitPrice": 0.2217,
+    "pnlPercent": -5.62,
+    "openTime": "2026-11-25T05:18:24.354Z",
+    "closeTime": "2026-11-25T06:23:53.487Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
