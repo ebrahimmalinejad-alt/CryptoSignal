@@ -6238,5 +6238,15 @@
     "openTime": "2026-11-25T05:18:24.354Z",
     "closeTime": "2026-11-25T06:23:53.487Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.00000347,
+    "exitPrice": 0.00000346,
+    "pnlPercent": -0.29,
+    "openTime": "2026-11-25T03:22:36.732Z",
+    "closeTime": "2026-11-25T07:39:25.023Z",
+    "reason": "Breakeven Stop"
   }
 ]
