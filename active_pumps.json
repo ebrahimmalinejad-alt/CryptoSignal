@@ -19,5 +19,12 @@
     "openTime": "2026-11-25T03:22:36.732Z",
     "timestamp": 1795576956732,
     "isRiskFree": false
+  },
+  "MMTUSDT": {
+    "symbol": "MMTUSDT",
+    "entryPrice": 0.2349,
+    "openTime": "2026-11-25T05:18:24.354Z",
+    "timestamp": 1795583904354,
+    "isRiskFree": false
   }
 }
