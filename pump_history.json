@@ -6288,5 +6288,25 @@
     "openTime": "2026-11-25T21:03:02.736Z",
     "closeTime": "2026-11-26T06:43:39.268Z",
     "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "SUIUSDT",
+    "type": "BUY",
+    "entryPrice": 0.6643,
+    "exitPrice": 0.6642,
+    "pnlPercent": -0.02,
+    "openTime": "2026-11-25T22:18:51.953Z",
+    "closeTime": "2026-11-26T15:56:03.454Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "TAOUSDT",
+    "type": "BUY",
+    "entryPrice": 182,
+    "exitPrice": 181.8,
+    "pnlPercent": -0.11,
+    "openTime": "2026-11-25T22:18:53.997Z",
+    "closeTime": "2026-11-26T15:56:03.454Z",
+    "reason": "Breakeven Stop"
   }
 ]
