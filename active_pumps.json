@@ -61,5 +61,12 @@
     "openTime": "2026-11-26T04:57:32.911Z",
     "timestamp": 1795669052911,
     "isRiskFree": false
+  },
+  "PAXGUSDT": {
+    "symbol": "PAXGUSDT",
+    "entryPrice": 3592.14,
+    "openTime": "2026-11-26T05:02:37.567Z",
+    "timestamp": 1795669357567,
+    "isRiskFree": false
   }
 }
