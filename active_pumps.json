@@ -68,5 +68,12 @@
     "openTime": "2026-11-26T05:02:37.567Z",
     "timestamp": 1795669357567,
     "isRiskFree": false
+  },
+  "XAUTUSDT": {
+    "symbol": "XAUTUSDT",
+    "entryPrice": 3590.78,
+    "openTime": "2026-11-26T05:12:45.264Z",
+    "timestamp": 1795669965264,
+    "isRiskFree": false
   }
 }
