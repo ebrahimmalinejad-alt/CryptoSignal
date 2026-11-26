@@ -6268,5 +6268,15 @@
     "openTime": "2026-11-23T04:12:27.801Z",
     "closeTime": "2026-11-25T16:21:30.857Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SOXSBUSDT",
+    "type": "BUY",
+    "entryPrice": 62.39,
+    "exitPrice": 59.62,
+    "pnlPercent": -4.44,
+    "openTime": "2026-11-25T21:33:23.033Z",
+    "closeTime": "2026-11-26T01:15:13.463Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
