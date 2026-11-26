@@ -6,13 +6,6 @@
     "timestamp": 1795640277434,
     "isRiskFree": false
   },
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.0000035,
-    "openTime": "2026-11-25T21:03:02.736Z",
-    "timestamp": 1795640582736,
-    "isRiskFree": true
-  },
   "LINKUSDT": {
     "symbol": "LINKUSDT",
     "entryPrice": 9.051,
