@@ -89,5 +89,12 @@
     "openTime": "2026-11-26T20:13:25.362Z",
     "timestamp": 1795724005362,
     "isRiskFree": false
+  },
+  "NVDABUSDT": {
+    "symbol": "NVDABUSDT",
+    "entryPrice": 151.8,
+    "openTime": "2026-11-26T20:18:30.074Z",
+    "timestamp": 1795724310074,
+    "isRiskFree": false
   }
 }
