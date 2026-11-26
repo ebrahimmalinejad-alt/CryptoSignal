@@ -40,5 +40,12 @@
     "openTime": "2026-11-26T03:26:35.905Z",
     "timestamp": 1795663595905,
     "isRiskFree": false
+  },
+  "WBTCUSDT": {
+    "symbol": "WBTCUSDT",
+    "entryPrice": 60793.54,
+    "openTime": "2026-11-26T03:36:43.878Z",
+    "timestamp": 1795664203878,
+    "isRiskFree": false
   }
 }
