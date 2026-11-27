@@ -62,13 +62,6 @@
     "timestamp": 1795720976574,
     "isRiskFree": true
   },
-  "ENAUSDT": {
-    "symbol": "ENAUSDT",
-    "entryPrice": 0.1017,
-    "openTime": "2026-11-26T20:13:25.362Z",
-    "timestamp": 1795724005362,
-    "isRiskFree": true
-  },
   "NVDABUSDT": {
     "symbol": "NVDABUSDT",
     "entryPrice": 151.8,
