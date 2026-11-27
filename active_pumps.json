@@ -82,5 +82,12 @@
     "openTime": "2026-11-26T20:18:30.074Z",
     "timestamp": 1795724310074,
     "isRiskFree": false
+  },
+  "SUIUSDT": {
+    "symbol": "SUIUSDT",
+    "entryPrice": 0.6825,
+    "openTime": "2026-11-27T03:04:43.761Z",
+    "timestamp": 1795748683761,
+    "isRiskFree": false
   }
 }
