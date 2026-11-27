@@ -6358,5 +6358,35 @@
     "openTime": "2026-11-26T20:13:25.362Z",
     "closeTime": "2026-11-27T07:06:52.929Z",
     "reason": "Take Profit (+5%)"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "type": "BUY",
+    "entryPrice": 1699.42,
+    "exitPrice": 1676.34,
+    "pnlPercent": -1.36,
+    "openTime": "2026-11-26T03:46:50.890Z",
+    "closeTime": "2026-11-27T15:44:43.752Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "type": "BUY",
+    "entryPrice": 0.00000352,
+    "exitPrice": 0.00000352,
+    "pnlPercent": 0,
+    "openTime": "2026-11-26T19:22:56.574Z",
+    "closeTime": "2026-11-27T15:44:43.752Z",
+    "reason": "Breakeven Stop"
+  },
+  {
+    "symbol": "NVDABUSDT",
+    "type": "BUY",
+    "entryPrice": 151.8,
+    "exitPrice": 148.28,
+    "pnlPercent": -2.32,
+    "openTime": "2026-11-26T20:18:30.074Z",
+    "closeTime": "2026-11-27T15:44:43.752Z",
+    "reason": "Breakeven Stop"
   }
 ]

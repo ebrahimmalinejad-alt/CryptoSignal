@@ -13,13 +13,6 @@
     "timestamp": 1795664203878,
     "isRiskFree": false
   },
-  "ETHUSDT": {
-    "symbol": "ETHUSDT",
-    "entryPrice": 1699.42,
-    "openTime": "2026-11-26T03:46:50.890Z",
-    "timestamp": 1795664810890,
-    "isRiskFree": true
-  },
   "MUBUSDT": {
     "symbol": "MUBUSDT",
     "entryPrice": 619.5,
@@ -53,20 +46,6 @@
     "entryPrice": 70.7,
     "openTime": "2026-11-26T06:03:16.022Z",
     "timestamp": 1795672996022,
-    "isRiskFree": true
-  },
-  "PEPEUSDT": {
-    "symbol": "PEPEUSDT",
-    "entryPrice": 0.00000352,
-    "openTime": "2026-11-26T19:22:56.574Z",
-    "timestamp": 1795720976574,
-    "isRiskFree": true
-  },
-  "NVDABUSDT": {
-    "symbol": "NVDABUSDT",
-    "entryPrice": 151.8,
-    "openTime": "2026-11-26T20:18:30.074Z",
-    "timestamp": 1795724310074,
     "isRiskFree": true
   },
   "SUIUSDT": {
