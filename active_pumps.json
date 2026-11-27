@@ -4,7 +4,7 @@
     "entryPrice": 127.4,
     "openTime": "2026-11-25T20:57:57.434Z",
     "timestamp": 1795640277434,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "LINKUSDT": {
     "symbol": "LINKUSDT",
