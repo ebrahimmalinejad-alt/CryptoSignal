@@ -6,19 +6,12 @@
     "timestamp": 1795640277434,
     "isRiskFree": true
   },
-  "LINKUSDT": {
-    "symbol": "LINKUSDT",
-    "entryPrice": 9.051,
-    "openTime": "2026-11-25T22:03:41.615Z",
-    "timestamp": 1795644221615,
-    "isRiskFree": true
-  },
   "ADAUSDT": {
     "symbol": "ADAUSDT",
     "entryPrice": 0.1489,
     "openTime": "2026-11-26T03:26:35.905Z",
     "timestamp": 1795663595905,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "WBTCUSDT": {
     "symbol": "WBTCUSDT",
@@ -32,14 +25,14 @@
     "entryPrice": 1699.42,
     "openTime": "2026-11-26T03:46:50.890Z",
     "timestamp": 1795664810890,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "MUBUSDT": {
     "symbol": "MUBUSDT",
     "entryPrice": 619.5,
     "openTime": "2026-11-26T04:57:32.911Z",
     "timestamp": 1795669052911,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "PAXGUSDT": {
     "symbol": "PAXGUSDT",
@@ -60,7 +53,7 @@
     "entryPrice": 0.05657,
     "openTime": "2026-11-26T06:03:13.878Z",
     "timestamp": 1795672993878,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "SOLUSDT": {
     "symbol": "SOLUSDT",
@@ -74,14 +67,14 @@
     "entryPrice": 0.00000352,
     "openTime": "2026-11-26T19:22:56.574Z",
     "timestamp": 1795720976574,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "ENAUSDT": {
     "symbol": "ENAUSDT",
     "entryPrice": 0.1017,
     "openTime": "2026-11-26T20:13:25.362Z",
     "timestamp": 1795724005362,
-    "isRiskFree": false
+    "isRiskFree": true
   },
   "NVDABUSDT": {
     "symbol": "NVDABUSDT",
