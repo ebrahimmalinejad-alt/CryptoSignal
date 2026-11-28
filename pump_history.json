@@ -6408,5 +6408,15 @@
     "openTime": "2026-11-28T02:08:24.348Z",
     "closeTime": "2026-11-28T04:59:34.486Z",
     "reason": "Stop Loss (-2.5%)"
+  },
+  {
+    "symbol": "SUIUSDT",
+    "type": "BUY",
+    "entryPrice": 0.6825,
+    "exitPrice": 0.6652,
+    "pnlPercent": -2.53,
+    "openTime": "2026-11-27T03:04:43.761Z",
+    "closeTime": "2026-11-28T05:09:39.228Z",
+    "reason": "Stop Loss (-2.5%)"
   }
 ]
